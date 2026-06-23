@@ -1,0 +1,1007 @@
+MÓDULO 6 — INTELIGÊNCIA ARTIFICIAL
+APLICADA A VENDAS
+Este módulo deverá ensinar o aluno a utilizar Inteligência Artificial de forma prática, estratégica, segura
+e ética em todas as etapas do processo comercial.
+A Inteligência Artificial deverá ser apresentada como uma ferramenta de apoio ao profissional, e não
+como substituição completa do julgamento humano.
+Todas as ferramentas, plataformas, modelos, preços, funcionalidades e limitações mencionados
+deverão ser verificados no momento da criação do curso, considerando o cenário de 2026.
+Não invente integrações, funcionalidades, preços ou resultados.
+Objetivos do módulo
+Ao finalizar este módulo, o aluno deverá ser capaz de:
+• Utilizar IA para pesquisar mercados;
+• Identificar empresas com potencial de compra;
+• Encontrar clientes dentro do ICP;
+• Criar e enriquecer listas de leads;
+• Pesquisar empresas e decisores;
+• Personalizar abordagens em escala;
+• Criar Cold Mails;
+• Criar roteiros de Cold Call;
+• Criar mensagens para WhatsApp e LinkedIn;
+• Preparar reuniões;
+• Gerar perguntas de diagnóstico;
+• Resumir reuniões;
+• Identificar dores e oportunidades;
+• Tratar objeções;
+• Criar propostas comerciais;
+• Fazer follow-ups;
+• Apoiar negociações;
+• Aumentar as chances de fechamento;
+• Atualizar dados no CRM;
+• Analisar o funil;
+• Priorizar oportunidades;
+• Criar assistentes e agentes comerciais;
+• Proteger dados pessoais e empresariais.
+1
+Ciclo 6.1 — Fundamentos de Inteligência Artificial para Vendas
+Conteúdos obrigatórios:
+• O que é Inteligência Artificial;
+• IA generativa;
+• Modelos de linguagem;
+• Assistentes de IA;
+• Agentes de IA;
+• Automação com IA;
+• Diferença entre IA, automação e agente;
+• Limitações dos modelos;
+• Alucinações;
+• Contexto;
+• Janela de contexto;
+• Dados de treinamento;
+• Uso de arquivos;
+• Busca na internet;
+• Geração de texto;
+• Geração de imagens;
+• Geração de áudio;
+• Transcrição;
+• Análise de dados;
+• Papel do humano na validação;
+• Aplicações no processo comercial.
+Apresente uma comparação didática entre:
+• Assistente de IA;
+• Copiloto;
+• Chatbot;
+• Agente autônomo;
+• Automação tradicional;
+• Automação com IA.
+Inclua exemplos de uso correto e uso incorreto.
+Atividade prática
+O aluno deverá identificar pelo menos dez tarefas comerciais que podem receber apoio de IA e
+classificar cada uma como:
+• Pesquisa;
+• Criação;
+• Análise;
+• Personalização;
+• Automação;
+• Tomada de decisão assistida.
+2
+Ciclo 6.2 — Engenharia de Prompts para Profissionais de Vendas
+Conteúdos obrigatórios:
+• O que é um prompt;
+• Como fornecer contexto;
+• Como definir uma função;
+• Como definir o objetivo;
+• Como informar o público-alvo;
+• Como incluir restrições;
+• Como solicitar formato de saída;
+• Como fornecer exemplos;
+• Como usar critérios de avaliação;
+• Como pedir revisão;
+• Como reduzir respostas genéricas;
+• Como evitar informações inventadas;
+• Como criar prompts reutilizáveis;
+• Como criar bibliotecas de prompts;
+• Como usar variáveis em prompts;
+• Como transformar processos comerciais em instruções para IA.
+Ensine uma estrutura reutilizável como:
+1. Função;
+2. Contexto;
+3. Objetivo;
+4. Dados de entrada;
+5. Regras;
+6. Restrições;
+7. Formato de saída;
+8. Critérios de qualidade;
+9. Etapa de validação.
+Modelos de prompts obrigatórios
+Crie modelos práticos para:
+• Pesquisa de mercado;
+• Definição de ICP;
+• Análise de empresa;
+• Análise de decisor;
+• Pesquisa de dores;
+• Cold Mail;
+• Cold Call;
+• WhatsApp;
+• LinkedIn;
+• Qualificação;
+• SPIN;
+• BANT;
+• GPCT;
+• Tratamento de objeções;
+3
+• Follow-up;
+• Proposta comercial;
+• Resumo de reunião;
+• Atualização de CRM;
+• Análise de pipeline;
+• Plano de ação comercial.
+Atividade prática
+O aluno deverá criar um prompt comercial completo e comparar:
+• Uma versão ruim;
+• Uma versão melhorada;
+• Uma versão profissional.
+Ciclo 6.3 — IA para Encontrar Empresas e Clientes Potenciais
+Conteúdos obrigatórios:
+• Pesquisa de mercado com IA;
+• Identificação de segmentos;
+• Identificação de nichos;
+• Pesquisa de empresas;
+• Pesquisa de contas-alvo;
+• Pesquisa de sinais de compra;
+• Pesquisa de eventos comerciais;
+• Pesquisa de expansão;
+• Pesquisa de contratações;
+• Pesquisa de tecnologias utilizadas;
+• Pesquisa de mudanças de liderança;
+• Pesquisa de investimentos;
+• Pesquisa de necessidades prováveis;
+• Construção de listas de contas;
+• Account-Based Marketing;
+• Account-Based Sales;
+• Priorização de contas;
+• Lead scoring assistido por IA;
+• Intent data;
+• Sinais públicos;
+• Fontes confiáveis;
+• Validação das informações.
+Explique que a IA não deve inventar empresas, contatos, cargos, e-mails ou telefones.
+Toda informação encontrada deverá possuir:
+• Fonte;
+• Data da consulta;
+• Nível de confiança;
+• Status de validação.
+4
+Laboratório prático
+Crie um simulador no qual o aluno informa:
+• Produto;
+• Segmento;
+• Região;
+• Porte;
+• Cargo-alvo;
+• Dor atendida;
+• Ticket;
+• Critérios do ICP.
+O sistema deverá gerar:
+• Perfil de empresas a procurar;
+• Palavras-chave de pesquisa;
+• Fontes recomendadas;
+• Critérios de priorização;
+• Sinais de compra;
+• Checklist de validação.
+Não gere dados pessoais fictícios fingindo que são reais.
+Ciclo 6.4 — IA para Enriquecimento e Qualificação de Leads
+Conteúdos obrigatórios:
+• O que é enriquecimento de dados;
+• Dados firmográficos;
+• Dados demográficos profissionais;
+• Dados tecnológicos;
+• Dados comportamentais;
+• Dados de intenção;
+• Complementação de registros;
+• Padronização;
+• Deduplicação;
+• Classificação;
+• Segmentação;
+• Validação;
+• Detecção de dados incompletos;
+• Priorização;
+• Lead scoring;
+• Account scoring;
+• Qualificação assistida;
+• Integração com CRM;
+• Riscos de utilizar dados incorretos;
+• LGPD;
+• Base legal;
+• Minimização de dados;
+5
+• Consentimento quando aplicável;
+• Retenção e exclusão.
+Apresente exemplos de como a IA pode analisar:
+• Site da empresa;
+• Descrição institucional;
+• Página de produtos;
+• Vagas abertas;
+• Notícias;
+• Perfil profissional;
+• Tecnologias utilizadas;
+• Histórico de interação;
+• Informações do CRM.
+Atividade prática
+O aluno receberá uma lista simulada com registros incompletos e deverá:
+1. Identificar campos ausentes;
+2. Definir dados realmente necessários;
+3. Padronizar os registros;
+4. Remover duplicidades;
+5. Classificar os leads;
+6. Criar uma pontuação;
+7. Justificar a priorização.
+Ciclo 6.5 — IA para Prospecção Personalizada em Escala
+Conteúdos obrigatórios:
+• Personalização real versus personalização superficial;
+• Pesquisa antes da abordagem;
+• Geração de hipóteses de dor;
+• Gatilhos de contexto;
+• Proposta de valor;
+• Criação de assunto de e-mail;
+• Criação de Cold Mail;
+• Criação de mensagens de WhatsApp;
+• Criação de mensagens de LinkedIn;
+• Criação de roteiros de Cold Call;
+• Variações de mensagem;
+• Adaptação de tom;
+• Adaptação por persona;
+• Adaptação por segmento;
+• Follow-up;
+• Cadência multicanal;
+• Testes A/B;
+• Análise de respostas;
+• Classificação de intenção;
+6
+• Identificação de mensagens genéricas;
+• Revisão humana;
+• Prevenção de spam.
+Inclua uma oficina para transformar dados de uma conta em uma abordagem personalizada.
+Estrutura mínima da oficina
+Dados de entrada:
+• Empresa;
+• Segmento;
+• Cargo;
+• Possível desafio;
+• Evento recente;
+• Solução oferecida;
+• Evidência;
+• Chamada para ação.
+Saídas:
+• Cold Mail curto;
+• Cold Mail consultivo;
+• Mensagem para LinkedIn;
+• Mensagem para WhatsApp;
+• Roteiro de Cold Call;
+• Três follow-ups;
+• Explicação da estratégia utilizada.
+Regras obrigatórias
+• Não utilizar elogios falsos;
+• Não inventar eventos;
+• Não fingir que pesquisou algo que não foi pesquisado;
+• Não criar falsa intimidade;
+• Não enviar mensagens sem revisão;
+• Não usar IA para disparos abusivos;
+• Respeitar políticas dos canais;
+• Respeitar a LGPD.
+Ciclo 6.6 — IA para Reuniões, Negociação e Fechamento de
+Vendas
+Conteúdos obrigatórios:
+Antes da reunião
+• Pesquisa da empresa;
+• Pesquisa do participante;
+• Preparação de hipóteses;
+7
+• Criação de agenda;
+• Perguntas de diagnóstico;
+• Preparação de demonstração;
+• Identificação de riscos.
+Durante a reunião
+• Transcrição;
+• Anotações;
+• Identificação de dores;
+• Identificação de objetivos;
+• Identificação de objeções;
+• Identificação de próximos passos;
+• Apoio ao vendedor em tempo real, quando permitido;
+• Consentimento para gravação;
+• Privacidade.
+Depois da reunião
+• Resumo;
+• Tarefas;
+• Atualização do CRM;
+• E-mail de follow-up;
+• Plano de ação;
+• Proposta;
+• Business case;
+• Cronograma;
+• Registro de objeções;
+• Previsão de fechamento.
+Negociação
+• Preparação de cenários;
+• Identificação de interesses;
+• Criação de argumentos;
+• Comparação de propostas;
+• Análise de concessões;
+• Identificação de riscos;
+• Simulação de objeções;
+• Construção de respostas;
+• Preparação de fechamento.
+Fechamento
+• Sinais de compra;
+• Perguntas de fechamento;
+• Próximos passos;
+• Proposta comercial;
+• Termos;
+• Assinatura;
+• Follow-up;
+• Prevenção de perda por falta de acompanhamento.
+8
+Simulador obrigatório
+Crie um simulador de conversa em que a IA represente diferentes perfis de compradores:
+• Comprador interessado;
+• Comprador desconfiado;
+• Comprador sem orçamento;
+• Comprador sem prioridade;
+• Comprador que já utiliza concorrente;
+• Comprador que precisa consultar outra pessoa;
+• Comprador técnico;
+• Comprador executivo.
+O simulador deverá:
+• Avaliar a resposta do aluno;
+• Apontar pontos fortes;
+• Apontar perguntas ausentes;
+• Identificar excesso de pressão;
+• Avaliar escuta;
+• Avaliar clareza;
+• Sugerir uma resposta melhor;
+• Não aprovar automaticamente qualquer resposta.
+Ciclo 6.7 — Assistentes, Copilotos e Agentes Comerciais
+Conteúdos obrigatórios:
+• O que é um assistente comercial de IA;
+• O que é um copiloto comercial;
+• O que é um agente;
+• Memória;
+• Ferramentas;
+• Bases de conhecimento;
+• RAG;
+• Uso de documentos;
+• Ações em sistemas;
+• Permissões;
+• Aprovação humana;
+• Logs;
+• Auditoria;
+• Limites;
+• Tratamento de erros;
+• Custos;
+• Segurança;
+• Governança.
+Ensine a criar conceitualmente agentes para:
+• Pesquisar empresas;
+9
+• Enriquecer leads;
+• Classificar leads;
+• Criar abordagens;
+• Preparar reuniões;
+• Resumir reuniões;
+• Atualizar CRM;
+• Gerar follow-ups;
+• Analisar oportunidades paradas;
+• Avisar sobre tarefas;
+• Analisar o pipeline;
+• Criar relatórios comerciais.
+Regra de segurança
+Nenhum agente poderá:
+• Enviar mensagens em massa sem autorização;
+• Alterar valores de propostas sem validação;
+• Excluir dados;
+• Marcar oportunidades como ganhas;
+• Prometer condições comerciais;
+• Assinar contratos;
+• Coletar dados proibidos;
+• Tomar decisões críticas sem supervisão.
+Projeto do módulo
+O aluno deverá criar o projeto de um copiloto de IA para vendas contendo:
+• Objetivo;
+• Usuário;
+• Entradas;
+• Fontes de dados;
+• Instruções;
+• Ferramentas;
+• Saídas;
+• Ações permitidas;
+• Ações proibidas;
+• Pontos de aprovação humana;
+• Métricas;
+• Riscos;
+• Plano de testes.
+MÓDULO 7 — AUTOMAÇÃO COMPLETA DO FLUXO
+COMERCIAL
+Este módulo deverá ensinar como mapear, construir, testar, documentar e monitorar automações
+comerciais do início ao fim.
+10
+O objetivo não é apenas apresentar ferramentas. O aluno deverá compreender a lógica do processo e
+ser capaz de desenhar fluxos independentes de uma plataforma específica.
+A automação deverá cobrir toda a jornada:
+1. Origem do lead;
+2. Captura;
+3. Enriquecimento;
+4. Validação;
+5. Deduplicação;
+6. Segmentação;
+7. Lead scoring;
+8. Distribuição;
+9. Prospecção;
+10. Cadência;
+11. Qualificação;
+12. Agendamento;
+13. Reunião;
+14. Atualização do CRM;
+15. Proposta;
+16. Negociação;
+17. Assinatura;
+18. Fechamento;
+19. Passagem de bastão;
+20. Relatórios;
+21. Reativação;
+22. Customer Success;
+23. Expansão e renovação.
+Ciclo 7.1 — Fundamentos e Mapeamento de Processos
+Conteúdos obrigatórios:
+• O que é automação;
+• Automação baseada em regras;
+• Automação com IA;
+• Workflow;
+• Trigger;
+• Ação;
+• Condição;
+• Filtro;
+• Roteamento;
+• Delay;
+• Loop;
+• Webhook;
+• API;
+• Integração nativa;
+• Banco de dados;
+• Fila;
+11
+• Logs;
+• Tratamento de erros;
+• Processos síncronos e assíncronos;
+• Automação no-code;
+• Low-code;
+• Automação com código.
+Ensine a mapear:
+• Estado atual;
+• Gargalos;
+• Atividades repetitivas;
+• Atividades críticas;
+• Dependências;
+• Entradas;
+• Saídas;
+• Responsáveis;
+• Sistemas;
+• Indicadores;
+• Riscos;
+• Exceções.
+Critérios para decidir o que automatizar
+• Volume;
+• Frequência;
+• Padronização;
+• Tempo gasto;
+• Taxa de erro;
+• Impacto;
+• Risco;
+• Reversibilidade;
+• Necessidade de julgamento humano.
+Atividade prática
+Criar um mapa do fluxo comercial atual utilizando:
+• Etapa;
+• Responsável;
+• Sistema;
+• Entrada;
+• Ação;
+• Saída;
+• Tempo;
+• Problema;
+• Possibilidade de automação.
+12
+Ciclo 7.2 — Automação da Captura, Organização e
+Enriquecimento de Leads
+Conteúdos obrigatórios:
+• Formulários;
+• Landing pages;
+• Chat;
+• Webhooks;
+• Importação de planilhas;
+• Captura por eventos;
+• Captura por campanhas;
+• Entrada manual;
+• Entrada por API;
+• Padronização de campos;
+• Validação de e-mail;
+• Validação de telefone;
+• Deduplicação;
+• Enriquecimento;
+• Segmentação;
+• Aplicação do ICP;
+• Lead scoring;
+• Criação de conta e contato;
+• Registro da fonte;
+• Consentimento;
+• Controle de origem;
+• Bloqueio de registros inválidos.
+Fluxo prático obrigatório
+Crie um exemplo no qual:
+1. Um lead entra por formulário;
+2. Os campos são validados;
+3. O registro é padronizado;
+4. O sistema procura duplicidade;
+5. O lead é enriquecido;
+6. O ICP é verificado;
+7. Uma pontuação é atribuída;
+8. O CRM é atualizado;
+9. O responsável é definido;
+10. Uma tarefa é criada;
+11. Um alerta é enviado;
+12. O processo é registrado em log.
+Inclua caminhos alternativos para:
+• Lead duplicado;
+• E-mail inválido;
+• Telefone ausente;
+• Empresa fora do ICP;
+13
+• Dados insuficientes;
+• Erro na integração.
+Ciclo 7.3 — Automação da Prospecção e da Cadência Multicanal
+Conteúdos obrigatórios:
+• Entrada de leads na cadência;
+• Segmentação;
+• Personalização;
+• E-mail;
+• Telefone;
+• LinkedIn;
+• WhatsApp;
+• Tarefas manuais;
+• Intervalos;
+• Horários permitidos;
+• Pausas;
+• Respostas;
+• Opt-out;
+• Encerramento;
+• Reentrada;
+• Testes A/B;
+• Controle de frequência;
+• Prevenção de spam;
+• Limites dos canais;
+• Reputação de domínio;
+• Entregabilidade;
+• Bloqueios;
+• LGPD.
+Lógica obrigatória
+A automação deverá saber reagir quando:
+• O lead responde;
+• O lead agenda;
+• O lead pede para parar;
+• O lead não responde;
+• O e-mail retorna;
+• O telefone está incorreto;
+• O lead muda de empresa;
+• O lead não possui fit;
+• O vendedor assume manualmente;
+• O lead precisa ser nutrido;
+• O lead deve ser reativado depois.
+14
+Construtor interativo
+Crie um construtor de cadência com:
+• Dia;
+• Canal;
+• Ação;
+• Mensagem;
+• Responsável;
+• Condição de entrada;
+• Condição de saída;
+• Delay;
+• Métrica;
+• Limite de tentativas.
+Ciclo 7.4 — Automação da Qualificação, Distribuição e
+Agendamento
+Conteúdos obrigatórios:
+• Qualificação automática;
+• Qualificação assistida;
+• Formulário inteligente;
+• Chatbot;
+• Lead scoring;
+• Account scoring;
+• BANT;
+• GPCT;
+• SPIN;
+• Perguntas condicionais;
+• Classificação de intenção;
+• Detecção de urgência;
+• Distribuição de leads;
+• Round-robin;
+• Distribuição por território;
+• Distribuição por segmento;
+• Distribuição por produto;
+• Distribuição por carga;
+• SLA;
+• Escalonamento;
+• Agendamento;
+• Confirmação;
+• Lembrete;
+• Reagendamento;
+• Cancelamento;
+• Prevenção de no-show.
+15
+Fluxo prático obrigatório
+1. Lead demonstra interesse;
+2. Sistema verifica critérios;
+3. Lead responde perguntas;
+4. Pontuação é atualizada;
+5. Lead é aprovado ou enviado para nutrição;
+6. Responsável é escolhido;
+7. Agenda disponível é consultada;
+8. Reunião é marcada;
+9. Convite é enviado;
+10. Lembretes são programados;
+11. CRM é atualizado;
+12. No-show gera fluxo de recuperação.
+Ciclo 7.5 — Automação do CRM, Pipeline e Gestão de
+Oportunidades
+Conteúdos obrigatórios:
+• Criação de contatos;
+• Criação de empresas;
+• Criação de negócios;
+• Atualização de propriedades;
+• Movimentação entre etapas;
+• Criação de tarefas;
+• Alertas;
+• Registro de atividades;
+• Associação entre registros;
+• Preenchimento automático;
+• Padronização;
+• Campos obrigatórios;
+• Regras de validação;
+• Oportunidades paradas;
+• Aging;
+• Próxima atividade;
+• Probabilidade;
+• Forecast;
+• Alertas de risco;
+• Pipeline hygiene;
+• Reativação;
+• Perda;
+• Motivos de perda;
+• Auditoria de alterações.
+16
+Regras obrigatórias
+Não permitir automações que:
+• Movam negócios sem critério;
+• Marquem vendas como ganhas automaticamente sem confirmação;
+• Apaguem registros críticos;
+• Sobrescrevam informações humanas sem histórico;
+• Dupliquem contatos;
+• Criem tarefas infinitas;
+• Enviem alertas repetidos sem controle.
+Atividade prática
+Criar um pipeline automatizado com:
+• Etapas;
+• Critérios de entrada;
+• Critérios de saída;
+• Campos obrigatórios;
+• Ações automáticas;
+• Alertas;
+• Tempo máximo;
+• Responsável;
+• Tratamento de exceção.
+Ciclo 7.6 — Automação de Propostas, Follow-up, Fechamento e
+Passagem de Bastão
+Conteúdos obrigatórios:
+• Geração de proposta;
+• Preenchimento de dados;
+• Modelos;
+• Aprovação interna;
+• Controle de descontos;
+• Versionamento;
+• Envio;
+• Rastreamento de abertura;
+• Follow-up;
+• Assinatura eletrônica;
+• Confirmação;
+• Atualização do negócio;
+• Geração de tarefas;
+• Notificação financeira;
+• Notificação operacional;
+• Passagem para Customer Success;
+• Onboarding;
+• Registro de promessas;
+17
+• Registro de escopo;
+• Registro de condições comerciais;
+• Pesquisa de satisfação inicial.
+Fluxo obrigatório
+1. Oportunidade atinge o critério de proposta;
+2. Dados obrigatórios são validados;
+3. Proposta é criada;
+4. Desconto fora da política exige aprovação;
+5. Documento é enviado;
+6. Abertura é registrada;
+7. Follow-ups são programados;
+8. Assinatura é detectada;
+9. CRM é atualizado;
+10. Financeiro é avisado;
+11. Customer Success recebe o contexto;
+12. Onboarding é iniciado;
+13. Todos os eventos ficam registrados.
+Ciclo 7.7 — Arquitetura de Automação de Ponta a Ponta
+Conteúdos obrigatórios:
+• Desenho de arquitetura;
+• Sistemas envolvidos;
+• CRM;
+• Automação de marketing;
+• Prospecção;
+• Enriquecimento;
+• Telefonia;
+• Mensageria;
+• Agenda;
+• Videoconferência;
+• Propostas;
+• Assinatura;
+• BI;
+• Banco de dados;
+• APIs;
+• Webhooks;
+• Filas;
+• Logs;
+• Monitoramento;
+• Alertas;
+• Retentativas;
+• Idempotência;
+• Versionamento;
+• Ambiente de teste;
+• Homologação;
+• Produção;
+18
+• Documentação;
+• Segurança;
+• Permissões;
+• Tokens;
+• Segredos;
+• Backup;
+• Continuidade;
+• Custos;
+• Escalabilidade.
+Observabilidade obrigatória
+Toda automação deverá possuir:
+• Identificador da execução;
+• Data e hora;
+• Entrada;
+• Resultado;
+• Status;
+• Erro;
+• Número de tentativas;
+• Sistema de origem;
+• Sistema de destino;
+• Responsável;
+• Possibilidade de reprocessamento.
+Projeto do módulo
+O aluno deverá construir o projeto completo de uma automação comercial contendo:
+1. Objetivo;
+2. Escopo;
+3. Processo atual;
+4. Processo futuro;
+5. Diagrama;
+6. Ferramentas;
+7. Gatilhos;
+8. Ações;
+9. Condições;
+10. Campos;
+11. Integrações;
+12. Pontos de aprovação humana;
+13. Tratamento de erros;
+14. Logs;
+15. Alertas;
+16. Indicadores;
+17. Riscos;
+18. LGPD;
+19. Plano de testes;
+20. Plano de implantação;
+21. Plano de contingência.
+19
+FERRAMENTAS E CATEGORIAS PARA IA E
+AUTOMAÇÃO
+Apresente categorias, não apenas marcas.
+As ferramentas mencionadas deverão ser verificadas em fontes oficiais em 2026.
+Considere pesquisar soluções das seguintes categorias:
+Inteligência Artificial
+• Modelos de linguagem;
+• Assistentes empresariais;
+• Pesquisa com IA;
+• Transcrição;
+• Inteligência de conversação;
+• Geração de propostas;
+• Análise de chamadas;
+• Enriquecimento de dados;
+• Personalização de mensagens;
+• Lead scoring;
+• Forecast;
+• Agentes de IA;
+• Bases de conhecimento;
+• RAG;
+• Análise de documentos.
+Automação
+• CRM;
+• Automação de marketing;
+• Sales engagement;
+• Automação no-code;
+• Automação low-code;
+• Integração por API;
+• Webhooks;
+• Enriquecimento;
+• Formulários;
+• Agenda;
+• Telefonia;
+• WhatsApp;
+• E-mail;
+• LinkedIn;
+• Assinatura eletrônica;
+• Propostas;
+• Customer Success;
+• BI;
+20
+• Monitoramento.
+Para cada categoria, explique:
+• Finalidade;
+• Momento de uso;
+• Dados necessários;
+• Benefícios;
+• Limitações;
+• Riscos;
+• Critérios de escolha;
+• Integrações;
+• Custos a considerar;
+• Dependência de fornecedor;
+• Segurança;
+• Conformidade com a LGPD.
+LABORATÓRIO VISUAL DE AUTOMAÇÃO
+A plataforma HTML deverá possuir um construtor visual simplificado de fluxos.
+O aluno deverá conseguir adicionar blocos como:
+• Gatilho;
+• Condição;
+• Filtro;
+• Ação;
+• Delay;
+• Aprovação humana;
+• IA;
+• Webhook;
+• CRM;
+• E-mail;
+• WhatsApp;
+• Tarefa;
+• Agenda;
+• Proposta;
+• Assinatura;
+• Alerta;
+• Log;
+• Encerramento.
+Cada bloco deverá possuir:
+• Nome;
+• Descrição;
+• Entrada;
+• Saída;
+• Configuração;
+21
+• Condição de sucesso;
+• Condição de erro;
+• Próximo passo.
+O construtor poderá ser educacional e simulado, mas deverá funcionar dentro da plataforma e salvar o
+projeto do aluno.
+Não afirme que uma integração externa está ativa quando ela for apenas uma simulação.
+BIBLIOTECA DE AUTOMAÇÕES PRONTAS
+Inclua modelos editáveis para:
+1. Lead de formulário para o CRM;
+2. Enriquecimento de lead;
+3. Deduplicação;
+4. Lead scoring;
+5. Distribuição automática;
+6. Cadência Outbound;
+7. Follow-up de Inbound;
+8. Recuperação de no-show;
+9. Reativação de oportunidade;
+10. Alerta de negócio parado;
+11. Atualização automática do CRM;
+12. Resumo de reunião;
+13. Geração de tarefas;
+14. Envio de proposta;
+15. Aprovação de desconto;
+16. Assinatura e fechamento;
+17. Passagem para Customer Success;
+18. Pesquisa de satisfação;
+19. Renovação;
+20. Upsell e cross-sell.
+Cada modelo deverá apresentar:
+• Objetivo;
+• Gatilho;
+• Entradas;
+• Etapas;
+• Condições;
+• Saídas;
+• Pontos de aprovação;
+• Erros possíveis;
+• Métricas;
+• Riscos.
+22
+REGRAS DE GOVERNANÇA, SEGURANÇA E LGPD
+Os módulos de IA e automação deverão ensinar obrigatoriamente:
+• Minimização de dados;
+• Controle de acesso;
+• Permissões;
+• Consentimento;
+• Base legal;
+• Transparência;
+• Retenção;
+• Exclusão;
+• Exportação;
+• Auditoria;
+• Logs;
+• Revisão humana;
+• Segurança de credenciais;
+• Proteção de chaves;
+• Uso de variáveis de ambiente;
+• Proibição de segredos no código;
+• Proibição de dados sensíveis em prompts públicos;
+• Avaliação de fornecedores;
+• Plano de resposta a incidentes;
+• Prevenção de discriminação algorítmica;
+• Prevenção de decisões automatizadas injustas.
+Inclua alertas específicos sobre:
+• Inserir listas de clientes em serviços públicos de IA;
+• Compartilhar contratos;
+• Compartilhar dados financeiros;
+• Compartilhar gravações sem consentimento;
+• Utilizar dados pessoais sem finalidade definida;
+• Automatizar spam;
+• Criar falsas avaliações;
+• Criar identidades falsas;
+• Fingir ser uma pessoa;
+• Produzir promessas comerciais não autorizadas.
+AVALIAÇÕES DOS NOVOS MÓDULOS
+Cada um dos 14 novos ciclos deverá possuir:
+• Banco mínimo de 20 perguntas;
+• Exatamente 10 perguntas por tentativa;
+• Nota mínima de 70%;
+• Pelo menos uma atividade prática;
+• Feedback comentado;
+23
+• Revisão dos erros;
+• Nova tentativa;
+• Embaralhamento;
+• Registro da nota;
+• Registro do tempo;
+• Registro das competências.
+Os novos módulos deverão acrescentar no mínimo:
+• 140 perguntas exibidas ao longo das primeiras tentativas;
+• 280 perguntas no banco completo;
+• 14 atividades práticas;
+• 2 projetos de módulo.
+NOVA QUANTIDADE TOTAL DO CURSO
+Após a inclusão dos módulos de IA e automação, o curso deverá possuir:
+• 7 módulos;
+• 37 ciclos;
+• 37 atividades práticas obrigatórias;
+• 37 quizzes;
+• Exatamente 10 perguntas exibidas por quiz;
+• Banco mínimo de 740 perguntas;
+• 70% de aprovação em cada ciclo;
+• 2 projetos específicos, um de IA e outro de automação;
+• 1 desafio final integrador;
+• Certificado somente após a conclusão completa.
+NOVA ORDEM DE PROGRESSÃO
+A sequência será:
+1. Módulo 1 — Fundamentos de Inside Sales;
+2. Módulo 2 — Qualificação e Técnicas de Abordagem;
+3. Módulo 3 — Prospecção Multicanal;
+4. Módulo 4 — Transição para Vendas;
+5. Módulo 5 — Carreira em Inside Sales;
+6. Módulo 6 — Inteligência Artificial Aplicada a Vendas;
+7. Módulo 7 — Automação Completa do Fluxo Comercial;
+8. Desafio Final Integrador;
+9. Certificado.
+O próximo módulo permanecerá bloqueado enquanto houver qualquer ciclo, atividade ou avaliação
+obrigatória pendente no módulo anterior.
+24

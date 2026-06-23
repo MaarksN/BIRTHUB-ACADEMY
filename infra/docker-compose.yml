@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: inside_sales
+      POSTGRES_USER: inside
+      POSTGRES_PASSWORD: inside
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+  minio:
+    image: minio/minio:RELEASE.2025-04-22T22-12-26Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+volumes:
+  postgres-data:
+  minio-data:

@@ -1,0 +1,109 @@
+DESAFIO FINAL INTEGRADOR — OPERAÇÃO DE
+INSIDE SALES COM IA E AUTOMAÇÃO
+O aluno deverá estruturar uma operação comercial completa, integrando estratégia, prospecção,
+Inteligência Artificial e automação.
+Parte 1 — Estratégia comercial
+1. Escolher uma empresa real ou fictícia;
+2. Descrever o produto ou serviço;
+3. Definir o mercado;
+4. Definir o ticket;
+5. Definir o ciclo de vendas;
+6. Construir o ICP;
+7. Definir personas;
+8. Definir metas;
+9. Construir o funil;
+10. Fazer a engenharia reversa das metas.
+Parte 2 — Prospecção
+1. Criar critérios para a lista;
+2. Definir fontes de empresas;
+3. Definir cargos-alvo;
+4. Criar um processo de validação;
+5. Criar um modelo de enriquecimento;
+6. Criar uma pontuação de leads;
+7. Priorizar as contas;
+8. Criar uma cadência multicanal.
+Parte 3 — Abordagem
+1. Criar um Cold Mail;
+2. Criar três follow-ups;
+3. Criar uma mensagem de LinkedIn;
+4. Criar uma mensagem de WhatsApp;
+5. Criar uma abertura de Cold Call;
+6. Criar perguntas de qualificação;
+7. Criar perguntas utilizando BANT;
+8. Criar perguntas utilizando GPCT;
+9. Criar perguntas utilizando SPIN;
+10. Criar respostas para cinco objeções.
+Parte 4 — Inteligência Artificial
+1. Criar um prompt de pesquisa de mercado;
+2. Criar um prompt para análise de empresa;
+1
+3. Criar um prompt para personalização;
+4. Criar um prompt de preparação de reunião;
+5. Criar um prompt de resumo de reunião;
+6. Criar um prompt de follow-up;
+7. Criar um prompt de análise de pipeline;
+8. Projetar um copiloto comercial;
+9. Definir permissões;
+10. Definir dados permitidos;
+11. Definir dados proibidos;
+12. Definir pontos de validação humana.
+Parte 5 — Automação
+1. Mapear o fluxo atual;
+2. Desenhar o fluxo automatizado;
+3. Definir os gatilhos;
+4. Definir condições;
+5. Definir ações;
+6. Definir delays;
+7. Definir integrações;
+8. Definir campos do CRM;
+9. Criar o fluxo de captura;
+10. Criar o fluxo de enriquecimento;
+11. Criar o fluxo de distribuição;
+12. Criar o fluxo de cadência;
+13. Criar o fluxo de agendamento;
+14. Criar o fluxo de recuperação de no-show;
+15. Criar o fluxo de proposta;
+16. Criar o fluxo de assinatura;
+17. Criar o fluxo de passagem de bastão;
+18. Definir logs;
+19. Definir alertas;
+20. Definir tratamento de erros.
+Parte 6 — Gestão e indicadores
+1. Definir indicadores de atividade;
+2. Definir indicadores de conversão;
+3. Definir indicadores de produtividade;
+4. Definir indicadores de qualidade;
+5. Definir indicadores de receita;
+6. Criar um dashboard;
+7. Criar uma rotina de revisão;
+8. Criar um plano de testes;
+9. Criar um plano de implantação;
+10. Criar um plano de melhoria contínua.
+2
+Avaliação do desafio
+O sistema deverá avaliar:
+• Coerência do ICP;
+• Qualidade da lista;
+• Personalização;
+• Qualidade das perguntas;
+• Aplicação dos frameworks;
+• Qualidade das abordagens;
+• Uso responsável da IA;
+• Clareza dos prompts;
+• Segurança;
+• LGPD;
+• Coerência das automações;
+• Tratamento de erros;
+• Presença de aprovação humana;
+• Qualidade dos indicadores;
+• Viabilidade da operação.
+Critério de aprovação
+O aluno deverá alcançar no mínimo 70% no desafio final.
+O certificado somente será liberado quando o aluno:
+• Concluir os 37 ciclos;
+• Aprovar nos 37 quizzes;
+• Concluir as 37 atividades;
+• Entregar os dois projetos de módulo;
+• Aprovar no desafio final integrador;
+• Atingir no mínimo 70% de aproveitamento geral.
+3

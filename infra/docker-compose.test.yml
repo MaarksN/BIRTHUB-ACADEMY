@@ -1,0 +1,13 @@
+services:
+  postgres-test:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: inside_sales_test
+      POSTGRES_USER: inside
+      POSTGRES_PASSWORD: inside
+    ports:
+      - "55432:5432"
+  redis-test:
+    image: redis:7
+    ports:
+      - "56379:6379"

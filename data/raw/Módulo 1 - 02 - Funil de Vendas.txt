@@ -1,0 +1,436 @@
+Título: Módulo 1 - 02 - Funil de Vendas
+Arquivo original: C:\Users\Marks\Downloads\Video\MP3\Módulo 1 - 02 - Funil de Vendas.mp3
+Idioma: Português
+Duração detectada: 00:28:39
+
+[00:00:03 - 00:00:08] Oi gente, tudo bom? Bem-vindos a mais uma aula aqui dentro da plataforma das seus
+[00:00:08 - 00:00:12] Hunter, o seu Hub de Vendas, onde você pode contratar vendedores,
+[00:00:12 - 00:00:16] recrutar a sua equipe de vendas, também treinar os seus vendedores e ainda
+[00:00:16 - 00:00:22] participar aqui da nossa comunidade. Hoje a nossa aula vai ser sobre o
+[00:00:22 - 00:00:26] Funil de Vendas. Então a gente vai ver as etapas do Funil que a gente geralmente
+[00:00:26 - 00:00:31] usa, vou trazer algumas taxas de conversão para vocês também e alguns
+[00:00:31 - 00:00:37] exemplos aqui, beleza? Espero que vocês curtam bastante esse conteúdo. Então vamos lá, né?
+[00:00:37 - 00:00:41] Quando a gente está falando de um Funil de Vendas, a gente está falando geralmente
+[00:00:41 - 00:00:48] dessa estrutura aqui, como se ele fosse literalmente um Funil. Hoje eu não vou
+[00:00:48 - 00:00:54] trazer sobre o Funil em ampulheta que está sendo muito utilizado, né? Ou o
+[00:00:54 - 00:00:59] Funil deitado, enfim. A gente vai ver sobre o Funil normal e em outra aula a
+[00:00:59 - 00:01:04] gente vai estudar um pouco mais sobre esse Funil ampulheta, ok? Então aqui é a
+[00:01:04 - 00:01:09] estrutura de um Funil de Vendas. Então a gente tem a entrada, que é a entrada de
+[00:01:09 - 00:01:14] leads que pode ser de origem inbound ou outbound. Nós temos aqui na plataforma uma
+[00:01:14 - 00:01:18] aula sobre inbound e outbound. Se você tiver alguma dúvida assista essas duas
+[00:01:18 - 00:01:23] aulas, eu recomendo bastante. Depois disso a gente tem uma qualificação
+[00:01:23 - 00:01:27] desse lead, ou seja, a gente manda ele para o time de vendas e aqui eu estou
+[00:01:27 - 00:01:32] colocando uma estrutura de Funil que utiliza equipes de pré-venda ou utiliza
+[00:01:32 - 00:01:37] uma pessoa, uma equipe, uma alguém para fazer essa qualificação. Pode ser o
+[00:01:37 - 00:01:41] vendedor também, mas é muito comum a gente ver essas equipes de pré-vendas fazendo
+[00:01:41 - 00:01:46] essa qualificação e mandando isso para o vendedor. Depois esse vendedor
+[00:01:46 - 00:01:52] realiza uma demonstração, ele realiza uma apresentação, ele segue para uma
+[00:01:52 - 00:01:56] negociação. Então aqui na negociação a gente já tem um diagnóstico, um
+[00:01:56 - 00:02:02] discover e a etapa de negociação e por fim ele fecha essa venda, certo?
+[00:02:02 - 00:02:10] Então esse Funil funciona nessa estrutura. Quando a gente fala de um Funil inbound,
+[00:02:10 - 00:02:17] eu trouxe aqui algumas taxas de mercado, certo? Isso são de empresas que eu já
+[00:02:17 - 00:02:21] trabalhei, de empresas que eu já prestei consultoria e também de taxas que eu tenho
+[00:02:21 - 00:02:27] visto no mercado conversando com outras equipes de vendas, tá? Então aqui eu
+[00:02:27 - 00:02:33] coloquei um exemplo de um Funil que tem como entrada sem leads, né? Então um Funil
+[00:02:33 - 00:02:38] ali com uma entrada de sem leads na origem inbound, ou seja, essa entrada de
+[00:02:38 - 00:02:45] sem leads ela se deu com a origem inbound, né? A equipe de marketing realizou
+[00:02:45 - 00:02:50] trabalhos, as pessoas levantaram a mão querendo conhecer um pouco mais da
+[00:02:50 - 00:02:55] ferramenta, baixaram algum material, interagiram de alguma forma com o perfil
+[00:02:55 - 00:03:00] da empresa e aí elas chegaram nessa etapa aqui do Funil que é a etapa de entrada.
+[00:03:00 - 00:03:04] Depois que eles caíram nessa etapa de entrada, a gente tem aquela etapa em que
+[00:03:04 - 00:03:08] ou equipe de prevendas ou vendedor ou ali uma pessoa vai fazer a qualificação.
+[00:03:08 - 00:03:12] Como é que essa qualificação? Ela vai conversar com esse lead, ela vai entender
+[00:03:12 - 00:03:16] se a ferramenta realmente vai sentido, ela vai fazer isso de uma forma muito
+[00:03:16 - 00:03:21] consultiva, nós também temos uma aula que sobrevenda as consultivas e aí depois
+[00:03:21 - 00:03:24] disso ela vai realizar o ordinamento, ela vai mandar essa pessoa para equipe de
+[00:03:24 - 00:03:29] vendas, certo? Se fizer sentido, tudo certinho. Aqui a gente tem, quando a gente
+[00:03:29 - 00:03:34] fala de inbound, a gente tem entre 30 e 50% de aproveitamento desses leads.
+[00:03:34 - 00:03:39] Eu não vou conseguir aproveitar 100%. Uma parte deles é lead inválido, deixou o
+[00:03:39 - 00:03:44] telefone inválido, mesmos que fazem trial, mesmos que levantam a mão para
+[00:03:44 - 00:03:49] conhecer a ferramenta, às vezes deixam o nome falso, às vezes deixam o telefone
+[00:03:49 - 00:03:55] falso. Então a gente precisa tanto qualificar quanto retirá-los do funil.
+[00:03:55 - 00:03:59] Então uma parte desses leads que entram são leads inválidos.
+[00:03:59 - 00:04:03] Uma parte desses leads não entendeu o que a ferramenta fazia, ele levantou a mão,
+[00:04:03 - 00:04:08] ele queria saber, mas ele achou que era uma coisa e na verdade vocês fazem outra,
+[00:04:08 - 00:04:13] então também eu não vou conseguir qualificar. Uma parte deles gostou, achou que
+[00:04:13 - 00:04:17] realmente a ferramenta fazia sentido, mas quando conversou, pensou, não é o momento
+[00:04:17 - 00:04:22] agora, não vou priorizar isso aqui, não vou priorizar esse projeto, ele não vai
+[00:04:22 - 00:04:29] para a etapa de agenda. E uma parte que entre 30 e 50% está dentro do ICP, ele é
+[00:04:29 - 00:04:33] realmente o lead que nós queríamos falar, ele entendeu o que a ferramenta faz e ele
+[00:04:33 - 00:04:39] vai para frente para essa agenda, certo? Então aqui de 100 eu coloquei uma
+[00:04:39 - 00:04:46] simulação de que 40 deles teriam passado, 40 seria 40% e ele está entre esses 30 e 50, certo?
+[00:04:46 - 00:04:51] Depois disso, depois que a gente agenda para o vendedor, a gente ainda tem uma taxa
+[00:04:51 - 00:04:57] deles entre 10 e 15% que não comparece a reunião, ele simplesmente não aparece,
+[00:04:57 - 00:05:01] a gente perde o contato, a gente não consegue mais falar com esse lead, ou seja,
+[00:05:01 - 00:05:07] desses 40 entre 4 e 6, a gente não vai mais conseguir falar com ele, a gente vai
+[00:05:07 - 00:05:15] perder essa agenda. Sobramos ainda uns 36, 34 leads e desses a gente consegue
+[00:05:15 - 00:05:20] passar uma parte para frente, alguns deles chegam na reunião com o vendedor e
+[00:05:20 - 00:05:26] acontece tudo aquilo de novo, eles entendem mais da ferramenta, eles descobrem que não
+[00:05:26 - 00:05:31] é agora, eles descobrem quanto custa e eles podem não seguir para essa etapa de
+[00:05:31 - 00:05:36] negociação ou não seguir essa jornada com o vendedor, certo? Então aqui
+[00:05:36 - 00:05:43] desses 40, cerca de 60 a 75% vão passar para a próxima etapa, que é essa etapa de negociação
+[00:05:43 - 00:05:50] mesmo, o que daria aqui eu coloquei uma taxa de 70%, daria 28 oportunidades,
+[00:05:50 - 00:05:56] dessas 28 oportunidades entre 10 e 25% eu sei, está bem grande, entre 10 e 25 é uma taxa
+[00:05:56 - 00:06:04] muito, é uma diferença muito grande, mas tem operação fecha 10%, tem operação
+[00:06:04 - 00:06:10] fecha 20, tem operação fecha 25 e tem operações que fecha mais de 30, tá? Mas
+[00:06:10 - 00:06:16] quando a gente conversa e fazendo bem com outras equipes, a gente tem entre 10 e 25,
+[00:06:16 - 00:06:24] então de 28 oportunidades a gente chegaria lá no final com 5, 5 clientes e aqui se eu não me engano eu coloquei
+[00:06:24 - 00:06:32] uma taxa de 18% ou 17, eu não lembro de cabeças, tá? Quanto que eu coloquei aqui de taxa, mas ficou entre esses 10 e 25%.
+[00:06:32 - 00:06:39] Ou seja, se eu estou trabalhando com um lead inbound e eu sei quais as taxas de conversão dentro do meu funil,
+[00:06:39 - 00:06:47] dentro dessas etapas do meu funil, eu sei que de cada 100 leads eu vou ter uma quantidade de x saindo lá na ponta, certo?
+[00:06:47 - 00:06:55] Nesse caso desse exemplo que eu trouxe, eu fiz aqui uma simulação muito, mas para vocês terem noção disso,
+[00:06:55 - 00:07:01] nessa minha simulação a cada 100 leads que entrar sem dentro do funil, 5 deles sairiam como clientes.
+[00:07:01 - 00:07:09] Aqui a gente também não está considerando o nosso ciclo de vendas, então isso poderia acontecer em 30 dias,
+[00:07:09 - 00:07:15] também como poderia acontecer em 60 dias ou em 90 dias, certo? Também não estou considerando qual ticket média dessa operação,
+[00:07:15 - 00:07:25] eu fiz apenas uma simulação, mas se você sabe que de cada 100 leads que entram, 5 se tornam clientes e a sua meta são 25 clientes novos no mês,
+[00:07:25 - 00:07:32] a equipe de marketing sabe que ela precisa colocar todos os meses para a equipe de brevendas 500 leads lá na ponta,
+[00:07:32 - 00:07:38] porque a gente consegue fazer a conta do contrário, então eu começo de quanto eu preciso para bater a meta,
+[00:07:38 - 00:07:44] para outra taxa de conversão, para outra taxa para entender quanto eu preciso colocar na entrada, certo?
+[00:07:44 - 00:07:49] Quando eu estou falando de outbound, aqui a gente estava falando de inbound e aqui de outbound,
+[00:07:49 - 00:07:56] que é o lead que eu vou prospectar, então esse lead aqui conhece a empresa, baixou o material, pediu para falar com a gente,
+[00:07:56 - 00:08:03] interagiu com as nossas postagens, segue a gente, ele vem sendo educado pela equipe de marketing durante um bom tempo,
+[00:08:03 - 00:08:13] esse lead não, esse lead ele realmente não nos conhece, a gente vai tentar começar uma conversa com ele agora,
+[00:08:13 - 00:08:22] então eu tenho ali um desafio bem grande com esse lead aqui, que é convertê-lo, engajá-lo e aí sim, chegando no final e vendê-lo, certo?
+[00:08:22 - 00:08:31] No outbound, as taxas são menores, pelo menos a taxa de entrada para a agenda e a taxa de negociação para a venda, certo?
+[00:08:31 - 00:08:36] Desculpa, a de negociação para a venda segue a mesma, ela só cai porque o número de agendas também é menor.
+[00:08:36 - 00:08:42] Então aqui na entrada, de novo, eu fiz uma simulação de que a gente coloca 100 leads para esse pré-vendedor trabalhar,
+[00:08:42 - 00:08:52] ou para esse vendedor e a gente tem uma taxa de conversão entre 5 e 15%, que parece muito pouco, nossa, entre 5 e 15%.
+[00:08:52 - 00:08:58] Mas a gente deveria considerar que, cara, é um número bom, de cada 100 leads a gente marca 10 agendas,
+[00:08:58 - 00:09:03] para um lead que nunca viu a gente, não nos conhece, é uma taxa de conversão legal,
+[00:09:03 - 00:09:07] aqui de cada 100, a gente dava 40, agora de cada 100 é um agindo 10.
+[00:09:07 - 00:09:13] Então, para eu fazer um número de vendas, eu preciso trabalhar com um volume muito maior,
+[00:09:13 - 00:09:21] ou automatizando uma parte dessa minha estratégia, ou fazendo uma estratégia híbrida, um pouco outbound, um pouco inbound, né?
+[00:09:21 - 00:09:30] O inbound tem uma atração bacana, mas eu despenho o dinheiro para fazer essa atração,
+[00:09:30 - 00:09:36] e por isso que o restante das minhas taxas de conversão é boa, e no outbound eu não despenho tanto dinheiro assim,
+[00:09:36 - 00:09:41] eu vou usar uma outra ferramenta, eu vou ter a equipe que vai me custar, mas não necessariamente,
+[00:09:41 - 00:09:47] eu vou gastar com tráfego ou com equipe de marketing, porque eu tenho só equipe de pré-vendas,
+[00:09:47 - 00:09:52] porém a minha taxa de conversão é menor, principalmente para essa etapa de agenda, certo?
+[00:09:52 - 00:09:57] Então, aqui a gente tem 10 agendas dessas 10, novamente entre 60 e 75%,
+[00:09:57 - 00:10:02] vai passar para a etapa de negociação, então aqui desses 10, um deles vai dando show,
+[00:10:02 - 00:10:09] um deles vai falar, cara, não era bem o que eu queria, o outro me liga daqui a uns 3 meses,
+[00:10:09 - 00:10:13] porque eu acho que a gente vai colocar esse projeto para rodar, sobraram 7,
+[00:10:13 - 00:10:20] então desses 10, 7 vão passar para frente, e aí novamente entre 10 e 25% vai virar cliente,
+[00:10:20 - 00:10:26] 10% de 7 não chega a fechar um cliente, para fechar um cliente eu precisaria fechar pelo menos
+[00:10:26 - 00:10:33] 15%, então aqui a gente colocou como só um cliente fechado mesmo, e nessa operação,
+[00:10:33 - 00:10:38] a cada 100 leads que entram eu vou fechar um lá no final, essas taxas de conversão novamente,
+[00:10:38 - 00:10:43] elas são baseadas em taxas do mercado, você pode ter uma taxa maior ou uma taxa menor,
+[00:10:43 - 00:10:49] mas isso é uma base, talvez se você está começando a superação agora e não tem noção de como
+[00:10:49 - 00:10:55] vai se comportar, talvez você pense, cara, eu vou botar 100 leads no funil e a gente vai agendar 50,
+[00:10:55 - 00:11:00] então a gente vai dizer que não, é muito difícil você agendar 50% de leads do outbound,
+[00:11:00 - 00:11:06] a não ser que você faça uma mega personalização e o seu produto seja muito desrupativo que as
+[00:11:06 - 00:11:10] pessoas realmente necessitem, senão você vai ficar mais ou menos nessa taxa,
+[00:11:10 - 00:11:15] entre a agenda e negociação, é muito difícil a gente ter taxas acima de 75,
+[00:11:15 - 00:11:18] tem que ser assim, meu, todo mundo tem que comparar assim na reunião,
+[00:11:18 - 00:11:28] tem que estar muito, muito alinhado, porque senão nessa etapa de descobrido do vendedor vai acontecer entre 60% e 75%, certo?
+[00:11:28 - 00:11:35] Então aqui a gente já viu como funcionam os funis inbound e outbound e a estrutura desse funil segue isso mesmo,
+[00:11:35 - 00:11:40] então a gente começa com muito a boca do funil, muitos leads chegando e a gente vai funilando,
+[00:11:40 - 00:11:44] conforme a gente vai passando esse lead a gente vai funilando, né?
+[00:11:44 - 00:11:50] E vocês viram que eu falei um pouco sobre ICP, o ICP, como vocês preferirem falar,
+[00:11:50 - 00:11:58] e o que é esse ICP? O ICP é o ideal customer profile, que significaria um perfil de cliente ideal,
+[00:11:58 - 00:12:08] ou seja, ele é um cliente que reúne algumas características que fazem mais sentido para sua solução, certo?
+[00:12:08 - 00:12:15] Então se você vende um produto que é, por exemplo, um produto de uma HRTech, né?
+[00:12:15 - 00:12:20] De uma HR, de uma RHTech, por exemplo, uma empresa de RH,
+[00:12:20 - 00:12:24] e aí você precisa saber a quantidade de colaboradores que aquela empresa tem,
+[00:12:24 - 00:12:28] porque de repente uma empresa com 10 colaboradores não faz sentido ter a sua solução,
+[00:12:28 - 00:12:34] porque não vai se pagar, não vai ser legal para eles, e porque em breve eles vão dar um churn,
+[00:12:34 - 00:12:37] eles vão cancelar, eles não vão ver valor naquela solução.
+[00:12:37 - 00:12:43] Então você coloca ali que o ideal seria ter empresas que tenham no mínimo 100 colaboradores,
+[00:12:43 - 00:12:47] para fazer mais sentido. Como é que a gente descobre isso, né?
+[00:12:47 - 00:12:52] No início você tem que meio que se você ainda não tem uma base de clientes,
+[00:12:52 - 00:12:57] você precisa imaginar quais seriam os clientes mais beneficiados com a sua solução.
+[00:12:57 - 00:13:02] Depois que você começa a montar uma base de clientes, a gente já consegue fazer isso através de relatórios
+[00:13:02 - 00:13:08] que o CS traz. Então o CS consegue identificar de cada 10 clientes que entram,
+[00:13:08 - 00:13:11] quantos clientes ficam e qual o tempo que esse cliente fica.
+[00:13:11 - 00:13:16] Então de cada 10 clientes, se os clientes que estão permanecendo têm esse número de colaboradores,
+[00:13:16 - 00:13:20] eles são desse segmento específico e eles têm esse faturamento,
+[00:13:20 - 00:13:24] é esse tipo de cliente que a gente vai focar. Então quando a nossa inteligência comercial,
+[00:13:24 - 00:13:29] ou a equipe de LDR fizer uma lista de leads, né,
+[00:13:29 - 00:13:33] ou o nosso marketing for buscar, o lead que mais se adequa para a gente,
+[00:13:33 - 00:13:37] ele vai nesse perfil de cliente ideal, ele vai seguir isso aqui.
+[00:13:37 - 00:13:41] Então por isso que a gente precisa ter esse IP ou esse ICP,
+[00:13:41 - 00:13:46] ou perfil ideal bem definido. Aqui eu trago alguns exemplos para vocês, certo?
+[00:13:46 - 00:13:49] Então aqui ó, indústria com mais de 100 colaboradores,
+[00:13:49 - 00:13:52] com faturamento bruto superior a 10 milhões por ano.
+[00:13:52 - 00:13:55] Eu posso pegar essas informações pelo telefone, hein?
+[00:13:55 - 00:14:00] Quando eu ligar para a empresa, mas a minha, o meu setor de inteligência comercial,
+[00:14:00 - 00:14:02] ele já pode mapear isso, né?
+[00:14:02 - 00:14:07] Se vocês usam alguma ferramenta para fazer lista, a gente já pode colocar a quantidade de colaboradores
+[00:14:07 - 00:14:12] que a gente quer, a gente pode colocar a quantidade de, o valor de faturamento,
+[00:14:12 - 00:14:17] mas se eu tenho alguma dúvida, eu também posso pegar essas informações por telefone, certo?
+[00:14:17 - 00:14:20] Um outro exemplo aqui é, olha, eu trabalho só com empresas tech,
+[00:14:20 - 00:14:24] eles precisam ter equipe de venda de mais de 5 pessoas
+[00:14:24 - 00:14:27] e eles têm que ter um faturamento bruto acima de 1 milhão, né?
+[00:14:27 - 00:14:32] Aí eu venho um CRM e para vender o meu CRM a empresa tem que ter mais de 5 pessoas,
+[00:14:32 - 00:14:37] senão ele não se paga. Ok. Aqui a gente tem um exemplo de um ICP.
+[00:14:37 - 00:14:41] Eu não vou ligar para uma empresa se ela não tiver essas características,
+[00:14:41 - 00:14:44] porque eu vou perder o meu tempo e a empresa vai perder o tempo dela,
+[00:14:44 - 00:14:46] então não vai ser bom para ninguém.
+[00:14:46 - 00:14:50] E caso ela esteja muito interessada, ela queira muito contratar minha ferramenta,
+[00:14:50 - 00:14:55] eu tenho que levar em consideração que pode ser que ela faça um cancelamento em breve,
+[00:14:55 - 00:14:58] porque ela não está dentro desse perfil de cliente ideal.
+[00:14:58 - 00:15:02] Existem exceções, existem, mas geralmente é isso que acontece, tá?
+[00:15:02 - 00:15:08] Dentro do ICP, logo depois que a gente define qual o nosso perfil de cliente ideal,
+[00:15:08 - 00:15:10] a gente também tem a persona.
+[00:15:10 - 00:15:17] Então a persona ela é uma, literalmente, uma representação desse cliente.
+[00:15:17 - 00:15:22] Então vamos supor que aqui a gente conversa com indústrias acima de 100 colaboradores.
+[00:15:22 - 00:15:26] Agora eu preciso pensar, quem é essa pessoa da indústria que eu vou conversar?
+[00:15:26 - 00:15:28] É o compras.
+[00:15:28 - 00:15:30] É a pessoa do RH?
+[00:15:30 - 00:15:32] É um analista?
+[00:15:32 - 00:15:33] É um diretor?
+[00:15:33 - 00:15:35] Quem é a pessoa que assina esse cheque?
+[00:15:35 - 00:15:37] Quem é a pessoa mais beneficiada com a minha solução?
+[00:15:37 - 00:15:43] Quem é a pessoa que poderia dizer sim para minha proposta, certo?
+[00:15:43 - 00:15:45] Isso é a persona.
+[00:15:45 - 00:15:51] E novamente essa persona ela apresenta algumas características específicas
+[00:15:51 - 00:15:54] da hipercoliardade e eu vou estudar isso.
+[00:15:54 - 00:15:59] Então não necessariamente eu não vou conversar com outras pessoas que não sejam exatamente essa persona.
+[00:15:59 - 00:16:04] Mas eu vou estudar essa persona porque eu quero saber como ela se comunica,
+[00:16:04 - 00:16:08] o que que ela mais gosta, qual a comunicação é mais eficiente para ela,
+[00:16:08 - 00:16:12] se eu abordo ela por e-mail, se eu abordo ela por LinkedIn, por telefone.
+[00:16:12 - 00:16:17] De acordo com essas preferências, eu vou utilizar isso na minha prospecção
+[00:16:17 - 00:16:21] e eu vou então conseguir chegar nessa persona, certo?
+[00:16:21 - 00:16:27] Então aqui tem uns exemplos, um CFL, um chefe, um diretor financeiro,
+[00:16:27 - 00:16:33] a comunicação mais eficiente para ele é por e-mail, por ligação de telefone fixo.
+[00:16:33 - 00:16:39] Beleza, esse tipo de persona eu já sei que eu vou comunicar com ela desse jeito.
+[00:16:39 - 00:16:43] Um diretor, ele prefere ir por e-mail, por celular e pelo LinkedIn.
+[00:16:43 - 00:16:45] Ok, então é assim que eu vou me comunicar.
+[00:16:45 - 00:16:50] Um analista de tráfego, de marketing, ele prefere uma comunicação por WhatsApp.
+[00:16:50 - 00:16:54] Ok, eu não vou ficar enchendo a caixa dele de e-mail, porque provavelmente ele não vai ler.
+[00:16:54 - 00:16:59] Então ao invés de gastar no tempo fazendo várias coisas
+[00:16:59 - 00:17:01] e montando uma cadência super mirabolante para ele,
+[00:17:01 - 00:17:06] eu vou concentrar minha comunicação pelo arte, porque para ele é comunicação mais eficiente.
+[00:17:06 - 00:17:10] Vocês conseguiram entender aqui que a persona, eu vou desenhar essa persona
+[00:17:10 - 00:17:14] para descobrir como eu me comunico melhor com ela e como eu consigo vender melhor para ela.
+[00:17:14 - 00:17:19] Esse é o papel de a gente definir a nossa persona, certo?
+[00:17:19 - 00:17:23] Depois disso, gente, dentro do funil, para montar o seu funil ali,
+[00:17:23 - 00:17:27] você é interessante, né, que você saiba o seu ticket médio, tá?
+[00:17:27 - 00:17:33] O ticket médio nada mais é do que um valor médio de quanto a gente vendeu naquele mês, tá?
+[00:17:33 - 00:17:35] Vendeu naquele período.
+[00:17:35 - 00:17:38] Geralmente o ticket médio é calculado no mês,
+[00:17:38 - 00:17:41] mas a gente pode calcular o ticket médio no ano,
+[00:17:41 - 00:17:43] ou calcular em seis meses ou no trimestre,
+[00:17:43 - 00:17:47] vocês que vão fazer a conta que vocês acharem mais pertinente.
+[00:17:47 - 00:17:51] E a gente consegue também identificar quando a gente está aumentando.
+[00:17:51 - 00:17:53] Então como é que eu faço, né, poxa?
+[00:17:53 - 00:17:56] Eu vendo hoje um produto de um real e eu gostaria de vender ele por cinco.
+[00:17:56 - 00:18:03] Ou eu aumento o valor desse produto e aí eu consigo fazer mais,
+[00:18:03 - 00:18:06] ah, eu aumento o valor da licença dele,
+[00:18:06 - 00:18:10] ou eu vendo mais licenças que no final ele vai ficar mais caro, né?
+[00:18:10 - 00:18:12] Ou eu vendo mais para o mesmo cliente.
+[00:18:12 - 00:18:14] Então, ah, eu vendo uma bala que ela custava um real agora,
+[00:18:14 - 00:18:17] ela custa, eu quero que ela chegue a cinco reais,
+[00:18:17 - 00:18:19] ou eu aumento o valor dela para cinco reais,
+[00:18:19 - 00:18:21] ou eu vendo cinco balas para cada cliente,
+[00:18:21 - 00:18:23] porque eu vou chegar nos mesmos cinco reais.
+[00:18:23 - 00:18:25] Então, as empresas têm muito isso,
+[00:18:25 - 00:18:27] eu quero aumentar o ticket médio.
+[00:18:27 - 00:18:29] E por que faz bem aumentar o ticket médio?
+[00:18:29 - 00:18:31] Porque claramente eu vou gastar,
+[00:18:31 - 00:18:32] vou ganhar o mesmo dinheiro,
+[00:18:32 - 00:18:35] ou mais dinheiro com um número menor de pessoas.
+[00:18:35 - 00:18:38] E é mais fácil administrar dez clientes,
+[00:18:38 - 00:18:40] né, do que o administrar cem.
+[00:18:40 - 00:18:43] Então se eu quero fazer mil reais no mês,
+[00:18:43 - 00:18:48] eu posso vender para dez pessoas um produto de cem reais.
+[00:18:48 - 00:18:51] Ou eu posso vender para cem pessoas um produto de dez reais,
+[00:18:51 - 00:18:54] ou eu posso vender para mil pessoas um produto de um real.
+[00:18:54 - 00:18:57] Mas se vocês concordam comigo que é,
+[00:18:57 - 00:19:01] ah, que administrar mil pessoas com um produto de um real
+[00:19:01 - 00:19:03] é muito mais trabalhoso.
+[00:19:03 - 00:19:05] Eu vou prestar de muito mais gente no suporte,
+[00:19:05 - 00:19:07] provavelmente vai dar muito mais BO
+[00:19:07 - 00:19:10] do que o administrar dez clientes de cem reais.
+[00:19:10 - 00:19:13] É isso que o aumento do ticket médio faz no teu funil.
+[00:19:13 - 00:19:15] Então a gente diminui o número de clientes,
+[00:19:15 - 00:19:18] mantém o mesmo número de faturamento,
+[00:19:18 - 00:19:20] e eu consigo não contratar mais suporte,
+[00:19:20 - 00:19:22] ou com a equipe que eu tenho,
+[00:19:22 - 00:19:26] já dar conta de atender esses clientes que a gente tem, certo?
+[00:19:26 - 00:19:28] Como é que a gente calcula, né, o ticket médio?
+[00:19:28 - 00:19:31] Aqui eu trouxe de novo uma simulação
+[00:19:31 - 00:19:34] em que eu coloco aqui 15 vendas feitas no mês.
+[00:19:34 - 00:19:36] Então vamos supor que a gente fechou o mês,
+[00:19:36 - 00:19:39] fechamos dezembro e tivemos 15 vendas.
+[00:19:39 - 00:19:43] E eu vendi naquele mês todo 150 mil, certo?
+[00:19:43 - 00:19:46] O ticket médio vai ser o valor das vendas,
+[00:19:46 - 00:19:49] dividido pelo número de vendas que foram feitas.
+[00:19:49 - 00:19:51] Então o meu ticket médio nesse caso
+[00:19:51 - 00:19:54] é de 150 mil dividido por 15,
+[00:19:54 - 00:19:57] porque eu tive 15 vendas e vendi 150 mil.
+[00:19:57 - 00:20:00] O ticket médio então foi de 10 mil reais.
+[00:20:00 - 00:20:05] E aqui eu posso ter produto de 5 mil e eu posso ter produto de 15.
+[00:20:05 - 00:20:11] Porém, no mês eu vendi 150 e o meu ticket médio é de 10 mil.
+[00:20:11 - 00:20:15] Isso aqui é muito legal para você fazer as suas metas.
+[00:20:15 - 00:20:19] Então se você tem uma meta de vender 150 mil
+[00:20:19 - 00:20:22] e você sabe que o seu ticket médio é de 10 mil,
+[00:20:22 - 00:20:25] você sabe que tem que chegar no final do mês com 15 vendas.
+[00:20:25 - 00:20:28] E aí lembra que a gente fez o funil e a conta ao contrário?
+[00:20:28 - 00:20:32] Agora você sabe quantos leads você precisa colocar na boca do funil
+[00:20:32 - 00:20:35] para chegar no final do mês com 15 vendas feitas.
+[00:20:35 - 00:20:37] E isso, gente, facilita muito.
+[00:20:37 - 00:20:41] Isso cria o que a gente chama de receita previsível.
+[00:20:41 - 00:20:45] Eu consigo prever dentro do mês que se eu coloco 2 mil leads
+[00:20:45 - 00:20:50] eu fecho 10 vendas, eu coloco 100 leads, eu fecho 5 vendas.
+[00:20:50 - 00:20:54] Enfim, a gente consegue prever isso e aí você consegue também prever.
+[00:20:54 - 00:20:56] Quanto você vai gastar? Já trazer isso.
+[00:20:56 - 00:21:00] Quantas pessoas você vai ter que ter para atender isso?
+[00:21:00 - 00:21:02] E se isso está dentro ou fora,
+[00:21:02 - 00:21:06] está dentro ou se está muito fora da realidade que você estava esperando
+[00:21:06 - 00:21:10] daquela expectativa mesmo que você criou, certo?
+[00:21:10 - 00:21:14] Ciclos de vendas, então a gente já viu o ICP, a persona, o ticket médio
+[00:21:14 - 00:21:21] e o ciclo de vendas, ele é a quantidade de dias que um lead fica no meu funil, certo?
+[00:21:21 - 00:21:25] Então o lead vai passando pelas etapas do funil
+[00:21:25 - 00:21:28] e ele vai ficando uma quantidade de dias em cada etapa.
+[00:21:28 - 00:21:32] E no final, se ele ficou 30 dias, 45 dias, 60 dias,
+[00:21:32 - 00:21:39] eu tenho isso de quantidade de dias e eu tenho isso como um ciclo de vendas, certo?
+[00:21:39 - 00:21:41] De ESCA, quanto que é um ciclo de vendas?
+[00:21:41 - 00:21:47] Tem ciclo de 15 dias, de 21 dias, de 30 dias, de 60, de 90, de 120,
+[00:21:47 - 00:21:56] mas por linhas gerais, quanto maior o seu ticket médio, quanto maior o valor da venda,
+[00:21:56 - 00:21:58] maior costuma ser o ciclo de vendas.
+[00:21:58 - 00:22:00] Então se eu tenho um produto de 500 reais,
+[00:22:00 - 00:22:03] talvez o meu ciclo de vendas seja de uma semana.
+[00:22:03 - 00:22:08] Se eu tenho um produto de 150 mil, o meu ciclo de vendas pode ser de 6 meses,
+[00:22:08 - 00:22:13] isso é bem relativo de acordo com o ticket médio e de acordo com algumas outras coisas ali,
+[00:22:13 - 00:22:16] que vocês vão ter em cada uma das etapas, certo?
+[00:22:16 - 00:22:22] Aqui eu desenhei mais ou menos, antes a gente estava vendo o funil e forma de funil.
+[00:22:22 - 00:22:27] Agora a gente está vendo ele em forma de etapas de funil mesmo.
+[00:22:27 - 00:22:34] Então eu tenho a entrada, os contatos iniciais, as agendas, a qualificação, negociação e o fechamento.
+[00:22:35 - 00:22:42] Até a qualificação, esse lead fica com a equipe de pré-vendas e geralmente as cadências da equipe de pré-vendas
+[00:22:42 - 00:22:44] elas têm entre 10 e 15 dias.
+[00:22:44 - 00:22:51] Então sim, até 15 dias, eu não consegui passar ele para uma reunião ou para uma demonstração,
+[00:22:51 - 00:22:53] eu vou tirá-lo do funil.
+[00:22:53 - 00:22:58] A gente costuma chamar de dar um perdido ou colocar uma etapa de lost,
+[00:22:58 - 00:23:02] que aí eu coloco lá um motivo pelo qual eu perdi este lead, certo?
+[00:23:02 - 00:23:05] Depois disso ele vai para uma etapa de demonstração,
+[00:23:05 - 00:23:09] que geralmente acontece entre o dia que eu agendei até uma semana,
+[00:23:09 - 00:23:12] e depois ele vai para uma etapa de negociação e fechamento,
+[00:23:12 - 00:23:17] que também segue um limite ali de dias.
+[00:23:17 - 00:23:20] Se eu vejo que o lead está enrolando muito, ele para de me responder,
+[00:23:20 - 00:23:24] não responde mais as follow-ups, eu vou perdendo esses leads.
+[00:23:24 - 00:23:29] Mas senão eu vou mantendo essa negociação por uma quantidade de dias.
+[00:23:29 - 00:23:37] Aqui, eu trouxe um exemplo de um CRM, que é organizado por Camban,
+[00:23:37 - 00:23:41] não conheço CRMs que não sejam organizados dessa maneira,
+[00:23:41 - 00:23:44] a maioria deles é organizada por Camban e por Cardes.
+[00:23:44 - 00:23:48] Cada um desses leads aqui, George, Larry,
+[00:23:48 - 00:23:53] são um cardzinho que representa um negócio ou uma oportunidade,
+[00:23:53 - 00:23:56] e eles vão andando dentro desse Camban, dentro desse CRM.
+[00:23:56 - 00:24:01] Então aqui dentro a gente tem os cards e as oportunidades,
+[00:24:01 - 00:24:03] e a gente tem as etapas do funil.
+[00:24:03 - 00:24:06] Era mais para mostrar para vocês como essa etapa é feita
+[00:24:06 - 00:24:08] e como esse funil funciona na prática.
+[00:24:08 - 00:24:11] Esse, inclusive, é o CRM Pipedrive.
+[00:24:11 - 00:24:15] Ele é um dos mais utilizados pelas equipes de inside sales,
+[00:24:15 - 00:24:18] e essa foto é uma imagem do Google,
+[00:24:18 - 00:24:22] não é de nenhum funil realmente existente,
+[00:24:22 - 00:24:24] acredito que seja só uma simulação deles,
+[00:24:24 - 00:24:27] é para vocês entenderem como ele funciona.
+[00:24:27 - 00:24:30] E aí etapas, quais são essas etapas?
+[00:24:30 - 00:24:36] Aqui eu simulei um funil de vendas que tivesse seis etapas.
+[00:24:36 - 00:24:40] Seis etapas até é uma quantidade OK,
+[00:24:40 - 00:24:43] já vi funis com quatro etapas, funis com dez etapas,
+[00:24:43 - 00:24:45] mas quanto mais etapas a gente coloca,
+[00:24:45 - 00:24:48] mais a gente vai perdendo leads entre as etapas,
+[00:24:48 - 00:24:50] e talvez a gente aumente também o nosso ciclo,
+[00:24:50 - 00:24:53] porque cada uma delas eu tenho um limite de dias
+[00:24:53 - 00:24:56] para ficar com esse lead dentro dela, certo?
+[00:24:56 - 00:24:58] Então a primeira etapa que a gente vai falar
+[00:24:58 - 00:25:00] é sobre a etapa de qualificação.
+[00:25:00 - 00:25:03] Quando o lead cai, e aqui a gente botei vários nomes
+[00:25:03 - 00:25:05] que vocês podem dar para a etapa de vocês.
+[00:25:05 - 00:25:07] Você pode dar aqui um nome de entrada,
+[00:25:07 - 00:25:09] um nome de qualificação,
+[00:25:09 - 00:25:13] enfim, leads do marketing,
+[00:25:13 - 00:25:20] ou alguma outra coisa que vocês queiram colocar.
+[00:25:20 - 00:25:24] Então aqui, deixei esses dois nomes e nessa etapa
+[00:25:24 - 00:25:27] você vai identificar os leads que vieram,
+[00:25:27 - 00:25:29] que caíram ali ou da inteligência comercial,
+[00:25:29 - 00:25:31] ou do marketing, e vai identificar se eles são válidos.
+[00:25:31 - 00:25:33] Então esse lead é válido,
+[00:25:33 - 00:25:35] ele está dentro do nosso S&P,
+[00:25:35 - 00:25:37] os dados que ele colocou são válidos,
+[00:25:37 - 00:25:38] então vou seguir com ele.
+[00:25:38 - 00:25:41] E aí eu vou jogar ele para esse próximo funil,
+[00:25:41 - 00:25:44] para essa próxima etapa, que é o primeiro contato,
+[00:25:44 - 00:25:45] ou tentativa de contato,
+[00:25:45 - 00:25:48] ou só contato, que aqui eu vou fazer o quê?
+[00:25:48 - 00:25:50] Tentar contato com esse lead, certo?
+[00:25:50 - 00:25:51] Começa a ligar para ele,
+[00:25:51 - 00:25:52] começa a mandar e-mail,
+[00:25:52 - 00:25:54] começa a mandar WhatsApp.
+[00:25:54 - 00:25:56] Assim que ele me responde,
+[00:25:56 - 00:25:57] então eu chego de manhã,
+[00:25:57 - 00:25:59] é a primeira etapa que eu vou dar uma olhada
+[00:25:59 - 00:26:02] essa daqui para ver quem está aqui para eu conversar.
+[00:26:02 - 00:26:03] Assim que ele me responde,
+[00:26:03 - 00:26:05] eu falo, me liga amanhã,
+[00:26:05 - 00:26:07] ou eu consigo um contato com ele,
+[00:26:07 - 00:26:09] ele vem para esse etapa aqui,
+[00:26:09 - 00:26:12] que é o agendamento, marcar reunião,
+[00:26:12 - 00:26:14] vocês podem dar outro nome também.
+[00:26:14 - 00:26:16] Aqui eu já tive algum contato,
+[00:26:16 - 00:26:18] ele já me respondeu em um momento,
+[00:26:18 - 00:26:20] e agora eu estou tentando agendar.
+[00:26:20 - 00:26:22] Então eu já tenho algumas informações dele,
+[00:26:22 - 00:26:23] eu preciso da data,
+[00:26:23 - 00:26:24] vamos definir uma data,
+[00:26:24 - 00:26:26] vamos marcar essa reunião,
+[00:26:26 - 00:26:29] eu estou tentando terminar a qualificação dele para agendar.
+[00:26:29 - 00:26:31] Terminei a qualificação e agendei,
+[00:26:31 - 00:26:33] ele vai para essa etapa de,
+[00:26:33 - 00:26:34] ou demonstração,
+[00:26:34 - 00:26:35] ou reunião de vendas,
+[00:26:35 - 00:26:36] ou etapa do vendedor,
+[00:26:36 - 00:26:39] como vocês preferirem chamar, certo?
+[00:26:39 - 00:26:41] Aqui é o lead que já está agendado,
+[00:26:41 - 00:26:43] e ele está aguardando a demonstração com o vendedor.
+[00:26:43 - 00:26:46] Então ele fica ali até a dava da demonstração,
+[00:26:46 - 00:26:48] no dia da demonstração,
+[00:26:48 - 00:26:49] ou ele segue adiante,
+[00:26:49 - 00:26:52] porque o vendedor vai continuar tratando ele no funil,
+[00:26:52 - 00:26:54] ou o vendedor dá um perdido,
+[00:26:54 - 00:26:56] tira ele do funil,
+[00:26:56 - 00:26:58] ou se ele não comparecer,
+[00:26:58 - 00:27:00] puxa, esse lead não compareceu,
+[00:27:00 - 00:27:01] ele deu um no show,
+[00:27:01 - 00:27:03] ele volta para o etapa anterior de agendamento,
+[00:27:03 - 00:27:07] eu continuo agora querendo agendar com ele novamente, certo?
+[00:27:07 - 00:27:10] Depois disso ele vem para a etapa de negociação,
+[00:27:10 - 00:27:12] então vem para cá os leads que já passaram,
+[00:27:12 - 00:27:13] pela demonstração,
+[00:27:13 - 00:27:15] e a gente quer começar uma negociação com eles,
+[00:27:15 - 00:27:18] a gente quer mandar uma proposta, enfim,
+[00:27:18 - 00:27:22] o vendedor passa para cá esses leads que ele vai seguir com isso,
+[00:27:22 - 00:27:23] caso não,
+[00:27:23 - 00:27:25] ele vai dar um perdido,
+[00:27:25 - 00:27:26] ele vai colocar eles na etapa de Lodge,
+[00:27:26 - 00:27:28] e vai explicar o porquê,
+[00:27:28 - 00:27:30] e depois que eles negociam um cara,
+[00:27:30 - 00:27:32] desculpa, o lead aceitou a proposta,
+[00:27:32 - 00:27:33] deu tudo certo,
+[00:27:33 - 00:27:35] aí ele vem para a etapa de ganho.
+[00:27:35 - 00:27:36] Pode ser ganho,
+[00:27:36 - 00:27:38] pode ser fechamento,
+[00:27:38 - 00:27:40] pode ser etapa de ser cliente,
+[00:27:40 - 00:27:43] então aqui a gente coloca os leads
+[00:27:43 - 00:27:47] que efetivamente viraram clientes dentro do CRM,
+[00:27:47 - 00:27:49] ou seja, tudo que a gente quer,
+[00:27:49 - 00:27:52] então ele passa por várias etapas dentro desse funil,
+[00:27:52 - 00:27:55] nesse caso aqui ele tem seis etapas,
+[00:27:55 - 00:27:58] e ele sai da entrada até o ganho,
+[00:27:58 - 00:28:01] passando por todas elas, certo?
+[00:28:01 - 00:28:03] Então a gente viu aqui quais etapas
+[00:28:03 - 00:28:05] que nós temos dentro do funil,
+[00:28:05 - 00:28:07] como funciona o funil,
+[00:28:07 - 00:28:12] as pessoas, o ICP, o ticket,
+[00:28:12 - 00:28:13] e as etapas aqui,
+[00:28:13 - 00:28:16] e a gente inclusive desenhou aqui algumas etapas para vocês,
+[00:28:16 - 00:28:18] para vocês entenderem como funciona na prática,
+[00:28:18 - 00:28:21] que nomes vocês poderiam dar para essa etapa,
+[00:28:21 - 00:28:22] certo? Para cada uma delas.
+[00:28:22 - 00:28:24] Espero que vocês tenham gostado,
+[00:28:24 - 00:28:25] se tiverem alguma dúvida,
+[00:28:25 - 00:28:27] deixem para a gente,
+[00:28:27 - 00:28:29] deixem para a gente nas nossas redes sociais,
+[00:28:29 - 00:28:31] ou aqui na nossa plataforma também,
+[00:28:31 - 00:28:33] e a gente se vê na próxima aula.

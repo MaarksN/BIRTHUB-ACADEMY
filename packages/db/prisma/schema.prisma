@@ -1,0 +1,522 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleCode {
+  OWNER
+  ADMIN
+  INSTRUCTOR
+  EVALUATOR
+  STUDENT
+}
+
+enum CertificateStatus {
+  VALID
+  REVOKED
+  EXPIRED
+}
+
+enum JobStatus {
+  QUEUED
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+model User {
+  id            String    @id @default(cuid())
+  tenantId      String
+  name          String
+  email         String    @unique
+  passwordHash  String
+  locale        String    @default("pt-BR")
+  deletedAt     DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([tenantId])
+}
+
+model Organization {
+  id          String    @id @default(cuid())
+  tenantId    String    @unique
+  name        String
+  slug        String    @unique
+  billingMode String    @default("manual")
+  deletedAt   DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Membership {
+  id             String   @id @default(cuid())
+  tenantId       String
+  userId         String
+  organizationId String
+  roleId         String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([userId, organizationId])
+  @@index([tenantId])
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  tenantId    String
+  code        RoleCode
+  name        String
+  permissions String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([tenantId, code])
+  @@index([tenantId])
+}
+
+model Permission {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  description String
+  createdAt   DateTime @default(now())
+}
+
+model Course {
+  id          String    @id
+  tenantId    String
+  title       String
+  slug        String
+  language    String
+  deletedAt   DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([tenantId, slug])
+  @@index([tenantId])
+}
+
+model CourseVersion {
+  id        String   @id @default(cuid())
+  tenantId  String
+  courseId  String
+  version   String
+  status    String   @default("draft")
+  metadata  Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([courseId, version])
+  @@index([tenantId])
+}
+
+model Module {
+  id              String   @id
+  tenantId        String
+  courseVersionId String
+  code            String
+  title           String
+  sortOrder       Int
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@unique([courseVersionId, code])
+  @@index([tenantId])
+}
+
+model Cycle {
+  id        String   @id
+  tenantId  String
+  moduleId  String
+  code      String
+  title     String
+  content   Json
+  sortOrder Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([tenantId, code])
+  @@index([tenantId])
+}
+
+model LessonBlock {
+  id        String   @id
+  tenantId  String
+  cycleId   String
+  title     String
+  kind      String
+  body      String
+  sortOrder Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, cycleId])
+}
+
+model Activity {
+  id        String   @id
+  tenantId  String
+  cycleId   String
+  title     String
+  content   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, cycleId])
+}
+
+model Rubric {
+  id        String   @id @default(cuid())
+  tenantId  String
+  ownerType String
+  ownerId   String
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, ownerType, ownerId])
+}
+
+model RubricCriterion {
+  id        String   @id @default(cuid())
+  tenantId  String
+  rubricId  String
+  title     String
+  levels    Json
+  sortOrder Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, rubricId])
+}
+
+model Question {
+  id              String   @id
+  tenantId        String
+  cycleId         String
+  difficulty      String
+  prompt          String
+  correctOptionId String
+  explanation     String
+  theme           String
+  source          String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([tenantId, cycleId])
+}
+
+model QuestionOption {
+  id         String   @id
+  tenantId   String
+  questionId String
+  label      String
+  text       String
+  feedback   String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([tenantId, questionId])
+}
+
+model QuizAttempt {
+  id          String   @id @default(cuid())
+  tenantId    String
+  userId      String
+  cycleId     String
+  seed        String
+  score       Int
+  passed      Boolean
+  submittedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([tenantId, userId, cycleId])
+}
+
+model QuizAttemptAnswer {
+  id              String   @id @default(cuid())
+  tenantId        String
+  attemptId       String
+  questionId      String
+  selectedOptionId String
+  correct         Boolean
+  createdAt       DateTime @default(now())
+
+  @@index([tenantId, attemptId])
+}
+
+model Enrollment {
+  id              String    @id @default(cuid())
+  tenantId        String
+  userId          String
+  courseVersionId String
+  status          String    @default("active")
+  deletedAt       DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@unique([tenantId, userId, courseVersionId])
+  @@index([tenantId])
+}
+
+model ProgressEvent {
+  id        String   @id @default(cuid())
+  tenantId  String
+  userId    String
+  cycleId   String?
+  eventType String
+  metadata  Json
+  createdAt DateTime @default(now())
+
+  @@index([tenantId, userId])
+}
+
+model Submission {
+  id          String    @id @default(cuid())
+  tenantId    String
+  userId      String
+  activityId  String?
+  projectId   String?
+  challengeId String?
+  status      String    @default("submitted")
+  payload     Json
+  score       Int?
+  reviewedBy  String?
+  reviewedAt  DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([tenantId, userId])
+}
+
+model Project {
+  id        String   @id
+  tenantId  String
+  moduleId  String
+  title     String
+  content   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, moduleId])
+}
+
+model FinalChallenge {
+  id        String   @id
+  tenantId  String
+  courseId  String
+  title     String
+  content   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, courseId])
+}
+
+model Certificate {
+  id              String            @id @default(cuid())
+  tenantId        String
+  userId          String
+  courseVersionId String
+  code            String            @unique
+  status          CertificateStatus @default(VALID)
+  issuedAt        DateTime          @default(now())
+  revokedAt       DateTime?
+  expiresAt       DateTime?
+  payload         Json
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  @@index([tenantId, userId])
+}
+
+model CertificateVerification {
+  id            String   @id @default(cuid())
+  certificateId String
+  code          String
+  ipHash        String?
+  userAgentHash String?
+  result        String
+  createdAt     DateTime @default(now())
+
+  @@index([code])
+}
+
+model SourceFile {
+  id             String   @id @default(cuid())
+  name           String
+  sha256         String   @unique
+  path           String
+  priority       String
+  condition      String
+  metadata       Json
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model SourceChunk {
+  id           String   @id @default(cuid())
+  sourceFileId String
+  cycleId      String?
+  text         String
+  metadata     Json
+  createdAt    DateTime @default(now())
+
+  @@index([sourceFileId])
+}
+
+model ContentAudit {
+  id        String   @id @default(cuid())
+  tenantId  String
+  entity    String
+  entityId  String
+  action    String
+  note      String
+  createdAt DateTime @default(now())
+
+  @@index([tenantId, entity, entityId])
+}
+
+model ConflictLog {
+  id        String   @id @default(cuid())
+  sourceA   String
+  sourceB   String
+  decision  String
+  rationale String
+  createdAt DateTime @default(now())
+}
+
+model Consent {
+  id          String   @id @default(cuid())
+  tenantId    String
+  userId      String
+  version     String
+  purpose     String
+  accepted    Boolean
+  acceptedAt  DateTime?
+  revokedAt   DateTime?
+  createdAt   DateTime @default(now())
+
+  @@index([tenantId, userId])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  tenantId  String
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String?
+  metadata  Json
+  createdAt DateTime @default(now())
+
+  @@index([tenantId, actorId])
+}
+
+model NotificationPreference {
+  id        String   @id @default(cuid())
+  tenantId  String
+  userId    String
+  channel   String
+  enabled   Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([tenantId, userId, channel])
+}
+
+model AIInteractionLog {
+  id             String   @id @default(cuid())
+  tenantId       String
+  userId         String
+  mode           String
+  promptHash     String
+  redactedPrompt String
+  response       String?
+  consentToStore Boolean  @default(false)
+  createdAt      DateTime @default(now())
+
+  @@index([tenantId, userId])
+}
+
+model PromptTemplate {
+  id        String   @id
+  tenantId  String
+  cycleId   String?
+  title     String
+  template  String
+  metadata  Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId, cycleId])
+}
+
+model AutomationTemplate {
+  id        String   @id
+  tenantId  String
+  title     String
+  content   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tenantId])
+}
+
+model AutomationSimulation {
+  id        String   @id @default(cuid())
+  tenantId  String
+  userId    String
+  flow       Json
+  logs       Json
+  valid      Boolean
+  createdAt DateTime @default(now())
+
+  @@index([tenantId, userId])
+}
+
+model ImportJob {
+  id        String    @id @default(cuid())
+  tenantId  String
+  status    JobStatus @default(QUEUED)
+  source    String
+  result    Json?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([tenantId, status])
+}
+
+model ExportJob {
+  id        String    @id @default(cuid())
+  tenantId  String
+  userId    String
+  status    JobStatus @default(QUEUED)
+  kind      String
+  resultUrl String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([tenantId, userId, status])
+}
+
+model BillingRecord {
+  id          String   @id @default(cuid())
+  tenantId    String
+  userId      String?
+  provider    String
+  externalId  String?
+  status      String
+  amountCents Int
+  currency    String   @default("BRL")
+  metadata    Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([tenantId, status])
+}

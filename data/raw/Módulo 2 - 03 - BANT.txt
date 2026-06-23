@@ -1,0 +1,198 @@
+Título: Módulo 2 - 03 - BANT
+Arquivo original: C:\Users\Marks\Downloads\Video\MP3\Módulo 2 - 03 - BANT.mp3
+Idioma: Português
+Duração detectada: 00:15:32
+
+[00:00:03 - 00:00:09] Oi, bem-vindos novamente a mais uma aula aqui na SalesHunter, aqui na nossa plataforma,
+[00:00:09 - 00:00:15] a SalesHunter que é um hub de recrutamento, comunidade e também educação, né, para a área de vendas.
+[00:00:15 - 00:00:23] Eu sou a Jessica Bosco, estou aqui com vocês em todas as aulas, mas contando um pouquinho sobre mim ainda,
+[00:00:23 - 00:00:28] trabalho com o time de treinamento e também com a comunidade da SalesHunter e vocês me encontrem tanto no LinkedIn
+[00:00:28 - 00:00:37] no Instagram como jabosco ou jesca bosco, beleza? A nossa aula de hoje é sobre frameworks e a gente vai
+[00:00:37 - 00:00:44] falar de Bungie. Nós já falamos de técnicas de abordagem, já falamos um pouco de outros frameworks,
+[00:00:44 - 00:00:51] mas agora a gente vai entrar exclusivamente nesse aqui, a gente vai ler ele no detalhe, ok? O Bungie
+[00:00:51 - 00:00:59] está criado pela IBM e ele tem como objetivo validar se o lead está apto ou não para comprar minha solução.
+[00:00:59 - 00:01:06] Então, diferente de alguns outros frameworks, tem que então educar o lead, levar o lead para uma outra
+[00:01:06 - 00:01:13] solução, o Bungie tem uma única preocupação que é descartar os leads que não estão aptos, certo?
+[00:01:13 - 00:01:18] Naquela época, né, épocas de ouro da IBM fazia muito sentido, eles recebiam muitos
+[00:01:18 - 00:01:22] outros leads e não tinha condição do time de vendas conversar com todo mundo. Então,
+[00:01:22 - 00:01:29] eles precisavam ter uma metodologia que descartasse quem não estivesse apto naquele momento. Logo,
+[00:01:29 - 00:01:36] o Bungie se popularizou e a gente usa ele hoje tanto com lead desembalde, vocês vão ver que ele
+[00:01:36 - 00:01:41] faz muito sentido para ele desembalde, que vem atrás e que a gente precisa saber se eles tem
+[00:01:41 - 00:01:47] de fato esses pontos que a gente precisa considerar, mas quando estamos fazendo uma prospecção,
+[00:01:47 - 00:01:54] ele também pode utilizar o Bungie buscando justamente isso, buscando esses pontos. Ele vai em algum
+[00:01:54 - 00:01:59] momento se fundir com outros frameworks, com outros roteiros que vocês forem utilizar e não tem
+[00:01:59 - 00:02:06] problema nenhum. E eu vejo muito o Bungie ser utilizado também como um balizador do SLA.
+[00:02:06 - 00:02:12] Nós já tivemos uma aula aqui de passagem de bastão explicando sobre o SLA e o Bungie faz
+[00:02:12 - 00:02:20] parte disso. Então, para coletar esses pontos eu preciso usar essa metodologia, certo? Comparo,
+[00:02:20 - 00:02:24] eu tinha falado, ele é muito usado para definir o SLA. Então, vamos lá, o que que é? O Bungie
+[00:02:24 - 00:02:33] é um acrônimo com quatro letrinhas que significam budget, orçamento, authority, autoridade, need,
+[00:02:33 - 00:02:39] necessidade e timing de tempo. Então, eu quero captar se ele tem orçamento, se ele de fato
+[00:02:39 - 00:02:46] tem autoridade naquilo ou autoridade dentro daquele processo de decisão, a necessidade que
+[00:02:46 - 00:02:52] aquele lead realmente tem e o tempo que ele vai levar para fazer aquela implantação. Aqui na questão
+[00:02:52 - 00:02:58] do orçamento, a gente pode perguntar sobre ele logo no início e começar a conversa descobrindo
+[00:02:58 - 00:03:03] sobre isso ou a gente vai descobrindo ao longo da conversa como é que está essa questão,
+[00:03:03 - 00:03:08] de acordo com outros pontos que eu vou levantar. Mas eu preciso descobrir se de fato ele tem
+[00:03:08 - 00:03:13] uma financeira, se ele considerou o valor que a minha solução custa e se ele considerou
+[00:03:13 - 00:03:19] quanto ele vai gastar para implantar aquilo, certo? Para adquirir o meu produto ou serviço e implantar
+[00:03:19 - 00:03:25] de fato isso. Então, como é que eu posso fazer perguntas de dinheiro sem necessariamente
+[00:03:25 - 00:03:31] perguntar se ele tem 10 mil reais para investir ou se ele tem x mil reais? De fato, uma das
+[00:03:31 - 00:03:35] perguntas vai ser, vocês possuem orçamento reservado para isso? Eu quero falar sobre
+[00:03:35 - 00:03:44] o direito sim. Eu preciso entender se principalmente ele desembalde, ele veio atrás entender mais sobre
+[00:03:44 - 00:03:49] o meu produto, mas ele tem um orçamento reservado para isso? A diretoria sabe que ele está buscando
+[00:03:49 - 00:03:57] isso. Ele reservou um dinheiro antes de vir ou ele está primeiro buscando, pesquisando,
+[00:03:57 - 00:04:03] entendendo quanto custa, porque são dois momentos muito diferentes e vai fazer diferença
+[00:04:03 - 00:04:10] para o vendedor, certo? Já chegaram a contratar esse tipo de serviço antes? Se eu sei que eles já são
+[00:04:10 - 00:04:16] acostumados a contratar, por exemplo, eu sou um gestor de tráfego e vendo isso. E eu sei que ele já
+[00:04:16 - 00:04:22] contratou vários outros, outras equipes de tráfego. Então, eu sei que ele já tem ideia de quanto
+[00:04:22 - 00:04:29] isso custa. Ele precisa saber mais sobre isso ou eu vendo um sistema, um sistema de arregar e ele
+[00:04:29 - 00:04:35] usa um sistema. Ele tem uma noção de quanto esse sistema geralmente custa e eu fico com uma vantagem
+[00:04:35 - 00:04:41] aqui para poder negociar, porque ele já está familiarizado com isso. Qual software vocês usam
+[00:04:41 - 00:04:48] em X-area? Isso é bem legal, porque eu consigo também entender o quanto eles gostam de, o quanto
+[00:04:48 - 00:04:54] eles investem, o quanto eles despendem de dinheiro para determinadas áreas por conta do
+[00:04:54 - 00:05:01] que eles utilizam. Então, se eles usam um software que eu sei que custa R$X e é um software
+[00:05:01 - 00:05:07] caro, logo eu sei que eles podem, sim, ter um dinheiro para investir nessa área aqui também,
+[00:05:07 - 00:05:12] certo? E a última pergunta é, como é que é a tua carteira de clientes hoje? Quantos clientes
+[00:05:12 - 00:05:18] vocês atendem e qual é o ticket med de vocês? Aqui eu já consigo entender rapidamente
+[00:05:18 - 00:05:23] quanto eles faturam. Se eles atendem sem clientes com um ticket médio de R$X, puxa
+[00:05:23 - 00:05:30] e faturam no mês, quanto eles faturam no ano. E eu entendo se o meu orçamento, já antes mesmo
+[00:05:30 - 00:05:34] da gente chegar nessa etapa de proposta, eu já consigo entender se o meu orçamento vai ficar
+[00:05:34 - 00:05:42] caro, barato ou na medida para o que eles precisam. Autoridade. Então, nessa etapa eu quero saber
+[00:05:42 - 00:05:48] como funciona o processo de decisão lá dentro, mas eu também preciso saber qual é o nível
+[00:05:48 - 00:05:53] de autoridade dessa pessoa que eu estou conversando. Nessa etapa é interessante que a gente não
+[00:05:53 - 00:06:00] tem o livro pela capa. Em algumas empresas, um gerente tem autoridade suficiente para contratar
+[00:06:00 - 00:06:06] uma solução para a área dele sem precisar de autorização de outras áreas, porque ele tem
+[00:06:06 - 00:06:10] um orçamento específico para a área. Em outras empresas, mesmo que esteja falando com um diretor,
+[00:06:10 - 00:06:17] ele precisa passar por um comitê de compra, por um comitê executivo, ele não tem autoridade
+[00:06:17 - 00:06:24] nada sozinho. Como eu sei se estou falando com a opção 1 ou a opção 2? Se eu questionar,
+[00:06:24 - 00:06:29] então aqui eu preciso de fato entender com quem eu estou conversando, qual é a opção deles,
+[00:06:29 - 00:06:35] o que funciona dentro da empresa, para eu saber a quantidade de tempo que leva para
+[00:06:35 - 00:06:39] a gente negociar, a quantidade de tempo que leva para essa tomada de decisão e por
+[00:06:39 - 00:06:44] onde essa decisão passa. Então, se eu estou conversando com uma empresa que precisa passar
+[00:06:44 - 00:06:49] para o parceiro, depois de jurídico, depois de compras, talvez a gente vai levar um, vai ser
+[00:06:49 - 00:06:54] uma negociação de uns três meses. Se eu estou conversando com uma empresa que eu estou
+[00:06:54 - 00:06:58] falando diretamente com o dono e é ele que toma decisão, pode ser que em menos de 30 dias a
+[00:06:58 - 00:07:03] gente já tenha essa decisão tomada. Isso vai ser bem interessante. Eu talvez não consiga mudar
+[00:07:03 - 00:07:10] essa pessoa de dentro da reunião, não consiga trazer outras pessoas para a reunião, mas agora
+[00:07:10 - 00:07:14] eu vendo quanto tempo vai levar e eu passo isso para o vendedor, para ele também ter essa
+[00:07:14 - 00:07:20] percepção de perguntas que eu posso fazer para entender sobre a autoridade. Fulano,
+[00:07:20 - 00:07:25] você acha que é mais importante a gente envolver mais pessoas para essa nossa conversa?
+[00:07:25 - 00:07:30] Como é que funciona o processo de decisão de vocês? Essa proposta passa por
+[00:07:30 - 00:07:37] outros setores, é só com vocês mesmos. Você tem um sócio que a gente poderia trazer para a próxima
+[00:07:37 - 00:07:42] reunião, porque eu acho que seria interessante ele já entender também sobre isso. Tem empresas
+[00:07:42 - 00:07:47] que têm sócio e o outro sócio não se envolve, ele apenas dá o si ou não. Então se você
+[00:07:47 - 00:07:52] convenceu o sócio 1, você automaticamente convenceu o sócio 2, mas tem outras que
+[00:07:52 - 00:07:57] eles precisam tomar as decisões em conjunto, ele precisa estar na reunião. Então em vez de você
+[00:07:57 - 00:08:01] fazer três, quatro reuniões e aí chamar o sócio já chama ele para a próxima reunião de
+[00:08:01 - 00:08:05] vendas e ele já entende na prática se vai fazer sentido ou não e você pode
+[00:08:05 - 00:08:12] continuar essa tomada de decisão junto com eles e essa negociação. Na etapa de
+[00:08:12 - 00:08:18] necessidade, não adianta ele ter dinheiro, ser a autoridade, mas de fato não ter uma
+[00:08:18 - 00:08:22] necessidade em tanto utilizar a sua solução ou trocar a solução atual que ele tem.
+[00:08:22 - 00:08:27] Então às vezes eu vou ter uma pessoa ali aqui e tem tudo isso, mas ela não tem o
+[00:08:27 - 00:08:33] problema ou o problema que ela tem, a minha solução não resolve. Aqui eu preciso
+[00:08:33 - 00:08:38] permitir que a minha solução vai resolver o problema dele e eu também preciso garantir
+[00:08:38 - 00:08:43] que ele vai ter bons resultados, ou seja, ele vai entrar na minha empr...
+[00:08:43 - 00:08:48] Na minha carteira de clientes, ele vai utilizar a minha solução, ele vai ter bons
+[00:08:48 - 00:08:53] resultados, ele vai alcançar o sucesso dele, ele não vai cancelar no dia seguinte e aí
+[00:08:53 - 00:08:58] sim eu entendo que essa solução fazia sentido para o que ele tinha, para o
+[00:08:58 - 00:09:04] que ele precisava, certo? O meu serviço de fato vai atendê-lo, né? Então eu posso
+[00:09:04 - 00:09:09] perguntar, como é que você imagina que a nossa solução vai impactar ou ajudar a
+[00:09:09 - 00:09:13] sua empresa nesse problema? Olha, a gente falou sobre vários pontos e eu
+[00:09:13 - 00:09:16] realmente acredito que a minha solução faz sentido para vocês, tá? Ela se
+[00:09:16 - 00:09:22] encaixa bem nesse ponto aqui. Você enxerga essa melhoria também? Como é
+[00:09:22 - 00:09:26] que é isso? Você consegue enxergar essa solução se linkando com esses
+[00:09:26 - 00:09:32] pontos que a gente pampiu antes? Isso ele vai te trazer também, certo? E por fim, o tempo, né?
+[00:09:32 - 00:09:38] Aqui eu preciso entender se o tempo que ele vai dispor para... o tempo que ele tem de
+[00:09:38 - 00:09:42] prioridade para resolver esse problema é o mesmo tempo que eu estou considerando.
+[00:09:42 - 00:09:47] Isso nós, a gente vai ter duas expectativas muito desalinhadas. Eu acredito que ele vai
+[00:09:47 - 00:09:51] fechar comigo em dois meses e na cabeça dele ele tem até o final desse ano para resolver.
+[00:09:51 - 00:09:57] Logo, a gente não está com expectativa alinhada. Então eu preciso entender se...
+[00:09:57 - 00:10:02] Enquanto o tempo ele quer resolver esse problema? Tem outras prioridades na frente,
+[00:10:02 - 00:10:07] certo? É no primeiro semestre, é no segundo semestre, é esse mês ainda,
+[00:10:07 - 00:10:11] principalmente quando ele vem do embound, porque quando ele vem, a gente entende
+[00:10:11 - 00:10:17] que ele tem um problema nesse exato momento. Algo aconteceu agora para que
+[00:10:17 - 00:10:21] ele venha atrás de mim e que ele conhece a minha solução. Mas eu preciso
+[00:10:21 - 00:10:27] saber o que que de fato aconteceu? Quanto esse problema é urgente, o suficiente
+[00:10:27 - 00:10:31] para ele trocar. E eu vou dar um exemplo aqui para vocês de um lead que poderia
+[00:10:31 - 00:10:38] chegar no embound. Eu tenho um plano de internet e a minha internet
+[00:10:38 - 00:10:43] começa da problema todo dia. E aí eu vou procurar uma nova solução de internet,
+[00:10:43 - 00:10:48] eu entro em contato com uma outra operadora e eu agendo uma chamada,
+[00:10:48 - 00:10:52] ou eu quero conhecer um pouco mais, eu estou com um problema muito urgente.
+[00:10:52 - 00:10:57] Na minha expectativa, a minha expectativa é resolver ainda esse mês, certo?
+[00:10:57 - 00:11:02] Mas caso eu não esteja com nenhum problema de internet, a minha operadora
+[00:11:02 - 00:11:05] está me atendendo super bem e eu começo a receber ligações de
+[00:11:05 - 00:11:07] prospecção. Poxa, já é que estamos com um plano muito legal.
+[00:11:07 - 00:11:12] Eu não tenho nenhuma prioridade agora e talvez não aconteça nada
+[00:11:12 - 00:11:15] no meu plano de internet que me faça sair dele agora e ir para outro.
+[00:11:15 - 00:11:21] Então para mim, cara, eu vou terminar a minha fidelidade aqui,
+[00:11:21 - 00:11:24] vai mais uns seis meses, acho que no final desse plano, quando eu terminar
+[00:11:24 - 00:11:28] a minha fidelidade, vocês me ligam. Não adianta o vendedor encher
+[00:11:28 - 00:11:31] a minha caixa e o meu WhatsApp, porque eu não vou trocar isso agora.
+[00:11:31 - 00:11:33] Não tem nenhum problema que esteja de fato acontecendo para que eu troque.
+[00:11:33 - 00:11:38] E se ele entende que eu só vou olhar isso novamente daqui a seis meses,
+[00:11:38 - 00:11:42] faz mais sentido ele colocar no CRM dele para entrar em contato comigo
+[00:11:42 - 00:11:45] daqui a seis meses, certo? É a mesma coisa com o lead.
+[00:11:45 - 00:11:49] Se eu entendo que agora não é uma prioridade, ele não vai parar para olhar isso,
+[00:11:49 - 00:11:53] eu não vou passar isso para vendas, porque ele não vai virar uma
+[00:11:53 - 00:11:59] negociação e uma decisão para agora. Vale mais a pena eu educar esse lead
+[00:11:59 - 00:12:02] para que a gente volte a conversar com ele daqui a seis meses,
+[00:12:02 - 00:12:07] ou quem sabe até um tempo maior, certo? Como que eu pergunto sobre isso, né?
+[00:12:07 - 00:12:10] Enquanto tempo que você imagina que essa mudança esteja acontecendo
+[00:12:10 - 00:12:13] no lead à empresa de vocês. Como é que vocês imaginam que ela vai
+[00:12:13 - 00:12:16] acontecer, enquanto o tempo ela vai acontecer?
+[00:12:17 - 00:12:21] Além da gente, com quais outras empresas vocês estão conversando?
+[00:12:21 - 00:12:25] Tem alguma outra ferramenta que você já está mais avançados?
+[00:12:26 - 00:12:29] Às vezes ele começou a conversar com outra ferramenta antes
+[00:12:29 - 00:12:32] e a gente já é quinta e deve ter alguma que ele já está mais avançado.
+[00:12:32 - 00:12:36] Eu preciso também entender em que quase que nós estamos,
+[00:12:36 - 00:12:39] porque isso faz parte do tempo de negociação.
+[00:12:40 - 00:12:44] Considerando que a gente tem aqui um prazo de uns dois meses para a implantação,
+[00:12:44 - 00:12:48] tu imagina que o projeto já esteja 100% rodando e implantado a partir de quando.
+[00:12:49 - 00:12:51] E ele vai dizer, eu imagino que daqui a seis meses.
+[00:12:52 - 00:12:55] Então pode ser que ele considere começar a implantação daqui a quatro meses.
+[00:12:55 - 00:12:58] Se ele tem mais um mês de negociação,
+[00:12:58 - 00:13:01] talvez seja o momento da gente já passar para o vendedor agora.
+[00:13:02 - 00:13:07] Sim, ele imagina que esse projeto só vai estar rodando, de fato, muito bem.
+[00:13:07 - 00:13:10] No próximo ano, eu não vou passar agora para o vendedor,
+[00:13:10 - 00:13:14] porque ele não vai levar isso como uma prioridade nesse momento.
+[00:13:16 - 00:13:19] E o SLA pode levar em consideração todos esses pontos aqui
+[00:13:20 - 00:13:24] que a gente já conversou e que eu expliquei para vocês lá no início.
+[00:13:24 - 00:13:27] Mas caso um desses pontos esteja muito fora,
+[00:13:28 - 00:13:29] ele de fato não tem dinheiro.
+[00:13:30 - 00:13:33] Ou a prioridade dele é outra totalmente diferente nesse momento.
+[00:13:34 - 00:13:38] A necessidade dele não tem nada a ver com o que eu ofereço.
+[00:13:39 - 00:13:42] Ou ele não é uma autoridade, estou conversando com o estagiário,
+[00:13:42 - 00:13:47] que vai levar até isso chegar na pessoa que de fato decide,
+[00:13:47 - 00:13:49] eu vou precisar fazer muitas reuniões.
+[00:13:49 - 00:13:54] Ou isso nem vai chegar, porque ele não mapeou isso.
+[00:13:54 - 00:13:56] É algo que ele está vindo atrás e entender,
+[00:13:56 - 00:14:01] mas nem existe um plano para que esse projeto rode dentro da empresa.
+[00:14:02 - 00:14:05] Eu aconselho que você não passe isso para o vendedor,
+[00:14:05 - 00:14:08] que dê um tempo para que a gente possa educar esse lead
+[00:14:08 - 00:14:13] e que ele fique dentro desse momento ideal de compra.
+[00:14:13 - 00:14:14] Então ele tem a jornada,
+[00:14:14 - 00:14:17] senão é o momento agora que ele vai continuar dentro da jornada,
+[00:14:17 - 00:14:19] em algum momento ele estará nesse momento de compra
+[00:14:20 - 00:14:21] ou nesse momento de decisão.
+[00:14:21 - 00:14:24] Porque se eu mando agora ele para o time de vendas,
+[00:14:25 - 00:14:28] eu provavelmente vou perder, ele vai chegar lá e ele não vai avançar
+[00:14:28 - 00:14:31] por conta de um desses pontos que está muito desalinhado.
+[00:14:31 - 00:14:33] E o vendedor vai ter perdido esse tempo também.
+[00:14:33 - 00:14:35] Então vale mais a pena a gente ir educando.
+[00:14:35 - 00:14:38] Talvez voltar ele para o time de marketing para receber mais informações
+[00:14:38 - 00:14:40] e continuar sendo neutrino.
+[00:14:40 - 00:14:42] Então estar naquela lista de nutrição do marketing,
+[00:14:42 - 00:14:45] mas eu vou continuar, não preciso descartar ele totalmente,
+[00:14:45 - 00:14:48] eu vou continuar nutrindo esse lead ali,
+[00:14:48 - 00:14:52] até que ele esteja num bom momento para a gente fazer essa compra,
+[00:14:52 - 00:14:54] para a gente de fato negociar, certo?
+[00:14:55 - 00:14:58] Se vocês tiverem alguma dúvida sobre o tema de hoje
+[00:14:58 - 00:15:00] ou quiserem compartilhar alguma coisa,
+[00:15:00 - 00:15:03] nós estamos tanto no LinkedIn, quanto no Instagram
+[00:15:03 - 00:15:06] e também no nosso site, seiushunter.ai,
+[00:15:06 - 00:15:10] que conta lá dentro com um feed que a gente enche de conteúdo
+[00:15:10 - 00:15:15] e vocês podem se beneficiar e estudar aquele conteúdo que está lá também.
+[00:15:15 - 00:15:17] Toda semana a gente tem conteúdo novo.
+[00:15:17 - 00:15:22] Além, é claro, das várias vagas que sempre estão lá de disposição
+[00:15:22 - 00:15:26] de todos os nossos candidatos, como a candidatura simplificar.
+[00:15:26 - 00:15:28] Então a gente se vê na próxima aula
+[00:15:28 - 00:15:30] e qualquer dúvida a gente fica à disposição.

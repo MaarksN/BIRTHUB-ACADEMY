@@ -1,0 +1,201 @@
+Título: Módulo 4 - 01 - Passagem de Bastão
+Arquivo original: C:\Users\Marks\Downloads\Video\MP3\Módulo 4 - 01 - Passagem de Bastão.mp3
+Idioma: Português
+Duração detectada: 00:14:42
+Modo: transcrição por partes de 3 minutos
+
+[00:00:02 - 00:00:10] Oi, bem-vindos a mais uma aula da plataforma da SalesHunter, um hub de recrutamento, educação
+[00:00:10 - 00:00:12] e comunidade de vendas.
+[00:00:12 - 00:00:17] Eu vou conduzir aula com vocês hoje, como sempre aqui dentro da plataforma para quem
+[00:00:17 - 00:00:21] não me conhece ainda, sou a Jessica Bosco, faço parte do time de treinamento e também
+[00:00:21 - 00:00:26] comunidade que é o de Seus Hunter e vocês podem encontrar tanto no LinkedIn como
+[00:00:26 - 00:00:31] Jessica Bosco como também no Instagram como Gê Bosco.
+[00:00:31 - 00:00:37] posto conteúdo de pré-vendas, todos os dias vocês podem acompanhar por lá. Então vamos lá né?
+[00:00:37 - 00:00:44] A nossa aula de hoje é sobre passagem de bastão. Esse nome SLA ele está na nossa aula de
+[00:00:44 - 00:00:50] também, mas aqui eu quero trazê-lo não só explicar o que é o SLA, mas também aplicando ele
+[00:00:50 - 00:00:57] dentro dessa passagem de bastão que a gente faz do time, dentro do time comercial, certo? Então
+[00:00:57 - 00:01:05] o SLA, o SLA é um nível de acordo de serviço e o SLA está presente em várias áreas, não
+[00:01:05 - 00:01:13] ele não é utilizado somente na área comercial. Ele pode estar entre cliente-empresa, um cliente
+[00:01:13 - 00:01:18] de um suporte, um cliente que precisa do atendimento de CS, ele pode ter um SLA, ou seja, um nível
+[00:01:18 - 00:01:24] de acordo. Ele pode estar entre as áreas da empresa, então vendas de CS, vendas e pre-vendas,
+[00:01:24 - 00:01:29] pre-vendas e vendas, pre-vendas e marketing ou também entre as empresas e os fornecedores.
+[00:01:29 - 00:01:38] E ele tem várias medidas, unidades de medida, um tempo de resposta, um conjunto de informação
+[00:01:38 - 00:01:43] ou algumas outras coisas que vão compor esse nível de acordo de serviço.
+[00:01:43 - 00:01:47] No caso de pré-vendas e vendas, a gente vai falar de informações importantes
+[00:01:47 - 00:01:52] que precisam ser coletadas, ou seja, um acordo em que eu passo o lead
+[00:01:52 - 00:01:54] para frente se ele tiver essas características.
+[00:01:54 - 00:01:58] Entre marketing e pré-vendas, a mesma coisa.
+[00:01:58 - 00:02:01] Já entre um cliente em uma empresa,
+[00:02:01 - 00:02:02] eu posso ter um acordo de horas
+[00:02:02 - 00:02:06] em que eu preciso resolver aquele problema em x horas por exemplo.
+[00:02:06 - 00:02:11] Certo? É como a gente vê isso, uma SLA de duas horas, uma Sla de três dias.
+[00:02:12 - 00:02:16] Então em vendas a gente vai usar isso para fazer esse levantamento,
+[00:02:16 - 00:02:20] de tanto características quanto pontos que esse lides precisa
+[00:02:20 - 00:02:24] antes de a gente passar isso, de fato, para o time de vendas.
+[00:02:24 - 00:02:26] Quando a gente passa para o time
+[00:02:26 - 00:02:29] de vendas, a gente precisa ter isso muito bem mapeado.
+[00:02:29 - 00:02:33] Então, de acordo com isso aqui que a gente vai definir,
+[00:02:33 - 00:02:36] o pré-vendedor vai criar o seu roteiro,
+[00:02:36 - 00:02:41] ou as suas perguntas, a sua proposta de perguntas,
+[00:02:41 - 00:02:44] para o lead, baseado nessas informações que ele tem que levantar.
+[00:02:44 - 00:02:49] Então se o orçamento for um ponto importante
+[00:02:49 - 00:02:52] que ele não pode passar para frente sem essa informação,
+[00:02:52 - 00:02:55] ele vai colocar isso no roteiro de perguntas.
+[00:02:55 - 00:02:59] Caso tenha algum outro ponto que seja muito relevante,
+[00:02:59 - 00:03:00] ele vai trocar.
+[00:03:00 - 00:03:04] Isso não significa que ele não vai aplicar um framework,
+[00:03:04 - 00:03:07] que ele não vá aplicar um Bunt, um Spin, um GPCT.
+[00:03:07 - 00:03:10] Significa que ele vai levar mais em consideração esses pontos
+[00:03:10 - 00:03:14] que ele precisa levantar, porque ele sabe que caso ele não traga isso,
+[00:03:14 - 00:03:18] o time de vendas não vai aceitar esse lead lá na frente, certo?
+[00:03:18 - 00:03:22] Então aqui eu trouxe alguns exemplos,
+[00:03:22 - 00:03:26] um exemplo de pontos que ele pode precisar coletar com esse lead.
+[00:03:26 - 00:03:29] A empresa precisa possuir um site,
+[00:03:29 - 00:03:34] talvez seja uma empresa que vende um sistema de atendimento, por exemplo.
+[00:03:34 - 00:03:37] E ela precisa incluir isso dentro do site.
+[00:03:37 - 00:03:42] Se essa empresa que eles estão prospectando não tem site, já não vai dar certo
+[00:03:42 - 00:03:46] porque ela não vai conseguir colocar esse sistema de atendimento lá e logo ela não vai ter sucesso.
+[00:03:46 - 00:03:50] Se essa empresa não tem sucesso com a contratação da sua solução,
+[00:03:50 - 00:03:55] logo ela vai cancelar e então o vendedor já sabe que ele não vai poder realizar essa venda
+[00:03:55 - 00:03:58] porque ele não quer uma venda que cancele dali a dois ou três meses.
+[00:03:58 - 00:04:00] Então ela precisa possuir site.
+[00:04:00 - 00:04:03] ela tem que ter pelo menos mais de 10 pessoas no time de tecnologia.
+[00:04:03 - 00:04:07] Talvez uma parte da implantação tenha que ser feita com a equipe interna.
+[00:04:07 - 00:04:11] Se a pessoa não tiver ninguém no time de technology interno,
+[00:04:11 - 00:04:13] essa implantação não vai acontecer.
+[00:04:13 - 00:04:18] a solução de vocês não será colocada lá dentro, ele não vai ter sucesso com aquilo e
+[00:04:18 - 00:04:24] novamente a gente gasta tempo, energia e dinheiro implantando ali o sistema e logo
+[00:04:24 - 00:04:28] em seguida ele vai cancelar ou ele nem vai chegar a realizar implantação porque
+[00:04:28 - 00:04:33] não tem pessoas suficientes ou talvez ele precisa ter pessoas de marketing ou ele
+[00:04:33 - 00:04:39] precisa já ter um time de vendas né ou alguém que vá tocar isso adiante.
+[00:04:39 - 00:04:43] Ah, ele precisa possuir um orçamento para o projeto de R$ 6 mil e aqui pode ser
+[00:04:43 - 00:04:45] qualquer valor que o teu projeto for custar.
+[00:04:45 - 00:04:48] Como é que ele vai validar isso?
+[00:04:48 - 00:04:51] Ele pode validar se esse orçamento já existe na área,
+[00:04:51 - 00:04:56] quanto a empresa está disposta a gastar
+[00:04:56 - 00:04:59] nesse resolvendo esse tipo de problema,
+[00:04:59 - 00:05:04] mas ele sabe que ele só pode passar para o time de vendas se ele tiver validado esse valor.
+[00:05:04 - 00:05:08] Ele talvez não precise falar o valor lá na cauda pré-vendas,
+[00:05:08 - 00:05:11] mas ele precisa validar que sim, a empresa teria esses 5 mil
+[00:05:11 - 00:05:15] para bancar a implantação desse projeto.
+[00:05:15 - 00:05:20] E implantação programada para um período máximo de 6 meses.
+[00:05:20 - 00:05:22] Aqui é bem legal, então ele vai entender
+[00:05:22 - 00:05:25] em quanto tempo a empresa gostaria de resolver esse problema.
+[00:05:25 - 00:05:29] Se eu lhe disser que esse ano ela não tem nenhuma projeção de resolver, é só no ano que vem,
+[00:05:29 - 00:05:33] provavelmente para vendedor não vai passar para o time de vendas.
+[00:05:33 - 00:06:00] O vendedor vai gastar tempo, o LID não está preparado para implantar isso agora e é mais viável deixar esse LID ali, dar um perdido e retomar o contato com ele dali uns 2 ou 3 meses ou daqui a uns 6 meses quando ele de fato estiver pronto
+[00:06:00 - 00:06:02] A verdade não vai mudar de ideia agora.
+[00:06:02 - 00:06:05] Ah, não sei que vendedor consiga trazer a urgência, certo?
+[00:06:05 - 00:06:10] Mas em muitos casos, se ele tem um prazo de implantar aquele projeto
+[00:06:10 - 00:06:13] para mais de seis meses, ele não vai pro time de vendas.
+[00:06:13 - 00:06:17] entender de fato o que a nossa solução faz, o que a gente pode oferecer para ele
+[00:06:17 - 00:06:22] e concordar que ele precisa fazer uma col, participar de uma col de apresentação de uma hora.
+[00:06:22 - 00:06:24] Esse ponto também é bem importante.
+[00:06:24 - 00:06:27] tem muito para vendedor que valida todos os pontos
+[00:06:27 - 00:06:30] e não valida se o lead realmente entendeu a solução.
+[00:06:30 - 00:06:34] E o lead chega na reunião de vendas sem de fato ter entendido aquilo
+[00:06:34 - 00:06:38] ou ele não entende que ele vai participar de uma reunião de demonstração.
+[00:06:38 - 00:06:39] Isso é comum.
+[00:06:39 - 00:06:43] Então eu tenho que explicar para ele qual o próximo passo dessa jornada de compra,
+[00:06:43 - 00:06:47] o que vai acontecer nessa reunião tem uma demonstração mesmo?
+[00:06:47 - 00:06:49] É uma reunião de Discovery.
+[00:06:49 - 00:06:52] O meu vendedor apresenta algo em tela,
+[00:06:52 - 00:06:57] eu preciso já colocar isso para que ele não crie uma expectativa ilusória.
+[00:06:57 - 00:07:02] Ele crieu uma expectativa de que algo ia acontecer e aquela coisa não acontece, certo?
+[00:07:17 - 00:07:23] termênus, vi muitos SLHs baseados no BANT, então a pessoa tinha que captar esses pontos
+[00:07:23 - 00:07:29] do BANT, orçamento, autoridade, necessidade e tempo, mas é uma variável.
+[00:07:29 - 00:07:32] O mais legal aqui é que vocês tenham isso construído.
+[00:07:47 - 00:07:51] que as pessoas vão permear o SLA entre essas duas áreas.
+[00:07:51 - 00:07:54] Aqui tem um exemplo também,
+[00:07:54 - 00:08:00] que a gente tem os vídeos, a parte do Inbound,
+[00:08:00 - 00:08:03] esses martelitos poderiam também ser outbound,
+[00:08:03 - 00:08:04] considerado como outbound,
+[00:08:04 - 00:08:11] tem a lhe prospecção, uma pré-qualificação, uma pré call, reenganjamento, qualificação,
+[00:08:11 - 00:08:18] maturação e passagem de bastão. Nos dois eu tenho ali a parte de conversar com o Lid,
+[00:08:18 - 00:08:21] de entender sobre ele, fazer a qualificação e aí passar o bastão.
+[00:08:22 - 00:08:27] Depois ele vai para o Closer que vai virar um MQL, SQL ou um cliente lá no fundo
+[00:08:27 - 00:08:29] quando ele passa ali por dentro do funil.
+[00:08:29 - 00:08:33] Nesse caso aqui é um Funio in Y porque ele vem tanto de alt e quanto de in
+[00:08:33 - 00:08:36] e ele se encontra no vendedor. O vendedor recebe os dois.
+[00:08:36 - 00:08:39] Também é comum que em algumas empresas
+[00:08:39 - 00:08:43] Existem vendedores só para carteira de altibound e vendedores
+[00:08:43 - 00:08:44] só com carteira de inbound.
+[00:08:44 - 00:08:49] Vai depender muito da estrutura, da quantidade de pessoas que tem no time
+[00:08:49 - 00:08:51] e se dá para fazer essa divisão.
+[00:08:51 - 00:08:54] Caso não dê, olha eu não tenho vendedores o suficiente.
+[00:08:54 - 00:08:57] Aí a gente pode colocar o mesmo vendedor atendendo os dois.
+[00:08:57 - 00:09:00] Mas a gente tem uma mudança de setup mental, eu diria...
+[00:09:00 - 00:09:04] Quando ele muda de outbound pra inbound, que é importante também você considerar
+[00:09:04 - 00:09:10] quando for ver quantas reuniões ele pode receber por mês e até mesmo realizar.
+[00:09:10 - 00:09:11] Beleza?
+[00:09:12 - 00:09:17] Falando nisso, no SLA, o USDR também, o pré-vendedor também vai criar um fluxo
+[00:09:17 - 00:09:22] de passagem de bastão, que vai organizar as informações,
+[00:09:22 - 00:09:27] garantir que o vendedor vai receber o máximo de informações possíveis
+[00:09:27 - 00:09:33] para que ele também possa facilitar na hora de fazer tanto as perguntas,
+[00:09:33 - 00:09:36] Ou seja, criar esse cenário e montar esse roteiro para o lead
+[00:09:36 - 00:09:43] quanto também melhorar ou até mesmo acelerar a decisão pela parte do lead.
+[00:09:43 - 00:09:48] Então se eu tenho essas informações bem mapeadas e bem organizadas
+[00:09:48 - 00:09:51] é mais fácil de ele criar um cenário
+[00:09:51 - 00:09:55] para que ele consiga direcionar melhor essa conversa também com o lead.
+[00:09:55 - 00:09:57] Como que esse fluxo vai ser?
+[00:09:57 - 00:10:01] Esse fluxo vai conter as anotações muito claras do CRM,
+[00:10:01 - 00:10:07] Então o SDR vai abrir o CRM e ele vai colocar todas as informações que eles conversaram.
+[00:10:07 - 00:10:15] Claro que ele não vai descrever a conversa inteirinha, mas ele vai colocar os pontos mais importantes.
+[00:10:15 - 00:10:20] Percepções que ele teve do lead, quando ele falou sobre tal coisa, qual foi a reação do lead?
+[00:10:20 - 00:10:25] Pontos importantes que eles levantaram, o que o lead trouxe de dor, que foi muito importante.
+[00:10:25 - 00:10:27] Ele vai organizar tudo aquilo.
+[00:10:27 - 00:10:31] A ligação do pré-vendedor, muitas vezes está disponível.
+[00:10:31 - 00:10:34] O vendedor pode ouvir a ligação do SDR,
+[00:10:34 - 00:10:37] mas às vezes ele não vai ter tempo entre uma reunião e outra
+[00:10:37 - 00:10:39] para ouvir todas as ligações.
+[00:10:39 - 00:10:41] Então é bacana que já esteja organizado.
+[00:10:41 - 00:10:45] Aqui, eu deixo o dedica também, vocês criarem um template
+[00:10:45 - 00:10:51] em que tem lá assim nível de autoridade do lead.
+[00:10:51 - 00:10:54] Ah, médio, baixo, médio e alto.
+[00:10:54 - 00:10:59] nível de urgência do projeto, alto, médio, baixo,
+[00:10:59 - 00:11:04] que fique mais organizado para que o vendedor bata o olho e já entenda ali o cenário.
+[00:11:04 - 00:11:09] Depois algumas características que você foi coletando, que o SDR foi coletado.
+[00:11:09 - 00:11:12] Depois disso, ele vai enviar um e-mail com essa passagem de bastão,
+[00:11:12 - 00:11:16] então apresentando o closer, colocando pontos que vocês conversaram,
+[00:11:16 - 00:11:19] né? Oi, Fulano! Que bom que a gente teve essa conversa.
+[00:11:19 - 00:11:22] gostaria de se alinhantar os pontos que a gente trouxe, ponto 1, ponto 2, ponto 3.
+[00:11:22 - 00:11:27] A sua próxima reunião será com o Folano de tal, aqui está o e-mail dele,
+[00:11:27 - 00:11:29] se precisar de estarmos disponíveis no WhatsApp,
+[00:11:29 - 00:11:31] a gente começa melhor tal dia.
+[00:11:31 - 00:11:33] E vai mandar um invite.
+[00:11:33 - 00:11:35] Então, a passagem de bastão, ela tem isso.
+[00:11:35 - 00:11:39] Ela tem o e-mail, o invite criado e as informações no CRM.
+[00:11:57 - 00:12:00] Ele valida que o Lidia entrou, que a câmera do Lidia está boa.
+[00:12:00 - 00:12:02] Ou a que o som do lead tá legal.
+[00:12:02 - 00:12:05] Aí entra o vendedor na sala também, ele passa o bastão e fala
+[00:12:05 - 00:12:08] Oi, Flam, tudo bom? Que bom que você veio.
+[00:12:08 - 00:12:12] Eu sou a Jessi, que tava conversando contigo no telefone aquele dia.
+[00:12:12 - 00:12:16] Agora eu vou passar o bastão aqui pro João, que está na chamada com a gente.
+[00:12:16 - 00:12:20] Espero que seja bem legal qualquer coisa pode contar comigo também.
+[00:12:20 - 00:12:25] Eu fico disponível ali no WhatsApp ou qualquer outra frase que você quiser usar pra fazer essa passagem.
+[00:12:25 - 00:12:32] O interessante é que o SDR valida, que o LID realmente entrou e ele aguarda até o LID entrar.
+[00:12:32 - 00:12:45] Às vezes o vendedor já entrou também, podem ficar os dois na chamada, mas é bem comum que o vendedô também entre depois que o lead já entrou para criar um momento entre o lead e o SDR.
+[00:12:45 - 00:12:50] mas pode fazer de qualquer forma desde que essa passagem fique muito clara para o lead.
+[00:12:50 - 00:12:53] Eu estou indo de uma pessoa para outra pessoa,
+[00:12:53 - 00:12:59] porque agora meu atendimento continua aqui com um time de vendas, certo?
+[00:12:59 - 00:13:04] depois que aconteceu a reunião, o que pode acontecer com esse lead?
+[00:13:04 - 00:13:09] Eu passei e tinha meu SLA super bem definido, peguei todos aqueles pontos.
+[00:13:09 - 00:13:13] O lead pode passar para a próxima etapa ou ser descartado.
+[00:13:13 - 00:13:21] Nesse ponto aqui, é importante a gente lembrar que muitas empresas pagam para o SDR ou para
+[00:13:21 - 00:13:25] o pré-vendedor somente por leads que viram uma oportunidade.
+[00:13:25 - 00:13:28] E quando é que esse lead vira uma oportunidade?
+[00:13:28 - 00:13:34] ele de fato avança para a próxima etapa do funil do vendedor. Então se ele tinha tudo mapeado
+[00:13:34 - 00:13:40] e ele avançou para a próxima etapas, ele vira uma oportunidade e o SDR recebe por isso, ganha
+[00:13:40 - 00:13:47] a sua comissão por isso. Se ele é descartado, de alguma maneira, ele... o LID não tem essa...
+[00:13:47 - 00:13:54] a gente não conseguiu validar algum ponto ou algo não aconteceu, ele é descartsado e
+[00:13:54 - 00:13:56] o SDR acaba não ganhando comissão por aquilo.
+[00:13:56 - 00:14:00] Então é bem importante saber disso e fazer bem essa passagem de bastão,
+[00:14:00 - 00:14:04] ter todos esses pontos mapeados para garantir que a sua comissão vai vir certinho,
+[00:14:04 - 00:14:10] que você vai ganhar por aquele lead, porque você foi lá prospector ele, levantou todas as informações
+[00:14:10 - 00:14:13] e é justo o que isso acontece também.
+[00:14:13 - 00:14:17] Se vocês tiverem alguma dúvida sobre esse assunto ou quiserem contactar a gente também,
+[00:14:17 - 00:14:24] Nós estamos no LinkedIn, no Instagram e também no nosso site, saleshunter.ai, com várias vagas,
+[00:14:24 - 00:14:26] feed com várias dicas.
+[00:14:26 - 00:14:31] Essa semana a gente postou algumas dicas de framework, então eu recomendo que vocês deiem
+[00:14:31 - 00:14:35] uma olhadinha lá, mas todo dia a gente tem dicas que a gente está postando e também
+[00:14:35 - 00:14:40] vagas novas para vocês acompanharem. Então gente, por enquanto é isso e até a próxima aula!
