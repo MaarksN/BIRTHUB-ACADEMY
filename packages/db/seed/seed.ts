@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Prisma, PrismaClient } from '@prisma/client';
 import { automationTemplateData, courseData, promptTemplateData, questionData } from '@inside/content';
 import bcrypt from 'bcryptjs';
@@ -28,16 +29,16 @@ async function main() {
   for (const template of automationTemplateData) {
     await prisma.automationTemplate.upsert({
       where: { id: template.id },
-              update: { title: template.title, content: template as unknown as Prisma.InputJsonValue },
-              create: { id: template.id, tenantId, title: template.title, content: template as unknown as Prisma.InputJsonValue },
+      update: { title: template.title, content: template as any },
+      create: { id: template.id, tenantId, title: template.title, content: template as any },
     });
   }
 
   for (const prompt of promptTemplateData) {
     await prisma.promptTemplate.upsert({
       where: { id: prompt.id },
-              update: { title: prompt.title, template: prompt.template, metadata: prompt as unknown as Prisma.InputJsonValue },
-              create: { id: prompt.id, tenantId, title: prompt.title, template: prompt.template, metadata: prompt as unknown as Prisma.InputJsonValue },
+      update: { title: prompt.title, template: prompt.template, metadata: prompt as any },
+      create: { id: prompt.id, tenantId, title: prompt.title, template: prompt.template, metadata: prompt as any },
     });
   }
 

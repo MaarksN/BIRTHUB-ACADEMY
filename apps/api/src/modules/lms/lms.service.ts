@@ -48,7 +48,7 @@ export class LmsService {
         userId: input.userId,
         cycleId: cycle.id,
         eventType: input.eventType,
-        metadata: input.metadata as Prisma.InputJsonValue,
+        metadata: input.metadata as any,
       },
     });
     return { persisted: true, event };

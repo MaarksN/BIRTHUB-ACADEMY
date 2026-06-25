@@ -6,8 +6,8 @@
   "packageManager": "pnpm@11.5.3",
   "scripts": {
     "dev": "pnpm --parallel --filter @inside/api --filter @inside/web dev",
-    "build": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm --filter @inside/db build && pnpm --filter @inside/worker build && pnpm --filter @inside/api build && pnpm --filter @inside/web build",
-    "typecheck": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm -r typecheck",
+    "build": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm --filter @inside/db prisma:generate && pnpm --filter @inside/db build && pnpm --filter @inside/worker build && pnpm --filter @inside/api build && pnpm --filter @inside/web build",
+    "typecheck": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm --filter @inside/db prisma:generate && pnpm -r typecheck",
     "lint": "eslint . --max-warnings=0",
     "test": "pnpm -r test",
     "validate:content": "tsx scripts/validate-content.ts",

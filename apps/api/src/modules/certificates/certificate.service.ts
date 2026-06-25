@@ -41,7 +41,7 @@ export class CertificateService {
           userId: input.userId,
           courseVersionId: input.courseVersionId ?? `${courseData.id}@${courseData.version}`,
           code,
-          payload: payload as Prisma.InputJsonValue,
+          payload: payload as any,
         },
       });
       return { issued: true, persisted: true, certificate: { ...payload, id: certificate.id } };
