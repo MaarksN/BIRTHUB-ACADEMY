@@ -1,0 +1,78 @@
+$ next dev --port 3000
+   ▲ Next.js 15.5.18
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
+
+ ✓ Starting...
+ ✓ Ready in 1972ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 5.8s (560 modules)
+ GET /admin 200 in 7357ms
+ ✓ Compiled in 559ms (546 modules)
+ GET /admin 200 in 633ms
+ ✓ Compiled in 623ms (225 modules)
+ ✓ Compiled in 219ms (225 modules)
+ ✓ Compiled in 158ms (225 modules)
+ ✓ Compiled in 212ms (225 modules)
+ ✓ Compiled in 913ms (225 modules)
+ ✓ Compiled in 599ms (225 modules)
+ ✓ Compiled in 128ms (225 modules)
+ ✓ Compiled in 311ms (225 modules)
+ ✓ Compiled in 152ms (225 modules)
+ ✓ Compiled in 195ms (225 modules)
+ ✓ Compiled in 386ms (225 modules)
+ ✓ Compiled in 404ms (225 modules)
+ ✓ Compiled in 81ms (225 modules)
+ ✓ Compiled in 112ms (225 modules)
+ ✓ Compiled in 95ms (225 modules)
+ ✓ Compiled in 125ms (225 modules)
+ ✓ Compiled in 351ms (225 modules)
+ ✓ Compiled in 152ms (225 modules)
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 635ms (321 modules)
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4013649600'
+}
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '1905672644'
+}
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '1905672644'
+}
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '1905672644'
+}
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4013649600'
+}
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4013649600'
+}
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  digest: '956244494'
+}
+ ⨯ Error: Could not find the module "/app/node_modules/.pnpm/next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4013649600'
+}
+[TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  page: '/admin'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.6s (893 modules)
+ GET /admin 500 in 8160ms
+ GET /admin 200 in 626ms
+ GET /admin 200 in 90ms
+ GET /admin 200 in 109ms
+ GET /admin 200 in 122ms
