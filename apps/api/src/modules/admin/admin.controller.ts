@@ -1,11 +1,15 @@
-import { Body, Controller, Get, Param, Patch, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, Param, Patch, Post, Query, UseGuards } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { courseData, questionData, automationTemplateData, promptTemplateData } from '@inside/content';
 import { AdminService } from './admin.service';
 import { updateUserRoleSchema, reviewSubmissionSchema } from '@inside/schemas';
+import { RolesGuard } from '../common/guards/roles.guard';
+import { Roles } from '../common/decorators/roles.decorator';
 
 @ApiTags('admin')
 @Controller('admin')
+@UseGuards(RolesGuard)
+@Roles('ADMIN')
 export class AdminController {
   constructor(private readonly adminService: AdminService) {}
 

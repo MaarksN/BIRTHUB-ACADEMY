@@ -1,13 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getApiUrl } from '../../../lib/api';
 
 export function AuditLogs() {
   const [logs, setLogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3333/admin/audit-logs?tenantId=default')
+    fetch(`${getApiUrl()}/admin/audit-logs?tenantId=default`)
       .then((res) => res.json())
       .then((data) => {
         setLogs(Array.isArray(data) ? data : []);

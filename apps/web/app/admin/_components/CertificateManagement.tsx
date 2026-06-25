@@ -1,13 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getApiUrl } from '../../../lib/api';
 
 export function CertificateManagement() {
   const [certificates, setCertificates] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3333/admin/certificates?tenantId=default')
+    fetch(`${getApiUrl()}/admin/certificates?tenantId=default`)
       .then((res) => res.json())
       .then((data) => {
         setCertificates(Array.isArray(data) ? data : []);
@@ -19,7 +20,7 @@ export function CertificateManagement() {
   const handleRevoke = async (id: string) => {
     if (!confirm('Tem certeza que deseja revogar este certificado?')) return;
     try {
-      const res = await fetch(`http://localhost:3333/admin/certificates/${id}/revoke`, {
+      const res = await fetch(`${getApiUrl()}/admin/certificates/${id}/revoke`, {
         method: 'POST',
       });
       if (res.ok) {

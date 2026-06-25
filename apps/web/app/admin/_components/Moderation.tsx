@@ -1,13 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getApiUrl } from '../../../lib/api';
 
 export function Moderation() {
   const [submissions, setSubmissions] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3333/admin/submissions?tenantId=default')
+    fetch(`${getApiUrl()}/admin/submissions?tenantId=default`)
       .then((res) => res.json())
       .then((data) => {
         setSubmissions(Array.isArray(data) ? data : []);
@@ -18,7 +19,7 @@ export function Moderation() {
 
   const handleReview = async (id: string, status: string, score?: number) => {
     try {
-      const res = await fetch(`http://localhost:3333/admin/submissions/${id}/review`, {
+      const res = await fetch(`${getApiUrl()}/admin/submissions/${id}/review`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status, score }),

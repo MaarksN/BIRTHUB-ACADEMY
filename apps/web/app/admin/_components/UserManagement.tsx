@@ -1,13 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getApiUrl } from '../../../lib/api';
 
 export function UserManagement() {
   const [users, setUsers] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3333/admin/users?tenantId=default')
+    fetch(`${getApiUrl()}/admin/users?tenantId=default`)
       .then((res) => res.json())
       .then((data) => {
         setUsers(Array.isArray(data) ? data : []);
@@ -18,7 +19,7 @@ export function UserManagement() {
 
   const handleUpdateRole = async (userId: string, newRole: string) => {
     try {
-      const res = await fetch(`http://localhost:3333/admin/users/${userId}/role`, {
+      const res = await fetch(`${getApiUrl()}/admin/users/${userId}/role`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ role: newRole }),
