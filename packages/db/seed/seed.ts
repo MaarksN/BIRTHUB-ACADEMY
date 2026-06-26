@@ -1,5 +1,4 @@
-// @ts-nocheck
-import { Prisma, PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 import { automationTemplateData, courseData, promptTemplateData, questionData } from '@inside/content';
 import bcrypt from 'bcryptjs';
 

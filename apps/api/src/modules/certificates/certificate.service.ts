@@ -1,7 +1,6 @@
 import { Injectable, Optional } from '@nestjs/common';
 import crypto from 'node:crypto';
 import { canIssueCertificate, courseData, type LearnerProgress } from '@inside/content';
-import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../common/prisma.service';
 
 @Injectable()

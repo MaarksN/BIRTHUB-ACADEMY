@@ -1,7 +1,6 @@
 import { Injectable, ForbiddenException, NotFoundException, Optional } from '@nestjs/common';
 import { courseData, drawQuizQuestions, findCycle, isCycleUnlocked, type LearnerProgress } from '@inside/content';
 import type { ProgressEventInput } from '@inside/schemas';
-import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../common/prisma.service';
 
 @Injectable()
