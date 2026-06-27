@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
@@ -13,10 +14,26 @@ import { AutomationService } from './automations/automation.service';
 import { AdminController } from './admin/admin.controller';
 import { AdminService } from './admin/admin.service';
 import { PrismaService } from './common/prisma.service';
+import { AuthGuard } from './common/guards/auth.guard';
+import { SubmissionController } from './submissions/submission.controller';
+import { SubmissionService } from './submissions/submission.service';
+import { StorageService } from './submissions/storage.service';
+import { HealthController } from './health/health.controller';
 
 @Module({
   imports: [ThrottlerModule.forRoot([{ ttl: 60_000, limit: 120 }])],
-  controllers: [AuthController, LmsController, CertificateController, AiController, AutomationController, AdminController],
-  providers: [AuthService, LmsService, CertificateService, AiService, AutomationService, AdminService, PrismaService],
+  controllers: [AuthController, LmsController, CertificateController, AiController, AutomationController, AdminController, SubmissionController, HealthController],
+  providers: [
+    AuthService,
+    LmsService,
+    CertificateService,
+    AiService,
+    AutomationService,
+    AdminService,
+    SubmissionService,
+    StorageService,
+    PrismaService,
+    { provide: APP_GUARD, useClass: AuthGuard },
+  ],
 })
 export class AppModule {}

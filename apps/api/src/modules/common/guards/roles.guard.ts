@@ -1,4 +1,4 @@
-import { Injectable, CanActivate, ExecutionContext, UnauthorizedException } from '@nestjs/common';
+import { Injectable, CanActivate, ExecutionContext, ForbiddenException, UnauthorizedException } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 
 @Injectable()
@@ -16,19 +16,13 @@ export class RolesGuard implements CanActivate {
     }
 
     const request = context.switchToHttp().getRequest();
-    const session = request.cookies?.inside_session;
-
-    if (!session) {
+    const auth = request.auth;
+    if (!auth) {
       throw new UnauthorizedException('Sessão inválida');
     }
-
-    // In a real application, we would validate the session against a database or cache
-    // For this demo, we assume the admin session is always 'user-admin'
-    // This is a simplification.
-    const user = {
-      roles: session === 'admin-session-id' ? ['ADMIN'] : ['STUDENT'],
-    };
-
-    return requiredRoles.some((role) => user.roles?.includes(role));
+    if (!requiredRoles.some((role) => auth.roles?.includes(role))) {
+      throw new ForbiddenException('Permissão insuficiente');
+    }
+    return true;
   }
 }

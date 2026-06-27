@@ -5,25 +5,96 @@ services:
       POSTGRES_DB: inside_sales
       POSTGRES_USER: inside
       POSTGRES_PASSWORD: inside
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
+    ports: ["5432:5432"]
+    volumes: ["postgres-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U inside -d inside_sales"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
   redis:
     image: redis:7
-    ports:
-      - "6379:6379"
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
   minio:
     image: minio/minio:RELEASE.2025-04-22T22-12-26Z
     command: server /data --console-address ":9001"
     environment:
       MINIO_ROOT_USER: minio
       MINIO_ROOT_PASSWORD: minio123
-    ports:
-      - "9000:9000"
-      - "9001:9001"
-    volumes:
-      - minio-data:/data
+    ports: ["9000:9000", "9001:9001"]
+    volumes: ["minio-data:/data"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  minio-init:
+    image: minio/mc:RELEASE.2025-04-16T18-13-26Z
+    depends_on:
+      minio: { condition: service_healthy }
+    entrypoint: ["/bin/sh", "-c", "mc alias set local http://minio:9000 minio minio123 && mc mb --ignore-existing local/inside-sales-course"]
+  api:
+    image: birthub-academy:local
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile
+    command: ["pnpm", "--filter", "@inside/api", "start"]
+    environment:
+      NODE_ENV: production
+      PORT: 3333
+      WEB_ORIGIN: http://localhost:3000
+      DATABASE_URL: postgresql://inside:inside@postgres:5432/inside_sales
+      REDIS_URL: redis://redis:6379
+      S3_ENDPOINT: http://minio:9000
+      S3_BUCKET: inside-sales-course
+      S3_ACCESS_KEY: minio
+      S3_SECRET_KEY: minio123
+      SESSION_TTL_HOURS: 8
+    ports: ["3333:3333"]
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+      minio: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3333/health').then(r=>{if(!r.ok)process.exit(1)})"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+  migrate:
+    image: birthub-academy:local
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile
+    command: ["sh", "-c", "pnpm --filter @inside/db exec prisma migrate deploy --schema prisma/schema.prisma && pnpm --filter @inside/db seed"]
+    environment:
+      DATABASE_URL: postgresql://inside:inside@postgres:5432/inside_sales
+    depends_on:
+      postgres: { condition: service_healthy }
+  web:
+    image: birthub-academy:local
+    command: ["pnpm", "--filter", "@inside/web", "start"]
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_API_URL: http://localhost:3333
+    ports: ["3000:3000"]
+    depends_on:
+      api: { condition: service_healthy }
+  worker:
+    image: birthub-academy:local
+    command: ["pnpm", "--filter", "@inside/worker", "start"]
+    environment:
+      NODE_ENV: production
+      REDIS_URL: redis://redis:6379
+      DATABASE_URL: postgresql://inside:inside@postgres:5432/inside_sales
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
 volumes:
   postgres-data:
   minio-data:

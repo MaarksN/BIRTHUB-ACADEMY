@@ -1,73 +1,39 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getApiUrl } from '../../../lib/api';
+import { apiFetch, ApiError } from '../../../lib/api';
+
+interface Certificate { id: string; userId: string; code: string; issuedAt: string; status: string }
 
 export function CertificateManagement() {
-  const [certificates, setCertificates] = useState<any[]>([]);
+  const [certificates, setCertificates] = useState<Certificate[]>([]);
+  const [reasons, setReasons] = useState<Record<string, string>>({});
+  const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
-    fetch(`${getApiUrl()}/admin/certificates?tenantId=default`)
-      .then((res) => res.json())
-      .then((data) => {
-        setCertificates(Array.isArray(data) ? data : []);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
+    apiFetch<Certificate[]>('/admin/certificates').then(setCertificates)
+      .catch((cause) => setMessage(cause instanceof ApiError ? cause.message : 'Falha ao carregar certificados'))
+      .finally(() => setLoading(false));
   }, []);
-
-  const handleRevoke = async (id: string) => {
-    if (!confirm('Tem certeza que deseja revogar este certificado?')) return;
+  const revoke = async (id: string) => {
+    const reason = reasons[id]?.trim();
+    if (!reason || reason.length < 3) { setMessage('Informe o motivo da revogação.'); return; }
     try {
-      const res = await fetch(`${getApiUrl()}/admin/certificates/${id}/revoke`, {
-        method: 'POST',
-      });
-      if (res.ok) {
-        alert('Certificado revogado.');
-        setCertificates(certificates.map(c => c.id === id ? { ...c, status: 'REVOKED' } : c));
-      }
-    } catch {
-      alert('Erro ao revogar.');
+      await apiFetch(`/admin/certificates/${id}/revoke`, { method: 'POST', body: JSON.stringify({ reason }) });
+      setCertificates((items) => items.map((item) => item.id === id ? { ...item, status: 'REVOKED' } : item));
+      setMessage('Certificado revogado e auditado.');
+    } catch (cause) {
+      setMessage(cause instanceof ApiError ? cause.message : 'Falha ao revogar certificado');
     }
   };
-
-  if (loading) return <p>Carregando certificados...</p>;
-
-  return (
-    <section className="content-block">
-      <h2>Revisar Atividades e Emitir Certificados</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Usuário ID</th>
-            <th>Código</th>
-            <th>Emissão</th>
-            <th>Status</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          {certificates.map((cert) => (
-            <tr key={cert.id}>
-              <td>{cert.userId}</td>
-              <td><code>{cert.code}</code></td>
-              <td>{new Date(cert.issuedAt).toLocaleDateString()}</td>
-              <td><span className={`badge badge-${cert.status.toLowerCase()}`}>{cert.status}</span></td>
-              <td>
-                {cert.status === 'VALID' && (
-                  <button className="btn-small btn-danger" onClick={() => handleRevoke(cert.id)}>Revogar</button>
-                )}
-              </td>
-            </tr>
-          ))}
-          {certificates.length === 0 && (
-            <tr>
-              <td colSpan={5} style={{ textAlign: 'center' }}>Nenhum certificado emitido.</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
-    </section>
-  );
+  if (loading) return <p>Carregando certificados…</p>;
+  return <section className="content-block"><h2>Certificados emitidos</h2>{message ? <p role="status">{message}</p> : null}
+    <table><thead><tr><th>Usuário</th><th>Código</th><th>Emissão</th><th>Status</th><th>Revogação</th></tr></thead><tbody>
+      {certificates.map((item) => <tr key={item.id}><td>{item.userId}</td><td><code>{item.code}</code></td><td>{new Date(item.issuedAt).toLocaleDateString('pt-BR')}</td><td>{item.status}</td><td>
+        {item.status === 'VALID' ? <><input aria-label={`Motivo para ${item.code}`} value={reasons[item.id] ?? ''} onChange={(event) => setReasons((current) => ({ ...current, [item.id]: event.target.value }))} /><button onClick={() => void revoke(item.id)}>Revogar</button></> : '—'}
+      </td></tr>)}
+      {!certificates.length ? <tr><td colSpan={5}>Nenhum certificado emitido.</td></tr> : null}
+    </tbody></table>
+  </section>;
 }
+

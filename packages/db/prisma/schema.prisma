@@ -28,6 +28,20 @@ enum JobStatus {
   FAILED
 }
 
+enum SubmissionStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  APPROVED
+  REJECTED
+  NEEDS_CHANGES
+}
+
+enum AttemptStatus {
+  IN_PROGRESS
+  SUBMITTED
+}
+
 model User {
   id            String    @id @default(cuid())
   tenantId      String
@@ -38,6 +52,15 @@ model User {
   deletedAt     DateTime?
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+
+  memberships  Membership[]
+  sessions      Session[]
+  enrollments   Enrollment[]
+  progressEvents ProgressEvent[]
+  cycleCompletions CycleCompletion[]
+  quizAttempts  QuizAttempt[]
+  submissions   Submission[]
+  certificates  Certificate[]
 
   @@index([tenantId])
 }
@@ -51,6 +74,27 @@ model Organization {
   deletedAt   DateTime?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
+
+  memberships Membership[]
+  sessions    Session[]
+  roles       Role[]
+  courses     Course[]
+}
+
+model Session {
+  id             String        @id @default(cuid())
+  tokenHash      String        @unique
+  userId         String
+  activeTenantId String
+  expiresAt      DateTime
+  revokedAt      DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization   Organization  @relation(fields: [activeTenantId], references: [tenantId], onDelete: Cascade)
+
+  @@index([userId, activeTenantId, expiresAt])
+  @@index([tokenHash, revokedAt])
 }
 
 model Membership {
@@ -61,9 +105,13 @@ model Membership {
   roleId         String
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  role           Role         @relation(fields: [roleId], references: [id], onDelete: Restrict)
 
   @@unique([userId, organizationId])
-  @@index([tenantId])
+  @@index([tenantId, userId])
+  @@index([roleId])
 }
 
 model Role {
@@ -74,6 +122,8 @@ model Role {
   permissions String[]
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  memberships Membership[]
 
   @@unique([tenantId, code])
   @@index([tenantId])
@@ -95,6 +145,9 @@ model Course {
   deletedAt   DateTime?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
+  organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  versions    CourseVersion[]
+  challenges  FinalChallenge[]
 
   @@unique([tenantId, slug])
   @@index([tenantId])
@@ -109,9 +162,13 @@ model CourseVersion {
   metadata  Json
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  course    Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  modules   Module[]
+  enrollments Enrollment[]
+  certificates Certificate[]
 
-  @@unique([courseId, version])
-  @@index([tenantId])
+  @@unique([tenantId, courseId, version])
+  @@index([tenantId, courseId])
 }
 
 model Module {
@@ -123,6 +180,9 @@ model Module {
   sortOrder       Int
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
+  courseVersion   CourseVersion @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
+  cycles          Cycle[]
+  projects        Project[]
 
   @@unique([courseVersionId, code])
   @@index([tenantId])
@@ -138,6 +198,13 @@ model Cycle {
   sortOrder Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  module    Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  lessonBlocks LessonBlock[]
+  activities Activity[]
+  questions Question[]
+  quizAttempts QuizAttempt[]
+  progressEvents ProgressEvent[]
+  completions CycleCompletion[]
 
   @@unique([tenantId, code])
   @@index([tenantId])
@@ -153,6 +220,7 @@ model LessonBlock {
   sortOrder Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  cycle     Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
 
   @@index([tenantId, cycleId])
 }
@@ -165,6 +233,8 @@ model Activity {
   content   Json
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  cycle     Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  submissions Submission[]
 
   @@index([tenantId, cycleId])
 }
@@ -177,6 +247,7 @@ model Rubric {
   title     String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  criteria  RubricCriterion[]
 
   @@index([tenantId, ownerType, ownerId])
 }
@@ -190,6 +261,8 @@ model RubricCriterion {
   sortOrder Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  rubric    Rubric @relation(fields: [rubricId], references: [id], onDelete: Cascade)
+  scores    ReviewScore[]
 
   @@index([tenantId, rubricId])
 }
@@ -200,12 +273,16 @@ model Question {
   cycleId         String
   difficulty      String
   prompt          String
-  correctOptionId String
+  correctOptionId String?
   explanation     String
   theme           String
   source          String
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
+  cycle           Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  options         QuestionOption[] @relation("QuestionOptions")
+  correctOption   QuestionOption? @relation("CorrectOption", fields: [correctOptionId], references: [id], onDelete: Restrict)
+  answers         QuizAttemptAnswer[]
 
   @@index([tenantId, cycleId])
 }
@@ -219,6 +296,9 @@ model QuestionOption {
   feedback   String
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
+  question   Question @relation("QuestionOptions", fields: [questionId], references: [id], onDelete: Cascade)
+  correctFor Question[] @relation("CorrectOption")
+  selectedAnswers QuizAttemptAnswer[]
 
   @@index([tenantId, questionId])
 }
@@ -231,9 +311,13 @@ model QuizAttempt {
   seed        String
   score       Int
   passed      Boolean
+  status      AttemptStatus @default(IN_PROGRESS)
   submittedAt DateTime?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cycle       Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  answers     QuizAttemptAnswer[]
 
   @@index([tenantId, userId, cycleId])
 }
@@ -246,7 +330,12 @@ model QuizAttemptAnswer {
   selectedOptionId String
   correct         Boolean
   createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  attempt         QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question        Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedOption  QuestionOption @relation(fields: [selectedOptionId], references: [id], onDelete: Restrict)
 
+  @@unique([attemptId, questionId])
   @@index([tenantId, attemptId])
 }
 
@@ -259,6 +348,8 @@ model Enrollment {
   deletedAt       DateTime?
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
+  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseVersion   CourseVersion @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
 
   @@unique([tenantId, userId, courseVersionId])
   @@index([tenantId])
@@ -272,8 +363,23 @@ model ProgressEvent {
   eventType String
   metadata  Json
   createdAt DateTime @default(now())
+  user      User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cycle     Cycle? @relation(fields: [cycleId], references: [id], onDelete: SetNull)
 
   @@index([tenantId, userId])
+}
+
+model CycleCompletion {
+  id          String   @id @default(cuid())
+  tenantId    String
+  userId      String
+  cycleId     String
+  completedAt DateTime @default(now())
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cycle       Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, userId, cycleId])
+  @@index([tenantId, userId, completedAt])
 }
 
 model Submission {
@@ -283,15 +389,68 @@ model Submission {
   activityId  String?
   projectId   String?
   challengeId String?
-  status      String    @default("submitted")
+  status      SubmissionStatus @default(SUBMITTED)
   payload     Json
   score       Int?
   reviewedBy  String?
   reviewedAt  DateTime?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  activity    Activity? @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  project     Project? @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  challenge   FinalChallenge? @relation(fields: [challengeId], references: [id], onDelete: Cascade)
+  files       SubmissionFile[]
+  reviews     Review[]
 
   @@index([tenantId, userId])
+  @@index([tenantId, status, createdAt])
+}
+
+model SubmissionFile {
+  id           String   @id @default(cuid())
+  tenantId     String
+  submissionId String
+  objectKey    String
+  originalName String
+  mimeType     String
+  sizeBytes    Int
+  createdAt    DateTime @default(now())
+  submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, objectKey])
+  @@index([tenantId, submissionId])
+}
+
+model Review {
+  id           String   @id @default(cuid())
+  tenantId     String
+  submissionId String
+  reviewerId   String
+  status       SubmissionStatus
+  score        Int?
+  feedback     String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+  scores       ReviewScore[]
+
+  @@index([tenantId, submissionId, createdAt])
+  @@index([tenantId, reviewerId])
+}
+
+model ReviewScore {
+  id          String @id @default(cuid())
+  tenantId    String
+  reviewId    String
+  criterionId String
+  score       Int
+  note        String?
+  review      Review @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+  criterion   RubricCriterion @relation(fields: [criterionId], references: [id], onDelete: Restrict)
+
+  @@unique([reviewId, criterionId])
+  @@index([tenantId, reviewId])
 }
 
 model Project {
@@ -302,6 +461,8 @@ model Project {
   content   Json
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  module    Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  submissions Submission[]
 
   @@index([tenantId, moduleId])
 }
@@ -314,6 +475,8 @@ model FinalChallenge {
   content   Json
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  course    Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  submissions Submission[]
 
   @@index([tenantId, courseId])
 }
@@ -327,12 +490,19 @@ model Certificate {
   status          CertificateStatus @default(VALID)
   issuedAt        DateTime          @default(now())
   revokedAt       DateTime?
+  revokedById     String?
+  revocationReason String?
+  pdfObjectKey    String?
   expiresAt       DateTime?
   payload         Json
   createdAt       DateTime          @default(now())
   updatedAt       DateTime          @updatedAt
+  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseVersion   CourseVersion @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
+  verifications   CertificateVerification[]
 
-  @@index([tenantId, userId])
+  @@unique([tenantId, userId, courseVersionId])
+  @@index([tenantId, userId, status])
 }
 
 model CertificateVerification {
@@ -343,6 +513,7 @@ model CertificateVerification {
   userAgentHash String?
   result        String
   createdAt     DateTime @default(now())
+  certificate   Certificate @relation(fields: [certificateId], references: [id], onDelete: Cascade)
 
   @@index([code])
 }
@@ -486,6 +657,8 @@ model ImportJob {
   status    JobStatus @default(QUEUED)
   source    String
   result    Json?
+  error     String?
+  attempts  Int       @default(0)
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
 
@@ -499,6 +672,8 @@ model ExportJob {
   status    JobStatus @default(QUEUED)
   kind      String
   resultUrl String?
+  error     String?
+  attempts  Int       @default(0)
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
 

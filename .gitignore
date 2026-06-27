@@ -5,3 +5,6 @@ dist
 .env.local
 coverage
 data/exports/*.zip
+*.tsbuildinfo
+playwright-report
+test-results

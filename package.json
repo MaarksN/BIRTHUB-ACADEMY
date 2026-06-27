@@ -10,6 +10,7 @@
     "typecheck": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm --filter @inside/db prisma:generate && pnpm -r typecheck",
     "lint": "eslint . --max-warnings=0",
     "test": "pnpm -r test",
+    "e2e": "playwright test",
     "validate:content": "tsx scripts/validate-content.ts",
     "validate:questions": "tsx scripts/validate-questions.ts",
     "validate:links": "tsx scripts/validate-links.ts",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.29.0",
+    "@playwright/test": "^1.61.1",
     "@types/node": "24.0.3",
     "eslint": "9.29.0",
     "tsx": "4.20.3",

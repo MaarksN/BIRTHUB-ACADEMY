@@ -54,6 +54,10 @@ h2 { margin-top: 0; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 .button, button { border: 0; border-radius: 8px; background: var(--brand); color: #fff; padding: 10px 14px; font-weight: 800; text-decoration: none; cursor: pointer; }
+.link-button { background: transparent; color: var(--brand); padding: 0; }
+button:disabled { opacity: .65; cursor: wait; }
+.status-error { border-left: 4px solid var(--danger); padding: 10px; background: color-mix(in srgb, var(--danger) 10%, transparent); }
+.status-success { border-left: 4px solid var(--good); padding: 10px; background: color-mix(in srgb, var(--good) 10%, transparent); }
 .button-secondary { background: transparent; color: var(--brand); border: 1px solid var(--brand); }
 label { display: block; font-weight: 700; margin: 12px 0 6px; }
 input, textarea, select { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: var(--surface); color: var(--text); font: inherit; }

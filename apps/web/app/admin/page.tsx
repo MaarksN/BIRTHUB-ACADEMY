@@ -6,10 +6,14 @@ import { UserManagement } from './_components/UserManagement';
 import { Moderation } from './_components/Moderation';
 import { CertificateManagement } from './_components/CertificateManagement';
 import { AuditLogs } from './_components/AuditLogs';
+import { useAuth } from '../../lib/auth';
 
 export default function AdminPage() {
+  const { user, loading, authorized } = useAuth({ required: true, roles: ['ADMIN', 'OWNER'] });
   const [activeTab, setActiveTab] = useState<'overview' | 'users' | 'moderation' | 'certificates' | 'logs'>('overview');
   const cycles = flattenCycles();
+
+  if (loading || !user || !authorized) return <div className="page-shell"><p>Validando permissão administrativa…</p></div>;
 
   return (
     <div className="page-shell">

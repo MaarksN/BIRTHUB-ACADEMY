@@ -1,26 +1,78 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import bcrypt from 'bcryptjs';
 import crypto from 'node:crypto';
+import { PrismaService } from '../common/prisma.service';
+import { hashSessionToken } from '../common/guards/auth.guard';
+import type { AuthContext } from './auth.types';
 
 @Injectable()
 export class AuthService {
-  private readonly demoPasswordHash = bcrypt.hashSync('InsideSales#2026', 12);
+  constructor(private readonly prisma: PrismaService) {}
 
   async login(email: string, password: string, tenantSlug: string) {
-    const allowed = email === 'admin@inside.local' || email === 'aluno@inside.local';
-    if (!allowed || !(await bcrypt.compare(password, this.demoPasswordHash))) {
+    const organization = await this.prisma.organization.findFirst({
+      where: { slug: tenantSlug, deletedAt: null },
+    });
+    const user = organization
+      ? await this.prisma.user.findFirst({
+          where: {
+            email: email.trim().toLowerCase(),
+            deletedAt: null,
+            memberships: { some: { organizationId: organization.id, tenantId: organization.tenantId } },
+          },
+          include: {
+            memberships: {
+              where: { organizationId: organization.id },
+              include: { role: true },
+            },
+          },
+        })
+      : null;
+    if (!user || !(await bcrypt.compare(password, user.passwordHash))) {
       throw new UnauthorizedException('Credenciais inválidas');
     }
-    const sessionId = crypto.randomUUID();
+
+    const rawToken = crypto.randomBytes(32).toString('base64url');
+    const ttlHours = Number(process.env.SESSION_TTL_HOURS ?? 8);
+    const expiresAt = new Date(Date.now() + ttlHours * 60 * 60 * 1000);
+    await this.prisma.session.create({
+      data: {
+        tokenHash: hashSessionToken(rawToken),
+        userId: user.id,
+        activeTenantId: organization!.tenantId,
+        expiresAt,
+      },
+    });
+
     return {
-      sessionId,
+      sessionId: rawToken,
+      expiresAt,
       user: {
-        id: email.startsWith('admin') ? 'user-admin' : 'user-student',
-        email,
-        name: email.startsWith('admin') ? 'Admin Inside Sales' : 'Aluno Demonstração',
-        tenantId: tenantSlug || 'default',
-        roles: email.startsWith('admin') ? ['ADMIN'] : ['STUDENT'],
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        activeTenantId: organization!.tenantId,
+        roles: user.memberships.map((membership) => membership.role.code),
       },
     };
+  }
+
+  me(auth: AuthContext) {
+    return {
+      id: auth.userId,
+      name: auth.name,
+      email: auth.email,
+      roles: auth.roles,
+      memberships: auth.memberships.map(({ tenantId, role }) => ({ tenantId, role })),
+      activeTenantId: auth.activeTenantId,
+    };
+  }
+
+  async logout(rawToken: string | undefined) {
+    if (!rawToken) return;
+    await this.prisma.session.updateMany({
+      where: { tokenHash: hashSessionToken(rawToken), revokedAt: null },
+      data: { revokedAt: new Date() },
+    });
   }
 }
