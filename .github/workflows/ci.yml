@@ -7,6 +7,8 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: postgresql://inside:inside@localhost:5432/inside_sales?schema=public
     services:
       postgres:
         image: postgres:16
@@ -34,7 +36,5 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm validate
       - run: pnpm prisma:validate
-        env:
-          DATABASE_URL: postgresql://localhost:5432/inside_sales
       - run: pnpm test
       - run: pnpm build
