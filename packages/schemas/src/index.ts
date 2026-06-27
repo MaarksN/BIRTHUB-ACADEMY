@@ -39,7 +39,19 @@ export const automationFlowSchema = z.object({
   errorHandling: z.array(z.string().min(1)).min(1),
 });
 
+export const updateUserRoleSchema = z.object({
+  role: z.enum(['OWNER', 'ADMIN', 'INSTRUCTOR', 'EVALUATOR', 'STUDENT']),
+});
+
+export const reviewSubmissionSchema = z.object({
+  status: z.enum(['submitted', 'approved', 'rejected', 'pending_review']),
+  score: z.number().min(0).max(100).optional(),
+  note: z.string().optional(),
+});
+
 export type LoginInput = z.infer<typeof loginSchema>;
+export type UpdateUserRoleInput = z.infer<typeof updateUserRoleSchema>;
+export type ReviewSubmissionInput = z.infer<typeof reviewSubmissionSchema>;
 export type ProgressEventInput = z.infer<typeof progressEventSchema>;
 export type QuizStartInput = z.infer<typeof quizStartSchema>;
 export type AiLabRequestInput = z.infer<typeof aiLabRequestSchema>;

@@ -1,9 +1,13 @@
+'use client';
+
+import { getApiUrl } from '../../lib/api';
+
 export default function LoginPage() {
   return (
     <div className="page-shell reader">
       <p className="eyebrow">Acesso</p>
       <h1>Entrar na plataforma</h1>
-      <form className="login-form" action="http://localhost:3333/auth/login" method="post">
+      <form className="login-form" action={`${getApiUrl()}/auth/login`} method="post">
         <label htmlFor="email">E-mail</label>
         <input id="email" name="email" type="email" defaultValue="admin@inside.local" required />
         <label htmlFor="password">Senha</label>

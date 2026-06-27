@@ -11,11 +11,12 @@ import { AiService } from './ai/ai.service';
 import { AutomationController } from './automations/automation.controller';
 import { AutomationService } from './automations/automation.service';
 import { AdminController } from './admin/admin.controller';
+import { AdminService } from './admin/admin.service';
 import { PrismaService } from './common/prisma.service';
 
 @Module({
   imports: [ThrottlerModule.forRoot([{ ttl: 60_000, limit: 120 }])],
   controllers: [AuthController, LmsController, CertificateController, AiController, AutomationController, AdminController],
-  providers: [AuthService, LmsService, CertificateService, AiService, AutomationService, PrismaService],
+  providers: [AuthService, LmsService, CertificateService, AiService, AutomationService, AdminService, PrismaService],
 })
 export class AppModule {}
