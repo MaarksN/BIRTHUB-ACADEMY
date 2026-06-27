@@ -34,5 +34,7 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm validate
       - run: pnpm prisma:validate
+        env:
+          DATABASE_URL: postgresql://localhost:5432/inside_sales
       - run: pnpm test
       - run: pnpm build
