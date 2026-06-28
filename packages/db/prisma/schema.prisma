@@ -61,6 +61,10 @@ model User {
   quizAttempts  QuizAttempt[]
   submissions   Submission[]
   certificates  Certificate[]
+  excellenceLearningPlans LearningPlan[]
+  tutorInteractions TutorInteraction[]
+  courseQualityScores CourseQualityScore[]
+  supportTickets SupportTicket[]
 
   @@index([tenantId])
 }
@@ -79,6 +83,12 @@ model Organization {
   sessions    Session[]
   roles       Role[]
   courses     Course[]
+  excellenceItems ExcellenceItem[]
+  competencies Competency[]
+  excellenceLearningPlans LearningPlan[]
+  tutorInteractions TutorInteraction[]
+  courseQualityScores CourseQualityScore[]
+  supportTickets SupportTicket[]
 }
 
 model Session {
@@ -613,6 +623,127 @@ model AIInteractionLog {
   createdAt      DateTime @default(now())
 
   @@index([tenantId, userId])
+}
+
+model ExcellenceItem {
+  id                 String   @id
+  tenantId           String
+  number             Int
+  slug               String
+  title              String
+  category           String
+  priority           String
+  status             String   @default("planned")
+  outcomes           Json     @default("[]")
+  metrics            Json     @default("[]")
+  acceptanceCriteria Json     @default("[]")
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  organization       Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+
+  @@unique([tenantId, number])
+  @@unique([tenantId, slug])
+  @@index([tenantId, priority])
+  @@index([tenantId, category])
+}
+
+model Competency {
+  id            String   @id @default(cuid())
+  tenantId      String
+  code          String
+  courseId      String?
+  title         String
+  description   String
+  level         String
+  evidence      Json     @default("[]")
+  relatedCycles Json     @default("[]")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  organization  Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+
+  @@unique([tenantId, code])
+  @@index([tenantId, level])
+  @@index([tenantId, courseId])
+}
+
+model LearningPlan {
+  id                String   @id @default(cuid())
+  tenantId          String
+  userId            String
+  goal              String
+  weeklyHours       Int
+  currentLevel      String
+  targetDate        DateTime?
+  intensity         String
+  focusCompetencies Json     @default("[]")
+  milestones        Json     @default("[]")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  organization      Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  user              User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId, createdAt])
+  @@index([tenantId, currentLevel])
+}
+
+model TutorInteraction {
+  id             String   @id @default(cuid())
+  tenantId       String
+  userId         String
+  mode           String
+  cycleCode      String?
+  promptHash     String
+  redactedPrompt String
+  answer         String?
+  nextQuestions  Json     @default("[]")
+  riskFlags      Json     @default("[]")
+  consentToStore Boolean  @default(false)
+  provider       String   @default("local")
+  fallbackUsed   Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  organization   Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  user           User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId, createdAt])
+  @@index([tenantId, mode, createdAt])
+}
+
+model CourseQualityScore {
+  id              String   @id @default(cuid())
+  tenantId        String
+  courseId        String
+  userId          String
+  score           Int
+  status          String
+  details         Json     @default("{}")
+  recommendations Json     @default("[]")
+  createdAt       DateTime @default(now())
+  organization    Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, courseId, createdAt])
+  @@index([tenantId, userId, createdAt])
+  @@index([tenantId, score])
+}
+
+model SupportTicket {
+  id           String    @id @default(cuid())
+  tenantId     String
+  userId       String
+  category     String
+  subject      String
+  description  String
+  severity     String    @default("normal")
+  status       String    @default("open")
+  sla          String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  closedAt     DateTime?
+  organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  user         User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId, status])
+  @@index([tenantId, severity, createdAt])
 }
 
 model PromptTemplate {

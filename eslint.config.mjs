@@ -7,6 +7,8 @@ export default [
       '**/dist/**',
       '**/.next/**',
       '**/node_modules/**',
+      'playwright-report/**',
+      'test-results/**',
       'apps/web/next-env.d.ts',
       'data/**',
       'packages/content/src/generated/**',

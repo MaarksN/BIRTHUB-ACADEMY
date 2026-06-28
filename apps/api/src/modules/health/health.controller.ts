@@ -17,10 +17,12 @@ export class HealthController {
   async ready() {
     try {
       await this.prisma.$queryRaw`SELECT 1`;
-      return { status: 'ready', database: 'up', timestamp: new Date().toISOString() };
+      const excellenceCatalogItems = await this.prisma.excellenceItem.count({
+        where: { tenantId: process.env.PUBLIC_EXCELLENCE_TENANT_ID ?? process.env.PUBLIC_TENANT_ID ?? 'default' },
+      });
+      return { status: 'ready', database: 'up', excellenceCatalogItems, timestamp: new Date().toISOString() };
     } catch {
       throw new ServiceUnavailableException({ status: 'not_ready', database: 'down' });
     }
   }
 }
-

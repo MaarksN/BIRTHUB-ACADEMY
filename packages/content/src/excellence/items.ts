@@ -1,0 +1,179 @@
+import type { ExcellenceItem } from './types.js';
+
+export const excellenceItems = [
+  {
+    "number": "11",
+    "title": "Motor pedagógico de excelência",
+    "slug": "pedagogy-engine",
+    "category": "pedagogy",
+    "priority": "P1.5"
+  },
+  {
+    "number": "12",
+    "title": "Plataforma adaptativa de aprendizagem",
+    "slug": "adaptive-learning",
+    "category": "adaptive-learning",
+    "priority": "P1.5"
+  },
+  {
+    "number": "13",
+    "title": "Tutor de IA realmente educacional",
+    "slug": "pedagogical-ai-tutor",
+    "category": "ai-tutor",
+    "priority": "P1.5"
+  },
+  {
+    "number": "14",
+    "title": "Avaliação avançada e anticolagem",
+    "slug": "assessment-integrity",
+    "category": "assessment-integrity",
+    "priority": "P1.5"
+  },
+  {
+    "number": "15",
+    "title": "Experiência premium do aluno",
+    "slug": "premium-learner-experience",
+    "category": "learner-experience",
+    "priority": "P2"
+  },
+  {
+    "number": "16",
+    "title": "Comunidade forte e cohorts",
+    "slug": "community-cohorts",
+    "category": "community",
+    "priority": "P2"
+  },
+  {
+    "number": "17",
+    "title": "Sistema de mentoria e acompanhamento humano",
+    "slug": "mentorship-success",
+    "category": "mentorship",
+    "priority": "P2"
+  },
+  {
+    "number": "18",
+    "title": "Career center e empregabilidade",
+    "slug": "career-center",
+    "category": "career",
+    "priority": "P2"
+  },
+  {
+    "number": "19",
+    "title": "Portfólio público verificável",
+    "slug": "verified-portfolio",
+    "category": "credentials",
+    "priority": "P2"
+  },
+  {
+    "number": "20",
+    "title": "Credenciais digitais e badges",
+    "slug": "digital-badges",
+    "category": "credentials",
+    "priority": "P2"
+  },
+  {
+    "number": "21",
+    "title": "Acessibilidade nível sério",
+    "slug": "wcag-accessibility",
+    "category": "accessibility",
+    "priority": "P2"
+  },
+  {
+    "number": "22",
+    "title": "Mobile-first e PWA",
+    "slug": "mobile-pwa",
+    "category": "mobile",
+    "priority": "P2"
+  },
+  {
+    "number": "23",
+    "title": "Player educacional avançado",
+    "slug": "advanced-learning-player",
+    "category": "learner-experience",
+    "priority": "P2"
+  },
+  {
+    "number": "24",
+    "title": "Analytics acadêmico e BI executivo",
+    "slug": "academic-analytics",
+    "category": "analytics",
+    "priority": "P2"
+  },
+  {
+    "number": "25",
+    "title": "Sistema de qualidade de conteúdo",
+    "slug": "content-quality-system",
+    "category": "content-quality",
+    "priority": "P2"
+  },
+  {
+    "number": "26",
+    "title": "CMS acadêmico interno",
+    "slug": "academic-cms",
+    "category": "cms",
+    "priority": "P2"
+  },
+  {
+    "number": "27",
+    "title": "White-label e B2B",
+    "slug": "white-label-b2b",
+    "category": "b2b",
+    "priority": "P3"
+  },
+  {
+    "number": "28",
+    "title": "Integrações profissionais",
+    "slug": "professional-integrations",
+    "category": "integrations",
+    "priority": "P3"
+  },
+  {
+    "number": "29",
+    "title": "Suporte, atendimento e sucesso do aluno",
+    "slug": "student-success-support",
+    "category": "support",
+    "priority": "P2"
+  },
+  {
+    "number": "30",
+    "title": "Governança acadêmica e institucional",
+    "slug": "academic-governance",
+    "category": "governance",
+    "priority": "P2"
+  },
+  {
+    "number": "31",
+    "title": "Internacionalização",
+    "slug": "internationalization",
+    "category": "internationalization",
+    "priority": "P3"
+  },
+  {
+    "number": "32",
+    "title": "Segurança de nível escola grande",
+    "slug": "advanced-security",
+    "category": "security",
+    "priority": "P2"
+  },
+  {
+    "number": "33",
+    "title": "Operação comercial e growth",
+    "slug": "growth-engine",
+    "category": "growth",
+    "priority": "P3"
+  },
+  {
+    "number": "34",
+    "title": "Ranking de qualidade do curso",
+    "slug": "course-quality-score",
+    "category": "analytics",
+    "priority": "P2"
+  },
+  {
+    "number": "35",
+    "title": "Laboratórios práticos e simulações",
+    "slug": "practical-labs",
+    "category": "labs",
+    "priority": "P1.5"
+  }
+] satisfies ExcellenceItem[];

@@ -19,10 +19,23 @@ import { SubmissionController } from './submissions/submission.controller';
 import { SubmissionService } from './submissions/submission.service';
 import { StorageService } from './submissions/storage.service';
 import { HealthController } from './health/health.controller';
+import { ExcellenceModule } from './excellence/excellence.module';
 
 @Module({
-  imports: [ThrottlerModule.forRoot([{ ttl: 60_000, limit: 120 }])],
-  controllers: [AuthController, LmsController, CertificateController, AiController, AutomationController, AdminController, SubmissionController, HealthController],
+  imports: [
+    ThrottlerModule.forRoot([{ ttl: 60_000, limit: 120 }]),
+    ExcellenceModule,
+  ],
+  controllers: [
+    AuthController,
+    LmsController,
+    CertificateController,
+    AiController,
+    AutomationController,
+    AdminController,
+    SubmissionController,
+    HealthController,
+  ],
   providers: [
     AuthService,
     LmsService,
