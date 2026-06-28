@@ -8,3 +8,4 @@ data/exports/*.zip
 *.tsbuildinfo
 playwright-report
 test-results
+.codex/*.log

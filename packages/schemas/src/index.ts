@@ -70,3 +70,5 @@ export type QuizAnswerInput = z.infer<typeof quizAnswerSchema>;
 export type SubmissionInput = z.infer<typeof submissionSchema>;
 export type AiLabRequestInput = z.infer<typeof aiLabRequestSchema>;
 export type AutomationFlowInput = z.infer<typeof automationFlowSchema>;
+
+export * from './excellence';

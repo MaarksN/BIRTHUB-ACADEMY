@@ -11,3 +11,4 @@ export {
   normalizeForDuplicateCheck,
   validateAutomationFlow,
 } from './rules.js';
+export * from './excellence/index.js';
