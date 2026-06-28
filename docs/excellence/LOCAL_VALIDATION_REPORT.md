@@ -8,6 +8,7 @@
 - Branch: `codex/excelencia-35-overlay`
 - Commit base validado: `1da1814` (o commit final é o commit Git que contém este relatório)
 - Data: 2026-06-27T23:00:23-03:00
+- Revalidação Docker/E2E: 2026-06-27T23:21-03:00
 
 ## ZIP aplicado
 
@@ -35,7 +36,7 @@
 - Merge controlado em `apps/api/src/modules/app.module.ts` para preservar controllers/providers existentes e adicionar `ExcellenceModule`.
 - Merge controlado em `packages/schemas/src/index.ts` para exportar schemas de excelência sem remover exports existentes.
 - Merge controlado em `packages/content/src/index.ts` para exportar o pacote de excelência sem remover exports existentes.
-- Docker/E2E ficaram bloqueados por ambiente local: Docker Desktop daemon indisponível e Postgres/Redis não escutando em `localhost`.
+- Docker Desktop estava inicialmente parado; o serviço foi iniciado localmente e a stack foi recriada na branch correta do overlay.
 
 ## Correções realizadas
 
@@ -44,6 +45,7 @@
 - Adicionado fallback read-only dos GETs públicos de catálogo para `@inside/content` quando Prisma/DATABASE_URL não estiver disponível.
 - Mantida a exigência de sessão real e tenant derivado do `AuthContext` nos endpoints POST protegidos.
 - Ajustado seletor E2E da página para evitar strict-mode violation por texto duplicado.
+- Ajustado E2E de logout para aceitar `/login?next=%2F`, comportamento real do guard após sair da rota protegida.
 - Validados modelos Prisma, seed idempotente, auditoria, tutor local/redaction/consentimento e documentação de produção já presentes no worktree.
 
 ## Comandos executados
@@ -62,20 +64,23 @@
 | `pnpm typecheck` | Aprovado | Primeira tentativa falhou por `EPERM` em DLL do Prisma presa por processo Playwright/Nest órfão; após limpeza passou. |
 | `pnpm test` | Aprovado | Workspace com 17 testes passando. |
 | `pnpm build` | Aprovado | Build completo OK; Next gerou `/excelencia`. Aviso não bloqueante sobre plugin ESLint do Next. |
-| `docker compose -f infra/docker-compose.yml up -d` | Bloqueado | Docker daemon `dockerDesktopLinuxEngine` indisponível. |
-| `pnpm e2e -- tests/e2e/excellence.spec.ts` | Bloqueado | 3 passaram, 5 falharam por login/DB indisponível; o script repassou `--` literal e coletou também `auth-and-tenancy.spec.ts`. |
-| `pnpm exec playwright test tests/e2e/excellence.spec.ts --workers=1` | Bloqueado parcial | 3 passaram; 2 falharam porque login exige Postgres/seed local. |
+| `docker compose -f infra/docker-compose.yml up -d` | Aprovado após iniciar Docker Desktop | Primeira tentativa falhou com daemon parado; depois subiu Postgres, Redis, MinIO, API, Web e Worker. |
+| `docker compose -f infra/docker-compose.yml up -d --build --force-recreate` | Aprovado | Rebuild na branch `codex/excelencia-35-overlay`; imagem incluiu `/excelencia` e migration `202606270002_excellence_production_hardening`. |
+| Migration/seed via serviço `migrate` | Aprovado | 3 migrations encontradas; `202606270002_excellence_production_hardening` aplicada; seed pronto com 3 usuários, 7 módulos e 740 questões. |
+| `GET http://localhost:3333/ready` | Aprovado | `database: up` e `excellenceCatalogItems: 25`. |
+| `pnpm e2e` | Aprovado | 8 testes E2E passaram, incluindo login/logout, tenancy e fluxos autenticados de excelência. |
 
 ## Endpoints validados
 
 - `GET /excellence/items`: aprovado via E2E público.
-- `GET /excellence/roadmap`: aprovado indiretamente pela página `/excelencia`, que carrega via `Promise.all`.
+- `GET /excellence/roadmap`: aprovado via API e indiretamente pela página `/excelencia`, que carrega via `Promise.all`.
 - `GET /excellence/competencies`: aprovado indiretamente pela página `/excelencia`.
 - `GET /excellence/pillars`: aprovado indiretamente pela página `/excelencia`.
 - `POST /excellence/learning-plan`: protegido; sem sessão retornou 401 no E2E.
-- `POST /excellence/ai-tutor`: coberto em teste unitário; fluxo autenticado E2E bloqueado por Postgres local ausente.
-- `POST /excellence/quality-score`: coberto em teste unitário; fluxo autenticado E2E bloqueado por Postgres local ausente.
-- `POST /excellence/support-ticket`: coberto em teste unitário; fluxo autenticado E2E bloqueado por Postgres local ausente.
+- `POST /excellence/learning-plan`: aprovado com sessão; tenant e usuário derivados da sessão.
+- `POST /excellence/ai-tutor`: aprovado com sessão; tutor local respondeu e histórico persistiu.
+- `POST /excellence/quality-score`: aprovado com sessão; tenant isolado não pontua curso do tenant `default`.
+- `POST /excellence/support-ticket`: aprovado com sessão; ticket criado com status `open`.
 
 ## Resultado dos testes
 
@@ -84,29 +89,23 @@
 - Lint: aprovado no monorepo.
 - Build: aprovado no monorepo.
 - E2E público: página `/excelencia`, `GET /excellence/items` e POST protegido sem sessão passaram.
-- E2E autenticado: bloqueado por falta de Docker/Postgres/seed local.
+- E2E autenticado: aprovado, 8/8 testes passaram contra Docker/Postgres/Redis locais.
 
 ## Pendências
 
-- Iniciar Docker Desktop e subir `infra/docker-compose.yml`.
-- Criar `.env` local a partir de `.env.example`.
-- Rodar migrations/seed no Postgres local.
-- Reexecutar `pnpm exec playwright test tests/e2e/excellence.spec.ts --workers=1`.
-- Opcional: ajustar script `pnpm e2e -- tests/e2e/excellence.spec.ts`, pois o `--` literal faz o Playwright coletar specs extras.
+- Opcional: ajustar script/comando documentado para seleção de arquivo E2E, pois `pnpm e2e -- tests/e2e/excellence.spec.ts` repassa `--` literal ao Playwright; `pnpm e2e` completo passou.
+- Opcional: instalar OpenSSL na imagem Docker ou trocar a base para remover o warning do Prisma sobre detecção de libssl.
 
 ## Riscos
 
 - GETs públicos usam fallback read-only do catálogo versionado quando o banco está indisponível; mutações seguem exigindo sessão e banco.
-- E2E completo ainda precisa validar o caminho autenticado com infraestrutura real.
-- Docker indisponível impede afirmar validação local ponta a ponta.
+- Prisma em Docker emite warning de OpenSSL/libssl, mas migrations, seed, API e E2E passaram.
 
 ## Próximos passos
 
-- Subir Docker/Postgres/Redis localmente.
-- Executar migrations e seed.
-- Repetir E2E autenticado e registrar evidências.
 - Revisar a ergonomia do script `e2e` para aceitar arquivo específico sem coletar specs extras.
+- Melhorar imagem Docker para instalar OpenSSL explicitamente.
 
 ## Status final
 
-APROVADO COM RESSALVAS
+APROVADO

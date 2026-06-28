@@ -10,7 +10,7 @@ test('login, auth/me, dashboard and logout form a persistent session flow', asyn
   const me = await page.request.get('http://localhost:3333/auth/me');
   expect(me.ok()).toBeTruthy();
   await page.getByRole('button', { name: 'Sair' }).click();
-  await expect(page).toHaveURL('/login');
+  await expect(page).toHaveURL(/\/login(?:\?next=.*)?$/);
   expect((await page.request.get('http://localhost:3333/auth/me')).status()).toBe(401);
 });
 

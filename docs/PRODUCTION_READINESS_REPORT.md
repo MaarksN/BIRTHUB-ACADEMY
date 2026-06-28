@@ -2,9 +2,9 @@
 
 ## Status
 
-GO COM RESSALVAS.
+GO PARA MERGE/HOMOLOGAÇÃO.
 
-O código passou em build, typecheck, lint, testes unitários/workspace, validações de conteúdo e Prisma. Docker e E2E ficaram bloqueados por ambiente local: Docker Desktop/daemon não estava disponível e o Postgres local não estava ativo em `localhost:5432`.
+O código passou em build, typecheck, lint, testes unitários/workspace, validações de conteúdo, Prisma, Docker compose, migrations, seed e E2E autenticado completo. A stack local ficou ativa com Postgres, Redis, MinIO, API, Web e Worker.
 
 ## Escopo implementado
 
@@ -29,8 +29,9 @@ O código passou em build, typecheck, lint, testes unitários/workspace, valida�
 | `pnpm typecheck` | Aprovado | Monorepo completo OK. |
 | `pnpm test` | Aprovado | 17 testes passaram no workspace. |
 | `pnpm build` | Aprovado | Build completo OK após limpar cache `.next` inconsistente. |
-| Docker compose | Bloqueado por ambiente | Docker daemon `dockerDesktopLinuxEngine` indisponível. |
-| E2E Excellence | Bloqueado por ambiente | API não iniciou porque Postgres local não estava disponível em `localhost:5432`. |
+| Docker compose | Aprovado | Docker Desktop foi iniciado; `infra/docker-compose.yml` subiu serviços saudáveis. |
+| Migrations/seed Docker | Aprovado | Migration `202606270002_excellence_production_hardening` aplicada; seed concluiu com 3 usuários, 7 módulos e 740 questões. |
+| E2E completo | Aprovado | `pnpm e2e`: 8 testes passaram, incluindo auth, tenancy e fluxos autenticados de excelência. |
 
 ## Critério final
 
@@ -39,5 +40,9 @@ Não declarar produção pronta se build, typecheck, lint, testes, Prisma, multi
 ## Evidência de segurança e tenancy
 
 - Unit tests cobrem tenant/user derivados de `AuthContext`, auditoria em mutações, redaction/consentimento do tutor, item 11 e item 35.
-- E2E foi ampliado para sessão, endpoints protegidos e isolamento de tenant, mas a execução local ficou bloqueada por infraestrutura.
+- E2E validou login/logout, `auth/me`, bloqueio de admin para estudante, isolamento de tenant, POST protegido sem sessão e mutações autenticadas de excelência.
 - Documentação criada: `docs/API_CONTRACTS.md`, `docs/SECURITY_REVIEW.md`, `docs/ROLLBACK_PLAN.md` e `docs/excellence/PRODUCTION_IMPLEMENTATION.md`.
+
+## Ressalva Operacional
+
+- A imagem Docker emite warning do Prisma sobre detecção de OpenSSL/libssl. O warning não bloqueou generate, migrations, seed, API ou E2E, mas convém instalar OpenSSL explicitamente no Dockerfile ou trocar a imagem base antes de produção.
