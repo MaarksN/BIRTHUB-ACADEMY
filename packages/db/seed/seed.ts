@@ -1,5 +1,12 @@
 import { Prisma, PrismaClient, RoleCode } from '@prisma/client';
-import { automationTemplateData, courseData, promptTemplateData, questionData } from '@inside/content';
+import {
+  automationTemplateData,
+  courseData,
+  excellenceCompetencies,
+  excellenceItems,
+  promptTemplateData,
+  questionData,
+} from '@inside/content';
 import bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
@@ -236,12 +243,79 @@ async function seedTemplates() {
   }
 }
 
+async function seedExcellenceCatalog(tenantIdToSeed: string) {
+  for (const item of excellenceItems) {
+    const itemNumber = Number(item.number);
+    await prisma.excellenceItem.upsert({
+      where: { tenantId_number: { tenantId: tenantIdToSeed, number: itemNumber } },
+      update: {
+        slug: item.slug,
+        title: item.title,
+        category: item.category,
+        priority: item.priority,
+        status: item.priority === 'P1.5' ? 'implementation_ready' : 'planned',
+        outcomes: json([`Excelência operacional para ${item.title}`]),
+        metrics: json(['adoção', 'qualidade', 'segurança', 'impacto no aluno']),
+        acceptanceCriteria: json([
+          'tenant derivado da sessão quando autenticado',
+          'auditoria registrada em mutações protegidas',
+          'documentação e testes associados',
+        ]),
+      },
+      create: {
+        id: `${tenantIdToSeed}-excellence-${item.number}`,
+        tenantId: tenantIdToSeed,
+        number: itemNumber,
+        slug: item.slug,
+        title: item.title,
+        category: item.category,
+        priority: item.priority,
+        status: item.priority === 'P1.5' ? 'implementation_ready' : 'planned',
+        outcomes: json([`Excelência operacional para ${item.title}`]),
+        metrics: json(['adoção', 'qualidade', 'segurança', 'impacto no aluno']),
+        acceptanceCriteria: json([
+          'tenant derivado da sessão quando autenticado',
+          'auditoria registrada em mutações protegidas',
+          'documentação e testes associados',
+        ]),
+      },
+    });
+  }
+
+  for (const competency of excellenceCompetencies) {
+    await prisma.competency.upsert({
+      where: { tenantId_code: { tenantId: tenantIdToSeed, code: competency.id } },
+      update: {
+        courseId: courseData.id,
+        title: competency.title,
+        description: competency.description,
+        level: competency.level,
+        evidence: json(competency.evidence),
+        relatedCycles: json(competency.relatedCycles),
+      },
+      create: {
+        id: `${tenantIdToSeed}-competency-${competency.id}`,
+        tenantId: tenantIdToSeed,
+        code: competency.id,
+        courseId: courseData.id,
+        title: competency.title,
+        description: competency.description,
+        level: competency.level,
+        evidence: json(competency.evidence),
+        relatedCycles: json(competency.relatedCycles),
+      },
+    });
+  }
+}
+
 async function main() {
   await seedIdentity();
   await seedIsolationTenant();
   await seedCourse();
   await seedQuestions();
   await seedTemplates();
+  await seedExcellenceCatalog(tenantId);
+  await seedExcellenceCatalog('isolated');
   console.log(`Seed ready: 3 users, ${courseData.modules.length} modules, ${questionData.length} questions`);
 }
 

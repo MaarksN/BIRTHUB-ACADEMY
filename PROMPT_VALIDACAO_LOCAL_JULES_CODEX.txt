@@ -1,0 +1,163 @@
+# PROMPT PARA VALIDAR O OVERLAY DE EXCELÊNCIA NO AMBIENTE LOCAL
+
+Você é um agente sênior de QA, integração, TypeScript, NestJS, Next.js, Prisma, monorepo pnpm e segurança.
+
+Repositório local:
+
+```text
+documentos/Github/BIRTHUB-ACADEMY
+```
+
+Objetivo: validar o overlay `birthub_academy_excelencia_35_overlay.zip` aplicado na raiz do repositório, corrigir conflitos simples e confirmar se os arquivos dos itens 11 a 35 estão íntegros.
+
+## Regras
+
+1. Não apague arquivos úteis.
+2. Não reescreva a plataforma.
+3. Preserve a arquitetura monorepo.
+4. Corrija apenas conflitos reais encontrados.
+5. Não invente testes executados.
+6. Documente falhas com causa provável.
+7. Se algo falhar por ambiente, explique exatamente.
+
+## Passo 1 — Conferir aplicação
+
+Execute:
+
+```bash
+cd documentos/Github/BIRTHUB-ACADEMY
+git status
+pnpm tsx scripts/validate-excellence-pack.ts
+```
+
+Se `tsx` não estiver disponível globalmente, use o `pnpm exec tsx`.
+
+## Passo 2 — Validar build dos packages
+
+```bash
+pnpm --filter @inside/schemas build
+pnpm --filter @inside/content build
+```
+
+Se falhar, corrija imports, extensões `.js` em exports ESM, tipos e paths.
+
+## Passo 3 — Validar API
+
+```bash
+pnpm --filter @inside/api typecheck
+pnpm --filter @inside/api test
+```
+
+Validar que:
+
+- `ExcellenceModule` está importado no `AppModule`.
+- `/excellence/items` é público.
+- `/excellence/roadmap` é público.
+- endpoints POST exigem sessão.
+- schemas Zod compilam.
+- testes do `ExcellenceService` passam.
+
+## Passo 4 — Validar Web
+
+```bash
+pnpm --filter @inside/web typecheck
+pnpm --filter @inside/web test
+```
+
+Validar que:
+
+- `/excelencia` compila.
+- usa `apiFetch`.
+- exibe loading, erro e dados.
+- não quebra CSS existente.
+- não usa `any` desnecessário.
+
+## Passo 5 — Validar monorepo
+
+```bash
+pnpm validate
+pnpm lint
+pnpm typecheck
+pnpm test
+pnpm build
+```
+
+Para cada erro:
+
+- registrar comando;
+- erro;
+- causa provável;
+- arquivo afetado;
+- correção aplicada.
+
+## Passo 6 — Validar E2E opcional
+
+Subir infra se necessário:
+
+```bash
+docker compose -f infra/docker-compose.yml up -d
+pnpm e2e -- tests/e2e/excellence.spec.ts
+```
+
+Se Playwright ou browser falhar, documentar e não fingir sucesso.
+
+## Passo 7 — Validar manualmente
+
+Com API e Web rodando:
+
+```bash
+pnpm --filter @inside/api dev
+pnpm --filter @inside/web dev
+```
+
+Abrir:
+
+```text
+http://localhost:3000/excelencia
+http://localhost:3333/excellence/items
+http://localhost:3333/excellence/roadmap
+http://localhost:3333/excellence/competencies
+http://localhost:3333/excellence/pillars
+```
+
+## Resultado esperado
+
+Criar ou atualizar:
+
+```text
+docs/excellence/LOCAL_VALIDATION_REPORT.md
+```
+
+Com:
+
+```markdown
+# Relatório de Validação Local — Overlay Excelência 35
+
+## Ambiente
+
+## Data
+
+## Commit/branch
+
+## Arquivos aplicados
+
+## Comandos executados
+
+| Comando | Resultado | Observação |
+|---|---|---|
+
+## Correções aplicadas
+
+## Testes aprovados
+
+## Testes falhos
+
+## Riscos
+
+## Próximos passos
+
+## Status final
+APROVADO / APROVADO COM RESSALVAS / REPROVADO
+```
+
+Não declare `APROVADO` se `pnpm build` ou `pnpm typecheck` falharem por erro de código.
