@@ -1,6 +1,9 @@
 -- SQL opcional para persistência futura dos 35 itens de excelência.
 -- Não é aplicado automaticamente pelo overlay.
 -- Revise e converta para Prisma schema/migration quando o modelo principal estiver estabilizado.
+-- SUPERADO PARCIALMENTE em 2026-06-28 pela migration
+-- packages/db/prisma/migrations/202606280001_excellence_persistence/migration.sql.
+-- Mantido apenas como referência histórica do blueprint inicial.
 
 CREATE TABLE IF NOT EXISTS excellence_items (
   id TEXT PRIMARY KEY,

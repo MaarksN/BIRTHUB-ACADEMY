@@ -51,6 +51,11 @@ export class ExcellenceController {
     return this.excellenceService.createLearningPlan(learningPlanRequestSchema.parse(body), auth);
   }
 
+  @Get('learning-plans')
+  listLearningPlans(@CurrentAuth() auth: AuthContext) {
+    return this.excellenceService.listLearningPlans(auth);
+  }
+
   @Post('ai-tutor')
   createTutorResponse(@Body() body: unknown, @CurrentAuth() auth: AuthContext) {
     return this.excellenceService.createTutorResponse(aiTutorRequestSchema.parse(body), auth);
@@ -61,8 +66,18 @@ export class ExcellenceController {
     return this.excellenceService.calculateQualityScore(qualityScoreRequestSchema.parse(body), auth);
   }
 
+  @Get('quality-scores/:courseId')
+  listQualityScores(@Param('courseId') courseId: string, @CurrentAuth() auth: AuthContext) {
+    return this.excellenceService.listQualityScores(courseId, auth);
+  }
+
   @Post('support-ticket')
   createSupportTicket(@Body() body: unknown, @CurrentAuth() auth: AuthContext) {
     return this.excellenceService.createSupportTicket(supportTicketSchema.parse(body), auth);
+  }
+
+  @Get('support-tickets')
+  listSupportTickets(@CurrentAuth() auth: AuthContext) {
+    return this.excellenceService.listSupportTickets(auth);
   }
 }

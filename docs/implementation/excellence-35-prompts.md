@@ -8,7 +8,7 @@ GO COM RESSALVAS
 
 Foram lidos os 35 arquivos de prompt em `C:\Users\Marks\Downloads\Compressed\prompts_individuais_35_itens_birthub` e aplicada uma implementacao incremental no monorepo. A entrega expõe os 35 itens como catalogo tipado, API publica de roadmap, pagina web, schemas Zod, scripts de validacao, teste de servico e documentacao operacional.
 
-Os itens 01-10 mapeiam a fundacao core ja presente no codigo: autenticacao/sessoes, multi-tenant, modelo Prisma, matricula/progresso, quiz, submissoes, certificados, integracao web/API, IA/automacoes/worker e gate de producao. Os itens 11-35 entram como camada nova de excelencia com contratos, dados compartilhados, endpoints e documentacao.
+Os itens 01-10 mapeiam a fundacao core ja presente no codigo. A camada de excelencia agora persiste planos de aprendizagem, scores de qualidade e tickets, registra uso do tutor e cria auditoria server-side.
 
 ## Arquivos Alterados
 
@@ -19,7 +19,10 @@ Os itens 01-10 mapeiam a fundacao core ja presente no codigo: autenticacao/sesso
 - `packages/content/src/excellence/*`
 - `packages/schemas/src/index.ts`
 - `packages/schemas/src/excellence.ts`
+- `packages/db/prisma/schema.prisma`
+- `packages/db/prisma/migrations/202606280001_excellence_persistence/migration.sql`
 - `packages/db/prisma/excellence-models.sql`
+- `playwright.config.ts`
 - `scripts/validate-excellence-pack.ts`
 - `scripts/report-excellence-readiness.ts`
 - `tests/e2e/excellence.spec.ts`
@@ -33,13 +36,18 @@ Os itens 01-10 mapeiam a fundacao core ja presente no codigo: autenticacao/sesso
 - Criado catalogo compartilhado em `@inside/content` com os 35 itens e prioridades P0/P1/P1.5/P2/P3.
 - Criados schemas Zod em `@inside/schemas` para contratos da camada de excelencia.
 - Criada pagina `/excelencia` consumindo a API com loading, erro e agrupamento por prioridade.
+- Criados modelos Prisma `LearningPlan`, `CourseQualityScore` e `SupportTicket`.
+- Adicionadas leituras autenticadas de planos, tickets e historico de scores.
+- Playwright usa banco, portas e URLs configuraveis e valida a Web pelo build de producao.
 
 ## Seguranca e Multi-Tenant
 
 - Endpoints POST usam o guard global e recebem `AuthContext`.
 - Dados sensiveis como `userId` e `tenantId` sao derivados de `auth.userId` e `auth.activeTenantId`.
 - Endpoints publicos expõem apenas catalogo, roadmap, competencias e pilares.
-- Persistencia completa dos novos dominios 11-35 ainda depende de migration futura.
+- Planos e tickets sao filtrados pelo tenant e usuario autenticado.
+- Scores de qualidade exigem papel `OWNER`, `ADMIN` ou `INSTRUCTOR`.
+- Todas as mutacoes persistentes criam `AuditLog`.
 
 ## Testes Executados
 
@@ -54,18 +62,22 @@ Os itens 01-10 mapeiam a fundacao core ja presente no codigo: autenticacao/sesso
 | `pnpm build` | OK | Build completo aprovado. |
 | `pnpm prisma:validate` | FALHOU | `DATABASE_URL` ausente no ambiente. |
 | `$env:DATABASE_URL='postgresql://birthub:birthub@localhost:5432/birthub?schema=public'; pnpm prisma:validate` | OK | Schema Prisma valido; sem conexao real com banco. |
+| `docker compose -f infra/docker-compose.test.yml up -d` | OK | Infra de teste iniciada. |
+| `pnpm e2e` com `E2E_WEB_URL`, `E2E_API_URL` e `E2E_DATABASE_URL` | OK | 6 testes Playwright aprovados. |
+| Consulta PostgreSQL de evidência | OK | 4 planos, 4 tickets e 8 auditorias `excellence.*`. |
 
 ## Evidencias
 
 - `/excelencia` aparece no build Next.js como rota estatica.
-- Teste `ExcellenceService` valida listagem dos 35 itens e roadmap por 5 prioridades.
+- Teste `ExcellenceService` valida catalogo, transacoes, tenant e auditoria.
+- E2E cria e relê plano/ticket persistidos e bloqueia quality score para aluno.
 - Validador local confirma o pacote aplicado.
 
 ## Pendencias
 
-- Executar `pnpm e2e` com API/web/infra em execucao.
-- Transformar `packages/db/prisma/excellence-models.sql` em migrations Prisma quando o modelo for aprovado.
-- Persistir os fluxos de aprendizagem adaptativa, tutor, score e suporte em tabelas dedicadas.
+- Criar UI do aluno para planos e tickets persistidos.
+- Criar painel admin para historico de quality score.
+- Persistir os dominios restantes: badges, portfolio, comunidade, mentoria, CMS e laboratorios.
 
 ## Riscos
 
@@ -79,10 +91,11 @@ Os itens 01-10 mapeiam a fundacao core ja presente no codigo: autenticacao/sesso
 3. Acessar `http://localhost:3333/excellence/items`.
 4. Acessar `http://localhost:3333/excellence/roadmap`.
 
-Nesta execucao, as portas padrao estavam ocupadas. A validacao manual ficou disponivel em:
+Nesta execucao E2E, as portas padrao estavam ocupadas. Foram usadas:
 
-- Web: `http://localhost:3001/excelencia`
-- API: `http://localhost:3334/excellence/items`
+- Web: `http://localhost:3002`
+- API: `http://localhost:3335`
+- PostgreSQL: `localhost:55432`
 
 ## Rollback
 

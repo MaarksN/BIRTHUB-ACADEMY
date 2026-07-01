@@ -42,6 +42,13 @@ enum AttemptStatus {
   SUBMITTED
 }
 
+enum SupportTicketStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
 model User {
   id            String    @id @default(cuid())
   tenantId      String
@@ -61,6 +68,9 @@ model User {
   quizAttempts  QuizAttempt[]
   submissions   Submission[]
   certificates  Certificate[]
+  learningPlans LearningPlan[]
+  supportTickets SupportTicket[]
+  qualityScoresCreated CourseQualityScore[] @relation("QualityScoreCreator")
 
   @@index([tenantId])
 }
@@ -148,6 +158,7 @@ model Course {
   organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
   versions    CourseVersion[]
   challenges  FinalChallenge[]
+  qualityScores CourseQualityScore[]
 
   @@unique([tenantId, slug])
   @@index([tenantId])
@@ -613,6 +624,62 @@ model AIInteractionLog {
   createdAt      DateTime @default(now())
 
   @@index([tenantId, userId])
+}
+
+model LearningPlan {
+  id                String   @id @default(cuid())
+  tenantId          String
+  userId            String
+  goal              String
+  weeklyHours       Int
+  currentLevel      String
+  targetDate        DateTime?
+  focusCompetencies Json
+  intensity         String
+  milestones        Json
+  status            String   @default("active")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId, status])
+  @@index([tenantId, createdAt])
+}
+
+model CourseQualityScore {
+  id              String   @id @default(cuid())
+  tenantId        String
+  courseId        String
+  score           Int
+  status          String
+  details         Json
+  recommendations Json
+  createdById     String
+  createdAt       DateTime @default(now())
+  course          Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdBy       User     @relation("QualityScoreCreator", fields: [createdById], references: [id], onDelete: Restrict)
+
+  @@index([tenantId, courseId, createdAt])
+  @@index([tenantId, createdById])
+}
+
+model SupportTicket {
+  id          String              @id @default(cuid())
+  tenantId    String
+  userId      String
+  category    String
+  subject     String
+  description String
+  severity    String
+  status      SupportTicketStatus @default(OPEN)
+  slaDueAt    DateTime
+  resolvedAt  DateTime?
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  user        User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId, status, createdAt])
+  @@index([tenantId, status, slaDueAt])
 }
 
 model PromptTemplate {

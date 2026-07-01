@@ -66,12 +66,29 @@ GET /excellence/roadmap
 GET /excellence/competencies
 GET /excellence/pillars
 POST /excellence/learning-plan
+GET /excellence/learning-plans
 POST /excellence/ai-tutor
 POST /excellence/quality-score
+GET /excellence/quality-scores/:courseId
 POST /excellence/support-ticket
+GET /excellence/support-tickets
 ```
 
-Os endpoints GET são públicos para facilitar validação. Os endpoints POST usam sessão autenticada pelo guard global da API.
+Os endpoints GET de catálogo, roadmap, competências e pilares são públicos para facilitar validação. Os endpoints POST e as leituras de planos, scores e tickets usam sessão autenticada pelo guard global da API. Planos e tickets usam o usuário/tenant da sessão. Scores de qualidade exigem papel `OWNER`, `ADMIN` ou `INSTRUCTOR`.
+
+## Persistência Implementada
+
+- `LearningPlan`: histórico de planos por aluno/tenant; novo plano arquiva o plano ativo anterior.
+- `CourseQualityScore`: histórico de scores por curso/tenant e ator responsável.
+- `SupportTicket`: tickets por aluno/tenant com status e prazo de SLA.
+- `AIInteractionLog`: o tutor pedagógico registra hash, consentimento e conteúdo redigido.
+- `AuditLog`: todas as mutações da camada de excelência registram ação, entidade e ator.
+
+A migration está em:
+
+```text
+packages/db/prisma/migrations/202606280001_excellence_persistence/migration.sql
+```
 
 ## Como considerar pronto
 
@@ -87,8 +104,4 @@ Cada item deve ter:
 
 ## Próximo passo técnico
 
-Converter os blueprints estáticos para persistência real em Prisma, usando o arquivo opcional:
-
-```text
-packages/db/prisma/excellence-models.sql
-```
+Expandir persistência e UI operacional para trilhas adaptativas, badges, portfólio, comunidade, mentoria e laboratórios. O arquivo `packages/db/prisma/excellence-models.sql` permanece apenas como referência histórica do blueprint inicial.

@@ -13,3 +13,25 @@ Endpoints implementados:
 - `GET /automations/templates`: biblioteca de automações.
 - `POST /automations/simulate`: validação e simulação.
 - `GET /admin/overview`: visão administrativa.
+
+## Excelência
+
+Leituras públicas:
+
+- `GET /excellence/items`
+- `GET /excellence/items/:slugOrNumber`
+- `GET /excellence/roadmap`
+- `GET /excellence/competencies`
+- `GET /excellence/pillars`
+
+Fluxos autenticados e persistentes:
+
+- `POST /excellence/learning-plan`
+- `GET /excellence/learning-plans`
+- `POST /excellence/ai-tutor`
+- `POST /excellence/support-ticket`
+- `GET /excellence/support-tickets`
+- `POST /excellence/quality-score` para `OWNER`, `ADMIN` ou `INSTRUCTOR`
+- `GET /excellence/quality-scores/:courseId` para `OWNER`, `ADMIN` ou `INSTRUCTOR`
+
+Todos os fluxos autenticados derivam `tenantId` e `userId` da sessão no servidor.

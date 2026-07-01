@@ -3,7 +3,7 @@
 ## Ambiente
 
 - Data: 2026-06-28T00:30:44-03:00
-- Branch: `main`
+- Branch: `codex/excellence-persistence-e2e`
 - Workspace: `C:\Users\Marks\Documents\GitHub\BIRTHUB-ACADEMY`
 
 ## Status Final
@@ -12,7 +12,7 @@ APROVADO COM RESSALVAS
 
 ## Resumo
 
-Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap executavel de plataforma. A implementacao adiciona API, pagina web, schemas, dados compartilhados, scripts de validacao, testes e documentacao para os itens 01-35. Os itens 01-10 representam a fundacao ja existente/ativada da plataforma; os itens 11-35 entram como camada de excelencia com contratos e blueprints.
+Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap executavel de plataforma. A camada de excelencia agora persiste planos de aprendizagem, scores de qualidade e tickets de suporte, registra interacoes do tutor e cria auditoria tenant-aware.
 
 ## Arquivos Aplicados
 
@@ -21,6 +21,8 @@ Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap e
 - `packages/content/src/excellence/*`
 - `packages/schemas/src/excellence.ts`
 - `packages/db/prisma/excellence-models.sql`
+- `packages/db/prisma/migrations/202606280001_excellence_persistence/migration.sql`
+- `packages/db/prisma/schema.prisma`
 - `scripts/validate-excellence-pack.ts`
 - `scripts/report-excellence-readiness.ts`
 - `tests/e2e/excellence.spec.ts`
@@ -36,7 +38,7 @@ Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap e
 | `pnpm --filter @inside/content build` | OK | Catalogo compartilhado compilado. |
 | `pnpm --filter @inside/api typecheck` | OK | API compila com o modulo `ExcellenceModule`. |
 | `pnpm --filter @inside/web typecheck` | OK | Pagina `/excelencia` compila. |
-| `pnpm --filter @inside/api test` | OK | 3 arquivos, 9 testes. |
+| `pnpm --filter @inside/api test` | OK | 3 arquivos, 10 testes. |
 | `pnpm --filter @inside/web test` | OK | 1 arquivo, 1 teste. |
 | `pnpm validate` | OK | Conteudo, questoes e links internos validados. |
 | `pnpm lint` | OK | Zero warnings. |
@@ -45,6 +47,9 @@ Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap e
 | `pnpm build` | OK | API, worker, packages e web Next.js compilados. |
 | `pnpm prisma:validate` | FALHOU | `DATABASE_URL` ausente no ambiente. |
 | `$env:DATABASE_URL='postgresql://birthub:birthub@localhost:5432/birthub?schema=public'; pnpm prisma:validate` | OK | Schema Prisma valido; sem conexao real com banco. |
+| `docker compose -f infra/docker-compose.test.yml up -d` | OK | PostgreSQL e Redis de teste iniciados. |
+| `pnpm e2e` com portas `3002/3335` | OK | 6 testes Playwright aprovados. |
+| Consulta PostgreSQL de evidência | OK | 4 planos, 4 tickets e 8 auditorias `excellence.*`. |
 
 ## Correcoes Aplicadas
 
@@ -52,12 +57,14 @@ Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap e
 - A pagina `/excelencia` inicializa todos os grupos de prioridade para evitar bucket indefinido.
 - O catalogo foi ampliado de 25 itens complementares para os 35 prompts completos.
 - O tipo de `excellenceItems` foi ampliado para `ExcellenceItem[]`, evitando narrowing literal indevido em consumidores.
+- `LearningPlan`, `CourseQualityScore` e `SupportTicket` foram adicionados ao Prisma com FKs e indices.
+- Os POSTs de plano, tutor, score e ticket agora registram persistencia e auditoria.
+- O Playwright passou a aceitar URLs/banco configuraveis e inicia Web por build de producao.
 
 ## Ressalvas
 
-- `pnpm e2e` nao foi executado nesta rodada.
-- Os endpoints `POST /excellence/*` entregam regras deterministicas e tenant-aware, mas ainda nao persistem todos os artefatos dos itens 11-35 em Prisma.
-- O arquivo `packages/db/prisma/excellence-models.sql` documenta o modelo futuro opcional; nao foi aplicado como migration.
+- Os dominios comunidade, mentoria, badges, portfolio, CMS e laboratorios ainda precisam de persistencia dedicada.
+- O arquivo `packages/db/prisma/excellence-models.sql` permanece como referencia historica; a migration efetiva esta em `packages/db/prisma/migrations`.
 - Havia alteracao local previa em `infra/Dockerfile`; ela foi preservada e nao faz parte desta entrega.
 
 ## Como Validar Manualmente
@@ -67,10 +74,11 @@ Os 35 prompts individuais foram lidos e consolidados em codigo como um roadmap e
 3. Conferir `GET http://localhost:3333/excellence/items`.
 4. Conferir `GET http://localhost:3333/excellence/roadmap`.
 
-Nesta execucao local, as portas padrao `3000` e `3333` ja estavam ocupadas. Foram usadas as portas alternativas:
+Nesta execucao E2E, as portas padrao `3000` e `3333` estavam ocupadas. Foram usadas portas isoladas:
 
-- Web: `http://localhost:3001/excelencia`
-- API: `http://localhost:3334/excellence/items`
+- Web: `http://localhost:3002`
+- API: `http://localhost:3335`
+- Banco: `postgresql://localhost:55432/inside_sales_test`
 
 ## Rollback
 
