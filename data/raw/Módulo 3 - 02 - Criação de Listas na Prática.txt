@@ -1,0 +1,114 @@
+Título: Módulo 3 - 02 - Criação de Listas na Prática
+Arquivo original: C:\Users\Marks\Downloads\Video\MP3\Módulo 3 - 02 - Criação de Listas na Prática.mp3
+Idioma: Português
+Duração detectada: 00:09:59
+
+[00:00:03 - 00:00:10] Então, a gente está aqui dentro da aula de criação de listas, onde nós faremos uma lista do zero
+[00:00:10 - 00:00:12] usando o Sales Navigator e o Snopio.
+[00:00:12 - 00:00:13] Certo?
+[00:00:13 - 00:00:19] Aqui dentro do Sales Navigator vocês vão poder, se vocês criarem uma conta tem 30 dias
+[00:00:19 - 00:00:25] graças vocês podem navegar por aqui e eu quero pesquisar e fazer uma nova lista. Então quando
+[00:00:25 - 00:00:30] eu venho aqui em pesquisar, eu quero criar um filtro novo de leads e eu tenho tudo isso aqui para
+[00:00:30 - 00:00:36] colocar na minha lista, certo? Eu posso vir aqui pelo número de colaboradores da empresa, então eu
+[00:00:36 - 00:00:43] quero empresas que tenham acima de 50 colaboradores e eu adiciono todo o resto. Eu posso colocar
+[00:00:43 - 00:00:54] colocar localidade, eu quero empresas do Brasil. Posso colocar o setor, nesse caso eu não vou colocar,
+[00:00:54 - 00:01:02] vou deixar o setor aberto. O cargo atual eu quero profissionais que atuem com RH. Então vou
+[00:01:02 - 00:01:17] todos os cargos aqui que tiverem a palavra RH. Diretor, gerente, coordenador, recursos humanos,
+[00:01:17 - 00:01:30] funcionário do RH e até mesmo analista e assistente de RH aqui. Não vou adicionar aqui outra função,
+[00:01:30 - 00:01:37] cargo anterior dessa pessoa, quantos anos ela está na empresa atual, não vou colocar nada
+[00:01:37 - 00:01:44] disso mas poderia colocar e eu poderia colocar outras informações aqui. Nesse caso ele me
+[00:01:44 - 00:01:51] trouxe 99 mil resultados, talvez eu comece por uma outra localidade para filtrar um
+[00:01:51 - 00:01:56] um pouco mais, porque 99 mil pessoas vão levar muito tempo para fazer, né? Muito
+[00:01:56 - 00:02:00] tempo para prospectar. Então agora eu coloquei, ó, Santa Catarina e ele me
+[00:02:00 - 00:02:06] trouxe 4 mil resultados. 4 mil resultados já é um número legal.
+[00:02:06 - 00:02:12] Ousterando que cada SDR trabalhei com mais ou menos entre 50 contas por semana,
+[00:02:12 - 00:02:15] eu tenho conta aqui para trabalhar bastante tempo.
+[00:02:15 - 00:02:20] E nem todas essas contas a gente vai conseguir achar o e-mail dela
+[00:02:20 - 00:02:22] ou os dados lá no esnovio.
+[00:02:22 - 00:02:30] dessas contas aqui, eu acredito que entre 70 e 80% a gente consiga captar, mas vai ter uma quantidade
+[00:02:30 - 00:02:36] de nomes que nós não vamos conseguir captar. Então aqui o que eu faço? Ele trouxe vários
+[00:02:36 - 00:02:46] Camila, Flávia, Clara, Marcelo, Fabiane. Eu vou selecionar e aqui ele está me dando páginas de 25 contas, certo?
+[00:02:46 - 00:02:52] Aqui, se eu vier até aqui embaixo, ele está me dando quantas páginas tem, mas tem muitas páginas.
+[00:02:52 - 00:02:55] Cada uma delas me traz 25 leads novos.
+[00:02:55 - 00:03:00] e eu tenho as duas extensões do esnovio, o localizador de clientes e potencial
+[00:03:00 - 00:03:03] e localizador dos meios, certo?
+[00:03:03 - 00:03:07] Então eu vou clicar aqui em localizador clientes e potencial
+[00:03:07 - 00:03:13] e eu vou escolher qual a lista.
+[00:03:30 - 00:03:33] leva para essa lista ser criada, mas também mais dados ele consegue,
+[00:03:33 - 00:03:35] mais tempo ele tem para fazer essa coleta.
+[00:03:35 - 00:03:39] Então tem ali uma chance dele conseguir puxar mais dados.
+[00:03:39 - 00:03:42] Nesse caso eu vou deixar de 80 a 90 segundos.
+[00:03:42 - 00:03:48] e vou deixar a lista 1 até 1 mesmo, eu vou extrair esses 25 resultados aqui.
+[00:03:48 - 00:03:52] Vou dar um salvar, e agora ele começou a fazer.
+[00:03:52 - 00:03:56] Vocês estão vendo que ele está sugando os dados do Seios Navigator
+[00:03:56 - 00:04:00] e ele vai desse 24% até o 100%.
+[00:04:00 - 00:04:05] Lembrando que eu coloquei entre 80 e 90 segundos por lead.
+[00:04:05 - 00:04:09] Aqui é interessante que eu não posso fechar essa guia.
+[00:04:09 - 00:04:13] Não importa o que acontecer, se você tiver uma guia que está extraindo informações,
+[00:04:13 - 00:04:16] a gente não pode fechar essa Guia.
+[00:04:30 - 00:04:37] com uma lista chamada teste. Então aqui por enquanto ele não trouxe nenhum dado,
+[00:04:37 - 00:04:41] mas aqui ele vai trazendo alguns dados para dentro dessa lista.
+[00:04:41 - 00:04:46] Como por exemplo essa nova lista de clientes em potencial,
+[00:04:46 - 00:04:49] ele traz os e-mails, e aqui tem uma outra coisa bacana.
+[00:04:49 - 00:04:55] Ele traz e-maios em cinza, que não foi possível localizar o e-mail,
+[00:04:55 - 00:04:59] e-mail verdinhos, que são e-mais válidos etestados,
+[00:05:16 - 00:05:22] eu preciso dar uma pesquisada, mas o verde eu tenho certeza que sim. Então cada crédito que você usa é um desses
+[00:05:22 - 00:05:31] e-mails que a gente validou, certo? A nossa pesquisa já andou, ela já está em 40%, enquanto isso aqui no
+[00:05:31 - 00:05:38] nosso bonequinho, eu consigo saber quantos créditos eu ainda tenho. Eu comprei um pacote mensal de
+[00:05:38 - 00:05:46] mil créditos por mês e eu já usei 144 de uma lista que eu já extrai. Então eu extrai uma lista
+[00:05:46 - 00:05:53] tem os 644 créditos. Quando chegar no limite desses 1000 créditos, a IAMI é lista zero.
+[00:05:53 - 00:05:59] E aqui da ferramenta, num primeiro momento parece muito difícil, mas depois que você começa a fazer
+[00:05:59 - 00:06:05] os testes e buscar ali fazer as automações, fica bem fácil.
+[00:06:05 - 00:06:11] O próximo passo depois que a gente faz o teste é criar o nosso fluxo de cadência,
+[00:06:11 - 00:06:16] programar uma cadência de e-mails que vai ser disparado aqui por dentro.
+[00:06:16 - 00:06:22] Então aqui, eu ainda estou em 40%, ele vai finalizar, ele vai criar uma lista como essa.
+[00:06:22 - 00:06:30] Então de 25 leads, nota que 13 ele não conseguiu contato, 11 ele conseguiu, 2 mais ou menos e 2 não.
+[00:06:30 - 00:06:33] Então, desses 25 novos que a gente está trazendo para cá,
+[00:06:33 - 00:06:35] provavelmente vai acontecer a mesma coisa.
+[00:06:35 - 00:06:38] Ele não vai conseguir trazer os 25.
+[00:06:38 - 00:06:40] Isso porque nem todo mundo tem um e-mail válido
+[00:06:40 - 00:06:46] e porque o Snowvel, ele faz a busca em alguns locais,
+[00:06:46 - 00:06:48] inclusive alguns locais públicos.
+[00:06:48 - 00:06:51] Então se não tiver lá, o Google Minio não for 100% confiável,
+[00:06:51 - 00:06:55] ele também não vai trazer ali, certo?
+[00:06:55 - 00:06:58] Ah, é importante lembrar que vocês podem deixar essa extensão
+[00:06:58 - 00:07:01] diretamente dentro do Google Chrome
+[00:07:01 - 00:07:03] e dentro de qualquer site.
+[00:07:03 - 00:07:07] Eu abri o site e eu quero saber se esse site tem ou não um lindos impotencial.
+[00:07:07 - 00:07:13] Vou fazer um teste com vocês agora de qualquer...
+[00:07:13 - 00:07:16] Vamos pensar aqui num site qualquer.
+[00:07:16 - 00:07:19] Vou pegar uma empresa, vou pegar a própria Amitime,
+[00:07:19 - 00:07:21] que a gente já falou dela na lista
+[00:07:21 - 00:07:25] e ela é uma geradora de lista e também de...
+[00:07:25 - 00:07:29] geradora de lista, não, desculpa, é uma ferramenta de senhos engaiz-me, né?
+[00:07:29 - 00:07:35] A FimeeTime tem aqui o site e eu consigo ver, a Fimee Time tem menos de 50 colaboradores, se eu não me engano.
+[00:07:35 - 00:07:40] Eu consigo ver aqui se eles têm e-mails válidos.
+[00:07:40 - 00:07:44] E aí ele pesquisa, ele trouxe os e-maios das pessoas
+[00:07:44 - 00:07:47] e eu posso ver os 76 resultados.
+[00:07:47 - 00:07:51] E no caso eu não quero porque eu vou consumir 76 créditos.
+[00:07:51 - 00:07:57] Não necessariamente são 76 colaboradores, ele pode validar em meios como RH, rouba x e psonz,
+[00:07:57 - 00:08:01] pode validar e meios como financeiro, rouba, nesse caso financeiro,
+[00:08:01 - 00:08:03] rouba me time e etc.
+[00:08:03 - 00:08:12] Aqui chegamos aos 100%. Então a gente volta aqui para essa lista de testes, ela está atualizando.
+[00:08:12 - 00:08:20] E daqui, ó, foi um número bem parecido. 13 tem e meio e ele tá validado 5.
+[00:08:20 - 00:08:23] Não temos certeza da validação desse meio 3.
+[00:08:23 - 00:08:31] não está validado e cinco não foram encontrados. Então aqui eu trouxe empresas de Santa Catarina
+[00:08:31 - 00:08:36] que tinham mais de 50 colaboradores e eu trouxe a pessoa de RH, e aqui ele me traz,
+[00:08:36 - 00:08:39] menos de gestora de RH, gestora de EH,
+[00:08:39 - 00:08:44] né, é coordenadora, gerente,
+[00:08:44 - 00:08:46] né, gerente novamente assistente.
+[00:08:46 - 00:08:49] Então aqui eu começo a conseguir
+[00:08:49 - 00:08:54] tanto exportar essa lista e fazer um bom uso dessa lista
+[00:08:54 - 00:08:56] porque agora eu tenho ali
+[00:09:06 - 00:09:11] aqui criar um novo filtro, lembrando que eu peguei só 25 nomes dos 4 mil que tinham a disposição.
+[00:09:11 - 00:09:19] E ele também não me deixa excluir as empresas duplicadas, então muitas vezes eu pego o
+[00:09:19 - 00:09:23] assistente de RH, ali no caso apareceu a Malvi, né? Eu vou pegar o assistente de
+[00:09:23 - 00:09:28] RH, o coordenador de RH ou gerente de RH ou diretor de RH da mesma empresa. Malvi é uma
+[00:09:28 - 00:09:31] uma empresa bem grande, então provavelmente eles têm mais de um profissional.
+[00:09:31 - 00:09:37] E pode ser que eu pegue todos os profissionais, se eles terem 10 pessoas lá na área de regar
+[00:09:37 - 00:09:40] pode ser que o capte o e-mail das 10 pessoas.
+[00:09:40 - 00:09:43] Mas isso também é bom, porque a gente consegue mandar para mais de uma.
+[00:09:43 - 00:09:47] Às vezes o problema é que não está afetando uma pessoa, está afetado a outra.
+[00:09:47 - 00:09:49] Então, para a gente é bacana, certo?
+[00:09:49 - 00:09:53] Então a gente viu ali como que funciona, espero ter ajudado vocês.
+[00:09:53 - 00:09:58] E a gente fica à disposição também para tirar alguma dúvida caso vocês tenham nessa parte.

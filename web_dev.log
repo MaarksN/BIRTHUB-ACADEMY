@@ -1,0 +1,10 @@
+$ next dev --port 3000
+   ▲ Next.js 15.5.18
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
+
+ ✓ Starting...
+ ✓ Ready in 1943ms
+ ○ Compiling /curso/[cycleCode] ...
+ ✓ Compiled /curso/[cycleCode] in 5.4s (550 modules)
+ ✓ Compiled in 75ms

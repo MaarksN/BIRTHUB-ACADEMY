@@ -1,0 +1,33 @@
+{
+  "name": "plataforma-inside-sales-ia-automacao",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.5.3",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @inside/api --filter @inside/web dev",
+    "build": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm --filter @inside/db build && pnpm --filter @inside/worker build && pnpm --filter @inside/api build && pnpm --filter @inside/web build",
+    "typecheck": "pnpm --filter @inside/schemas build && pnpm --filter @inside/content build && pnpm --filter @inside/ui build && pnpm -r typecheck",
+    "lint": "eslint . --max-warnings=0",
+    "test": "pnpm -r test",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "validate:questions": "tsx scripts/validate-questions.ts",
+    "validate:links": "tsx scripts/validate-links.ts",
+    "validate": "pnpm --filter @inside/content build && pnpm validate:content && pnpm validate:questions && pnpm validate:links",
+    "generate:openapi": "tsx scripts/generate-openapi.ts",
+    "generate:seed": "tsx scripts/generate-seed.ts",
+    "prisma:validate": "pnpm --filter @inside/db prisma:validate"
+  },
+  "dependencies": {
+    "@inside/content": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.29.0",
+    "@types/node": "24.0.3",
+    "eslint": "9.29.0",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.34.1",
+    "vitest": "3.2.6"
+  }
+}

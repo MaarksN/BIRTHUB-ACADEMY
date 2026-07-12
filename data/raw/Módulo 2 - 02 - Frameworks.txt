@@ -1,0 +1,632 @@
+Título: Módulo 2 - 02 - Frameworks
+Arquivo original: C:\Users\Marks\Downloads\Video\MP3\Módulo 2 - 02 - Frameworks.mp3
+Idioma: Português
+Duração detectada: 00:24:52
+
+[00:00:05 - 00:00:08] Oi, sejam bem-vindos à plataforma da Seus Hunter.
+[00:00:08 - 00:00:11] Seus Hunter quer um hub de recrutamento,
+[00:00:11 - 00:00:13] educação e também comunidade de vendas.
+[00:00:13 - 00:00:17] E hoje a gente vai falar um pouquinho sobre frameworks.
+[00:00:17 - 00:00:20] Eu sou a Jessica Bosco e vou apoiar vocês aqui nessa aula.
+[00:00:20 - 00:00:22] Beleza? O que é framework?
+[00:00:22 - 00:00:25] Antes de a gente passar aqui para o restante da aula,
+[00:00:25 - 00:00:27] framework nada mais é do que um roteiro
+[00:00:27 - 00:00:30] ou algo que já foi criado e que vai facilitar a vida
+[00:00:30 - 00:00:34] porque essa pessoa vai seguir a mesma técnica.
+[00:00:34 - 00:00:37] Então são técnicas de abordagem, geralmente, que a gente usa
+[00:00:37 - 00:00:39] quando eu falo de framework em vendas, tá?
+[00:00:39 - 00:00:43] Frameworks também são utilizados em outras áreas da tecnologia,
+[00:00:43 - 00:00:45] mas em vendas é alguma técnica, né?
+[00:00:45 - 00:00:48] Ou algum roteiro que já foi utilizado e testado
+[00:00:48 - 00:00:51] e a gente vai utilizar ele aqui também. Beleza?
+[00:00:51 - 00:00:56] Hoje eu vou falar com vocês em específico de dois
+[00:00:56 - 00:00:58] e vou trazer dois menos conhecidos,
+[00:00:58 - 00:01:01] mas eu vou focar bastante para a gente falar sobre o SPIN,
+[00:01:01 - 00:01:05] que é um dos mais usados na venda consultiva,
+[00:01:05 - 00:01:08] e na venda SaaS, e no mercado de tecnologia.
+[00:01:08 - 00:01:11] Então acho que vale a pena a gente aprofundar um pouquinho mais no SPIN.
+[00:01:11 - 00:01:16] Beleza? Então olha, quando a gente está falando de framework,
+[00:01:16 - 00:01:19] de roteiro, a primeira coisa que a gente precisa
+[00:01:19 - 00:01:22] é entender quem é o nosso cliente ideal,
+[00:01:22 - 00:01:24] quem é o cliente que tem mais fit,
+[00:01:24 - 00:01:28] ou seja, que ele dá mais meti com o nosso produto.
+[00:01:28 - 00:01:31] E aí a partir disso a gente vai conhecer os frameworks
+[00:01:31 - 00:01:33] e saber como é que a gente conduz então essa conversa.
+[00:01:33 - 00:01:39] De acordo com isso, cada nicho, cada segmento,
+[00:01:39 - 00:01:45] ele vai se adaptar melhor a um framework de vendas, certo?
+[00:01:45 - 00:01:49] Mas é diferente se vocês vendem para B2B,
+[00:01:49 - 00:01:52] business to business, ou seja, de empresa para empresa,
+[00:01:52 - 00:01:56] BTC, business to customer, que é empresa para cliente final,
+[00:01:56 - 00:01:58] direto para o consumidor final,
+[00:01:58 - 00:02:04] ou business to government, que é a empresa direto para o governo,
+[00:02:04 - 00:02:07] a gente está falando de 8 to 8, que é human to human,
+[00:02:07 - 00:02:10] que é transferência de emoções, humanos para humanos.
+[00:02:10 - 00:02:13] Então a gente está aqui falando que a gente vende de pessoa para pessoa.
+[00:02:13 - 00:02:17] E diferente se é de empresa para empresa, de CNPJ para CNPJ,
+[00:02:17 - 00:02:20] quem vai negociá-la na frente é um CPF.
+[00:02:20 - 00:02:22] Então é importante a gente saber também
+[00:02:22 - 00:02:24] que essa transferência de emoções
+[00:02:24 - 00:02:27] ela vai conduzir essa venda que vocês estão fazendo.
+[00:02:27 - 00:02:29] Então como que o nosso cliente se comporta,
+[00:02:29 - 00:02:31] o que ele está sentindo em cada uma dessas fases,
+[00:02:31 - 00:02:34] isso vai ser muito importante para a gente ali, certo?
+[00:02:34 - 00:02:38] Os frameworks mais conhecidos e utilizados em pré-vendas,
+[00:02:38 - 00:02:42] e eu diria que em vendas também hoje são o SPIN,
+[00:02:42 - 00:02:46] que a gente vai trazer e vai falar bastante sobre ele, o BUNT,
+[00:02:46 - 00:02:50] o GPCT, BA, ICI, que é uma sopa de letrinhas
+[00:02:50 - 00:02:55] que traz um framework muito utilizado que era o GPCT,
+[00:02:55 - 00:02:58] e eles voltaram mais quatro letrinhas lá no final, certo?
+[00:02:58 - 00:03:02] Mas a gente vai falar hoje aqui do SPIN e do BUNT, beleza?
+[00:03:02 - 00:03:10] Em geral, todos os nossos frameworks vão ter exatamente esse contexto,
+[00:03:10 - 00:03:14] ou esse objetivo, que é entender o contexto da empresa,
+[00:03:14 - 00:03:16] quais são os desafios dela,
+[00:03:16 - 00:03:19] quais são as situações que ela enfrenta hoje,
+[00:03:19 - 00:03:23] o por que ela está passando, em que situação que ela se encontra,
+[00:03:23 - 00:03:25] se ela tem dinheiro.
+[00:03:25 - 00:03:26] Então, ela tem dinheiro para investir,
+[00:03:26 - 00:03:28] ela não tem como é que está o caixa dessa empresa,
+[00:03:28 - 00:03:31] os processos de decisão, o tempo de implementação,
+[00:03:31 - 00:03:34] enquanto o tempo a eu espero é ter aquele problema resolvido,
+[00:03:34 - 00:03:39] ou enquanto o tempo a gente pode voltar a falar sobre isso,
+[00:03:39 - 00:03:41] eu vou me mostrar consultivo,
+[00:03:41 - 00:03:44] então o vendedor vai fazer isso com consultividade,
+[00:03:44 - 00:03:49] eu vou construir confiança com esse lead também.
+[00:03:50 - 00:03:54] E o que precisa ser validado para o lead converter?
+[00:03:54 - 00:03:58] O sal, gente, nada mais é que uma sigla para sales accepta leads,
+[00:03:58 - 00:04:01] ou seja, é um lead que vai aceito pelo time de vendas,
+[00:04:01 - 00:04:04] o que significa que ele é um lead qualificado,
+[00:04:04 - 00:04:07] nós acabamos de qualificar esse lead em uma oportunidade.
+[00:04:07 - 00:04:09] O que a gente precisa para validar?
+[00:04:09 - 00:04:11] Então, quando a gente está falando de BUNT,
+[00:04:11 - 00:04:15] significa que eu preciso validar essas quatro palavrinhas,
+[00:04:15 - 00:04:17] budget, authority needs and timing.
+[00:04:18 - 00:04:18] O que é isso?
+[00:04:18 - 00:04:20] Budget, qual orçamento?
+[00:04:20 - 00:04:23] Eu não vou chegar para esse vendedor,
+[00:04:23 - 00:04:25] desculpa para esse contrador,
+[00:04:25 - 00:04:26] para esse lead, e perguntar,
+[00:04:26 - 00:04:29] Flana, minha solução aqui custa 5 mil,
+[00:04:29 - 00:04:30] você tem 5 mil?
+[00:04:30 - 00:04:33] Tem outras maneiras de eu perguntar para essa pessoa
+[00:04:33 - 00:04:35] se ela tem esse dinheiro disponível,
+[00:04:35 - 00:04:37] ou como anda o orçamento dela.
+[00:04:37 - 00:04:40] Mas a primeira maneira não é essa,
+[00:04:40 - 00:04:42] de perguntar se ele tem aquele valor.
+[00:04:42 - 00:04:43] Então eu descobri,
+[00:04:43 - 00:04:46] Flana, quais as ferramentas vocês usam aí?
+[00:04:46 - 00:04:48] Se ele usa top performer,
+[00:04:48 - 00:04:50] mais cara do segmento,
+[00:04:50 - 00:04:52] significa que ele tem grana.
+[00:04:52 - 00:04:54] Se ele recebeu investimento recentemente,
+[00:04:54 - 00:04:55] eu já não preciso fazer essa pergunta,
+[00:04:55 - 00:04:56] porque eu sei que ele tem dinheiro,
+[00:04:56 - 00:04:58] o dinheiro não é problema.
+[00:04:59 - 00:05:02] Depois que eu validei o orçamento,
+[00:05:02 - 00:05:04] e eu validei que realmente ele vai ter dinheiro
+[00:05:04 - 00:05:05] para a gente fazer isso,
+[00:05:05 - 00:05:07] eu preciso descobrir se essa pessoa com quem eu estou falando
+[00:05:07 - 00:05:10] é a pessoa que tem o poder de decisão,
+[00:05:10 - 00:05:14] ou se ela está dentro dessa jornada do poder de decisão.
+[00:05:14 - 00:05:16] Por que pode ser que ela seja uma analista?
+[00:05:16 - 00:05:20] Pode ser que ela seja uma analista que tem influência,
+[00:05:20 - 00:05:21] mas pode ser que ela seja uma analista
+[00:05:21 - 00:05:23] que não vai poder decidir nada.
+[00:05:23 - 00:05:25] Está vendo? Tem diferença, né?
+[00:05:25 - 00:05:28] Então vou dar um outro exemplo aqui.
+[00:05:28 - 00:05:31] Às vezes a gente tem diretores de venda
+[00:05:31 - 00:05:35] que são super capazes de assinar sozinhos.
+[00:05:35 - 00:05:37] Outras vezes a gente tem um diretor de vendas
+[00:05:37 - 00:05:41] em que quando ele vai decidir sobre uma ferramenta,
+[00:05:41 - 00:05:43] tem que passar por um comitê de compra
+[00:05:43 - 00:05:44] e aí ele já não decide sozinho.
+[00:05:44 - 00:05:46] Então não adianta ser o diretor.
+[00:05:46 - 00:05:49] Ele não tem poder de decidir aquilo sozinho,
+[00:05:49 - 00:05:51] mesmo ele sendo um diretor.
+[00:05:51 - 00:05:52] Em outros casos a gente tem um gerente
+[00:05:52 - 00:05:54] que às vezes ele tem um orçamento da área
+[00:05:54 - 00:05:56] e ele pode decidir sozinho.
+[00:05:56 - 00:05:58] Então se a gente seguir só pelo cargo,
+[00:05:58 - 00:06:01] eu não tenho certeza que aquela pessoa é uma autoridade
+[00:06:01 - 00:06:03] e que ela é o decisor.
+[00:06:03 - 00:06:05] Então eu preciso confirmar isso.
+[00:06:05 - 00:06:07] A necessidade, né?
+[00:06:07 - 00:06:08] Quais as dores que ele tem,
+[00:06:08 - 00:06:12] quais as necessidades que ele tem,
+[00:06:12 - 00:06:14] por que ele está procurando isso agora
+[00:06:14 - 00:06:16] ou por que eu falando sobre escolha agora
+[00:06:16 - 00:06:17] vai ser interessante?
+[00:06:17 - 00:06:19] Isso vai fazer sentido.
+[00:06:19 - 00:06:20] E enquanto o tempo que ele precisa
+[00:06:20 - 00:06:21] está com isso resolvido.
+[00:06:21 - 00:06:24] Então o tempo vai estar muito relacionado
+[00:06:24 - 00:06:27] com o nível de prioridade que isso tem na vida dele.
+[00:06:27 - 00:06:35] Eu só vou conseguir aumentar esse nível de prioridade
+[00:06:35 - 00:06:37] se eu trouxer uma implicação
+[00:06:37 - 00:06:41] ou se eu fizer com que aquilo vire a algum gente.
+[00:06:41 - 00:06:42] Então eu trago ali uma situação,
+[00:06:42 - 00:06:45] eu mostro para ele que aquilo sim é algo urgente
+[00:06:45 - 00:06:47] e aí eu posso reverter isso
+[00:06:47 - 00:06:49] em uma coisa que a gente levar um ano para implantar.
+[00:06:49 - 00:06:51] De repente agora a gente já vai implantar isso
+[00:06:51 - 00:06:53] no mês que vem, certo?
+[00:06:53 - 00:06:55] Esse framework,
+[00:06:55 - 00:06:58] ele não tem preocupação nenhuma de educar esse lead.
+[00:06:58 - 00:07:00] Ele simplesmente existe
+[00:07:00 - 00:07:02] para a gente validar esses pontos
+[00:07:02 - 00:07:04] e seguir para frente ou não.
+[00:07:04 - 00:07:06] Então se ele é uma autoridade, segue para frente.
+[00:07:06 - 00:07:08] Se ele não é, eu não vou passar para o vendedor.
+[00:07:08 - 00:07:10] Ele tem dinheiro, passa para o vendedor.
+[00:07:10 - 00:07:12] Não tem, não vou passar.
+[00:07:12 - 00:07:14] Ele tem necessidades, passa para o vendedor.
+[00:07:14 - 00:07:16] Ele não tem, não passa.
+[00:07:16 - 00:07:18] Ou seja, é mais ou menos isso.
+[00:07:18 - 00:07:20] É para decidir se ele vai para frente
+[00:07:20 - 00:07:22] para o próximo passo ou não, certo?
+[00:07:24 - 00:07:27] Tem dois outros métodos que são um pouco menos conhecidos,
+[00:07:27 - 00:07:31] mas que para prevendas faz muito sentido, tá?
+[00:07:31 - 00:07:35] Um deles é o call e o outro é o talker.
+[00:07:35 - 00:07:40] Esse call é de uma VP dos Estados Unidos, a Sherry,
+[00:07:40 - 00:07:42] e ele fala de quatro passos, né?
+[00:07:42 - 00:07:45] O primeiro é conectar.
+[00:07:45 - 00:07:47] Então eu vou me conectar com o mano
+[00:07:47 - 00:07:49] que está do outro lado da linha.
+[00:07:49 - 00:07:51] Eu vou ter empatia por ele
+[00:07:51 - 00:07:53] e a gente vai criar essa conexão.
+[00:07:53 - 00:07:56] Depois vem o ask, ou seja, eu faço perguntas.
+[00:07:56 - 00:07:58] E aqui, gente, não é qualquer pergunta.
+[00:07:58 - 00:08:00] Eu vou fazer perguntas inteligentes.
+[00:08:00 - 00:08:04] Então perguntas que provoquem, eu vou ser muito curioso.
+[00:08:04 - 00:08:05] Ele vai falar uma coisa,
+[00:08:05 - 00:08:07] eu vou engatar com uma outra pergunta
+[00:08:07 - 00:08:08] que faça sentido naquilo.
+[00:08:08 - 00:08:10] Não como se eu estivesse fazendo um roteiro de pergunta
+[00:08:10 - 00:08:14] tipo o pesquisador do IBGE.
+[00:08:14 - 00:08:16] Não, não é nesse sentido.
+[00:08:16 - 00:08:18] Eu preciso fazer perguntas inteligentes.
+[00:08:18 - 00:08:20] Depois vem o listen que eu vou escutar.
+[00:08:20 - 00:08:23] Literalmente é escutativa.
+[00:08:23 - 00:08:26] Se hoje você tem dificuldade de fazer essa escutativa,
+[00:08:26 - 00:08:27] saiba que ela é bem treinável.
+[00:08:27 - 00:08:30] Então é possível que você treine essa escutativa, tá?
+[00:08:30 - 00:08:33] Eu vou realmente ler as emoções daquela pessoa.
+[00:08:33 - 00:08:34] Eu vou escutar o que ela está falando,
+[00:08:34 - 00:08:36] vou falar, meu Deus, é isso mesmo.
+[00:08:36 - 00:08:37] Que legal.
+[00:08:37 - 00:08:39] Eu estou conseguindo me conectar com ela.
+[00:08:39 - 00:08:41] E depois eu vou conectar sem informação.
+[00:08:41 - 00:08:46] Então eu vou usar nesse caso da Col.
+[00:08:46 - 00:08:47] É legal que você use um caderno.
+[00:08:47 - 00:08:49] Porque você vai anotando as coisas,
+[00:08:49 - 00:08:51] depois você volta nessas anotações.
+[00:08:51 - 00:08:52] Então, Fulano lá falou uma informação,
+[00:08:52 - 00:08:55] você anotou aqui, depois você volta nessa informação
+[00:08:55 - 00:08:58] e você consegue conectar isso, certo?
+[00:08:58 - 00:09:01] E aí você vai conectar com a sua solução.
+[00:09:01 - 00:09:02] Então olha, Fulano, puxa,
+[00:09:02 - 00:09:05] você me falou aí que vocês têm hoje 40 colaboradores
+[00:09:05 - 00:09:07] e que você tem essa dificuldade.
+[00:09:07 - 00:09:11] Até acho interessante você ter me contado isso,
+[00:09:11 - 00:09:13] porque hoje a gente resolve essa dor exatamente desse lead,
+[00:09:13 - 00:09:15] assim, dessa maneira.
+[00:09:15 - 00:09:17] E você conecta com o que vocês fazem, sabe?
+[00:09:17 - 00:09:20] Dá esse link, exatamente esse link ali.
+[00:09:20 - 00:09:22] Esse método ele é bem bacana
+[00:09:22 - 00:09:26] para montar um roteiro para o pré-vendas, tá?
+[00:09:26 - 00:09:29] Ele funciona muito como um roteiro.
+[00:09:29 - 00:09:35] O outro método é um método da Winby Design.
+[00:09:35 - 00:09:38] É uma consultoria também,
+[00:09:38 - 00:09:40] que aqui no Brasil já faz, acho, uns 5 anos.
+[00:09:40 - 00:09:43] E eles trazem o método do talker.
+[00:09:43 - 00:09:45] Então ele vai ter tom de voz,
+[00:09:45 - 00:09:46] ele vai ter perguntas,
+[00:09:46 - 00:09:48] ele vai ter escutativa de novo,
+[00:09:48 - 00:09:51] ele vai ter anotações, empatia e repetição.
+[00:09:51 - 00:09:52] Como é que a gente vai fazer isso?
+[00:09:52 - 00:09:54] Opa, deixa eu voltar aqui.
+[00:09:54 - 00:09:56] Então no tom de voz,
+[00:09:56 - 00:09:58] começar com um tom de voz muito firme,
+[00:09:58 - 00:10:03] ou bom, aquele tom de voz que a pessoa que mostra,
+[00:10:03 - 00:10:04] para a pessoa que você entende daquilo,
+[00:10:04 - 00:10:06] você é especialista naquilo,
+[00:10:06 - 00:10:09] e que ela está falando com alguém
+[00:10:09 - 00:10:11] que dá vontade de conversar mesmo, né?
+[00:10:11 - 00:10:13] Depois você vai para a parte de perguntas,
+[00:10:13 - 00:10:15] de novo, perguntas inteligentes,
+[00:10:15 - 00:10:17] perguntas curiosas e perguntas...
+[00:10:17 - 00:10:19] Você não vai perguntar para a pessoa
+[00:10:19 - 00:10:20] a informação que está na cara do site,
+[00:10:20 - 00:10:22] por exemplo, aí vocês são de qual cidade?
+[00:10:22 - 00:10:24] Se eu estou ligando com o DDD 11,
+[00:10:24 - 00:10:26] não vai fazer sentido perguntar
+[00:10:26 - 00:10:28] de qual cidade a empresa é.
+[00:10:28 - 00:10:30] Posso perguntar, cara,
+[00:10:30 - 00:10:31] eu vi que a empresa é de São Paulo,
+[00:10:31 - 00:10:33] mas se está em qual cidade?
+[00:10:33 - 00:10:34] Estão em São Paulo mesmo?
+[00:10:34 - 00:10:36] Vocês estão trabalhando remoto?
+[00:10:36 - 00:10:39] Aí eu transformei numa pergunta inteligente.
+[00:10:39 - 00:10:41] De novo, explotativa,
+[00:10:41 - 00:10:42] que é treinável, sim.
+[00:10:42 - 00:10:45] Então se vocês não conseguiram
+[00:10:45 - 00:10:47] aplicar a explotativa da para treinar,
+[00:10:47 - 00:10:49] vai fazer as anotações,
+[00:10:49 - 00:10:51] a Unified Zen fala muito sobre isso,
+[00:10:51 - 00:10:52] que quando a gente anota,
+[00:10:52 - 00:10:55] a gente consegue colocar um símbolo específico
+[00:10:55 - 00:10:56] para uma anotação,
+[00:10:56 - 00:10:57] a gente consegue circular,
+[00:10:57 - 00:10:58] a gente consegue voltar na pergunta,
+[00:10:58 - 00:11:00] então tem muito disso.
+[00:11:00 - 00:11:03] A gente vai gerar uma empatia
+[00:11:03 - 00:11:05] pelo problema que outra pessoa está passando,
+[00:11:05 - 00:11:06] então a pessoa vai falar uma coisa,
+[00:11:06 - 00:11:08] eu não vou rir da cara dela,
+[00:11:08 - 00:11:09] não vou rir das escolhas dela,
+[00:11:09 - 00:11:13] ou eu não vou julgar as escolhas que ela fez até ali.
+[00:11:13 - 00:11:14] Eu estou ali para a partir de agora,
+[00:11:14 - 00:11:17] a gente resolver o problema de uma outra maneira.
+[00:11:17 - 00:11:19] Mas do jeito que ela fazia,
+[00:11:19 - 00:11:20] no momento na cabeça dela,
+[00:11:20 - 00:11:22] era a melhor maneira que ela tinha.
+[00:11:22 - 00:11:23] Então não faz sentido
+[00:11:23 - 00:11:27] eu trazer alguma informação ali.
+[00:11:27 - 00:11:28] E eu vou repetir.
+[00:11:28 - 00:11:30] Então eu vou chegar no final e eu vou repetir.
+[00:11:30 - 00:11:31] Oxa, João, que legal.
+[00:11:31 - 00:11:33] Então hoje vocês fazem isso,
+[00:11:33 - 00:11:35] dessa maneira a empresa funciona assim.
+[00:11:35 - 00:11:40] Eu vou repetir as informações de novo,
+[00:11:40 - 00:11:41] eu vou fazer o mesmo,
+[00:11:41 - 00:11:43] do método da Sherry aqui.
+[00:11:43 - 00:11:46] Eu vou linkar com que a minha solução tenha.
+[00:11:46 - 00:11:48] Quando eu finalizei, empatizei,
+[00:11:48 - 00:11:50] aí sim eu vou falar da minha solução,
+[00:11:50 - 00:11:51] aí eu vou falar sobre
+[00:11:51 - 00:11:54] por que eu entrei em contato exatamente,
+[00:11:54 - 00:11:56] por que eu quero marcar uma cópia com essa pessoa,
+[00:11:56 - 00:11:58] e vou levar ela para esse próximo passo,
+[00:11:58 - 00:11:59] que é marcar reunião.
+[00:11:59 - 00:12:00] Certo?
+[00:12:00 - 00:12:02] Esse método também.
+[00:12:02 - 00:12:03] Ele é ótimo para criar roteiro,
+[00:12:03 - 00:12:05] o prevedas pode pegar ele
+[00:12:05 - 00:12:07] e já fazer várias perguntas,
+[00:12:07 - 00:12:10] de acordo com cada uma dessas letras,
+[00:12:10 - 00:12:11] e funciona muito bem.
+[00:12:11 - 00:12:12] E dá para também espaçar.
+[00:12:12 - 00:12:14] Puxa, já fiz várias perguntas.
+[00:12:14 - 00:12:17] Agora é um momento de eu voltar aqui,
+[00:12:17 - 00:12:18] de eu gerar essa empatia,
+[00:12:18 - 00:12:19] de eu fazer a repetição,
+[00:12:19 - 00:12:21] para não ficar uma cól muito longa,
+[00:12:21 - 00:12:22] uma ligação de prevedas de 20 minutos,
+[00:12:22 - 00:12:24] mas também não ficar muito curta,
+[00:12:24 - 00:12:25] porque eu faço só duas perguntas,
+[00:12:25 - 00:12:27] e eu já quero ir para o agendamento.
+[00:12:27 - 00:12:28] Beleza?
+[00:12:28 - 00:12:29] E gente,
+[00:12:29 - 00:12:31] a outra...
+[00:12:31 - 00:12:34] Outro framework que eu queria entrar mais
+[00:12:34 - 00:12:36] nesse ponto com vocês é o SPIN.
+[00:12:37 - 00:12:41] Então o SPIN, ele é um framework que foi criado,
+[00:12:41 - 00:12:43] eu não lembro agora o ano, acho que foi em 1980,
+[00:12:44 - 00:12:46] pelo Neil Hackhan,
+[00:12:46 - 00:12:48] ele é um pesquisador,
+[00:12:48 - 00:12:50] que ele gastou alguns milhões em volta,
+[00:12:51 - 00:12:53] visitando empresas ao redor do mundo,
+[00:12:54 - 00:12:58] para chegar em uma técnica de vendas,
+[00:12:58 - 00:13:00] ele avaliou vários vendedores,
+[00:13:00 - 00:13:02] e ele entendeu que os vendedores que faziam as perguntas,
+[00:13:02 - 00:13:04] nessa sequência lógica,
+[00:13:04 - 00:13:07] dessa forma, vendiam mais.
+[00:13:07 - 00:13:08] Isso para contas grandes,
+[00:13:08 - 00:13:10] ele analisou contas grandes,
+[00:13:10 - 00:13:11] analisou contas pequenas,
+[00:13:11 - 00:13:13] ele entendeu que para as contas grandes,
+[00:13:13 - 00:13:15] exatamente essa sequência,
+[00:13:15 - 00:13:18] nesse formato era a sequência que fazia com que eles vendiam mais.
+[00:13:18 - 00:13:20] Os vendedores que não aplicavam isso
+[00:13:20 - 00:13:22] não tinham o mesmo resultado de vendas.
+[00:13:22 - 00:13:24] E qual que era essa sequência?
+[00:13:24 - 00:13:26] Falar sobre situação,
+[00:13:26 - 00:13:29] perguntar os problemas,
+[00:13:29 - 00:13:31] levantar as implicações,
+[00:13:31 - 00:13:34] e falar sobre as necessidades.
+[00:13:34 - 00:13:38] Então o SPIN, ele serve para vocês falarem em vários momentos,
+[00:13:38 - 00:13:40] e ele é uma espinha,
+[00:13:40 - 00:13:43] a espinha dorsal do pré-vendas.
+[00:13:43 - 00:13:46] De novo, ele serve como um roteiro.
+[00:13:46 - 00:13:47] Então vamos lá,
+[00:13:47 - 00:13:48] quando a gente está falando de situação,
+[00:13:48 - 00:13:51] como é que a gente reage em cada um desses pontos?
+[00:13:51 - 00:13:55] Como que eu qualifico um lead de acordo com o SPIN?
+[00:13:55 - 00:13:58] Então eu vou fazer perguntas situacionais,
+[00:13:58 - 00:14:01] ou seja, vou entender a situação desse lead,
+[00:14:01 - 00:14:05] eu vou basear as minhas perguntas em pontos de problema,
+[00:14:05 - 00:14:07] porque eu quero gerar aquele engajamento,
+[00:14:07 - 00:14:09] e eu vou até trazer alguns outros problemas conhecidos,
+[00:14:09 - 00:14:11] eu vou comparar os problemas,
+[00:14:11 - 00:14:13] vou entender se faz sentido,
+[00:14:13 - 00:14:15] e eu vou conectar para eu descobrir o impacto,
+[00:14:15 - 00:14:19] mas também fazendo ali umas implicações.
+[00:14:19 - 00:14:24] Então a gente pode dividir o SPIN nesses quatro quadrantes.
+[00:14:24 - 00:14:27] Situação, então eu tenho ali,
+[00:14:27 - 00:14:28] situação hoje,
+[00:14:28 - 00:14:31] é tipo coisas da empresa que não dá para mudar.
+[00:14:31 - 00:14:33] Eu vou chegar hoje,
+[00:14:33 - 00:14:35] se eu vender um produto para ela hoje,
+[00:14:35 - 00:14:37] ou se eu não vender, a situação dela é exatamente essa.
+[00:14:37 - 00:14:39] Então quais os objetivos da empresa,
+[00:14:39 - 00:14:41] qual orçamento que ela tem,
+[00:14:41 - 00:14:44] os planos, a autoridade,
+[00:14:44 - 00:14:46] a pessoa que eu estou falando da autoridade,
+[00:14:46 - 00:14:49] eu vou pedir para ela me contar ali, né?
+[00:14:49 - 00:14:50] Depois eu vou para problema,
+[00:14:50 - 00:14:52] os desafios que ela tem hoje,
+[00:14:52 - 00:14:56] e esse tempo, quanto tempo ela quer resolver esse problema?
+[00:14:56 - 00:14:57] A implicação,
+[00:14:57 - 00:15:00] quais são as consequências dela resolver,
+[00:15:00 - 00:15:02] ou dela não resolver o problema?
+[00:15:03 - 00:15:06] E a necessidade é eu pegar essas necessidades
+[00:15:06 - 00:15:09] e trazer essa implicação em cima dessa necessidade.
+[00:15:09 - 00:15:11] Então fazer com que ela entenda
+[00:15:11 - 00:15:12] que isso é uma necessidade
+[00:15:12 - 00:15:15] e que a gente pode ajudá-la a resolver, certo?
+[00:15:15 - 00:15:17] Então aqui na situação,
+[00:15:17 - 00:15:18] eu vou entender a situação atual do lead,
+[00:15:18 - 00:15:21] eu vou tentar saber o contexto dele
+[00:15:21 - 00:15:23] é o máximo antes de ligar.
+[00:15:23 - 00:15:25] Não que isso seja um pestilho,
+[00:15:25 - 00:15:27] porque é legal também que a gente faça
+[00:15:27 - 00:15:29] algumas pesquisas durante a ligação.
+[00:15:29 - 00:15:31] Puxa, eu não achei essa informação no site.
+[00:15:31 - 00:15:33] Eu vou perguntar pela ligação,
+[00:15:33 - 00:15:35] poxa, Flônia, eu estou pesquisando aqui
+[00:15:35 - 00:15:37] e eu não achei essa informação no teu site,
+[00:15:37 - 00:15:39] será que você pode me passar isso?
+[00:15:40 - 00:15:42] E aqui a gente pode fazer perguntas do tipo,
+[00:15:42 - 00:15:44] como é isso?
+[00:15:44 - 00:15:45] Quanto tempo isso?
+[00:15:45 - 00:15:46] Me conta mais sobre isso?
+[00:15:46 - 00:15:49] Me explica sobre esse fator aqui, tá?
+[00:15:49 - 00:15:51] São perguntas abertas, perguntas fechadas.
+[00:15:51 - 00:15:52] Na etapa de situação,
+[00:15:52 - 00:15:55] você pode fazer a pergunta que você quiser, né?
+[00:15:55 - 00:15:58] Mas você pode começar com uma pergunta fechada,
+[00:15:59 - 00:16:01] de sim ou não, tá?
+[00:16:01 - 00:16:02] E ele não...
+[00:16:02 - 00:16:04] Aqui é o momento da conversa
+[00:16:04 - 00:16:06] que ele só está dando informação.
+[00:16:06 - 00:16:08] Então ele não está percebendo muita coisa,
+[00:16:08 - 00:16:10] ele não vê a minha consultividade,
+[00:16:10 - 00:16:11] ele ainda não entendeu direito
+[00:16:11 - 00:16:13] por que ele está dando essas respostas,
+[00:16:13 - 00:16:15] porém ele está lidando respostas.
+[00:16:15 - 00:16:17] E ele que fala,
+[00:16:17 - 00:16:19] a gente faz as perguntas e o lead responde,
+[00:16:19 - 00:16:21] a gente faz as perguntas e o lead responde
+[00:16:21 - 00:16:22] nessa etapa do SP.
+[00:16:22 - 00:16:23] Certo?
+[00:16:24 - 00:16:26] Quanto cedadores tem essa equipe?
+[00:16:26 - 00:16:29] Quanto você investe hoje em tal coisa, né?
+[00:16:29 - 00:16:30] As perguntas de qualificação
+[00:16:30 - 00:16:31] a gente pode ter prontas,
+[00:16:31 - 00:16:33] vocês podem ter post-it no notebook
+[00:16:33 - 00:16:35] com perguntas já prontas, tá?
+[00:16:35 - 00:16:38] E se ele não tiver qualificado,
+[00:16:38 - 00:16:40] nessa etapa aqui eu também já entendo
+[00:16:40 - 00:16:42] se ele está ou não qualificado,
+[00:16:42 - 00:16:44] se faz sentido continuar com essa vídeo ou não,
+[00:16:44 - 00:16:47] e caso não faça, já vou desqualificar.
+[00:16:47 - 00:16:50] Eu já vou tirar ele do meu funil,
+[00:16:50 - 00:16:52] porque se ele não tiver fit,
+[00:16:52 - 00:16:55] eu não vou continuar com uma conversa longa com ele, né?
+[00:16:55 - 00:16:57] Não quero continuar uma conversa longa aqui
+[00:16:57 - 00:16:59] se o lead não tem fit, tá?
+[00:16:59 - 00:17:01] Então eu já digo na hora, eu falo, olha,
+[00:17:01 - 00:17:04] falando, eu realmente achei que,
+[00:17:04 - 00:17:07] né, pelo site aqui vocês fossem uma coisa,
+[00:17:07 - 00:17:09] mas agora conversando, entendo que é outro,
+[00:17:09 - 00:17:10] eu acho que não faz muito sentido
+[00:17:10 - 00:17:11] pra gente desse momento
+[00:17:11 - 00:17:13] e talvez acho que também não vai fazer sentido.
+[00:17:13 - 00:17:15] Vocês darem nossa solução.
+[00:17:15 - 00:17:16] Agradeço muito aqui o teu tempo
+[00:17:16 - 00:17:18] e a gente se fala aí no futuro.
+[00:17:18 - 00:17:19] Show, pronto.
+[00:17:19 - 00:17:21] Eu já tirei ele do meu funil.
+[00:17:21 - 00:17:23] Na etapa de problema,
+[00:17:23 - 00:17:25] eu já falei sobre a situação
+[00:17:25 - 00:17:30] e agora eu começo a entrar mais na parte do problema
+[00:17:30 - 00:17:32] a partir das respostas de situação.
+[00:17:32 - 00:17:35] Então, se ele me diz, né,
+[00:17:35 - 00:17:37] aqui, ah, eu tenho 10 enedores,
+[00:17:37 - 00:17:40] puxa, 10 enedores e tu é o gestor.
+[00:17:40 - 00:17:42] Como é que tu faz pra controlar
+[00:17:42 - 00:17:44] as atividades que são feitas no dia a dia?
+[00:17:44 - 00:17:47] Posso começar a puxar alguma dor que ele vai ter ali, né?
+[00:17:47 - 00:17:51] Eu preciso também dar a entender
+[00:17:51 - 00:17:53] que eu conheço os problemas que ele tem.
+[00:17:53 - 00:17:57] Aqui é o momento que eu vou mostrar autoridade pra ele.
+[00:17:57 - 00:17:59] Aqui é onde eu vou trazendo exemplos de coisas
+[00:17:59 - 00:18:02] que eu já vi, de pessoas que eu já falei.
+[00:18:02 - 00:18:03] Cara, até te pergunto,
+[00:18:03 - 00:18:04] porque eu tenho um cliente que a gente atende
+[00:18:04 - 00:18:06] que ele tinha exatamente esse mesmo problema
+[00:18:06 - 00:18:09] e eu queria saber como é que é pra vocês hoje.
+[00:18:09 - 00:18:12] Puxa, faz com que ele entenda que o problema não é essa dele.
+[00:18:12 - 00:18:15] Outras pessoas também têm aquilo, né?
+[00:18:15 - 00:18:16] Eu posso usar palavras como
+[00:18:16 - 00:18:18] qual a dificuldade disso aqui, né?
+[00:18:18 - 00:18:21] Como é que funciona ali em relação ao atraso?
+[00:18:21 - 00:18:23] E aqui também, gente, dá pra você
+[00:18:23 - 00:18:25] se fazer uma coisa que eu gosto muito,
+[00:18:25 - 00:18:27] que é fazer uma simulação.
+[00:18:27 - 00:18:29] Se eu tô conversando com um Lid
+[00:18:29 - 00:18:32] e eu tô falando com ele sobre logística, por exemplo,
+[00:18:32 - 00:18:34] e é um e-commerce.
+[00:18:34 - 00:18:37] Flando, vamos supor que eu acabei de comprar uma peça tua.
+[00:18:37 - 00:18:38] Acabei de comprar, caiu a compra lá.
+[00:18:38 - 00:18:43] Me conta então como que é esse trajeto da minha peça
+[00:18:43 - 00:18:45] até o caminhão, o que que vocês usam,
+[00:18:45 - 00:18:47] por quais sistemas ela passa.
+[00:18:47 - 00:18:50] Assim, a pessoa consegue me contar um cenário
+[00:18:50 - 00:18:52] e eu já consigo também entender
+[00:18:52 - 00:18:54] como que isso se encaixa com a minha solução.
+[00:18:54 - 00:18:57] Ou será que dá pra eu vender alguma coisa pra ela?
+[00:18:57 - 00:18:59] Ali eu já consigo entender, tá?
+[00:18:59 - 00:19:02] Eu vou, claro, fazer perguntas
+[00:19:02 - 00:19:04] dentro da minha zona de solução.
+[00:19:04 - 00:19:06] Não adianta perguntar pra ela
+[00:19:06 - 00:19:08] uma pergunta muito aberta.
+[00:19:08 - 00:19:12] Tipo, João, qual é o teu maior problema
+[00:19:12 - 00:19:13] na logística hoje?
+[00:19:13 - 00:19:14] Porque o João pode falar, cara,
+[00:19:14 - 00:19:17] o maior problema que a gente tem é o preço da gasolina.
+[00:19:17 - 00:19:19] E pode ser que a minha solução não resolva nada
+[00:19:19 - 00:19:20] sobre o preço da gasolina.
+[00:19:20 - 00:19:23] Então não vai fazer sentido fazer essa pergunta pro João.
+[00:19:23 - 00:19:24] Entende?
+[00:19:24 - 00:19:27] Eu preciso ter alguma coisa que eu possa ter uma relevância.
+[00:19:27 - 00:19:29] Que eu possa, de alguma forma,
+[00:19:29 - 00:19:34] influenciar nessa dificuldade que ele tem, certo?
+[00:19:34 - 00:19:36] Então aqui eu vou trazer algum conhecimento de mercado
+[00:19:36 - 00:19:39] e, de novo, não vou perguntar em cima dessa situação.
+[00:19:39 - 00:19:42] Ele tem uma situação que ele já me deu as respostas
+[00:19:42 - 00:19:43] e eu anotei.
+[00:19:43 - 00:19:46] Então eu volto nessa situação pra conseguir entender
+[00:19:46 - 00:19:49] qual é o problema e também achar esses problemas,
+[00:19:49 - 00:19:50] achar essas dores.
+[00:19:50 - 00:19:53] Eu tenho que fazer o lidre refletir sobre os problemas dele.
+[00:19:53 - 00:19:56] Quanto mais ele fala, mais ele entende que ele tem dor
+[00:19:56 - 00:19:59] e que ele precisa resolver isso, certo?
+[00:19:59 - 00:20:02] Então, ó, qual é a dificuldade de engenharia uma equipe, né?
+[00:20:02 - 00:20:05] Por que vocês usam esse software?
+[00:20:05 - 00:20:08] E aí, gente, aqui é o momento que ele vai falar.
+[00:20:08 - 00:20:09] E aí a gente precisa ouvir.
+[00:20:09 - 00:20:13] Porque, de novo, sempre que ele trouxe essas dificuldades,
+[00:20:13 - 00:20:16] eu vou depois trazer essa dificuldade de contraproposta
+[00:20:16 - 00:20:19] pra vender minha solução, tá?
+[00:20:19 - 00:20:21] A pesquisa, então, é a solução mais o problema.
+[00:20:21 - 00:20:23] Essa é a primeira etapa.
+[00:20:23 - 00:20:26] O pré-vendedor vai ficar um bom tempo nessa etapa de pesquisa.
+[00:20:26 - 00:20:29] A gente chama de pesquisa, etapa de discovery,
+[00:20:29 - 00:20:31] mas é a etapa onde eu tô entendendo, de novo,
+[00:20:31 - 00:20:35] os problemas e a situação que esse lidre está enfrentando, né?
+[00:20:35 - 00:20:39] Antes da implicação, a gente tem situação e problema.
+[00:20:39 - 00:20:41] E eles são fatos isolados.
+[00:20:41 - 00:20:43] Então, não adianta eu querer direto implicar
+[00:20:43 - 00:20:45] se eu não sei quais são os problemas reais
+[00:20:45 - 00:20:46] que ele está enfrentando.
+[00:20:46 - 00:20:47] Primeiro, eu preciso, tá?
+[00:20:47 - 00:20:50] Primeiro, eu preciso ser um bom ouvinte, tá?
+[00:20:50 - 00:20:54] Na implicação é onde a gente vai falar sobre as consequências.
+[00:20:54 - 00:20:57] Aqui, a gente pode falar de consequências positivas,
+[00:20:57 - 00:20:59] consequências negativas.
+[00:20:59 - 00:21:01] Então, eu posso fazer ele enxergar como seria
+[00:21:01 - 00:21:03] se a gente resolver seu problema dele.
+[00:21:03 - 00:21:06] Tipo, Fulano, se a gente resolver esse teu problema
+[00:21:06 - 00:21:09] e a gente conseguir se gerir isso 40% mais rápido,
+[00:21:09 - 00:21:10] o que que tu ganharia?
+[00:21:10 - 00:21:11] Como seria a tua vida, né?
+[00:21:11 - 00:21:15] Ou a gente pode falar sobre o negativo.
+[00:21:15 - 00:21:17] Fulano, se a gente não resolver esse problema dentro...
+[00:21:17 - 00:21:20] O que que vai acontecer dentro de um ano?
+[00:21:20 - 00:21:22] E dentro de dois anos?
+[00:21:22 - 00:21:25] Fazer ele entender quanto dinheiro ele vai perder.
+[00:21:25 - 00:21:28] Fazer ele entender os gargalos.
+[00:21:28 - 00:21:31] Quantas pessoas poderiam sair dali?
+[00:21:31 - 00:21:33] Quantos clientes ele poderia perder com isso?
+[00:21:33 - 00:21:37] Então, e começar a tangibilizar.
+[00:21:37 - 00:21:39] Ou seja, colocar isso em números.
+[00:21:39 - 00:21:40] Ah, é faturamento?
+[00:21:40 - 00:21:41] É quanto de faturamento?
+[00:21:41 - 00:21:42] É dinheiro?
+[00:21:42 - 00:21:43] É quanto de dinheiro?
+[00:21:43 - 00:21:44] Quanto tempo leva?
+[00:21:44 - 00:21:45] Quem vai sofrer com isso?
+[00:21:45 - 00:21:48] Qual impacto que isso vai ter?
+[00:21:48 - 00:21:50] Como que isso vai afetar a operação?
+[00:21:50 - 00:21:52] Será que ele não pode ser desligado no futuro
+[00:21:52 - 00:21:54] caso ele não resolva isso?
+[00:21:54 - 00:21:55] O SPIN tem muito disso.
+[00:21:55 - 00:21:57] A gente vai fazer implicação negativa
+[00:21:57 - 00:22:00] e vai impactar exatamente nessa pessoa.
+[00:22:00 - 00:22:04] Nessa pessoa que é esse decisor, essa autoridade.
+[00:22:04 - 00:22:06] Então, ele tem que sair de um estado de cara.
+[00:22:06 - 00:22:07] Tá tranquilo.
+[00:22:07 - 00:22:10] Só que a minha operação tá rodando normal
+[00:22:10 - 00:22:11] para um estado de...
+[00:22:11 - 00:22:14] Eita, eu tenho um problema.
+[00:22:14 - 00:22:16] Eu não sabia que eu tinha esse problema.
+[00:22:16 - 00:22:20] Então, ele tem que sair de um estado totalmente despreocupado
+[00:22:20 - 00:22:22] para um estado de alerta e curioso.
+[00:22:22 - 00:22:24] Curioso para saber como é que ele vai resolver isso.
+[00:22:24 - 00:22:27] Certo?
+[00:22:27 - 00:22:29] Aí aqui a gente tem uma variável.
+[00:22:29 - 00:22:32] Eu posso fazer com que ele enxergue
+[00:22:32 - 00:22:34] quais são os problemas que a gente tem
+[00:22:34 - 00:22:38] e quanto tempo a gente precisa para resolver.
+[00:22:38 - 00:22:40] Tipo, se é um problema muito grave,
+[00:22:40 - 00:22:43] o nível de urgência dele tem que estar de 3 a 6 meses.
+[00:22:43 - 00:22:51] Ah, ele tá com urgência muito grande em resolver isso.
+[00:22:51 - 00:22:52] É muito grave.
+[00:22:52 - 00:22:54] É um problema mais urgente.
+[00:22:54 - 00:22:57] É um problema que não necessariamente é urgente,
+[00:22:57 - 00:22:59] mas em algum momento a gente vai resolver.
+[00:22:59 - 00:23:00] Cara, tá bom.
+[00:23:00 - 00:23:03] E aí eu vou vendo isso versus os problemas que a gente mapeou.
+[00:23:03 - 00:23:06] E eu vejo qual tempo que ele quer aplicar
+[00:23:06 - 00:23:10] ou quanto isso é prioridade para ele nesse momento,
+[00:23:10 - 00:23:11] para esse lead.
+[00:23:11 - 00:23:14] E aí, gente, falando aqui sobre...
+[00:23:14 - 00:23:16] A gente não vai entrar na necessidade.
+[00:23:16 - 00:23:17] A necessidade...
+[00:23:17 - 00:23:18] Deixa eu até voltar aqui.
+[00:23:18 - 00:23:20] A gente usa as implicações.
+[00:23:20 - 00:23:22] Então, é a gente mostrar para esse lead
+[00:23:22 - 00:23:23] que essa necessidade que ele trouxe,
+[00:23:23 - 00:23:25] que essas dores, elas são uma necessidade,
+[00:23:25 - 00:23:28] elas têm uma prioridade ali.
+[00:23:29 - 00:23:31] A gente trazer essas consequências
+[00:23:31 - 00:23:33] e a gente linkar com a nossa solução.
+[00:23:33 - 00:23:35] Mas, de qualquer forma,
+[00:23:35 - 00:23:37] o que eu ia falar para vocês
+[00:23:37 - 00:23:40] é para a gente usar esse script como um guia.
+[00:23:40 - 00:23:43] Não usem ele como uma tábua da salvação,
+[00:23:43 - 00:23:45] do tipo, meu Deus, eu me perdi,
+[00:23:45 - 00:23:46] eu estava na pergunta 5,
+[00:23:46 - 00:23:48] e agora eu não lembro qual é a pergunta 6,
+[00:23:48 - 00:23:49] então não sei mais o que fazer.
+[00:23:49 - 00:23:50] Não.
+[00:23:50 - 00:23:53] Lembrem de usar isso como um roteiro.
+[00:23:53 - 00:23:54] Cri em um roteiro
+[00:23:54 - 00:23:56] que vocês consigam começar por uma pergunta,
+[00:23:56 - 00:23:58] para determinar com uma determinada pergunta,
+[00:23:58 - 00:24:00] e vocês vão conseguir seguir isso.
+[00:24:00 - 00:24:03] Então, eu começo com uma pergunta sobre isso,
+[00:24:03 - 00:24:05] depois eu sigo para isso,
+[00:24:05 - 00:24:07] e aí, conforme a conversa vai desdobrando,
+[00:24:07 - 00:24:09] eu vou fazendo outras perguntas,
+[00:24:09 - 00:24:10] não necessariamente na ordem.
+[00:24:10 - 00:24:11] E eu finalizo aqui,
+[00:24:11 - 00:24:14] porque eu quero ir para o agendamento,
+[00:24:14 - 00:24:16] eu finalizo com um link,
+[00:24:16 - 00:24:17] e falo da minha solução e agendo.
+[00:24:17 - 00:24:19] Então, isso é um roteiro.
+[00:24:19 - 00:24:22] Você precisa conseguir fazer isso
+[00:24:22 - 00:24:24] sem depender de um...
+[00:24:24 - 00:24:26] de um papel ou de um framework,
+[00:24:26 - 00:24:27] porque aí você consegue fazer isso
+[00:24:27 - 00:24:29] com qualquer segmento,
+[00:24:29 - 00:24:30] com qualquer produto,
+[00:24:30 - 00:24:31] com qualquer solução,
+[00:24:31 - 00:24:33] com qualquer lead.
+[00:24:33 - 00:24:34] Beleza?
+[00:24:34 - 00:24:37] Então, essa foi uma pequena aula sobre frameworks,
+[00:24:37 - 00:24:39] mais voltada para o SPIN.
+[00:24:39 - 00:24:40] Espero que vocês tenham gostado.
+[00:24:40 - 00:24:42] A gente tem mais conteúdos aqui,
+[00:24:42 - 00:24:44] então aproveitem a nossa plataforma,
+[00:24:44 - 00:24:46] e qualquer dúvida a gente fica à disposição também.

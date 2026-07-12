@@ -1,0 +1,347 @@
+Título: Módulo 1 - 07 - Ferramentas Inside Sales
+Arquivo original: C:\Users\Marks\Downloads\Video\MP3\Módulo 1 - 07 - Ferramentas Inside Sales.mp3
+Idioma: Português
+Duração detectada: 00:17:21
+
+[00:00:03 - 00:00:07] Oi gente, bem-vindos a mais uma aula aqui na plataforma da Seus Hunter.
+[00:00:07 - 00:00:12] A Seus Hunter quer um hub de recrutamento, educação e também comunidade de vendas.
+[00:00:12 - 00:00:15] Eu sou a Jessica Bosco, vocês já me viram bastante por aqui.
+[00:00:15 - 00:00:19] Faço parte do time de Naebumer e também de comunidade.
+[00:00:19 - 00:00:21] Então, treinamento e comunidade aqui da Seus Hunter.
+[00:00:21 - 00:00:26] Vocês me encontram no Instagram como o Gé Bosco e também no LinkedIn como o Géssica Bosco.
+[00:00:26 - 00:00:29] Todo dia tem conteúdo lá sobre pré-vendas.
+[00:00:29 - 00:00:33] Hoje a gente vai falar um pouquinho sobre ferramentas da Insight Seus.
+[00:00:33 - 00:00:43] Esse tema é muito vasto e eu já vou tentando pra vocês que talvez não estejam todas as ferramentas que você conhece aqui, porque são muitas.
+[00:00:43 - 00:00:47] E a gente costuma brincar que a cada dia surge em novas ferramentas no mercado.
+[00:00:47 - 00:00:51] Mas eu tentei fazer um computilado trazer todas aqui pra vocês.
+[00:00:51 - 00:00:56] Então, vamos começar explicando um pouquinho de por que a gente usa ferramentas.
+[00:00:57 - 00:01:01] Talvez você tenha começado um processo de Insight Seus agora,
+[00:01:01 - 00:01:04] ou estruturado, uma área recentemente,
+[00:01:04 - 00:01:06] e talvez você ainda não tenha ferramentas nenhuma.
+[00:01:06 - 00:01:09] Mas um bom stack de ferramentas pra Insight Seus,
+[00:01:09 - 00:01:15] ele ajuda muito no ganho de produtividade, no ganho de tempo, na sequência de um fluxo.
+[00:01:15 - 00:01:20] Então, eu não esqueço de fazer uma atividade, se eu tenho essa sequência de fluxos,
+[00:01:20 - 00:01:25] anotado ou automatizado, compartilhamento de informações,
+[00:01:25 - 00:01:29] indiferente de quem estiver atuando com este lead no próximo dia,
+[00:01:29 - 00:01:34] eu tenho as informações ali compartilhadas e ele também aumenta performance.
+[00:01:34 - 00:01:41] A gente costuma brincar, inclusive, que o SDR ele precisa mais executar
+[00:01:41 - 00:01:45] do que necessariamente pensar naquilo que ele vai precisar fazer no próximo passo.
+[00:01:45 - 00:01:50] Então, quando ele precisa gastar mesmo, ele vai despreender muito tempo pensando
+[00:01:50 - 00:01:52] puxa, o que eu vou fazer agora?
+[00:01:52 - 00:01:53] Ele perde essa produtividade.
+[00:01:53 - 00:01:56] Então, se ele tem uma ferramenta que ajuda ele nisso,
+[00:01:56 - 00:02:00] ele vai ganhando, né, esses pequenos minutos de produtividade no final do dia
+[00:02:00 - 00:02:02] e no final do mês fazem a diferença.
+[00:02:02 - 00:02:05] Eu vou falar um pouquinho sobre cada uma das ferramentas,
+[00:02:05 - 00:02:09] qual o papel delas, e aí depois eu trago algumas aqui do mercado que a gente conhece.
+[00:02:09 - 00:02:10] Ok?
+[00:02:10 - 00:02:12] Começando com ferramentas de automação de marketing.
+[00:02:12 - 00:02:17] Se você está pensando em começar a sua estrutura de comercial,
+[00:02:17 - 00:02:21] a estruturação do seu comercial pelo marketing ou pelo inbound,
+[00:02:21 - 00:02:24] você precisa ter uma ferramenta de automação de marketing.
+[00:02:24 - 00:02:27] Não vai dar para seguir adiante sem ter isso.
+[00:02:27 - 00:02:29] O que ela faz?
+[00:02:29 - 00:02:35] Gerenci os leads que chegam, principalmente porque você vai ter um grande atrativo
+[00:02:35 - 00:02:39] ali de leads gerando performance, marketing de performance e outros.
+[00:02:39 - 00:02:42] Então, você vai precisar de um gerenciador de leads, né?
+[00:02:42 - 00:02:45] Ela faz uma análise das estratégias de marketing.
+[00:02:45 - 00:02:49] Então, essas análises de performance, como estão as nossas performance,
+[00:02:49 - 00:02:53] onde a gente está investindo, o que nós podemos otimizar de campanha,
+[00:02:53 - 00:02:56] testes AB, lead scoring.
+[00:02:56 - 00:02:58] Então, cada lead que chega vai ganhando uma pontuação
+[00:02:58 - 00:03:02] e depois de uma x pontuação, ele passa para o time de pré-vendas
+[00:03:02 - 00:03:06] ou para o time comercial, ou como você estiver estruturando aí, certo?
+[00:03:06 - 00:03:08] E ele também faz uma segmentação.
+[00:03:08 - 00:03:11] Então, depois é bem fácil de você encaminhar um e-mail,
+[00:03:11 - 00:03:14] aliás, ele também faz de disparo de e-mail marketing.
+[00:03:14 - 00:03:17] É muito fácil de você enviar um e-mail marketing
+[00:03:17 - 00:03:20] para um determinado segmento de leads ou de clientes
+[00:03:20 - 00:03:24] porque você tem isso mapeado já pela ferramenta de automação.
+[00:03:24 - 00:03:26] O que a gente tem hoje no mercado?
+[00:03:26 - 00:03:30] Tem mais ferramentas, talvez não tenha trazido todas aqui,
+[00:03:30 - 00:03:33] mas essas são as principais que a gente mais vê.
+[00:03:33 - 00:03:38] Então, o HubSpot, o HubSpot ele é legal porque ele tem automação de marketing,
+[00:03:38 - 00:03:41] a ferramenta de vendas e ferramenta de CS.
+[00:03:41 - 00:03:45] Então, ele tem os três, dá para usar os três ali dentro e uma ferramenta só.
+[00:03:45 - 00:03:49] Active, ela chegou no Brasil, não faz muito tempo,
+[00:03:49 - 00:03:52] antigamente a gente tinha mais o RdStation,
+[00:03:52 - 00:03:55] mas Active tem tomado um espaço bacana.
+[00:03:55 - 00:04:01] O Rd, aqui ele tem CRM e recentemente ele comprou um outro CRM e incluiu isso,
+[00:04:01 - 00:04:04] mas o RdStation é uma ferramenta de automação de marketing
+[00:04:04 - 00:04:07] e temos o RdStation, o RdCRM também,
+[00:04:07 - 00:04:11] e a Leadlovers, que faz essa parte de automação,
+[00:04:11 - 00:04:13] de atração dos leads também.
+[00:04:13 - 00:04:17] Por enquanto, vou deixar essas quatro, mas vocês podem pesquisar,
+[00:04:17 - 00:04:20] se vocês jogarem ali no Google, vão achar várias,
+[00:04:20 - 00:04:23] muitas outras ferramentas que fazem essa automação
+[00:04:23 - 00:04:27] e que prometem uma facilidade na hora de gerenciar esses leads que chegam.
+[00:04:27 - 00:04:31] Depois, a gente também tem as ferramentas de inteligência comercial
+[00:04:31 - 00:04:35] ou inteligência competitiva, ou inteligência de mercado.
+[00:04:35 - 00:04:40] Essas ferramentas são bem importantes para quem faz prospecção.
+[00:04:40 - 00:04:43] Então, a automação de marketing é para quem faz em bound,
+[00:04:43 - 00:04:46] mas quem trabalha com a ultima áudio precisa ter uma ferramenta
+[00:04:46 - 00:04:50] de inteligência comercial ou inteligência de mercado.
+[00:04:50 - 00:04:51] Por quê?
+[00:04:51 - 00:04:55] A gente viu na aula de criação de lista
+[00:04:55 - 00:04:59] que eu até tenho como prospectar com leads vindos do Google.
+[00:04:59 - 00:05:01] Daria super para fazer.
+[00:05:01 - 00:05:05] Porém, quando eu falo de ferramentas e de listas
+[00:05:05 - 00:05:10] que vêm da inteligência comercial e dessas empresas,
+[00:05:10 - 00:05:12] eu estou falando de um lead que foi analisado,
+[00:05:12 - 00:05:14] de um lead que foi enriquecido,
+[00:05:14 - 00:05:17] de um lead que teve uma inteligência por trás,
+[00:05:17 - 00:05:20] gerando, descobrindo novos nichos,
+[00:05:20 - 00:05:23] descobrindo novas oportunidades, e ela também faz integração.
+[00:05:23 - 00:05:28] Então, eu não preciso ficar manualmente subindo as informações
+[00:05:28 - 00:05:30] ou colocando aquilo numa planilha.
+[00:05:30 - 00:05:34] Eu tenho isso dentro de uma automação e de uma integração.
+[00:05:34 - 00:05:37] Isso facilita bastante a vida do pré-vendedor.
+[00:05:37 - 00:05:40] Muitas vezes, quem opera a ferramenta de inteligência comercial
+[00:05:40 - 00:05:43] ou de inteligência de mercado, é um LDR
+[00:05:43 - 00:05:45] que faz essa parte dos leads,
+[00:05:45 - 00:05:48] ou até mesmo alguém de inteligência competitiva.
+[00:05:48 - 00:05:50] Em alguns casos, em algumas empresas,
+[00:05:50 - 00:05:53] nós temos esse profissional cuidando disso.
+[00:05:53 - 00:05:57] A gente tem a Cortex, a Speedio, a Driva e a Neue.
+[00:05:57 - 00:06:01] Até vou pedir desculpas porque essas logos estão um pouco
+[00:06:01 - 00:06:05] com uma qualidade menos alta, digamos assim,
+[00:06:05 - 00:06:09] mas quando eu estava procurando aqui para colocar,
+[00:06:09 - 00:06:12] eu queria colocar a logo para ficar mais fácil de você identificar
+[00:06:12 - 00:06:16] quando vocês forem para o Google procurar por essa ferramenta.
+[00:06:16 - 00:06:18] Se vocês quiserem dar um print aqui,
+[00:06:18 - 00:06:22] eu queria fazer um vídeo de uma forma fácil também de vocês encontrarem.
+[00:06:22 - 00:06:25] Assim como a sua ferramenta de automação,
+[00:06:25 - 00:06:29] existem várias outras e vocês vão achar vários outros nomes.
+[00:06:29 - 00:06:32] Mas eu já trabalhei com algumas dessas,
+[00:06:32 - 00:06:35] então conheço e por isso que a gente trouxe elas
+[00:06:35 - 00:06:38] para essa apresentação de hoje, certo?
+[00:06:38 - 00:06:39] Sem os engagement.
+[00:06:39 - 00:06:41] Depois que a gente fez o primeiro contato,
+[00:06:41 - 00:06:43] tanto do inbound quanto do outbound,
+[00:06:43 - 00:06:45] hoje a gente fez essa geração de lead,
+[00:06:45 - 00:06:48] ou que a gente entende que eles têm o perfil ideal
+[00:06:48 - 00:06:50] para serem trabalhados no outbound,
+[00:06:50 - 00:06:53] cai em uma ferramenta de sales engagement.
+[00:06:53 - 00:06:56] A ferramenta de engagement é diferente de um CRM,
+[00:06:56 - 00:06:58] porém muita gente confunde as duas,
+[00:06:58 - 00:07:01] porque elas têm uma função muito parecida.
+[00:07:01 - 00:07:04] Porém, a sales engagement é mais voltada para SDRs,
+[00:07:04 - 00:07:07] para o time de pré-vendas mesmo.
+[00:07:07 - 00:07:11] Inclusive ela é ferramenta que vem antes do CRM.
+[00:07:11 - 00:07:13] Então todo o time de pré-vendas,
+[00:07:13 - 00:07:15] ao invés de trabalhar dentro do CRM,
+[00:07:15 - 00:07:18] ele vai trabalhar dentro da ferramenta de sales engagement.
+[00:07:18 - 00:07:21] Então ela vai fazer organização por atividades.
+[00:07:21 - 00:07:24] No dia a dia ele vai saber qual atividade ele precisa fazer.
+[00:07:24 - 00:07:27] Ele vai fazer o início do relacionamento com os leads lá dentro,
+[00:07:27 - 00:07:29] tanto pelo WhatsApp quanto por ligações.
+[00:07:29 - 00:07:32] Vou fazer o gerenciamento das prospecções,
+[00:07:32 - 00:07:34] as automatizações todas dentro da ferramenta.
+[00:07:34 - 00:07:36] Chegou em certo estágio da ferramenta,
+[00:07:36 - 00:07:38] ele envia um e-mail automático.
+[00:07:38 - 00:07:42] Ele também vai fazer o armazenamento de informações.
+[00:07:42 - 00:07:46] Então quando esse lead for para um CRM,
+[00:07:46 - 00:07:49] saí do SDR, do time de pré-vendas, para o time de vendas,
+[00:07:49 - 00:07:53] ele carrega com ele essas informações coletadas.
+[00:07:53 - 00:07:55] Então tudo isso que ele coleteu,
+[00:07:55 - 00:07:57] vai para o CRM do vendedor também,
+[00:07:57 - 00:07:59] ele não perde nenhuma informação.
+[00:07:59 - 00:08:01] Mas ele vai para o CRM do vendedor,
+[00:08:01 - 00:08:03] em alguns casos, às vezes,
+[00:08:03 - 00:08:05] quando ele já faz a reunião,
+[00:08:05 - 00:08:08] marquei a reunião, já aparece lá na agenda do vendedor,
+[00:08:08 - 00:08:11] e já abre uma oportunidade no CRM,
+[00:08:11 - 00:08:14] e às vezes, somente quando a gente entende que é uma oportunidade.
+[00:08:14 - 00:08:16] Precisa ter a reunião primeiro,
+[00:08:16 - 00:08:20] ela precisa ser validada, qualificada e aí sim.
+[00:08:20 - 00:08:22] É uma oportunidade, agora vamos abrir
+[00:08:22 - 00:08:24] esse negócio dentro do CRM.
+[00:08:24 - 00:08:27] Algumas que nós temos, a Exact Sales,
+[00:08:27 - 00:08:29] que acredito que a Exact Sales M-Time
+[00:08:29 - 00:08:31] são as mais conhecidas, e a RIV também
+[00:08:31 - 00:08:35] trabalha com essa parte do Sales Engagement.
+[00:08:35 - 00:08:37] Inclusive depois, no final,
+[00:08:37 - 00:08:39] eu vou mostrar para vocês como vocês podem comparar
+[00:08:39 - 00:08:42] as ferramentas, para entender o que uma fornece,
+[00:08:42 - 00:08:46] o que uma oferece, o que a outra deixa de oferecer,
+[00:08:46 - 00:08:48] para entender também qual ferramenta melhora
+[00:08:48 - 00:08:53] para o seu stack de ferramentas de inside sales.
+[00:08:53 - 00:08:56] CRM, muito parecido com o Sales Engagement,
+[00:08:56 - 00:08:58] porém ele é para os vendedores,
+[00:08:58 - 00:09:00] ele faz isso também de controlar
+[00:09:00 - 00:09:02] e registrar as atividades do vendedor.
+[00:09:02 - 00:09:04] Então, o vendedor precisa garantir
+[00:09:04 - 00:09:06] que aquele lidhe será atendido,
+[00:09:06 - 00:09:08] e ele não vai esquecer de ninguém.
+[00:09:08 - 00:09:10] E muitas vezes ele é usado para isso,
+[00:09:10 - 00:09:12] para a gente não esquecer os atendimentos
+[00:09:12 - 00:09:14] que ainda estão em aberto,
+[00:09:14 - 00:09:16] e a gente não esquecer de fazer os follow-ups
+[00:09:16 - 00:09:18] com aqueles leads que nós precisamos conversar.
+[00:09:18 - 00:09:21] Então, ele vai seguir um fluxo de cadência,
+[00:09:21 - 00:09:24] um fluxo de engajamento ali,
+[00:09:24 - 00:09:26] vai identificar cada etapa do negócio atual
+[00:09:26 - 00:09:28] através de funis, então ele tem os funis
+[00:09:28 - 00:09:30] dentro do CRM, e ele entende
+[00:09:30 - 00:09:33] em que etapa do funil está cada um dos leads
+[00:09:33 - 00:09:35] e qual a atenção que ele tem que dar para cada um deles,
+[00:09:35 - 00:09:37] e também vai identificar as oportunidades.
+[00:09:37 - 00:09:40] O CRM faz várias outras coisas,
+[00:09:40 - 00:09:43] mas eu acredito que essas serão as principais.
+[00:09:43 - 00:09:47] Aqui tem bastante ferramenta de CRM hoje no mercado.
+[00:09:47 - 00:09:52] O Pipe Drive e o Pipe Run são ferramentas até parecidas,
+[00:09:52 - 00:09:54] mas o Pipe Drive é de fora e o Pipe Run
+[00:09:54 - 00:09:55] é uma ferramenta nacional.
+[00:09:55 - 00:10:00] Mosquite, Nectar, Plumes também são ferramentas nacionais.
+[00:10:00 - 00:10:03] O RdE station CRM, eles compraram uma outra ferramenta
+[00:10:03 - 00:10:05] e transformaram em RdCRM.
+[00:10:05 - 00:10:10] Azor, CRM, HubSpot, Uptricks e o Salesforce.
+[00:10:10 - 00:10:15] O Salesforce vocês devem conhecer por conta de Aaron Ross
+[00:10:15 - 00:10:20] e toda a história, e ele é um dos CRM
+[00:10:20 - 00:10:23] também muito utilizados por operações grandes.
+[00:10:23 - 00:10:26] E aqui tem um porém que é o tamanho da empresa
+[00:10:26 - 00:10:28] que vai utilizar essa ferramenta.
+[00:10:28 - 00:10:32] Uma empresa muito grande com contratos muito grandes
+[00:10:32 - 00:10:34] e que precisa de várias etapas,
+[00:10:34 - 00:10:37] talvez se dê melhor com uma ferramenta como HubSpot
+[00:10:37 - 00:10:38] ou Salesforce.
+[00:10:38 - 00:10:42] Uma empresa que precisa que o CRM tenha vários caminhos,
+[00:10:42 - 00:10:43] várias etapas,
+[00:10:43 - 00:10:45] ou que ele tenha muitos campos adicionais
+[00:10:45 - 00:10:47] e que ele seja mais customisável,
+[00:10:47 - 00:10:49] pode se dar melhor também com o Bittrick.
+[00:10:49 - 00:10:51] Mas só tem uma operação simples,
+[00:10:51 - 00:10:53] o meu ticket é médio
+[00:10:53 - 00:10:55] e eu preciso de uma ferramenta bem intuitiva.
+[00:10:55 - 00:10:58] O Pipe Drive, o Pipe Run podem ser uma opção.
+[00:10:58 - 00:11:00] Tem aqui para todos os gostos,
+[00:11:00 - 00:11:04] para todos os bolsos e para todos os tamanhos de empresa.
+[00:11:04 - 00:11:06] Então vocês podem preenter e pesquisar
+[00:11:06 - 00:11:08] qual seria o CRM ideal.
+[00:11:08 - 00:11:10] E se você já usa um CRM hoje,
+[00:11:10 - 00:11:12] está pensando, puxa, será que eu troco?
+[00:11:12 - 00:11:15] A troca de um CRM também é bem complexa.
+[00:11:15 - 00:11:18] Eu preciso levar todas as informações
+[00:11:18 - 00:11:20] que eu tenho de um CRM para o outro
+[00:11:20 - 00:11:22] e eu posso ficar ali um ou dois dias
+[00:11:22 - 00:11:25] sem o sistema ainda até que eu termine de configurar.
+[00:11:25 - 00:11:28] Então o ideal seria essa troca ser feita
+[00:11:28 - 00:11:30] talvez no final de semana
+[00:11:30 - 00:11:34] ou em algum período que seja mais tranquilo.
+[00:11:34 - 00:11:37] Se você tem uma sensacionalidade de um período mais tranquilo no mês,
+[00:11:37 - 00:11:39] recomendo que faça ali,
+[00:11:39 - 00:11:41] porque geralmente as ferramentas prometem isso
+[00:11:41 - 00:11:44] de uma forma muito rápida, fácil e até intuitiva.
+[00:11:44 - 00:11:47] Mas a gente sabe que pode sim haver alguma perda
+[00:11:47 - 00:11:50] e você perder ali um ou dois dias de operação mesmo, certo?
+[00:11:50 - 00:11:54] O PADX virtual é a telefonia virtual,
+[00:11:54 - 00:11:57] assim como eu estou conversando aqui com o headset,
+[00:11:57 - 00:12:01] com o microphone, o PADX virtual é isso também.
+[00:12:01 - 00:12:04] Então ele é um sistema de telefonia na nuvem.
+[00:12:04 - 00:12:07] A gente não precisa mais daquele telefone na mesa.
+[00:12:07 - 00:12:09] E eu já vi empresas que começam a operação comercial
+[00:12:09 - 00:12:11] ainda com o telefone na mesa e a gente pensa,
+[00:12:11 - 00:12:14] puxa, não é mais assim que a gente faz.
+[00:12:14 - 00:12:17] Tem tudo dentro do computador, eu tenho tudo em nuvem.
+[00:12:17 - 00:12:19] Inclusive, esse PADX virtual,
+[00:12:19 - 00:12:24] ele se conecta com o CRM ou sales engagement.
+[00:12:24 - 00:12:26] Então, nesse caso,
+[00:12:26 - 00:12:28] ele também traz um DDD personalizado,
+[00:12:28 - 00:12:31] alguns deles você paga um valor a mais para ele
+[00:12:31 - 00:12:34] colocar o DDD da região para onde você está ligando.
+[00:12:34 - 00:12:38] Ele distribui um número de VoIP para várias pessoas
+[00:12:38 - 00:12:41] que podem fazer a ligação e ele grava a chamada.
+[00:12:41 - 00:12:44] Esse eu acho que é o ponto mais do DDD
+[00:12:44 - 00:12:47] e a gravação de chamadas são os pontos mais importantes.
+[00:12:47 - 00:12:48] Porque quando eu gravo a chamada,
+[00:12:48 - 00:12:50] eu consigo depois fazer a escuta daquelas chamadas
+[00:12:50 - 00:12:53] e eu consigo entender quais são os gargalos da minha operação
+[00:12:53 - 00:12:56] e onde eu preciso de fato investir em um treinamento, certo?
+[00:12:56 - 00:13:01] Ou até mesmo fazer ou tomar alguma outra ação em cima disso.
+[00:13:01 - 00:13:04] Nesse caso, eu não trouxe nenhuma ferramenta
+[00:13:04 - 00:13:08] porque geralmente os CRM já têm algum PADX integrado.
+[00:13:08 - 00:13:12] E ultimamente a gente tem visto muitos PADX surgirem
+[00:13:12 - 00:13:14] e aí eu não quis trazer nenhum aqui
+[00:13:14 - 00:13:16] porque é mais interessante que vocês vejam
+[00:13:16 - 00:13:20] qual que já está integrado diretamente com o CRM.
+[00:13:20 - 00:13:23] Ferramenta de Enablement.
+[00:13:23 - 00:13:26] Não era muito comum
+[00:13:26 - 00:13:30] e as ferramentas de Enablement surgiram não faz muito tempo,
+[00:13:30 - 00:13:34] mas elas servem para que você possa armazenar todo o conhecimento
+[00:13:34 - 00:13:36] e o conteúdo, fazer uma gestão desse conhecimento
+[00:13:36 - 00:13:39] que já foi distribuído e passado para as equipes
+[00:13:39 - 00:13:41] e também fazer uma aceleração do Rampap.
+[00:13:41 - 00:13:44] Algumas empresas têm uma universidade corporativa,
+[00:13:44 - 00:13:47] algumas empresas trabalham com isso de outra forma,
+[00:13:47 - 00:13:50] mas tem uma ferramenta de Enablement exclusiva
+[00:13:50 - 00:13:53] que pode ser contratada e utilizada em todas as empresas,
+[00:13:53 - 00:13:57] que é o Coreox, em que você monta sua área de Enablement lá dentro,
+[00:13:57 - 00:13:59] sua área de treinamento.
+[00:13:59 - 00:14:02] E por fim, tem algumas outras ferramentas
+[00:14:02 - 00:14:04] que dá para utilizar também,
+[00:14:04 - 00:14:07] plug-ins automáticos, que capitão dados do LinkedIn
+[00:14:07 - 00:14:09] ou dados do Google.
+[00:14:09 - 00:14:11] Muitas das ferramentas que a gente mostrou aqui
+[00:14:11 - 00:14:13] já têm esses plug-ins, então você contrata ela
+[00:14:13 - 00:14:15] e você já pode usar o plug-in
+[00:14:15 - 00:14:17] e facilita muito a vida, principalmente quando a gente precisa
+[00:14:17 - 00:14:19] de uma informação rápida
+[00:14:19 - 00:14:21] e a gente já tem a extensão ali.
+[00:14:21 - 00:14:23] Ferramenta de montagem de proposta.
+[00:14:23 - 00:14:26] Essa daqui facilita quando você precisa montar
+[00:14:26 - 00:14:28] muitas propostas de diferentes valores
+[00:14:28 - 00:14:31] para diferentes leads, ou tipos de leads.
+[00:14:31 - 00:14:34] Poxa, eu faço um treinamento, mas eu também faço uma consultoria
+[00:14:34 - 00:14:37] e eu também preço um serviço, X, Y, Z,
+[00:14:37 - 00:14:39] então você precisa de uma ferramenta
+[00:14:39 - 00:14:41] de montagem de proposta.
+[00:14:41 - 00:14:44] A ferramenta de Playbook segue uma linha muito parecida,
+[00:14:44 - 00:14:46] mas ela vai montar o Playbook de vendas
+[00:14:46 - 00:14:50] e muitas empresas ainda não têm o seu Playbook montado
+[00:14:50 - 00:14:52] ou não sabem como começar.
+[00:14:52 - 00:14:55] E essa é a ferramenta de Playbook, ela é especialista nisso.
+[00:14:55 - 00:14:57] Como vamos montar o seu Playbook?
+[00:14:57 - 00:14:59] E a ferramenta de coach de vendas,
+[00:14:59 - 00:15:02] que é uma ferramenta que analisa as ligações,
+[00:15:02 - 00:15:05] analisa textos enviados e ela faz realmente um coach,
+[00:15:05 - 00:15:08] trazendo maiores insights para o gestor
+[00:15:08 - 00:15:10] que está gerenciando aquela equipe
+[00:15:10 - 00:15:13] e que às vezes não teve tempo de ouvir tudo
+[00:15:13 - 00:15:16] ou de ver tudo que foi feito, certo?
+[00:15:16 - 00:15:19] Antes de eu mostrar para vocês
+[00:15:19 - 00:15:21] como fazer a comparação de ferramentas,
+[00:15:21 - 00:15:24] só lembrando que nós estamos no LinkedIn,
+[00:15:24 - 00:15:27] nós estamos no Instagram e também no nosso site,
+[00:15:27 - 00:15:31] sempre como seioshunter, no site seioshunter.ai.
+[00:15:31 - 00:15:34] Então deixa eu interromper esse compartilhamento aqui
+[00:15:34 - 00:15:37] e eu quero compartilhar com vocês
+[00:15:37 - 00:15:41] essa maneira que a gente faz
+[00:15:41 - 00:15:44] de comparar as ferramentas, certo?
+[00:15:44 - 00:15:48] Então deixa eu compartilhar aqui.
+[00:15:48 - 00:15:50] Nós estamos no Bitube Stack,
+[00:15:50 - 00:15:54] que é um site que indica ferramentas.
+[00:15:54 - 00:15:57] E aqui eu vou digitar o nome da ferramenta
+[00:15:57 - 00:15:59] que eu quero fazer comparação.
+[00:15:59 - 00:16:01] Nesse caso, eu vou utilizar a ExatSales,
+[00:16:01 - 00:16:04] que é uma ferramenta que a gente mostrou para vocês.
+[00:16:04 - 00:16:06] Então aqui é a ExatSales.
+[00:16:06 - 00:16:09] Vou dar um buscar e a gente vai trazer aqui.
+[00:16:09 - 00:16:17] O Bitube Stack traz um discritivo da ferramenta, certo?
+[00:16:17 - 00:16:21] ExatSales é um software de direção de leads
+[00:16:21 - 00:16:25] para quem é indicado o prêmios que ele já ganhou.
+[00:16:25 - 00:16:35] E aqui ele tem uma função que é o compare.
+[00:16:35 - 00:16:38] E eu posso adicionar uma ferramenta para que ele compare.
+[00:16:38 - 00:16:41] Nesse caso, eu vou colocar a metane.
+[00:16:41 - 00:16:46] Depois que eu adicionei,
+[00:16:46 - 00:16:50] eu já tenho as comparações.
+[00:16:50 - 00:16:52] E o mais legal é esse aqui.
+[00:16:52 - 00:16:58] Então ele diz para mim o que uma ferramenta faz e a outra não faz, certo?
+[00:16:58 - 00:17:00] E assim eu consigo escolher melhor.
+[00:17:00 - 00:17:03] Além disso, eu posso listar contato das duas.
+[00:17:03 - 00:17:05] Tanto de uma quanto de outra.
+[00:17:05 - 00:17:07] Beleza?
+[00:17:07 - 00:17:08] Gente, espero que vocês tenham curtido.
+[00:17:08 - 00:17:10] Vejo vocês na próxima aula.
+[00:17:10 - 00:17:12] Então tem muito conteúdo aqui dentro da plataforma.
+[00:17:12 - 00:17:14] E não esquece de dar uma passadinha lá no nosso site
+[00:17:14 - 00:17:16] para dar uma olhada nas vagas também.

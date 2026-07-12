@@ -1,0 +1,483 @@
+[
+  {
+    "id": "prompt-1-1",
+    "cycleCode": "1.1",
+    "title": "Prompt de estudo aplicado - Glossário de Inside Sales",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Glossário de Inside Sales em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-1-2",
+    "cycleCode": "1.2",
+    "title": "Prompt de estudo aplicado - Funil de Vendas",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Funil de Vendas em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-1-3",
+    "cycleCode": "1.3",
+    "title": "Prompt de estudo aplicado - Vendas Consultivas",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Vendas Consultivas em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-1-4",
+    "cycleCode": "1.4",
+    "title": "Prompt de estudo aplicado - O que é Inbound",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar O que é Inbound em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-1-5",
+    "cycleCode": "1.5",
+    "title": "Prompt de estudo aplicado - O que é Outbound",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar O que é Outbound em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-1-6",
+    "cycleCode": "1.6",
+    "title": "Prompt de estudo aplicado - Definindo o ICP",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Definindo o ICP em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-1-7",
+    "cycleCode": "1.7",
+    "title": "Prompt de estudo aplicado - Ferramentas de Inside Sales",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Ferramentas de Inside Sales em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-2-1",
+    "cycleCode": "2.1",
+    "title": "Prompt de estudo aplicado - Técnicas de Abordagem",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Técnicas de Abordagem em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-2-2",
+    "cycleCode": "2.2",
+    "title": "Prompt de estudo aplicado - Frameworks de Vendas",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Frameworks de Vendas em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-2-3",
+    "cycleCode": "2.3",
+    "title": "Prompt de estudo aplicado - BANT",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar BANT em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-2-4",
+    "cycleCode": "2.4",
+    "title": "Prompt de estudo aplicado - GPCT",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar GPCT em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-2-5",
+    "cycleCode": "2.5",
+    "title": "Prompt de estudo aplicado - SPIN Selling",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar SPIN Selling em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-2-6",
+    "cycleCode": "2.6",
+    "title": "Prompt de estudo aplicado - Cold Call",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Cold Call em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-1",
+    "cycleCode": "3.1",
+    "title": "Prompt de estudo aplicado - Criação de Listas",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Criação de Listas em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-2",
+    "cycleCode": "3.2",
+    "title": "Prompt de estudo aplicado - Criação de Listas na Prática",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Criação de Listas na Prática em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-3",
+    "cycleCode": "3.3",
+    "title": "Prompt de estudo aplicado - Social Selling no WhatsApp",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Social Selling no WhatsApp em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-4",
+    "cycleCode": "3.4",
+    "title": "Prompt de estudo aplicado - Social Selling no LinkedIn",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Social Selling no LinkedIn em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-5",
+    "cycleCode": "3.5",
+    "title": "Prompt de estudo aplicado - Fluxo de Cadência",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Fluxo de Cadência em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-6",
+    "cycleCode": "3.6",
+    "title": "Prompt de estudo aplicado - Cold Mail",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Cold Mail em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-7",
+    "cycleCode": "3.7",
+    "title": "Prompt de estudo aplicado - Oratória",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Oratória em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-3-8",
+    "cycleCode": "3.8",
+    "title": "Prompt de estudo aplicado - Objeções",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Objeções em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-4-1",
+    "cycleCode": "4.1",
+    "title": "Prompt de estudo aplicado - Passagem de Bastão",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Passagem de Bastão em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-5-1",
+    "cycleCode": "5.1",
+    "title": "Prompt de estudo aplicado - Carreira em Inside Sales",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Carreira em Inside Sales em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-1",
+    "cycleCode": "6.1",
+    "title": "Prompt de estudo aplicado - Fundamentos de Inteligência Artificial para Vendas",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Fundamentos de Inteligência Artificial para Vendas em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-2",
+    "cycleCode": "6.2",
+    "title": "Prompt de estudo aplicado - Engenharia de Prompts para Profissionais de Vendas",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Engenharia de Prompts para Profissionais de Vendas em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-3",
+    "cycleCode": "6.3",
+    "title": "Prompt de estudo aplicado - IA para Encontrar Empresas e Clientes Potenciais",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar IA para Encontrar Empresas e Clientes Potenciais em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-4",
+    "cycleCode": "6.4",
+    "title": "Prompt de estudo aplicado - IA para Enriquecimento e Qualificação de Leads",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar IA para Enriquecimento e Qualificação de Leads em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-5",
+    "cycleCode": "6.5",
+    "title": "Prompt de estudo aplicado - IA para Prospecção Personalizada em Escala",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar IA para Prospecção Personalizada em Escala em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-6",
+    "cycleCode": "6.6",
+    "title": "Prompt de estudo aplicado - IA para Reuniões, Negociação e Fechamento",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar IA para Reuniões, Negociação e Fechamento em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-6-7",
+    "cycleCode": "6.7",
+    "title": "Prompt de estudo aplicado - Assistentes, Copilotos e Agentes Comerciais",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Assistentes, Copilotos e Agentes Comerciais em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-1",
+    "cycleCode": "7.1",
+    "title": "Prompt de estudo aplicado - Fundamentos e Mapeamento de Processos Comerciais",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Fundamentos e Mapeamento de Processos Comerciais em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-2",
+    "cycleCode": "7.2",
+    "title": "Prompt de estudo aplicado - Automação da Captura, Organização e Enriquecimento de Leads",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Automação da Captura, Organização e Enriquecimento de Leads em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-3",
+    "cycleCode": "7.3",
+    "title": "Prompt de estudo aplicado - Automação da Prospecção e da Cadência Multicanal",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Automação da Prospecção e da Cadência Multicanal em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-4",
+    "cycleCode": "7.4",
+    "title": "Prompt de estudo aplicado - Automação da Qualificação, Distribuição e Agendamento",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Automação da Qualificação, Distribuição e Agendamento em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-5",
+    "cycleCode": "7.5",
+    "title": "Prompt de estudo aplicado - Automação do CRM, Pipeline e Gestão de Oportunidades",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Automação do CRM, Pipeline e Gestão de Oportunidades em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-6",
+    "cycleCode": "7.6",
+    "title": "Prompt de estudo aplicado - Automação de Propostas, Follow-up, Fechamento e Passagem de Bastão",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Automação de Propostas, Follow-up, Fechamento e Passagem de Bastão em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  },
+  {
+    "id": "prompt-7-7",
+    "cycleCode": "7.7",
+    "title": "Prompt de estudo aplicado - Arquitetura de Automação Comercial de Ponta a Ponta",
+    "mode": "[SIMULACAO]",
+    "template": "Atue como mentor de Inside Sales. Ajude-me a aplicar Arquitetura de Automação Comercial de Ponta a Ponta em uma empresa fictícia ou com dados anonimizados. Separe fatos, hipóteses e recomendações. Liste riscos de LGPD, política de canal e validação humana.",
+    "qualityCriteria": [
+      "contexto suficiente",
+      "formato de saída definido",
+      "fontes ou lacunas declaradas",
+      "limites de uso"
+    ]
+  }
+]

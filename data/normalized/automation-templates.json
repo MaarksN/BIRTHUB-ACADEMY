@@ -1,0 +1,842 @@
+[
+  {
+    "id": "automation-template-01",
+    "title": "Lead de formulário para CRM",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Lead de formulário para CRM"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-02",
+    "title": "Enriquecimento de lead",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Enriquecimento de lead"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-03",
+    "title": "Deduplicação",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Deduplicação"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-04",
+    "title": "Lead scoring",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Lead scoring"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-05",
+    "title": "Distribuição automática",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Distribuição automática"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-06",
+    "title": "Cadência outbound",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Cadência outbound"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-07",
+    "title": "Follow-up inbound",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Follow-up inbound"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-08",
+    "title": "Recuperação de no-show",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Recuperação de no-show"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-09",
+    "title": "Reativação de oportunidade",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Reativação de oportunidade"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-10",
+    "title": "Alerta de negócio parado",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Alerta de negócio parado"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-11",
+    "title": "Atualização automática do CRM",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Atualização automática do CRM"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-12",
+    "title": "Resumo de reunião",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Resumo de reunião"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-13",
+    "title": "Geração de tarefas",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Geração de tarefas"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-14",
+    "title": "Envio de proposta",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Envio de proposta"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-15",
+    "title": "Aprovação de desconto",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Aprovação de desconto"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-16",
+    "title": "Assinatura e fechamento",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Assinatura e fechamento"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-17",
+    "title": "Passagem para Customer Success",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Passagem para Customer Success"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-18",
+    "title": "Pesquisa de satisfação",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Pesquisa de satisfação"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-19",
+    "title": "Renovação",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Renovação"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  },
+  {
+    "id": "automation-template-20",
+    "title": "Upsell e cross-sell",
+    "mode": "[SIMULACAO]",
+    "trigger": "Evento comercial validado",
+    "conditions": [
+      "tenant ativo",
+      "consentimento e base legal revisados",
+      "dados mínimos presentes"
+    ],
+    "actions": [
+      {
+        "type": "log",
+        "label": "Registrar início de Upsell e cross-sell"
+      },
+      {
+        "type": "validate",
+        "label": "Validar dados, canal e política aplicável"
+      },
+      {
+        "type": "task",
+        "label": "Criar tarefa ou recomendação para humano responsável"
+      }
+    ],
+    "delays": [
+      "aguardar janela comercial quando houver comunicação externa"
+    ],
+    "fallbacks": [
+      "pausar fluxo e alertar responsável se dados estiverem incompletos"
+    ],
+    "errorHandling": [
+      "idempotência por chave de evento",
+      "retry limitado",
+      "rollback documentado quando aplicável"
+    ],
+    "metrics": [
+      "tempo de ciclo",
+      "taxa de conclusão",
+      "erros",
+      "intervenções humanas"
+    ]
+  }
+]

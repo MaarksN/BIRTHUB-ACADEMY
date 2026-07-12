@@ -1,0 +1,1032 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conteúdo Completo — Módulos 6 e 7</title><style>
+:root{--bg:#f5f7fb;--paper:#fff;--text:#172033;--muted:#5e6a7d;--primary:#3559e0;--accent:#16a085;--border:#dbe2ef;--soft:#eef3ff;--warn:#fff7e8;--bad:#fff0f0;--good:#ebfff6;--shadow:0 12px 35px rgba(31,50,81,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}.layout{display:grid;grid-template-columns:300px 1fr;min-height:100vh}aside{position:sticky;top:0;height:100vh;overflow:auto;padding:24px;background:#111a2e;color:#fff}aside h1{font-size:1.15rem;line-height:1.25;margin:0 0 18px}aside p{color:#bdc7dc;font-size:.9rem}.nav-title{margin:22px 0 8px;color:#7edbc6;text-transform:uppercase;font-size:.75rem;letter-spacing:.08em}.toc a{display:block;color:#dbe4f8;text-decoration:none;padding:7px 9px;border-radius:8px;font-size:.9rem}.toc a:hover{background:rgba(255,255,255,.09);color:#fff}main{max-width:1100px;width:100%;margin:0 auto;padding:42px}.hero,.module,.cycle,.references{background:var(--paper);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:34px;margin-bottom:30px}.hero h1{font-size:2.25rem;margin:.2rem 0}.subtitle{font-size:1.12rem;color:var(--muted)}.bad,.better,.good,.case{padding:16px 18px;border-radius:12px;margin:16px 0;border-left:5px solid}.bad{background:var(--bad);border-color:#d95858}.better{background:var(--warn);border-color:#e6a331}.good{background:var(--good);border-color:#12a36d}.case{background:var(--soft);border-color:var(--primary)}h2{font-size:1.8rem;color:#1e3a8a;border-bottom:2px solid var(--border);padding-bottom:10px}h3{font-size:1.48rem;margin-top:0;color:#243b73}h4{font-size:1.14rem;margin-top:28px;color:#23375e}h5{font-size:1rem}.meta{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 20px}.pill{background:var(--soft);color:#27408b;border-radius:999px;padding:5px 11px;font-size:.82rem;font-weight:600}.objectives{background:#f7fafc;border:1px solid var(--border);border-radius:12px;padding:16px 18px}.objectives h4{margin-top:0}table{border-collapse:collapse;width:100%;margin:18px 0;font-size:.94rem}th,td{border:1px solid var(--border);padding:10px;text-align:left;vertical-align:top}th{background:#eef3ff;color:#243b73}pre{white-space:pre-wrap;background:#111827;color:#e5f0ff;padding:18px;border-radius:12px;overflow:auto}code{background:#eef2f7;padding:2px 5px;border-radius:5px}.question-bank{display:grid;gap:14px}.question{border:1px solid var(--border);border-radius:12px;padding:16px;background:#fbfcff}.question h5{margin:0 0 8px;color:#1e3a8a}.answer summary{cursor:pointer;color:var(--primary);font-weight:700}.checklist{list-style:none;padding-left:0}.checklist li{margin:7px 0}.checklist li::before{content:'☐';margin-right:9px;color:var(--accent)}.module-intro{background:linear-gradient(135deg,#203a78,#3559e0);color:white}.module-intro h2{color:#fff;border-color:rgba(255,255,255,.25)}.module-intro p{color:#e6edff}.notice{background:#fff7e8;border:1px solid #f0cc82;border-radius:12px;padding:15px}.search{width:100%;padding:11px;border-radius:10px;border:1px solid #53617c;background:#fff;color:#111;margin:10px 0 18px}.hidden{display:none!important}.top{display:inline-block;margin-top:20px;color:var(--primary)}footer{text-align:center;color:var(--muted);padding:30px}@media(max-width:900px){.layout{display:block}aside{position:relative;height:auto}.toc{columns:2}main{padding:18px}.hero,.module,.cycle,.references{padding:22px}.hero h1{font-size:1.7rem}}@media(max-width:560px){.toc{columns:1}table{display:block;overflow-x:auto}.layout{display:block}}
+@media print{aside{display:none}.layout{display:block}main{max-width:none;padding:0}.hero,.module,.cycle,.references{box-shadow:none;break-inside:auto;border-radius:0}.question{break-inside:avoid}.answer{display:block}.answer summary{display:none}.answer p{display:block}a{color:#000;text-decoration:none}}
+</style></head><body><div class="layout"><aside id="top"><h1>Inside Sales com IA e Automação</h1><p>Conteúdo completo dos módulos 6 e 7, atividades, checklists e 280 questões comentadas.</p><input class="search" id="search" type="search" placeholder="Buscar no conteúdo..." aria-label="Buscar no conteúdo"><div class="toc"><div class="nav-title">Módulo 6</div><a href="#c6-1">6.1 — Fundamentos de Inteligência Artificial para Vendas</a><a href="#c6-2">6.2 — Engenharia de Prompts para Profissionais de Vendas</a><a href="#c6-3">6.3 — IA para Encontrar Empresas e Clientes Potenciais</a><a href="#c6-4">6.4 — IA para Enriquecimento e Qualificação de Leads</a><a href="#c6-5">6.5 — IA para Prospecção Personalizada em Escala</a><a href="#c6-6">6.6 — IA para Reuniões, Negociação e Fechamento</a><a href="#c6-7">6.7 — Assistentes, Copilotos e Agentes Comerciais</a><div class="nav-title">Módulo 7</div><a href="#c7-1">7.1 — Fundamentos e Mapeamento de Processos Comerciais</a><a href="#c7-2">7.2 — Automação da Captura, Organização e Enriquecimento de Leads</a><a href="#c7-3">7.3 — Automação da Prospecção e da Cadência Multicanal</a><a href="#c7-4">7.4 — Automação da Qualificação, Distribuição e Agendamento</a><a href="#c7-5">7.5 — Automação do CRM, Pipeline e Gestão de Oportunidades</a><a href="#c7-6">7.6 — Automação de Propostas, Follow-up, Fechamento e Passagem de Bastão</a><a href="#c7-7">7.7 — Arquitetura de Automação Comercial de Ponta a Ponta</a><div class="nav-title">Complementos</div><a href="#projects">Projetos dos módulos</a><a href="#references">Referências oficiais</a></div></aside><main><header class="hero"><span class="pill">Material didático</span><h1>Módulos 6 e 7 — Inteligência Artificial e Automação Comercial</h1><p class="subtitle">Conteúdo estruturado para curso premium de Inside Sales, com 14 ciclos, atividades práticas, projetos de módulo, checklists e quizzes comentados.</p><div class="notice"><strong>Nota de uso responsável:</strong> este material apresenta princípios educacionais e operacionais. Aplicações reais devem ser adaptadas às políticas da empresa, aos contratos dos fornecedores, às regras dos canais e à legislação aplicável. Não substitui orientação jurídica, de segurança ou privacidade.</div></header><section class="module module-intro"><h2>Módulo 6 — Inteligência Artificial Aplicada a Vendas</h2><p>Este módulo desenvolve a capacidade de usar IA para pesquisar, priorizar, personalizar, preparar reuniões, apoiar negociações e projetar copilotos ou agentes. O princípio central é: a IA aumenta a capacidade humana, mas não elimina responsabilidade, validação ou governança.</p></section><article class="cycle searchable" id="c6-1" data-title="fundamentos de inteligência artificial para vendas"><h3>6.1 — Fundamentos de Inteligência Artificial para Vendas</h3><div class="meta"><span class="pill">Duração: 2h30</span><span class="pill">Nível: Iniciante</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Diferenciar IA, IA generativa, automação, assistente, copiloto e agente.</li><li>Reconhecer casos de uso da IA em cada etapa do funil comercial.</li><li>Identificar limitações, riscos e situações que exigem validação humana.</li><li>Classificar tarefas comerciais por potencial de apoio da IA.</li></ul></div>
+<h4>1. O que é Inteligência Artificial</h4>
+<p>Inteligência Artificial é o conjunto de técnicas que permite a sistemas computacionais executar tarefas normalmente associadas à percepção, previsão, classificação, linguagem, planejamento ou tomada de decisão. Em vendas, a IA não deve ser tratada como uma “máquina que sabe tudo”. Ela é um mecanismo de apoio que encontra padrões, transforma dados, gera rascunhos e recomenda próximos passos.</p>
+<p>A IA generativa produz novos conteúdos a partir de instruções: textos, resumos, imagens, áudio, tabelas, roteiros ou código. Os modelos de linguagem trabalham com probabilidades e padrões linguísticos. Por isso, podem produzir respostas convincentes e incorretas. Esse erro é conhecido como <strong>alucinação</strong>.</p>
+
+<h4>2. IA, automação, assistente, copiloto e agente</h4>
+<table><thead><tr><th>Conceito</th><th>Função</th><th>Exemplo comercial</th><th>Risco principal</th></tr></thead><tbody>
+<tr><td>Automação por regras</td><td>Executa passos predefinidos</td><td>Criar tarefa quando um lead entra no CRM</td><td>Executar uma regra inadequada em escala</td></tr>
+<tr><td>Assistente de IA</td><td>Responde e cria conteúdo sob solicitação</td><td>Gerar perguntas para uma reunião</td><td>Informação inventada ou genérica</td></tr>
+<tr><td>Copiloto</td><td>Acompanha o profissional e recomenda ações</td><td>Sugerir um follow-up a partir do histórico</td><td>Dependência excessiva da recomendação</td></tr>
+<tr><td>Agente</td><td>Planeja e executa etapas usando ferramentas</td><td>Pesquisar conta, resumir dados e preparar briefing</td><td>Ação indevida sem permissão ou supervisão</td></tr>
+<tr><td>Chatbot</td><td>Conversa dentro de um escopo definido</td><td>Triagem inicial de interessados</td><td>Frustração quando não reconhece exceções</td></tr>
+</tbody></table>
+
+<h4>3. Como a IA apoia o processo comercial</h4>
+<ul>
+<li><strong>Mercado:</strong> organizar pesquisas, comparar segmentos e transformar dados públicos em hipóteses.</li>
+<li><strong>Prospecção:</strong> sugerir contas, palavras-chave, mensagens e cadências.</li>
+<li><strong>Qualificação:</strong> resumir informações, classificar respostas e recomendar perguntas.</li>
+<li><strong>Reuniões:</strong> preparar briefings, transcrever com consentimento e registrar próximos passos.</li>
+<li><strong>Negociação:</strong> comparar cenários, estruturar argumentos e simular objeções.</li>
+<li><strong>Gestão:</strong> identificar negócios parados, padrões de perda e riscos no pipeline.</li>
+</ul>
+
+<h4>4. As quatro camadas de uma solução comercial com IA</h4>
+<ol>
+<li><strong>Dados:</strong> CRM, documentos, sites, conversas, catálogos e regras internas.</li>
+<li><strong>Modelo:</strong> sistema que interpreta a entrada e produz uma saída.</li>
+<li><strong>Ferramentas:</strong> buscas, APIs, banco de dados, calendário, CRM e mensageria.</li>
+<li><strong>Governança:</strong> permissões, logs, aprovação humana, segurança e avaliação de qualidade.</li>
+</ol>
+<p>Uma solução não é confiável apenas porque usa um modelo avançado. Ela precisa de dados adequados, regras claras, testes e mecanismos de controle.</p>
+
+<h4>5. Limitações que o profissional deve conhecer</h4>
+<ul>
+<li>A IA pode inventar fatos, fontes, contatos e números.</li>
+<li>O modelo pode não conhecer eventos recentes sem acesso a busca atualizada.</li>
+<li>Um resumo pode omitir detalhes importantes.</li>
+<li>Dados ruins geram recomendações ruins.</li>
+<li>O modelo pode reproduzir vieses presentes nos dados ou nas instruções.</li>
+<li>Informações confidenciais não devem ser inseridas em ferramentas sem avaliação de privacidade e contrato adequado.</li>
+</ul>
+
+<h4>6. Regra de risco: quanto maior o impacto, maior a supervisão</h4>
+<p>Use automação total apenas em ações reversíveis e de baixo risco. Recomendações de prioridade podem ser assistidas. Alterações de preço, aprovação de desconto, assinatura de contrato, exclusão de dados e mensagens sensíveis exigem validação humana.</p>
+<div class="case"><strong>Caso prático — NuvemPro:</strong> uma empresa de software deseja usar IA para acelerar a prospecção. A solução segura pesquisa contas públicas, cria um briefing e sugere uma mensagem. O SDR valida os fatos, ajusta o tom e decide se a mensagem será enviada. A solução insegura inventa contatos e dispara mensagens sem revisão.</div>
+
+<h4>Atividade prática — Mapa de oportunidades de IA</h4>
+<p>Liste dez tarefas da sua rotina comercial. Para cada tarefa, registre: frequência, tempo gasto, risco, dados utilizados e resultado esperado. Classifique a aplicação como pesquisa, criação, análise, personalização, automação ou decisão assistida. Escolha três tarefas de baixo risco para um primeiro piloto.</p>
+
+<h4>Checklist de conclusão</h4>
+<ul class="checklist">
+<li>Consigo explicar por que IA não é sinônimo de automação.</li>
+<li>Sei diferenciar assistente, copiloto, chatbot e agente.</li>
+<li>Reconheço tarefas que não devem ser totalmente automatizadas.</li>
+<li>Entendo a necessidade de validação humana e de fontes.</li>
+<li>Sei mapear uma oportunidade de IA com objetivo e risco.</li>
+</ul>
+
+<h4>Resumo</h4>
+<p>A IA amplia a capacidade do profissional de vendas quando recebe contexto, dados de qualidade e limites claros. O ganho não está em “substituir pessoas”, mas em reduzir trabalho repetitivo, melhorar preparação e aumentar consistência. Toda aplicação deve combinar utilidade, validação e governança.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual alternativa diferencia melhor automação por regras de IA generativa?</strong></p><ol type="A"><li>A automação por regras segue condições definidas; a IA generativa produz saídas probabilísticas.</li><li>A automação sempre usa linguagem natural; a IA nunca usa regras.</li><li>A IA generativa só funciona com planilhas.</li><li>Não existe diferença prática.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A automação executa instruções determinísticas, enquanto a IA generativa cria respostas com base em padrões e probabilidades.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>O que é uma alucinação de IA?</strong></p><ol type="A"><li>Uma resposta lenta.</li><li>Uma saída convincente, porém factual ou logicamente incorreta.</li><li>Um bloqueio de usuário.</li><li>Uma atualização automática do CRM.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Alucinação é quando o sistema gera conteúdo plausível, mas falso ou não sustentado.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual tarefa exige maior supervisão humana?</strong></p><ol type="A"><li>Formatar nomes em uma planilha.</li><li>Criar um rascunho de assunto de e-mail.</li><li>Aprovar desconto e alterar o valor de uma proposta.</li><li>Resumir uma descrição pública de empresa.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: C.</strong> Decisões financeiras e contratuais têm alto impacto e devem exigir aprovação humana.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual componente pertence à camada de governança?</strong></p><ol type="A"><li>Log de execução e permissões.</li><li>Lista de leads bruta.</li><li>Texto de uma landing page.</li><li>Tamanho da tela do usuário.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Governança inclui permissões, logs, auditoria, supervisão e avaliação.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Um copiloto comercial é melhor descrito como:</strong></p><ol type="A"><li>Um robô que substitui todo o time.</li><li>Um sistema que acompanha o profissional e sugere ações com base no contexto.</li><li>Uma planilha sem fórmulas.</li><li>Um disparador de mensagens sem limites.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Copilotos apoiam o usuário durante o trabalho, sem retirar necessariamente a decisão humana.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual é a melhor primeira aplicação de IA em uma empresa iniciante?</strong></p><ol type="A"><li>Assinar contratos automaticamente.</li><li>Excluir leads sem revisão.</li><li>Criar briefings e rascunhos revisados por um vendedor.</li><li>Alterar preços com base em humor do cliente.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: C.</strong> Começar por tarefas reversíveis, de baixo risco e com revisão facilita aprendizagem e controle.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Por que dados ruins prejudicam uma solução de IA?</strong></p><ol type="A"><li>Porque a IA transforma automaticamente qualquer dado em verdade.</li><li>Porque recomendações dependem da qualidade, contexto e atualização dos dados de entrada.</li><li>Porque modelos não processam texto.</li><li>Porque somente dados financeiros podem ser usados.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Entradas incompletas ou incorretas aumentam erros e decisões equivocadas.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual exemplo representa um agente?</strong></p><ol type="A"><li>Um documento estático com instruções.</li><li>Um sistema que pesquisa, usa ferramentas e executa etapas de um objetivo com limites definidos.</li><li>Uma calculadora simples.</li><li>Um e-mail escrito manualmente.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Agentes combinam modelo, ferramentas e lógica para executar etapas orientadas a um objetivo.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual prática reduz o risco de informações inventadas?</strong></p><ol type="A"><li>Pedir respostas sem fontes.</li><li>Solicitar evidências, registrar fontes e validar dados críticos.</li><li>Enviar a resposta imediatamente.</li><li>Remover todo contexto do prompt.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Evidências e verificação diminuem a chance de usar conteúdo incorreto.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual princípio deve orientar o nível de automação?</strong></p><ol type="A"><li>Quanto maior o impacto, menor a supervisão.</li><li>Toda tarefa deve ser autônoma.</li><li>Quanto maior o impacto e a irreversibilidade, maior a supervisão.</li><li>Somente tarefas criativas precisam de controle.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: C.</strong> Risco, impacto e reversibilidade determinam a necessidade de aprovação humana.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Modelos generativos produzem respostas probabilísticas, não garantias factuais.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A saída depende de padrões e pode conter erros.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Quanto maior a autonomia do sistema, menor deve ser a governança.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Mais autonomia exige controles, logs e supervisão maiores.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Assistente e agente são conceitos idênticos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Agentes podem planejar e executar etapas com ferramentas; assistentes normalmente respondem sob solicitação.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Logs e permissões fazem parte da camada de governança.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Eles apoiam controle e auditoria.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Tarefas reversíveis e de baixo risco são boas candidatas a pilotos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Elas limitam o impacto de falhas iniciais.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>A IA consegue verificar qualquer fato sem fontes externas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Fatos críticos exigem fonte e validação.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Uma solução de IA pode combinar dados, modelo, ferramentas e governança.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> As quatro camadas formam uma visão completa da solução.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Contratos e descontos podem ser aprovados sem revisão humana.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> São ações de alto impacto.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Uma alucinação pode ser escrita em tom confiante.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A aparência de certeza não garante precisão.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Todo chatbot é necessariamente um agente autônomo.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Muitos chatbots seguem escopos ou regras limitadas.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c6-2" data-title="engenharia de prompts para profissionais de vendas"><h3>6.2 — Engenharia de Prompts para Profissionais de Vendas</h3><div class="meta"><span class="pill">Duração: 3h</span><span class="pill">Nível: Iniciante a intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Construir prompts claros, reutilizáveis e verificáveis.</li><li>Transformar tarefas comerciais em instruções estruturadas.</li><li>Criar formatos de saída adequados ao CRM e à rotina comercial.</li><li>Revisar prompts com critérios de qualidade e segurança.</li></ul></div>
+<h4>1. Prompt não é apenas uma pergunta</h4>
+<p>Prompt é a combinação de instrução, contexto, dados e critérios que orienta a IA. Pedidos vagos produzem respostas genéricas. Pedidos muito longos, contraditórios ou sem prioridade também reduzem a qualidade. O objetivo é fornecer informação suficiente para a tarefa sem misturar requisitos incompatíveis.</p>
+
+<h4>2. Estrutura profissional de prompt</h4>
+<ol>
+<li><strong>Função:</strong> qual papel a IA deve assumir.</li>
+<li><strong>Contexto:</strong> empresa, mercado, produto, etapa do funil e situação.</li>
+<li><strong>Objetivo:</strong> resultado que deve ser produzido.</li>
+<li><strong>Dados de entrada:</strong> informações disponíveis e campos variáveis.</li>
+<li><strong>Regras:</strong> passos ou critérios obrigatórios.</li>
+<li><strong>Restrições:</strong> o que não pode ser inventado, omitido ou executado.</li>
+<li><strong>Formato de saída:</strong> tabela, JSON, lista, roteiro ou e-mail.</li>
+<li><strong>Critérios de qualidade:</strong> clareza, personalização, tamanho e tom.</li>
+<li><strong>Validação:</strong> checagem de fatos, lacunas e incertezas.</li>
+</ol>
+
+<h4>3. Exemplo: de prompt fraco para prompt profissional</h4>
+<div class="bad"><strong>Fraco:</strong> “Crie um e-mail para vender meu software.”</div>
+<div class="better"><strong>Melhorado:</strong> “Crie um e-mail curto para um diretor financeiro de uma empresa de logística. O software reduz retrabalho em conciliação.”</div>
+<div class="good"><strong>Profissional:</strong> “Atue como SDR B2B. Com base somente nos dados fornecidos, produza um cold mail de até 90 palavras para um diretor financeiro. Contexto: empresa de logística com 200 funcionários; hipótese de problema: conciliações manuais e atraso no fechamento. Estrutura: contexto verificável, hipótese, benefício, pergunta simples. Não invente clientes, números ou eventos. Marque qualquer lacuna como [VALIDAR]. Gere três assuntos com até seis palavras e uma justificativa de personalização.”</div>
+
+<h4>4. Variáveis e biblioteca de prompts</h4>
+<p>Um prompt reutilizável deve separar instruções fixas de variáveis. Exemplos de variáveis: <code>{{empresa}}</code>, <code>{{cargo}}</code>, <code>{{segmento}}</code>, <code>{{sinal}}</code>, <code>{{dor}}</code>, <code>{{prova}}</code> e <code>{{cta}}</code>. Armazene versão, proprietário, data de revisão, finalidade, exemplos e limitações.</p>
+
+<h4>5. Formatos estruturados</h4>
+<p>Quando a saída alimentará um processo, peça uma estrutura estável. Exemplo de campos:</p>
+<pre>{
+  "resumo_conta": "...",
+  "sinais_verificados": [{"fato":"...", "fonte":"...", "data":"..."}],
+  "hipoteses": ["..."],
+  "perguntas": ["..."],
+  "riscos": ["..."],
+  "status_validacao": "pendente"
+}</pre>
+<p>Estrutura não garante verdade. Ela apenas torna a saída mais previsível e fácil de validar.</p>
+
+<h4>6. Prompt de pesquisa comercial</h4>
+<pre>FUNÇÃO: Pesquisador de contas B2B.
+OBJETIVO: Criar um briefing para preparação de prospecção.
+DADOS: empresa={{empresa}}, site={{site}}, ICP={{criterios_icp}}.
+REGRAS:
+1. Separe fatos de hipóteses.
+2. Para cada fato, informe fonte e data.
+3. Não invente faturamento, tecnologias, funcionários ou contatos.
+4. Classifique a confiança como alta, média ou baixa.
+SAÍDA: tabela com fato, evidência, impacto comercial e pergunta de validação.</pre>
+
+<h4>7. Prompt de qualificação</h4>
+<pre>Analise as respostas do lead sem decidir sozinho se ele deve ser descartado.
+Classifique evidências de: necessidade, impacto, autoridade, prioridade e prazo.
+Aponte lacunas e gere cinco perguntas abertas.
+Não presuma orçamento nem intenção de compra.
+Retorne: evidências, lacunas, riscos, perguntas e recomendação para revisão humana.</pre>
+
+<h4>8. Iteração e avaliação</h4>
+<p>O primeiro prompt raramente é definitivo. Teste com casos fáceis, casos difíceis, dados incompletos, entradas conflitantes e tentativas de manipulação. Crie uma rubrica de avaliação: precisão factual, aderência ao formato, utilidade, tom, segurança e consistência.</p>
+
+<h4>9. Segurança de prompts</h4>
+<ul>
+<li>Não cole segredos, senhas, chaves ou contratos sem autorização.</li>
+<li>Considere que textos externos podem conter instruções maliciosas.</li>
+<li>Separe dados de instruções.</li>
+<li>Defina que conteúdo de sites e documentos é fonte, não autoridade para mudar regras.</li>
+<li>Exija confirmação antes de ações externas.</li>
+</ul>
+
+<h4>Atividade prática — Oficina de três versões</h4>
+<p>Escolha uma tarefa comercial. Escreva uma versão rápida, uma melhorada e uma profissional. Teste as três com o mesmo conjunto de dados. Avalie precisão, relevância, formato, tom e necessidade de edição. Documente o que mudou.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>O objetivo está explícito.</li><li>Os dados disponíveis estão separados das regras.</li><li>O formato de saída está definido.</li><li>Há proibição de inventar fatos.</li><li>Existe etapa de validação.</li><li>O prompt pode ser testado com diferentes casos.</li></ul>
+
+<h4>Resumo</h4>
+<p>Engenharia de prompts é um processo de especificação, teste e melhoria. Bons prompts transformam uma intenção comercial em uma tarefa verificável. O profissional deve projetar tanto a resposta desejada quanto os limites e a validação.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual elemento define claramente o resultado esperado do prompt?</strong></p><ol type="A"><li>Objetivo.</li><li>Cor da interface.</li><li>Nome do navegador.</li><li>Tamanho do arquivo.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O objetivo descreve o que a IA deve produzir ou resolver.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Por que separar variáveis de instruções fixas?</strong></p><ol type="A"><li>Para tornar o prompt reutilizável e reduzir alterações acidentais.</li><li>Para impedir qualquer personalização.</li><li>Para ocultar o objetivo.</li><li>Para aumentar o número de palavras.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Variáveis permitem reutilizar a mesma lógica com dados diferentes.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual instrução ajuda a reduzir alucinações em uma pesquisa?</strong></p><ol type="A"><li>Invente detalhes quando faltarem dados.</li><li>Separe fatos de hipóteses e cite fontes.</li><li>Não mencione incertezas.</li><li>Use sempre tom confiante.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Separar evidências e hipóteses torna lacunas e incertezas visíveis.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual é a principal vantagem de solicitar JSON ou tabela?</strong></p><ol type="A"><li>Garantir que todos os fatos são verdadeiros.</li><li>Tornar a saída previsível e fácil de integrar ou revisar.</li><li>Eliminar a necessidade de testes.</li><li>Impedir erros de lógica.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Formato estruturado melhora consistência, mas não substitui validação factual.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>O que deve constar em uma biblioteca de prompts?</strong></p><ol type="A"><li>Somente o texto do prompt.</li><li>Finalidade, versão, responsável, exemplos, limitações e data de revisão.</li><li>A senha do sistema.</li><li>Dados pessoais de todos os clientes.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Governança de prompts exige metadados e controle de versão.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual prompt é mais profissional?</strong></p><ol type="A"><li>Venda isso agora.</li><li>Faça algo bom.</li><li>Crie um cold mail com contexto, dados, restrições, formato e validação.</li><li>Escreva qualquer coisa longa.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: C.</strong> Um prompt profissional especifica o trabalho e seus critérios.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>O que significa marcar uma lacuna como [VALIDAR]?</strong></p><ol type="A"><li>Autorizar a IA a inventar.</li><li>Sinalizar que o dado precisa de confirmação humana ou fonte.</li><li>Eliminar a lacuna.</li><li>Aprovar automaticamente a informação.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A marcação evita que ausência de dado seja escondida por uma resposta plausível.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Como testar robustez de um prompt?</strong></p><ol type="A"><li>Usar somente um exemplo perfeito.</li><li>Testar casos fáceis, difíceis, incompletos e conflitantes.</li><li>Evitar qualquer avaliação.</li><li>Mudar o objetivo a cada teste.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Testes variados revelam falhas de formato, segurança e interpretação.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual risco existe ao inserir texto de sites em um prompt?</strong></p><ol type="A"><li>O texto pode conter instruções maliciosas ou enganosas.</li><li>Sites não possuem texto.</li><li>A IA deixa de processar português.</li><li>Nenhum risco existe.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Conteúdo externo deve ser tratado como dado, não como instrução confiável.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual critério pertence a uma rubrica de prompt?</strong></p><ol type="A"><li>Precisão factual e aderência ao formato.</li><li>Marca do computador.</li><li>Cor favorita do vendedor.</li><li>Quantidade de abas abertas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Rubricas medem qualidade, segurança e utilidade da saída.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Solicitar JSON garante que os fatos estejam corretos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O formato melhora consistência, não veracidade.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Variáveis tornam prompts mais reutilizáveis.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Elas separam dados mutáveis de instruções fixas.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Um prompt profissional deve autorizar a invenção de dados ausentes.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Deve sinalizar lacunas e proibir invenções.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Testes com dados incompletos ajudam a avaliar robustez.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Eles revelam comportamento diante de lacunas.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Conteúdo externo pode conter instruções maliciosas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Esse risco é conhecido em sistemas que processam conteúdo de terceiros.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Definir apenas a função da IA é suficiente para qualquer tarefa.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Também são necessários objetivo, dados, regras, formato e validação.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Controle de versão é útil em bibliotecas de prompts.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Permite rastrear alterações e desempenho.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Dados de entrada e instruções devem ser claramente separados.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A separação reduz confusão e ataques de instrução.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Precisão factual pode fazer parte da rubrica de avaliação.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> É um critério essencial em tarefas comerciais.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Um prompt mais longo é sempre melhor.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Clareza e coerência são mais importantes que tamanho.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c6-3" data-title="ia para encontrar empresas e clientes potenciais"><h3>6.3 — IA para Encontrar Empresas e Clientes Potenciais</h3><div class="meta"><span class="pill">Duração: 3h</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Transformar o ICP em um plano de pesquisa de contas.</li><li>Identificar sinais de compra e fontes públicas confiáveis.</li><li>Classificar contas por aderência, momento e evidência.</li><li>Criar briefings sem inventar empresas ou contatos.</li></ul></div>
+<h4>1. Comece pelo ICP, não pela ferramenta</h4>
+<p>Encontrar clientes não significa gerar a maior lista possível. O ponto de partida é um ICP testável: segmento, porte, região, modelo de negócio, maturidade, tecnologias, eventos, restrições e problemas que a solução resolve. A IA ajuda a converter esses critérios em palavras-chave, filtros e hipóteses de pesquisa.</p>
+
+<h4>2. Três dimensões de prioridade</h4>
+<table><thead><tr><th>Dimensão</th><th>Pergunta</th><th>Exemplos</th></tr></thead><tbody>
+<tr><td>Fit</td><td>A empresa combina com o ICP?</td><td>Segmento, porte, região, tecnologia, modelo de negócio</td></tr>
+<tr><td>Momento</td><td>Existe um sinal de mudança ou necessidade?</td><td>Expansão, vagas, nova liderança, projeto, investimento, regulação</td></tr>
+<tr><td>Acessibilidade</td><td>É possível chegar ao grupo comprador?</td><td>Cargos identificados, canais públicos, evento, indicação, relacionamento</td></tr>
+</tbody></table>
+
+<h4>3. Sinais de compra</h4>
+<p>Sinais não provam intenção. Eles indicam que uma conversa pode ser relevante. Exemplos: aumento de contratações, abertura de unidade, adoção de tecnologia, mudança executiva, expansão geográfica, novo produto, reclamações recorrentes ou crescimento de volume operacional. Cada sinal deve ter fonte e data.</p>
+
+<h4>4. Plano de pesquisa</h4>
+<ol>
+<li>Descrever o ICP e os critérios de exclusão.</li>
+<li>Converter critérios em consultas e filtros.</li>
+<li>Selecionar fontes: site, notícias, documentos públicos, vagas e perfis corporativos.</li>
+<li>Registrar fato, fonte, data e confiança.</li>
+<li>Transformar fatos em hipóteses, nunca em afirmações não verificadas.</li>
+<li>Criar perguntas de validação para a abordagem.</li>
+</ol>
+
+<h4>5. Matriz de pontuação de contas</h4>
+<p>Exemplo de pontuação:</p>
+<table><thead><tr><th>Critério</th><th>Peso</th><th>Regra</th></tr></thead><tbody>
+<tr><td>Segmento prioritário</td><td>20</td><td>20 se estiver no segmento A; 10 no B; 0 fora</td></tr>
+<tr><td>Porte</td><td>15</td><td>Faixa ideal recebe 15</td></tr>
+<tr><td>Região atendida</td><td>10</td><td>Dentro da área comercial</td></tr>
+<tr><td>Sinal recente</td><td>25</td><td>Evento verificado nos últimos 90 dias</td></tr>
+<tr><td>Dor provável</td><td>20</td><td>Hipótese apoiada por duas evidências</td></tr>
+<tr><td>Acesso</td><td>10</td><td>Grupo comprador e canal identificados</td></tr>
+</tbody></table>
+<p>A pontuação organiza a fila. Ela não substitui o julgamento do vendedor e deve ser revisada com dados de conversão.</p>
+
+<h4>6. Evidência, hipótese e pergunta</h4>
+<div class="case"><strong>Evidência:</strong> a empresa publicou dez vagas para analistas financeiros.<br><strong>Hipótese:</strong> o aumento do time pode elevar o volume de processos e a necessidade de padronização.<br><strong>Pergunta:</strong> “Como vocês estão garantindo consistência no fechamento enquanto o time cresce?”</div>
+<p>Não afirme que a empresa “tem problemas” sem confirmação. Uma abordagem consultiva usa a evidência para formular uma pergunta.</p>
+
+<h4>7. Briefing de conta</h4>
+<ul>
+<li>Resumo da empresa.</li>
+<li>Critérios do ICP atendidos e não atendidos.</li>
+<li>Sinais com fonte e data.</li>
+<li>Possíveis integrantes do grupo comprador, sem inventar contatos.</li>
+<li>Hipóteses de desafios.</li>
+<li>Perguntas de validação.</li>
+<li>Riscos e informações ausentes.</li>
+<li>Próximo passo recomendado.</li>
+</ul>
+
+<h4>8. ABM e ABS</h4>
+<p>Account-Based Marketing e Account-Based Sales concentram recursos em contas selecionadas. A IA pode apoiar pesquisa e personalização, mas a estratégia exige coordenação entre marketing e vendas, definição de contas, mensagens por grupo comprador e indicadores de engajamento.</p>
+
+<h4>Atividade — Laboratório de pesquisa</h4>
+<p>Defina produto, segmento, região, porte, cargo-alvo, dor, ticket e critérios do ICP. Crie cinco consultas de pesquisa, três sinais prioritários, uma matriz de pontuação e um briefing fictício usando apenas dados explicitamente fornecidos. Marque toda hipótese.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>O ICP tem critérios de inclusão e exclusão.</li><li>Fatos possuem fonte e data.</li><li>Hipóteses estão separadas de evidências.</li><li>A pontuação tem pesos explicáveis.</li><li>Não existem contatos ou eventos inventados.</li><li>Há perguntas para validar as hipóteses.</li></ul>
+
+<h4>Resumo</h4>
+<p>A IA é útil para ampliar e organizar pesquisa, mas a qualidade depende de critérios, fontes e rastreabilidade. Uma lista valiosa é menor, verificável e priorizada por fit, momento e acesso.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual deve ser o ponto de partida para encontrar contas com IA?</strong></p><ol type="A"><li>A ferramenta mais popular.</li><li>Um ICP testável e critérios de exclusão.</li><li>Uma lista comprada sem filtros.</li><li>O maior número possível de empresas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O ICP orienta consultas, filtros e prioridade.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>O que um sinal de compra representa?</strong></p><ol type="A"><li>Prova definitiva de compra.</li><li>Indício de mudança ou necessidade que merece validação.</li><li>Autorização para enviar spam.</li><li>Confirmação de orçamento.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Sinais orientam hipóteses, não garantem intenção.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual informação deve acompanhar um fato usado no briefing?</strong></p><ol type="A"><li>Fonte e data.</li><li>Somente opinião do SDR.</li><li>Uma promessa de fechamento.</li><li>Nenhuma referência.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Rastreabilidade permite revisão e atualização.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual dimensão avalia se a empresa combina com o perfil ideal?</strong></p><ol type="A"><li>Momento.</li><li>Fit.</li><li>Acessibilidade.</li><li>Entregabilidade.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Fit mede aderência ao ICP.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Como usar uma vaga aberta na abordagem?</strong></p><ol type="A"><li>Afirmar que a empresa está em crise.</li><li>Usar como evidência e formular uma pergunta de validação.</li><li>Inventar o motivo da contratação.</li><li>Concluir que existe orçamento.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O dado público permite uma hipótese, não uma conclusão.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual é a função da pontuação de contas?</strong></p><ol type="A"><li>Substituir completamente o vendedor.</li><li>Organizar prioridade com critérios explicáveis.</li><li>Garantir o fechamento.</li><li>Eliminar necessidade de dados.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Scoring é apoio à priorização e deve ser recalibrado.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>O que diferencia evidência de hipótese?</strong></p><ol type="A"><li>Evidência é verificável; hipótese é uma interpretação a validar.</li><li>Hipótese sempre é verdadeira.</li><li>Evidência não precisa de fonte.</li><li>Não existe diferença.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A separação evita transformar suposições em fatos.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual item não deve ser inventado pela IA?</strong></p><ol type="A"><li>Pergunta de descoberta.</li><li>Estrutura de checklist.</li><li>Nome e e-mail de um decisor real.</li><li>Modelo de matriz.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: C.</strong> Dados pessoais e contatos reais exigem fonte e validação.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>ABM concentra esforços em:</strong></p><ol type="A"><li>Todas as empresas sem priorização.</li><li>Contas selecionadas com coordenação de marketing e vendas.</li><li>Somente clientes perdidos.</li><li>Apenas consumidores B2C.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A estratégia trabalha contas-alvo e grupos compradores.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual combinação gera melhor prioridade?</strong></p><ol type="A"><li>Fit alto, sinal recente e acesso possível.</li><li>Fit baixo e nenhum dado.</li><li>Grande volume sem validação.</li><li>Somente tamanho da empresa.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Fit, momento e acessibilidade formam uma visão mais completa.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Sinal de compra é prova definitiva de intenção.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ele é um indício que precisa de validação.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Fit, momento e acessibilidade podem ser usados juntos na prioridade.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> As dimensões fornecem visão mais completa.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Toda hipótese deve ser apresentada ao prospect como fato.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Hipóteses devem ser formuladas como perguntas.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Fontes e datas aumentam a rastreabilidade da pesquisa.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Elas permitem revisão e atualização.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Uma lista menor e validada pode ser superior a uma lista ampla sem critérios.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Qualidade e prioridade tendem a gerar melhor uso do tempo.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>A IA deve preencher contatos ausentes com nomes plausíveis.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Contatos reais não podem ser inventados.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>O ICP deve conter critérios de exclusão.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Eles evitam esforço em contas inadequadas.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Pontuação de contas deve ser revisada com resultados reais.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A calibração melhora aderência à conversão.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>ABM dispensa coordenação entre marketing e vendas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A coordenação é parte central da estratégia.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Evidência verificável e hipótese interpretativa são a mesma coisa.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Elas devem ser separadas.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c6-4" data-title="ia para enriquecimento e qualificação de leads"><h3>6.4 — IA para Enriquecimento e Qualificação de Leads</h3><div class="meta"><span class="pill">Duração: 3h</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Definir um modelo mínimo e útil de dados comerciais.</li><li>Padronizar, deduplicar e enriquecer registros com rastreabilidade.</li><li>Separar pontuação de fit e de engajamento.</li><li>Aplicar princípios da LGPD na qualificação.</li></ul></div>
+<h4>1. Enriquecer não é acumular dados</h4>
+<p>Enriquecimento é completar registros com informações relevantes para uma finalidade comercial legítima. Coletar tudo aumenta custo, risco e confusão. Antes de buscar um campo, responda: por que ele é necessário, como será usado, por quanto tempo será mantido e quem poderá acessá-lo?</p>
+
+<h4>2. Tipos de dados</h4>
+<ul>
+<li><strong>Firmográficos:</strong> segmento, porte, localização, modelo de negócio.</li>
+<li><strong>Profissionais:</strong> cargo, área e senioridade, quando obtidos legitimamente.</li>
+<li><strong>Tecnográficos:</strong> tecnologias e plataformas utilizadas.</li>
+<li><strong>Comportamentais:</strong> interações com conteúdos, reuniões e campanhas.</li>
+<li><strong>Intenção:</strong> sinais que sugerem interesse, sempre com cautela e transparência.</li>
+</ul>
+
+<h4>3. Modelo canônico de dados</h4>
+<p>Defina um padrão único para os sistemas. Exemplo:</p>
+<table><thead><tr><th>Campo</th><th>Regra</th><th>Exemplo</th></tr></thead><tbody>
+<tr><td>company_name</td><td>Nome oficial sem abreviações inconsistentes</td><td>Exemplo Tecnologia Ltda.</td></tr>
+<tr><td>domain</td><td>Minúsculas, sem protocolo e sem barra final</td><td>exemplo.com.br</td></tr>
+<tr><td>country</td><td>Código padronizado</td><td>BR</td></tr>
+<tr><td>employee_range</td><td>Faixas fixas</td><td>51-200</td></tr>
+<tr><td>source</td><td>Origem do dado</td><td>site_corporativo</td></tr>
+<tr><td>verified_at</td><td>Data da verificação</td><td>2026-06-21</td></tr>
+</tbody></table>
+
+<h4>4. Deduplicação</h4>
+<p>Duplicidades fragmentam o histórico e geram abordagens repetidas. Use chaves como domínio, identificador interno, e-mail normalizado ou combinação de campos. A IA pode sugerir correspondências, mas fusões de registros importantes devem preservar histórico e ter possibilidade de reversão.</p>
+
+<h4>5. Fit score e engagement score</h4>
+<ul>
+<li><strong>Fit score:</strong> mede compatibilidade com o ICP.</li>
+<li><strong>Engagement score:</strong> mede sinais de interação ou interesse.</li>
+<li><strong>Score combinado:</strong> ajuda a priorizar, mas deve mostrar os componentes.</li>
+</ul>
+<p>Um lead com fit alto e engajamento baixo pode entrar em prospecção. Um lead com engajamento alto e fit baixo pode precisar de desqualificação ou encaminhamento. Não esconda regras em uma “caixa-preta”.</p>
+
+<h4>6. Exemplo de scoring</h4>
+<table><thead><tr><th>Regra</th><th>Pontos</th></tr></thead><tbody>
+<tr><td>Segmento prioritário</td><td>+20</td></tr>
+<tr><td>Porte ideal</td><td>+15</td></tr>
+<tr><td>Região atendida</td><td>+10</td></tr>
+<tr><td>Solicitou demonstração</td><td>+25</td></tr>
+<tr><td>Participou de reunião</td><td>+20</td></tr>
+<tr><td>E-mail inválido</td><td>-30</td></tr>
+<tr><td>Concorrente ou estudante</td><td>-40</td></tr>
+</tbody></table>
+<p>Regras devem ser revisadas com dados de conversão e não com opinião isolada.</p>
+
+<h4>7. Qualificação assistida</h4>
+<p>A IA pode resumir respostas e mapear evidências de necessidade, impacto, autoridade, prioridade e prazo. Ela não deve descartar automaticamente um lead apenas por uma frase ambígua. Retorne evidências, lacunas, confiança e perguntas recomendadas.</p>
+
+<h4>8. LGPD aplicada</h4>
+<p>O tratamento de dados deve observar finalidade, adequação, necessidade, qualidade, transparência, segurança, prevenção, não discriminação e prestação de contas. Dados pessoais devem ser usados de forma proporcional e documentada. O curso não substitui análise jurídica específica.</p>
+
+<h4>9. Fluxo seguro de enriquecimento</h4>
+<ol>
+<li>Receber registro e identificar origem.</li>
+<li>Validar campos essenciais.</li>
+<li>Normalizar formato.</li>
+<li>Procurar duplicidade.</li>
+<li>Consultar fontes autorizadas.</li>
+<li>Registrar fonte, data e confiança.</li>
+<li>Calcular scores separados.</li>
+<li>Encaminhar incertezas para revisão.</li>
+<li>Aplicar retenção e acesso.</li>
+</ol>
+
+<h4>Atividade — Limpeza e priorização</h4>
+<p>Use uma lista simulada com vinte registros. Defina campos mínimos, normalize nomes e domínios, identifique duplicidades, classifique o nível de confiança, calcule fit e engajamento e selecione os cinco leads prioritários. Justifique cada decisão.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Todo campo possui finalidade.</li><li>Fonte e data são registradas.</li><li>Fit e engajamento estão separados.</li><li>Fusões são reversíveis.</li><li>Regras de exclusão são revisáveis.</li><li>Dados excessivos não são coletados.</li></ul>
+
+<h4>Resumo</h4>
+<p>Enriquecimento eficiente melhora qualidade, não volume. O processo combina modelo de dados, validação, deduplicação, pontuação explicável e governança de privacidade.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual é o objetivo correto do enriquecimento?</strong></p><ol type="A"><li>Coletar todos os dados possíveis.</li><li>Completar dados relevantes para uma finalidade definida.</li><li>Substituir o CRM.</li><li>Guardar dados sem prazo.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Enriquecimento deve ser proporcional e orientado à finalidade.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Qual campo ajuda a rastrear atualização do dado?</strong></p><ol type="A"><li>verified_at.</li><li>favorite_color.</li><li>random_note.</li><li>unknown_field.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A data de verificação indica frescor e necessidade de revisão.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Fit score mede:</strong></p><ol type="A"><li>Aderência ao ICP.</li><li>Somente abertura de e-mail.</li><li>Quantidade de mensagens.</li><li>Humor do vendedor.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Fit representa compatibilidade estrutural com o cliente ideal.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Engagement score mede:</strong></p><ol type="A"><li>Compatibilidade jurídica.</li><li>Interações e sinais de interesse.</li><li>Número de funcionários apenas.</li><li>Valor de contrato assinado.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Engajamento considera comportamentos e interações.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Qual é uma boa chave para deduplicação de empresas?</strong></p><ol type="A"><li>Domínio normalizado.</li><li>Cor do logotipo.</li><li>Primeira letra do nome.</li><li>Quantidade de posts.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Domínio é um identificador mais estável que variações do nome.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>O que fazer quando a IA sugere que dois registros são iguais, mas há dúvida?</strong></p><ol type="A"><li>Excluir ambos.</li><li>Revisar antes de fundir e preservar histórico.</li><li>Criar mais duplicatas.</li><li>Ignorar qualquer evidência.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Fusão pode afetar histórico e deve ser reversível.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Qual prática está alinhada ao princípio da necessidade?</strong></p><ol type="A"><li>Coletar apenas os dados necessários para a finalidade.</li><li>Coletar dados sensíveis por curiosidade.</li><li>Manter dados indefinidamente.</li><li>Compartilhar dados sem controle.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Necessidade limita o tratamento ao mínimo adequado.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Um lead de fit alto e engajamento baixo pode:</strong></p><ol type="A"><li>Ser necessariamente descartado.</li><li>Entrar em uma estratégia de prospecção apropriada.</li><li>Ser marcado como cliente ganho.</li><li>Receber desconto automático.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Fit alto indica boa aderência mesmo sem interação prévia.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual saída é mais segura para qualificação assistida?</strong></p><ol type="A"><li>Descartar automaticamente sem explicação.</li><li>Mostrar evidências, lacunas, confiança e perguntas.</li><li>Inventar orçamento.</li><li>Ocultar a regra de pontuação.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A saída explicável permite revisão humana.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Por que revisar scores com dados de conversão?</strong></p><ol type="A"><li>Para calibrar regras com resultados reais.</li><li>Para impedir qualquer mudança.</li><li>Para aumentar todos os scores.</li><li>Para eliminar a necessidade de ICP.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Scores devem refletir padrões reais e ser continuamente avaliados.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Enriquecimento responsável coleta somente dados úteis à finalidade.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Minimização reduz risco e custo.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Fit score e engagement score medem a mesma dimensão.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Fit mede aderência; engajamento mede interação.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Domínio normalizado pode ajudar a identificar empresas duplicadas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> É uma chave relativamente estável.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Uma correspondência aproximada deve sempre fundir registros automaticamente.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Casos incertos exigem revisão.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Dados vazios de baixa confiança não devem sobrescrever dados verificados.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A qualidade da fonte deve orientar atualização.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Score alto garante que o lead comprará.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Score apenas apoia prioridade.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Fonte e data de verificação devem acompanhar dados enriquecidos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso permite rastrear frescor e origem.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>A LGPD incentiva coleta ilimitada de dados.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O princípio da necessidade limita a coleta.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Qualificação assistida deve mostrar lacunas e confiança.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A explicabilidade apoia revisão humana.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Deduplicação não afeta a experiência do prospect.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Duplicidades podem gerar contatos repetidos e conflitantes.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c6-5" data-title="ia para prospecção personalizada em escala"><h3>6.5 — IA para Prospecção Personalizada em Escala</h3><div class="meta"><span class="pill">Duração: 3h</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Diferenciar personalização real de personalização superficial.</li><li>Criar mensagens multicanal com fatos verificáveis.</li><li>Definir regras de entrada, pausa e saída de cadências.</li><li>Usar IA sem gerar spam ou comunicação enganosa.</li></ul></div>
+<h4>1. Escala sem relevância é apenas ruído</h4>
+<p>A IA reduz o tempo de produção, mas também pode multiplicar mensagens ruins. Personalização não é inserir o primeiro nome. É demonstrar por que a conversa pode ser relevante para aquela conta, naquele momento, sem fingir conhecimento ou intimidade.</p>
+
+<h4>2. Níveis de personalização</h4>
+<table><thead><tr><th>Nível</th><th>Base</th><th>Uso</th></tr></thead><tbody>
+<tr><td>Segmento</td><td>Dor e linguagem comuns ao setor</td><td>Listas amplas e homogêneas</td></tr>
+<tr><td>Persona</td><td>Objetivos e responsabilidades do cargo</td><td>Mensagens por função</td></tr>
+<tr><td>Conta</td><td>Fatos e sinais da empresa</td><td>Contas prioritárias</td></tr>
+<tr><td>Indivíduo</td><td>Conteúdo profissional público e relevante</td><td>Abordagens de alto valor</td></tr>
+</tbody></table>
+
+<h4>3. Estrutura de uma mensagem consultiva</h4>
+<ol>
+<li><strong>Contexto verificável:</strong> razão legítima para contato.</li>
+<li><strong>Hipótese:</strong> problema possível, formulado sem afirmar o que não foi confirmado.</li>
+<li><strong>Valor:</strong> resultado que a solução ajuda a alcançar.</li>
+<li><strong>Prova:</strong> evidência real e autorizada.</li>
+<li><strong>CTA:</strong> próximo passo simples e específico.</li>
+</ol>
+
+<h4>4. Exemplo de cold mail</h4>
+<div class="good"><strong>Assunto:</strong> fechamento financeiro em expansão<br><br>Olá, Marina. Vi no site da empresa que vocês abriram duas novas unidades neste trimestre. Em operações que crescem rápido, o fechamento costuma ganhar mais fontes de dados e reconciliações manuais. Isso também está acontecendo aí? A NuvemPro organiza conciliações e trilhas de aprovação em um único fluxo. Posso compartilhar um mapa de processo de uma página para você avaliar se faz sentido?</div>
+<p>O exemplo usa um fato verificável, apresenta uma hipótese e faz uma pergunta. Não declara que a empresa possui o problema.</p>
+
+<h4>5. Prompt para personalização</h4>
+<pre>Use somente os fatos fornecidos. Para cada mensagem:
+- cite um contexto verificável;
+- formule a dor como hipótese;
+- evite elogios genéricos;
+- não invente clientes, números ou eventos;
+- limite a 80 palavras;
+- use uma única chamada para ação;
+- marque [VALIDAR] quando faltar evidência.</pre>
+
+<h4>6. Cadência multicanal</h4>
+<p>Uma cadência é uma sequência coordenada de tentativas. Cada canal tem contexto e regras diferentes. A automação deve parar quando o lead responde, agenda, solicita exclusão, não possui fit ou quando um vendedor assume a conversa.</p>
+<table><thead><tr><th>Dia</th><th>Canal</th><th>Objetivo</th></tr></thead><tbody>
+<tr><td>1</td><td>E-mail</td><td>Apresentar contexto e hipótese</td></tr>
+<tr><td>2</td><td>Ligação</td><td>Validar relevância</td></tr>
+<tr><td>4</td><td>LinkedIn manual</td><td>Conectar com contexto profissional</td></tr>
+<tr><td>7</td><td>E-mail</td><td>Adicionar insight útil</td></tr>
+<tr><td>11</td><td>Ligação</td><td>Tentar contato direto</td></tr>
+<tr><td>15</td><td>E-mail de encerramento</td><td>Fechar o ciclo com respeito</td></tr>
+</tbody></table>
+
+<h4>7. Regras por canal</h4>
+<ul>
+<li><strong>E-mail:</strong> cuidar de reputação, autenticação, qualidade da lista e opt-out.</li>
+<li><strong>WhatsApp:</strong> a mensagem deve ser esperada, relevante e respeitar preferências e políticas do canal.</li>
+<li><strong>LinkedIn:</strong> não utilizar scraping, bots ou automação não autorizada; priorizar interação autêntica e manual.</li>
+<li><strong>Telefone:</strong> identificar-se, respeitar recusa e registrar resultado.</li>
+</ul>
+
+<h4>8. Testes A/B responsáveis</h4>
+<p>Teste uma variável por vez: assunto, abertura, CTA ou proposta de valor. Defina tamanho da amostra, período e métrica. Não escolha vencedor com poucos dados. Avalie também respostas negativas, descadastros e qualidade das reuniões.</p>
+
+<h4>9. Classificação de respostas com IA</h4>
+<p>A IA pode sugerir categorias: interessado, não agora, sem fit, encaminhamento, objeção, solicitação de exclusão ou resposta automática. Solicitações de exclusão devem ter prioridade absoluta e interromper o fluxo.</p>
+
+<h4>Atividade — Oficina multicanal</h4>
+<p>Com base em uma conta fictícia, produza: cold mail curto, cold mail consultivo, mensagem de LinkedIn, mensagem de WhatsApp, abertura de Cold Call e três follow-ups. Para cada frase, indique qual fato ou hipótese a sustenta.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>O contexto é verificável.</li><li>A dor é hipótese, não acusação.</li><li>Existe apenas um CTA.</li><li>A mensagem respeita o canal.</li><li>A cadência possui condições de parada.</li><li>Solicitações de exclusão são tratadas imediatamente.</li></ul>
+
+<h4>Resumo</h4>
+<p>IA permite personalização em escala somente quando existem dados, regras e revisão. A qualidade da prospecção é medida não apenas por volume, mas por relevância, respeito, respostas e oportunidades válidas.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>O que caracteriza personalização real?</strong></p><ol type="A"><li>Inserir apenas o primeiro nome.</li><li>Relacionar um contexto verificável a uma hipótese relevante.</li><li>Usar elogios genéricos.</li><li>Enviar a mesma mensagem para todos.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Personalização real demonstra razão específica e legítima para o contato.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Qual estrutura é mais adequada para cold mail consultivo?</strong></p><ol type="A"><li>Contexto, hipótese, valor e CTA simples.</li><li>Texto longo, desconto e urgência falsa.</li><li>Elogio, três links e cinco CTAs.</li><li>Somente descrição do produto.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A estrutura conecta relevância e próximo passo.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Como tratar uma dor não confirmada?</strong></p><ol type="A"><li>Afirmar como fato.</li><li>Formular como hipótese e fazer uma pergunta.</li><li>Inventar uma estatística.</li><li>Ignorar o contexto.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A abordagem deve validar, não presumir.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Quando a cadência deve parar?</strong></p><ol type="A"><li>Somente após vinte mensagens.</li><li>Quando há resposta, agenda, opt-out, falta de fit ou intervenção humana.</li><li>Nunca.</li><li>Quando a IA fica sem ideias.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Regras de saída evitam insistência e conflitos.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Qual prática é inadequada no LinkedIn?</strong></p><ol type="A"><li>Interação profissional manual.</li><li>Uso de bots e scraping não autorizados.</li><li>Comentar com relevância.</li><li>Personalizar convite.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A plataforma proíbe automação e scraping não autorizados.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual resposta deve ter prioridade de tratamento?</strong></p><ol type="A"><li>Resposta automática de férias.</li><li>Solicitação de exclusão ou parada.</li><li>Curtida em publicação.</li><li>E-mail aberto.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Preferências e opt-out devem interromper o fluxo.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Em um teste A/B, o ideal é:</strong></p><ol type="A"><li>Mudar todas as variáveis ao mesmo tempo.</li><li>Testar uma variável e definir métrica e amostra.</li><li>Escolher vencedor após uma resposta.</li><li>Ignorar respostas negativas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Controle de variáveis permite interpretar o resultado.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual métrica complementa a taxa de resposta?</strong></p><ol type="A"><li>Qualidade das reuniões e descadastros.</li><li>Número de palavras do e-mail.</li><li>Cor do botão.</li><li>Quantidade de abas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Volume sem qualidade pode ocultar dano de reputação.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual CTA é mais adequado?</strong></p><ol type="A"><li>Compre agora e assine hoje.</li><li>Posso enviar um mapa de uma página para você avaliar?</li><li>Clique em cinco links.</li><li>Responda imediatamente ou perderá a oportunidade.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> CTA simples e de baixo atrito favorece conversa.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual é o principal risco da IA na prospecção em escala?</strong></p><ol type="A"><li>Multiplicar rapidamente mensagens genéricas ou incorretas.</li><li>Reduzir a velocidade.</li><li>Impedir qualquer personalização.</li><li>Eliminar todos os dados.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Escala amplifica tanto boas quanto más práticas.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Inserir o primeiro nome, sozinho, constitui personalização profunda.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Personalização real conecta contexto e relevância.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Uma dor não confirmada deve ser apresentada como hipótese.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso evita acusação e abre espaço para descoberta.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Cadências devem ter condições de saída.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Sem elas, mensagens continuam mesmo após resposta ou opt-out.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Solicitação de parada pode ser ignorada se o lead estiver no ICP.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Opt-out deve ser respeitado independentemente do fit.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Testes A/B devem mudar uma variável por vez quando possível.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso facilita interpretar o resultado.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Taxa de resposta positiva é uma métrica de qualidade.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ela diferencia resposta útil de qualquer resposta.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Scraping e bots não autorizados no LinkedIn são práticas seguras.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Podem violar políticas e resultar em restrição.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Mensagem de WhatsApp deve ser esperada e relevante.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Preferências do usuário e regras do canal são essenciais.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Uma cadência multicanal significa repetir o mesmo texto em todos os canais.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Cada canal exige contexto e formato próprios.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Escala pode amplificar mensagens ruins.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Automação aumenta rapidamente o alcance de erros.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c6-6" data-title="ia para reuniões, negociação e fechamento"><h3>6.6 — IA para Reuniões, Negociação e Fechamento</h3><div class="meta"><span class="pill">Duração: 3h30</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Usar IA antes, durante e depois de reuniões comerciais.</li><li>Criar resumos, follow-ups e planos de ação verificáveis.</li><li>Apoiar negociação sem conceder condições não autorizadas.</li><li>Aplicar consentimento, privacidade e supervisão.</li></ul></div>
+<h4>1. Antes da reunião: preparação orientada por evidências</h4>
+<p>A IA pode reunir informações da conta, histórico do CRM, participantes, objetivos e riscos. O briefing deve separar fatos, hipóteses e perguntas. Uma boa preparação evita transformar a reunião em apresentação genérica.</p>
+<ul>
+<li>Objetivo da reunião.</li>
+<li>Participantes e papéis conhecidos.</li>
+<li>Histórico de interações.</li>
+<li>Hipóteses de necessidade.</li>
+<li>Perguntas de descoberta.</li>
+<li>Riscos, concorrentes e lacunas.</li>
+<li>Próximo passo desejado.</li>
+</ul>
+
+<h4>2. Durante a reunião</h4>
+<p>Transcrição e análise exigem consentimento e avaliação de privacidade. A IA pode apoiar notas, mas o vendedor deve continuar ouvindo. O sistema não deve exibir sugestões invasivas que distraiam ou manipulem a conversa.</p>
+<p>Elementos a registrar:</p>
+<ul>
+<li>Problemas, impactos e causas.</li>
+<li>Objetivos e indicadores.</li>
+<li>Processo de decisão.</li>
+<li>Pessoas envolvidas.</li>
+<li>Prazo e prioridade.</li>
+<li>Objeções.</li>
+<li>Compromissos e próximos passos.</li>
+</ul>
+
+<h4>3. Depois da reunião: resumo confiável</h4>
+<p>O resumo deve ser comparado com a gravação ou notas. Diferencie o que o cliente afirmou do que o vendedor inferiu.</p>
+<table><thead><tr><th>Campo</th><th>Exemplo</th></tr></thead><tbody>
+<tr><td>Objetivo declarado</td><td>Reduzir fechamento de dez para seis dias</td></tr>
+<tr><td>Problema</td><td>Conciliações em três sistemas</td></tr>
+<tr><td>Impacto</td><td>Horas extras e atraso no relatório</td></tr>
+<tr><td>Decisão</td><td>Diretor financeiro aprova; TI valida segurança</td></tr>
+<tr><td>Próximo passo</td><td>Workshop técnico em 28/06</td></tr>
+<tr><td>Lacuna</td><td>Orçamento ainda não discutido</td></tr>
+</tbody></table>
+
+<h4>4. Follow-up</h4>
+<p>O follow-up deve confirmar entendimento e compromissos, não apenas agradecer. Estrutura:</p>
+<ol>
+<li>Resumo de dois ou três pontos.</li>
+<li>Resultado desejado.</li>
+<li>Ações de cada parte.</li>
+<li>Datas e responsáveis.</li>
+<li>Material prometido.</li>
+<li>Próxima reunião.</li>
+</ol>
+
+<h4>5. IA na negociação</h4>
+<p>A IA pode preparar cenários, limites, alternativas e perguntas. Não deve conceder desconto, alterar cláusula, prometer integração ou assumir compromisso sem autorização. Crie uma matriz:</p>
+<table><thead><tr><th>Item</th><th>Desejado</th><th>Limite</th><th>Concessão possível</th><th>Contrapartida</th></tr></thead><tbody>
+<tr><td>Prazo</td><td>12 meses</td><td>6 meses</td><td>9 meses</td><td>Pagamento antecipado</td></tr>
+<tr><td>Desconto</td><td>0%</td><td>10%</td><td>5%</td><td>Maior volume</td></tr>
+<tr><td>Implantação</td><td>Padrão</td><td>Customização limitada</td><td>Workshop extra</td><td>Escopo fechado</td></tr>
+</tbody></table>
+
+<h4>6. Business case</h4>
+<p>A IA pode organizar premissas, custos, benefícios e riscos. Toda estimativa deve mostrar origem, fórmula e sensibilidade. Não transforme hipótese em garantia. Exemplo: economia anual = horas evitadas × custo médio, com faixa conservadora, provável e otimista.</p>
+
+<h4>7. Sinais de compra e fechamento</h4>
+<ul>
+<li>Perguntas sobre implantação, segurança e contrato.</li>
+<li>Inclusão de novos participantes.</li>
+<li>Discussão de cronograma.</li>
+<li>Solicitação de proposta ou prova.</li>
+</ul>
+<p>Sinal de compra não significa autorização para pressionar. Use perguntas de confirmação: “O que precisa acontecer para avançarmos?” e “Quem mais deve validar essa etapa?”</p>
+
+<h4>8. Simulação de compradores</h4>
+<p>O aluno deve treinar com perfis diferentes: interessado, desconfiado, sem orçamento, sem prioridade, usuário de concorrente, comprador técnico, executivo e pessoa sem autoridade. A avaliação deve considerar escuta, perguntas, clareza, pressão e próximos passos.</p>
+
+<h4>Atividade — Da reunião ao fechamento</h4>
+<p>Use uma transcrição fictícia. Produza briefing, resumo, campos de CRM, follow-up, matriz de negociação, business case com premissas e plano de próximos passos. Marque trechos não confirmados.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Gravação possui consentimento.</li><li>Resumo separa fala e inferência.</li><li>Próximos passos têm data e responsável.</li><li>Descontos exigem aprovação.</li><li>Business case mostra premissas.</li><li>CRM é atualizado após validação.</li></ul>
+
+<h4>Resumo</h4>
+<p>A IA aumenta consistência em preparação e acompanhamento, mas negociação e compromisso exigem responsabilidade humana. A qualidade está na fidelidade ao que foi dito, na clareza das ações e na disciplina de registro.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual deve ser o objetivo de um briefing pré-reunião?</strong></p><ol type="A"><li>Substituir a conversa.</li><li>Organizar evidências, hipóteses, perguntas e riscos.</li><li>Criar uma proposta final sem descoberta.</li><li>Inventar necessidades.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O briefing melhora preparação sem antecipar conclusões.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>O uso de transcrição exige:</strong></p><ol type="A"><li>Consentimento e avaliação de privacidade.</li><li>Somente bateria do computador.</li><li>Nenhuma informação ao participante.</li><li>Envio automático a qualquer sistema.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Gravação e tratamento de conversa precisam de transparência e proteção.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual resumo é mais confiável?</strong></p><ol type="A"><li>Mistura tudo em um parágrafo.</li><li>Distingue declarações, inferências, lacunas e próximos passos.</li><li>Remove objeções.</li><li>Inclui dados inventados.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Separação melhora revisão e evita falsas conclusões.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Um bom follow-up deve:</strong></p><ol type="A"><li>Apenas agradecer.</li><li>Confirmar pontos, ações, responsáveis e datas.</li><li>Adicionar desconto não discutido.</li><li>Esconder lacunas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O follow-up formaliza entendimento e continuidade.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Qual ação não deve ser delegada autonomamente à IA?</strong></p><ol type="A"><li>Formatar notas.</li><li>Sugerir perguntas.</li><li>Conceder desconto e alterar cláusula.</li><li>Resumir histórico.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: C.</strong> Concessões comerciais e contratuais exigem autorização.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Como apresentar uma estimativa em business case?</strong></p><ol type="A"><li>Como garantia absoluta.</li><li>Com premissas, fórmula e cenários.</li><li>Sem fonte.</li><li>Apenas no cenário otimista.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Transparência sobre premissas permite avaliação do risco.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Qual é um possível sinal de compra?</strong></p><ol type="A"><li>Perguntas sobre implantação e contrato.</li><li>Silêncio total por meses.</li><li>Pedido de exclusão.</li><li>E-mail inválido.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Perguntas operacionais podem indicar avanço, mas precisam de confirmação.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>O que a IA deve fazer ao identificar uma informação não discutida?</strong></p><ol type="A"><li>Inventar a resposta.</li><li>Marcar como lacuna e sugerir pergunta.</li><li>Preencher com média do mercado.</li><li>Registrar como fato.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Lacunas devem ser explícitas.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual critério deve ser usado em simuladores de negociação?</strong></p><ol type="A"><li>Somente velocidade de fala.</li><li>Escuta, perguntas, clareza, pressão e próximos passos.</li><li>Quantidade de descontos.</li><li>Número de slides.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A avaliação deve refletir comportamento consultivo.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual pergunta apoia um fechamento consultivo?</strong></p><ol type="A"><li>Você vai comprar agora, certo?</li><li>O que precisa acontecer para avançarmos?</li><li>Posso ignorar a área de segurança?</li><li>Posso marcar como ganho?</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A pergunta identifica critérios reais e próximos passos.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Transcrição de reunião deve considerar consentimento e privacidade.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Conversas podem conter dados pessoais e confidenciais.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Resumo automático nunca precisa ser revisado.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Pode omitir ou interpretar incorretamente informações.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Follow-up deve registrar responsáveis e datas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso transforma conversa em compromisso claro.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>A IA pode prometer integrações não confirmadas para acelerar fechamento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Promessas precisam de autorização e viabilidade.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Business case deve mostrar premissas e cenários.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso evita apresentar estimativas como garantia.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Abrir a proposta é equivalente a aceitar a proposta.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> É apenas um sinal limitado.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Sinais de compra dispensam perguntas de confirmação.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ainda é necessário validar processo e próximos passos.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>A IA pode apoiar preparação de cenários de negociação.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ela organiza alternativas, limites e perguntas.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Fala do cliente e inferência do vendedor devem ser separadas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Essa distinção melhora fidelidade do registro.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Desconto fora da política pode ser concedido pelo sistema sem aprovação.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Concessões críticas exigem controle humano.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c6-7" data-title="assistentes, copilotos e agentes comerciais"><h3>6.7 — Assistentes, Copilotos e Agentes Comerciais</h3><div class="meta"><span class="pill">Duração: 4h</span><span class="pill">Nível: Intermediário a avançado</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Projetar um copiloto ou agente com escopo, dados e permissões.</li><li>Compreender RAG, memória, ferramentas e fluxo de controle.</li><li>Definir aprovação humana, logs e avaliações.</li><li>Criar um projeto de agente comercial seguro.</li></ul></div>
+<h4>1. Da conversa à execução</h4>
+<p>Um assistente responde a solicitações. Um copiloto acompanha uma atividade. Um agente recebe um objetivo, seleciona passos e usa ferramentas. Quanto maior a autonomia, maior a necessidade de controle, testes e observabilidade.</p>
+
+<h4>2. Componentes de um agente</h4>
+<ol>
+<li><strong>Objetivo:</strong> tarefa específica e mensurável.</li>
+<li><strong>Instruções:</strong> regras, limites e prioridades.</li>
+<li><strong>Conhecimento:</strong> documentos, políticas e dados autorizados.</li>
+<li><strong>Ferramentas:</strong> busca, CRM, calendário, e-mail ou funções internas.</li>
+<li><strong>Memória:</strong> estado necessário para continuidade.</li>
+<li><strong>Controle de fluxo:</strong> condições, roteamento e aprovações.</li>
+<li><strong>Observabilidade:</strong> logs, rastros, custos, erros e avaliações.</li>
+</ol>
+
+<h4>3. RAG</h4>
+<p>Retrieval-Augmented Generation recupera trechos de uma base e os fornece ao modelo. Isso melhora aderência a políticas e documentos, mas não elimina erros. A base precisa de atualização, permissões, segmentação e avaliação. Respostas críticas devem indicar a fonte usada.</p>
+
+<h4>4. Memória</h4>
+<p>Memória não significa guardar tudo. Armazene apenas o necessário, com prazo e finalidade. Diferencie:</p>
+<ul>
+<li><strong>Memória de sessão:</strong> contexto da conversa atual.</li>
+<li><strong>Memória operacional:</strong> estado de uma tarefa.</li>
+<li><strong>Memória de longo prazo:</strong> preferências ou histórico autorizado.</li>
+</ul>
+
+<h4>5. Ferramentas e permissões</h4>
+<table><thead><tr><th>Ação</th><th>Nível recomendado</th></tr></thead><tbody>
+<tr><td>Ler dados públicos</td><td>Automático com registro de fonte</td></tr>
+<tr><td>Consultar CRM</td><td>Somente registros autorizados</td></tr>
+<tr><td>Criar rascunho</td><td>Automático</td></tr>
+<tr><td>Enviar mensagem</td><td>Aprovação humana ou regra estrita</td></tr>
+<tr><td>Alterar preço</td><td>Humano obrigatório</td></tr>
+<tr><td>Excluir registro</td><td>Humano obrigatório e trilha de auditoria</td></tr>
+<tr><td>Marcar negócio como ganho</td><td>Confirmação humana</td></tr>
+</tbody></table>
+
+<h4>6. Padrões de agentes comerciais</h4>
+<ul>
+<li><strong>Pesquisador de contas:</strong> coleta evidências e produz briefing.</li>
+<li><strong>Preparador de reunião:</strong> combina histórico e perguntas.</li>
+<li><strong>Assistente de CRM:</strong> sugere atualizações após a reunião.</li>
+<li><strong>Analista de pipeline:</strong> identifica riscos e oportunidades paradas.</li>
+<li><strong>Gerador de follow-up:</strong> produz rascunho baseado em compromissos.</li>
+</ul>
+<p>Evite um único agente com acesso irrestrito. Divida responsabilidades e aplique o princípio do menor privilégio.</p>
+
+<h4>7. Guardrails</h4>
+<ul>
+<li>Lista de ações permitidas e proibidas.</li>
+<li>Validação de entrada e saída.</li>
+<li>Bloqueio de dados sensíveis.</li>
+<li>Aprovação antes de ações externas.</li>
+<li>Limites de volume, tempo e custo.</li>
+<li>Detecção de instruções maliciosas.</li>
+<li>Encaminhamento para humano em baixa confiança.</li>
+</ul>
+
+<h4>8. Logs e avaliações</h4>
+<p>Registre objetivo, entradas, fontes, ferramentas, decisões, saídas, erros, custos e aprovações. Crie um conjunto de casos de teste e meça: precisão, taxa de conclusão, violações, necessidade de correção e valor gerado.</p>
+
+<h4>9. Canvas de agente comercial</h4>
+<table><tbody>
+<tr><th>Objetivo</th><td>Preparar briefing de conta em até cinco minutos</td></tr>
+<tr><th>Usuário</th><td>SDR</td></tr>
+<tr><th>Entradas</th><td>Domínio, ICP e histórico autorizado</td></tr>
+<tr><th>Saídas</th><td>Fatos, fontes, hipóteses, perguntas e riscos</td></tr>
+<tr><th>Ferramentas</th><td>Busca, base interna e CRM somente leitura</td></tr>
+<tr><th>Ações proibidas</th><td>Enviar mensagens, alterar CRM, inventar contatos</td></tr>
+<tr><th>Aprovação</th><td>SDR valida antes de usar</td></tr>
+<tr><th>Métrica</th><td>Precisão e tempo economizado</td></tr>
+</tbody></table>
+
+<h4>Projeto do módulo 6 — Copiloto comercial</h4>
+<p>Crie um projeto contendo objetivo, usuários, dados, fontes, instruções, ferramentas, saídas, ações permitidas, ações proibidas, aprovações, métricas, riscos, testes e plano de implantação. Inclua pelo menos cinco casos de falha.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>O objetivo é específico.</li><li>O acesso segue menor privilégio.</li><li>Ações críticas têm aprovação.</li><li>Fontes aparecem na saída.</li><li>Logs permitem auditoria.</li><li>Há testes de falha e baixa confiança.</li></ul>
+
+<h4>Resumo</h4>
+<p>Agentes combinam modelos, dados e ferramentas. Seu valor depende menos da aparência de autonomia e mais da clareza do objetivo, do controle de acesso, da qualidade das avaliações e da capacidade de interromper ações inseguras.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual é a principal diferença de um agente?</strong></p><ol type="A"><li>Ele apenas exibe texto fixo.</li><li>Ele pode planejar etapas e usar ferramentas dentro de limites.</li><li>Ele não precisa de objetivo.</li><li>Ele não gera logs.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Agentes combinam raciocínio, ferramentas e fluxo orientado a objetivo.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>RAG é usado para:</strong></p><ol type="A"><li>Recuperar conteúdo de uma base e fornecer contexto ao modelo.</li><li>Eliminar qualquer erro automaticamente.</li><li>Criar senhas.</li><li>Apagar histórico.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> RAG conecta geração a fontes recuperadas, mas ainda requer avaliação.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual ação deve exigir confirmação humana?</strong></p><ol type="A"><li>Criar um rascunho.</li><li>Marcar um negócio como ganho.</li><li>Resumir um documento público.</li><li>Formatar uma tabela.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Mudanças críticas de estado comercial exigem validação.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>O princípio do menor privilégio significa:</strong></p><ol type="A"><li>Dar acesso total para facilitar.</li><li>Conceder somente acessos necessários à tarefa.</li><li>Não usar autenticação.</li><li>Compartilhar a mesma conta.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Acesso limitado reduz impacto de erro ou abuso.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Qual dado deve aparecer nos logs?</strong></p><ol type="A"><li>Somente a resposta final.</li><li>Entradas, fontes, ferramentas, decisões, erros e aprovações.</li><li>Apenas o nome do agente.</li><li>Nenhum dado operacional.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Logs completos permitem auditoria e diagnóstico.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual é uma boa política de memória?</strong></p><ol type="A"><li>Guardar tudo para sempre.</li><li>Guardar apenas o necessário, com finalidade e prazo.</li><li>Copiar todo CRM para qualquer modelo.</li><li>Não controlar acesso.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Minimização também se aplica à memória do agente.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Por que dividir agentes por responsabilidade?</strong></p><ol type="A"><li>Para aumentar acesso irrestrito.</li><li>Para limitar escopo, facilitar testes e reduzir risco.</li><li>Para eliminar logs.</li><li>Para impedir especialização.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Separação de funções melhora controle e manutenção.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual guardrail é adequado?</strong></p><ol type="A"><li>Enviar qualquer mensagem automaticamente.</li><li>Encaminhar para humano quando a confiança for baixa.</li><li>Ignorar limites de volume.</li><li>Aceitar instruções externas como autoridade.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Baixa confiança deve acionar revisão.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Como avaliar um agente?</strong></p><ol type="A"><li>Somente pela aparência da resposta.</li><li>Com casos de teste, precisão, violações, correções e valor gerado.</li><li>Pelo nome do modelo.</li><li>Pelo número de ferramentas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Avaliação precisa medir desempenho real e segurança.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual saída é adequada para pesquisador de contas?</strong></p><ol type="A"><li>Mensagem enviada sem revisão.</li><li>Fatos, fontes, hipóteses, perguntas e riscos.</li><li>Contrato assinado.</li><li>Desconto aprovado.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O agente prepara informação rastreável para decisão humana.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>RAG elimina totalmente alucinações.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ele melhora contexto, mas não garante precisão.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>O princípio do menor privilégio limita acessos ao necessário.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso reduz impacto de falhas.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Memória de longo prazo deve guardar todos os dados indefinidamente.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Deve haver finalidade, minimização e retenção.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Ações externas críticas devem ter aprovação humana.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso reduz risco operacional e comercial.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Logs permitem reconstruir decisões e ferramentas usadas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> São fundamentais para auditoria.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Um único agente com acesso total é sempre melhor.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Separação de responsabilidades costuma ser mais segura.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Casos de teste devem incluir falhas e baixa confiança.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Testar apenas o caminho ideal é insuficiente.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Um agente pesquisador pode inventar contatos se marcar como hipótese.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Contatos reais não devem ser inventados.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Guardrails podem limitar volume, custo e ações.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Eles ajudam a controlar comportamento.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Avaliação de agentes deve considerar utilidade e segurança.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Desempenho sem controle não é suficiente.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><section class="module module-intro"><h2>Módulo 7 — Automação Completa do Fluxo Comercial</h2><p>Este módulo transforma processos comerciais em workflows confiáveis, com gatilhos, condições, aprovações, integrações, logs, tratamento de erros e métricas. O foco não é uma ferramenta específica, mas a lógica que permite automatizar de forma segura e sustentável.</p></section><article class="cycle searchable" id="c7-1" data-title="fundamentos e mapeamento de processos comerciais"><h3>7.1 — Fundamentos e Mapeamento de Processos Comerciais</h3><div class="meta"><span class="pill">Duração: 3h</span><span class="pill">Nível: Iniciante a intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Diferenciar processo, workflow e automação.</li><li>Mapear estado atual e estado futuro.</li><li>Selecionar tarefas adequadas para automação.</li><li>Documentar exceções, responsáveis e indicadores.</li></ul></div>
+<h4>1. Automação começa antes da ferramenta</h4>
+<p>Automatizar um processo ruim apenas acelera erros. O primeiro passo é compreender como o trabalho acontece, por que cada etapa existe, quais dados entram, quem decide e quais exceções ocorrem.</p>
+
+<h4>2. Processo, workflow e automação</h4>
+<ul>
+<li><strong>Processo:</strong> conjunto amplo de atividades que produz um resultado de negócio.</li>
+<li><strong>Workflow:</strong> sequência organizada de tarefas e decisões dentro do processo.</li>
+<li><strong>Automação:</strong> execução total ou parcial do workflow por sistemas.</li>
+</ul>
+
+<h4>3. Elementos de um workflow</h4>
+<table><thead><tr><th>Elemento</th><th>Descrição</th><th>Exemplo</th></tr></thead><tbody>
+<tr><td>Gatilho</td><td>Evento que inicia</td><td>Novo formulário</td></tr>
+<tr><td>Condição</td><td>Regra de decisão</td><td>País atendido?</td></tr>
+<tr><td>Ação</td><td>Passo executado</td><td>Criar contato</td></tr>
+<tr><td>Delay</td><td>Espera controlada</td><td>Aguardar 24 horas</td></tr>
+<tr><td>Roteamento</td><td>Escolha de caminho</td><td>Enterprise ou SMB</td></tr>
+<tr><td>Aprovação</td><td>Validação humana</td><td>Autorizar desconto</td></tr>
+<tr><td>Erro</td><td>Caminho de falha</td><td>API indisponível</td></tr>
+<tr><td>Log</td><td>Registro da execução</td><td>ID, horário e resultado</td></tr>
+</tbody></table>
+
+<h4>4. Mapeamento AS-IS</h4>
+<p>O mapa do estado atual deve registrar: etapa, responsável, sistema, entrada, ação, saída, tempo, volume, erro, retrabalho, controle e exceção. Observe o processo real, não apenas o procedimento escrito.</p>
+
+<h4>5. Desenho TO-BE</h4>
+<p>No estado futuro, elimine etapas sem valor antes de automatizar. Defina o que será automático, assistido e humano. Toda decisão de alto impacto precisa de responsável.</p>
+
+<h4>6. Matriz de seleção</h4>
+<table><thead><tr><th>Critério</th><th>Boa candidata</th><th>Má candidata</th></tr></thead><tbody>
+<tr><td>Volume</td><td>Alto e recorrente</td><td>Raro</td></tr>
+<tr><td>Regra</td><td>Clara e estável</td><td>Ambígua</td></tr>
+<tr><td>Risco</td><td>Baixo e reversível</td><td>Alto e irreversível</td></tr>
+<tr><td>Dados</td><td>Disponíveis e padronizados</td><td>Incompletos</td></tr>
+<tr><td>Exceções</td><td>Conhecidas</td><td>Imprevisíveis</td></tr>
+</tbody></table>
+
+<h4>7. Automação determinística e automação com IA</h4>
+<p>Use regras para decisões estáveis: “se país não atendido, encaminhar para fila”. Use IA quando existe interpretação: classificar intenção ou resumir texto. Não use IA para substituir uma regra que pode ser explícita e auditável.</p>
+
+<h4>8. Exceções e fallback</h4>
+<p>Todo fluxo deve prever dados ausentes, duplicidade, timeout, indisponibilidade, rejeição, limite de volume, falha de autenticação e intervenção humana. O caminho de erro é parte do processo, não um detalhe técnico.</p>
+
+<h4>Atividade — Mapa AS-IS e TO-BE</h4>
+<p>Mapeie um fluxo real da entrada do lead ao agendamento. Calcule tempo de espera e trabalho, identifique três gargalos e escolha duas automações. Para cada uma, defina risco, exceções e fallback manual.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>O processo atual foi observado.</li><li>Entradas e saídas estão definidas.</li><li>Responsáveis estão claros.</li><li>Etapas sem valor foram removidas.</li><li>Exceções possuem caminho.</li><li>Métricas de sucesso foram escolhidas.</li></ul>
+
+<h4>Resumo</h4>
+<p>Automação é desenho de processo, não apenas conexão de aplicativos. Um bom fluxo é simples, explicável, monitorável e preparado para falhas.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual é o primeiro passo de uma automação?</strong></p><ol type="A"><li>Comprar uma ferramenta.</li><li>Entender e mapear o processo.</li><li>Criar cem integrações.</li><li>Eliminar todos os humanos.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O processo deve ser compreendido e melhorado antes da automação.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>O que é um gatilho?</strong></p><ol type="A"><li>Evento que inicia o fluxo.</li><li>Resultado financeiro final.</li><li>Erro de digitação.</li><li>Tipo de contrato.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O gatilho inicia uma execução.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual é a diferença entre processo e workflow?</strong></p><ol type="A"><li>Não existe.</li><li>Processo é mais amplo; workflow é uma sequência de tarefas dentro dele.</li><li>Workflow sempre é manual.</li><li>Processo só existe em software.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Workflow operacionaliza partes de um processo.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual tarefa é boa candidata à automação?</strong></p><ol type="A"><li>Alta frequência, regra clara e baixo risco.</li><li>Decisão rara e irreversível.</li><li>Atividade sem dados.</li><li>Exceção não compreendida.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Repetição e previsibilidade aumentam viabilidade.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Quando usar IA em vez de regra simples?</strong></p><ol type="A"><li>Sempre.</li><li>Quando a tarefa exige interpretação de conteúdo não estruturado.</li><li>Para comparar um campo exato.</li><li>Para substituir todas as validações.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> IA é útil em interpretação, enquanto regras são melhores para lógica explícita.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>O que é AS-IS?</strong></p><ol type="A"><li>Estado atual do processo.</li><li>Estado futuro.</li><li>Lista de ferramentas.</li><li>Nome do CRM.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> AS-IS documenta como o processo funciona hoje.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>O que é TO-BE?</strong></p><ol type="A"><li>Processo futuro desejado.</li><li>Erro de integração.</li><li>Registro duplicado.</li><li>Tipo de lead.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> TO-BE representa o desenho futuro.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Por que mapear exceções?</strong></p><ol type="A"><li>Para aumentar surpresa.</li><li>Para definir resposta quando o caminho ideal falhar.</li><li>Para esconder erros.</li><li>Para impedir logs.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Exceções são inevitáveis e precisam de tratamento.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual etapa deve ocorrer antes de automatizar?</strong></p><ol type="A"><li>Eliminar passos sem valor.</li><li>Adicionar mais aprovações sem motivo.</li><li>Duplicar registros.</li><li>Remover indicadores.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Automatizar desperdício não melhora o processo.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>O caminho de erro deve:</strong></p><ol type="A"><li>Ser ignorado.</li><li>Ter registro, responsável e estratégia de recuperação.</li><li>Excluir a execução.</li><li>Repetir infinitamente.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Falhas precisam ser observáveis e recuperáveis.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Automatizar um processo ruim pode acelerar erros.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Melhoria de processo deve preceder automação.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Workflow e processo são sempre sinônimos perfeitos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Workflow é uma sequência dentro de um processo mais amplo.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Gatilho é o evento que inicia uma execução.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele define o começo do fluxo.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Caminhos de erro são opcionais em processos críticos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Falhas precisam de tratamento previsto.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Tarefas frequentes e padronizadas são boas candidatas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Repetição e clareza favorecem automação.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Decisões irreversíveis e ambíguas devem ser totalmente automáticas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Elas exigem supervisão.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>AS-IS representa o estado atual.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> É o mapa do processo existente.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>TO-BE representa o processo futuro desejado.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele mostra o desenho após melhorias.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>IA deve substituir regras determinísticas simples.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Regras explícitas costumam ser mais auditáveis.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Responsáveis e indicadores fazem parte do mapeamento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Sem eles não há governança do processo.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c7-2" data-title="automação da captura, organização e enriquecimento de leads"><h3>7.2 — Automação da Captura, Organização e Enriquecimento de Leads</h3><div class="meta"><span class="pill">Duração: 3h30</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Projetar um fluxo de entrada de leads confiável.</li><li>Definir validação, normalização e deduplicação.</li><li>Integrar enriquecimento, scoring e distribuição.</li><li>Criar caminhos para erros e dados insuficientes.</li></ul></div>
+<h4>1. Fontes de entrada</h4>
+<p>Leads podem chegar por formulário, landing page, chat, evento, planilha, campanha, API, indicação ou inserção manual. Todo registro deve carregar origem, campanha, data, consentimento quando aplicável e identificador de execução.</p>
+
+<h4>2. Contrato de dados</h4>
+<p>Antes de integrar, defina campos obrigatórios, tipos, formatos e valores permitidos. Exemplo: e-mail em minúsculas, país em código, telefone com código internacional, domínio sem protocolo e consentimento como valor explícito.</p>
+
+<h4>3. Fluxo recomendado</h4>
+<ol>
+<li>Receber evento.</li>
+<li>Validar assinatura ou origem.</li>
+<li>Gerar ID de execução.</li>
+<li>Validar campos.</li>
+<li>Normalizar dados.</li>
+<li>Procurar duplicidade.</li>
+<li>Atualizar ou criar registro.</li>
+<li>Enriquecer somente campos necessários.</li>
+<li>Calcular fit e engajamento.</li>
+<li>Distribuir ou nutrir.</li>
+<li>Criar tarefa e alerta.</li>
+<li>Registrar resultado.</li>
+</ol>
+
+<h4>4. Idempotência</h4>
+<p>Idempotência significa que repetir o mesmo evento não cria efeitos duplicados. Use um identificador único, verifique se a execução já foi processada e faça operações de “criar ou atualizar”. Isso evita contatos, negócios e tarefas duplicadas.</p>
+
+<h4>5. Validação</h4>
+<ul>
+<li>Formato de e-mail e telefone.</li>
+<li>Campos obrigatórios.</li>
+<li>Valores permitidos.</li>
+<li>Domínio descartável ou inválido.</li>
+<li>Consistência entre país e telefone.</li>
+<li>Consentimento e finalidade.</li>
+</ul>
+<p>Validação sintática não prova que o contato existe ou autorizou comunicação.</p>
+
+<h4>6. Deduplicação e atualização</h4>
+<p>Defina hierarquia de chaves. Exemplo: ID externo, domínio da empresa, e-mail, telefone e correspondência aproximada. Ao encontrar duplicidade, não sobrescreva dados confiáveis por valores vazios ou de menor qualidade.</p>
+
+<h4>7. Enriquecimento com fallback</h4>
+<p>Se o fornecedor de enriquecimento falhar, o fluxo pode tentar novamente, encaminhar para pesquisa manual ou continuar com dados mínimos. Nunca bloqueie todo o processo por um campo não essencial.</p>
+
+<h4>8. Branches essenciais</h4>
+<table><thead><tr><th>Situação</th><th>Ação</th></tr></thead><tbody>
+<tr><td>Duplicado</td><td>Atualizar histórico e evitar novo negócio</td></tr>
+<tr><td>E-mail inválido</td><td>Marcar, solicitar correção ou usar outro canal legítimo</td></tr>
+<tr><td>Fora do ICP</td><td>Nutrição, fila alternativa ou encerramento</td></tr>
+<tr><td>Dados insuficientes</td><td>Criar tarefa de pesquisa</td></tr>
+<tr><td>Erro de API</td><td>Retentar com limite e alertar</td></tr>
+<tr><td>Consentimento ausente</td><td>Restringir ações que dependem de consentimento</td></tr>
+</tbody></table>
+
+<h4>9. Métricas</h4>
+<ul>
+<li>Leads recebidos.</li>
+<li>Taxa de validação.</li>
+<li>Taxa de duplicidade.</li>
+<li>Tempo até distribuição.</li>
+<li>Taxa de enriquecimento.</li>
+<li>Erros por origem.</li>
+<li>Percentual de registros com campos essenciais.</li>
+</ul>
+
+<h4>Atividade — Desenho de captura</h4>
+<p>Crie um diagrama para um lead de formulário. Inclua validação, normalização, deduplicação, enriquecimento, scoring, CRM, tarefa, alerta, log e seis caminhos de erro. Defina o identificador de idempotência.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Há contrato de dados.</li><li>Origem e data são preservadas.</li><li>O fluxo é idempotente.</li><li>Dados confiáveis não são sobrescritos por dados vazios.</li><li>Retentativas têm limite.</li><li>Erros geram alerta e fila de recuperação.</li></ul>
+
+<h4>Resumo</h4>
+<p>Um bom fluxo de captura protege a qualidade desde a entrada. A combinação de contrato de dados, idempotência, deduplicação e observabilidade evita que o CRM se transforme em um repositório inconsistente.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual dado deve acompanhar todo lead capturado?</strong></p><ol type="A"><li>Origem e data.</li><li>Cor favorita.</li><li>Senha do usuário.</li><li>Opinião do SDR.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Origem e tempo são essenciais para rastreabilidade.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>O que é idempotência?</strong></p><ol type="A"><li>Executar o mesmo evento sem criar efeitos duplicados.</li><li>Executar infinitamente.</li><li>Ignorar identificadores.</li><li>Apagar registros repetidos automaticamente.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Um evento repetido deve produzir o mesmo estado final.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual operação ajuda a evitar duplicação?</strong></p><ol type="A"><li>Criar sempre.</li><li>Criar ou atualizar com chave única.</li><li>Remover validação.</li><li>Usar nomes como única chave.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Upsert e chaves estáveis reduzem duplicidades.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Validação de formato de e-mail prova que:</strong></p><ol type="A"><li>O contato existe e autorizou mensagens.</li><li>A estrutura parece válida, mas não prova existência ou consentimento.</li><li>O lead comprará.</li><li>O domínio é do ICP.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Sintaxe não equivale a existência ou autorização.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Como tratar falha de enriquecimento não essencial?</strong></p><ol type="A"><li>Bloquear tudo para sempre.</li><li>Usar fallback, retentar com limite ou seguir com dados mínimos.</li><li>Inventar dados.</li><li>Excluir o lead.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Falhas parciais devem ter degradação controlada.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Ao encontrar um duplicado, o fluxo deve:</strong></p><ol type="A"><li>Criar outro registro.</li><li>Atualizar o existente e preservar histórico.</li><li>Excluir ambos.</li><li>Enviar duas cadências.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Consolidação evita abordagens conflitantes.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Qual métrica indica qualidade de entrada?</strong></p><ol type="A"><li>Taxa de duplicidade.</li><li>Quantidade de cores do formulário.</li><li>Número de fontes do site.</li><li>Tamanho do logo.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Duplicidade revela problemas de integração e identificação.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Retentativas devem:</strong></p><ol type="A"><li>Ser infinitas.</li><li>Ter limite, intervalo e alerta após falha.</li><li>Ocorrer sem log.</li><li>Ignorar o tipo de erro.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Retentativas controladas evitam sobrecarga e loops.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual campo é útil como chave de empresa?</strong></p><ol type="A"><li>Domínio normalizado.</li><li>Nome do vendedor.</li><li>Primeira palavra da descrição.</li><li>Cor do site.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Domínio é mais consistente que nomes variáveis.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>O que é contrato de dados?</strong></p><ol type="A"><li>Definição de campos, tipos, formatos e regras entre sistemas.</li><li>Contrato de venda com o cliente.</li><li>Lista de senhas.</li><li>Somente uma planilha.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O contrato reduz ambiguidades nas integrações.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Todo evento deve possuir origem e identificador de execução.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso melhora rastreabilidade.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Idempotência evita efeitos duplicados em eventos repetidos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> É essencial em integrações.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Formato válido de e-mail prova consentimento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Formato não comprova autorização.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Retentativas infinitas são recomendadas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Elas podem causar loops e sobrecarga.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Dados verificados devem ser preservados contra sobrescrita vazia.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A qualidade da fonte importa.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Todo erro de API deve excluir o lead.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Pode haver retentativa, fila ou fallback.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Contrato de dados define formatos e tipos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele reduz ambiguidade entre sistemas.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Deduplicação deve considerar uma hierarquia de chaves.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Diferentes objetos exigem identificadores adequados.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Falha de enriquecimento não essencial precisa bloquear sempre o fluxo.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> O processo pode seguir com degradação controlada.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Taxa de duplicidade é uma métrica de qualidade.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ela revela problemas de captura e integração.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c7-3" data-title="automação da prospecção e da cadência multicanal"><h3>7.3 — Automação da Prospecção e da Cadência Multicanal</h3><div class="meta"><span class="pill">Duração: 3h30</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Automatizar cadências com regras de entrada e saída.</li><li>Coordenar canais sem mensagens duplicadas.</li><li>Aplicar limites, opt-out e políticas de plataforma.</li><li>Medir resposta, qualidade e reputação.</li></ul></div>
+<h4>1. O que deve ser automatizado</h4>
+<p>Automatize organização, agendamento de tarefas, registro, lembretes, pausas e seleção de templates. Personalização crítica e mensagens de alto valor podem permanecer assistidas. A automação deve apoiar o vendedor, não transformar canais em disparadores indiscriminados.</p>
+
+<h4>2. Regras de entrada</h4>
+<ul>
+<li>ICP e segmento elegíveis.</li>
+<li>Dados mínimos válidos.</li>
+<li>Sem opt-out ou bloqueio.</li>
+<li>Sem oportunidade ativa com outro vendedor.</li>
+<li>Sem duplicidade em outra cadência.</li>
+<li>Fuso horário e região atendidos.</li>
+</ul>
+
+<h4>3. Máquina de estados</h4>
+<p>Modele o lead em estados: elegível, ativo, respondeu, agendou, pausado, nutrido, desqualificado, opt-out e concluído. Transições explícitas evitam que o mesmo lead receba mensagens conflitantes.</p>
+
+<h4>4. Exemplo de cadência</h4>
+<table><thead><tr><th>Dia</th><th>Ação</th><th>Automação</th><th>Regra de saída</th></tr></thead><tbody>
+<tr><td>1</td><td>E-mail 1</td><td>Rascunho e envio aprovado</td><td>Resposta ou bounce</td></tr>
+<tr><td>2</td><td>Tarefa de ligação</td><td>Criar tarefa</td><td>Conexão ou recusa</td></tr>
+<tr><td>4</td><td>Pesquisa LinkedIn</td><td>Tarefa manual</td><td>Conta restrita ou sem perfil</td></tr>
+<tr><td>7</td><td>E-mail 2</td><td>Enviar se não respondeu</td><td>Resposta ou opt-out</td></tr>
+<tr><td>11</td><td>Ligação</td><td>Tarefa</td><td>Agendamento</td></tr>
+<tr><td>15</td><td>Encerramento</td><td>Mensagem respeitosa</td><td>Finalizar</td></tr>
+</tbody></table>
+
+<h4>5. Resposta e classificação</h4>
+<p>Quando chega uma resposta, pause a cadência antes de classificar. Categorias: positivo, encaminhamento, não agora, objeção, sem fit, resposta automática, bounce e opt-out. Uma classificação incorreta nunca deve reativar automaticamente uma pessoa que pediu para parar.</p>
+
+<h4>6. WhatsApp</h4>
+<p>Mensagens empresariais devem ser relevantes e esperadas. Respeite opt-in, preferências, limites e modelos aprovados quando aplicável. Ofereça forma clara de interrupção. Não transfira uma lista de números para um fluxo sem base, finalidade e avaliação.</p>
+
+<h4>7. LinkedIn</h4>
+<p>Automação não autorizada, scraping, bots e extensões que enviam mensagens ou copiam dados podem violar as políticas da plataforma. Use o canal para pesquisa e interação autêntica, com tarefas manuais ou integrações oficiais.</p>
+
+<h4>8. E-mail e entregabilidade</h4>
+<ul>
+<li>Autenticação de domínio.</li>
+<li>Lista válida e segmentada.</li>
+<li>Volume gradual.</li>
+<li>Tratamento de bounces.</li>
+<li>Opt-out funcional.</li>
+<li>Conteúdo relevante.</li>
+<li>Monitoramento de reputação.</li>
+</ul>
+
+<h4>9. Controle de frequência</h4>
+<p>Implemente limite por pessoa, empresa, domínio e período. Considere contatos de diferentes vendedores e campanhas. Uma visão global evita que cinco fluxos enviem cinco mensagens no mesmo dia.</p>
+
+<h4>10. Métricas</h4>
+<p>Além de abertura e resposta, acompanhe respostas positivas, reuniões qualificadas, descadastros, reclamações, bounces, restrições de conta, conversão por segmento e tempo do vendedor.</p>
+
+<h4>Atividade — Construtor de cadência</h4>
+<p>Desenhe uma cadência de quinze dias com canais, responsáveis, mensagens, delays, condições de entrada, condições de saída, limites e métricas. Inclua tratamento para resposta, agendamento, opt-out, bounce e intervenção humana.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Leads não entram em cadências duplicadas.</li><li>Resposta pausa o fluxo imediatamente.</li><li>Opt-out é definitivo.</li><li>Canais respeitam políticas.</li><li>Há limite de frequência global.</li><li>Métricas de qualidade são acompanhadas.</li></ul>
+
+<h4>Resumo</h4>
+<p>Automação de prospecção deve coordenar ações e proteger a experiência. O principal ganho é consistência operacional; o principal risco é escalar irrelevância e violar preferências.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual deve ser uma regra de entrada em cadência?</strong></p><ol type="A"><li>Lead com opt-out.</li><li>Lead elegível, com dados válidos e sem cadência ativa.</li><li>Qualquer contato da internet.</li><li>Oportunidade já em negociação com outro vendedor.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Elegibilidade evita conflitos e contatos indevidos.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>O que fazer quando o lead responde?</strong></p><ol type="A"><li>Continuar enviando até classificar.</li><li>Pausar imediatamente e classificar depois.</li><li>Duplicar a cadência.</li><li>Apagar a resposta.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A pausa evita mensagens automáticas após o início da conversa.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Qual estado deve impedir novas mensagens?</strong></p><ol type="A"><li>Opt-out.</li><li>Elegível.</li><li>Ativo.</li><li>Em pesquisa.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Solicitação de parada deve ser respeitada.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual prática é inadequada no LinkedIn?</strong></p><ol type="A"><li>Criar tarefa manual de pesquisa.</li><li>Usar bots ou scraping não autorizado.</li><li>Interagir com conteúdo relevante.</li><li>Usar integração oficial.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ferramentas não autorizadas podem violar políticas.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Qual métrica avalia qualidade, não apenas volume?</strong></p><ol type="A"><li>Reuniões qualificadas.</li><li>Quantidade de e-mails enviados.</li><li>Número de templates.</li><li>Tamanho da lista.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Reuniões válidas indicam resultado comercial real.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Por que usar controle de frequência global?</strong></p><ol type="A"><li>Para permitir vários envios simultâneos.</li><li>Para evitar sobreposição de campanhas e vendedores.</li><li>Para remover opt-out.</li><li>Para aumentar bounces.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Visão global protege o contato de excesso de mensagens.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Como tratar bounce?</strong></p><ol type="A"><li>Ignorar e continuar.</li><li>Classificar o tipo, interromper quando necessário e corrigir dados.</li><li>Enviar mais vezes.</li><li>Marcar como resposta positiva.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Bounces afetam reputação e indicam dado inválido.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual é o papel adequado da automação na personalização?</strong></p><ol type="A"><li>Inventar fatos.</li><li>Organizar dados e criar rascunhos sujeitos a regras e revisão.</li><li>Enviar qualquer mensagem.</li><li>Substituir todo julgamento.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Automação auxilia sem remover responsabilidade.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>No WhatsApp, mensagens empresariais devem ser:</strong></p><ol type="A"><li>Inesperadas e frequentes.</li><li>Relevantes, esperadas e compatíveis com preferências.</li><li>Sem possibilidade de parada.</li><li>Enviadas a qualquer lista.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Controle do usuário e relevância são centrais.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Uma máquina de estados ajuda a:</strong></p><ol type="A"><li>Criar mensagens duplicadas.</li><li>Controlar transições e impedir ações incompatíveis.</li><li>Eliminar logs.</li><li>Ignorar respostas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Estados explícitos tornam o comportamento previsível.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Uma resposta deve pausar a cadência antes da classificação.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso impede mensagens adicionais indevidas.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Opt-out pode ser revertido automaticamente após sete dias.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Solicitação de parada deve ser respeitada.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Controle de frequência deve considerar vários fluxos e vendedores.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso evita sobreposição.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Bounce não afeta reputação de envio.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Bounces podem prejudicar entregabilidade.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Cada canal pode exigir abordagem diferente.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Contexto e formato variam por canal.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>LinkedIn permite qualquer bot de terceiros.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Automação não autorizada pode violar políticas.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>WhatsApp empresarial deve respeitar preferências do usuário.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O usuário deve manter controle da conversa.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Quantidade enviada é suficiente para avaliar uma cadência.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> É necessário medir qualidade, respostas e reclamações.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Uma máquina de estados evita ações incompatíveis.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Estados controlam transições do lead.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>O mesmo lead pode entrar em várias cadências simultâneas sem risco.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Isso pode gerar contatos repetidos e conflitos.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c7-4" data-title="automação da qualificação, distribuição e agendamento"><h3>7.4 — Automação da Qualificação, Distribuição e Agendamento</h3><div class="meta"><span class="pill">Duração: 3h30</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Criar qualificação automática e assistida.</li><li>Projetar regras transparentes de distribuição.</li><li>Automatizar agendamento e lembretes.</li><li>Implementar recuperação de no-show e SLA.</li></ul></div>
+<h4>1. Qualificação em camadas</h4>
+<p>Não tente resolver toda a qualificação em um formulário. Use camadas:</p>
+<ol>
+<li><strong>Validação básica:</strong> contato, empresa, região e produto.</li>
+<li><strong>Fit:</strong> ICP e critérios de exclusão.</li>
+<li><strong>Intenção:</strong> motivo do contato e urgência.</li>
+<li><strong>Descoberta humana:</strong> problema, impacto, decisão e contexto.</li>
+</ol>
+
+<h4>2. Perguntas condicionais</h4>
+<p>O fluxo pode adaptar perguntas com base em respostas. Se a pessoa é estudante, encaminhar para conteúdo. Se representa empresa fora da região, direcionar. Se solicita demonstração e atende ao ICP, priorizar contato.</p>
+
+<h4>3. Frameworks como apoio</h4>
+<p>BANT, GPCT e SPIN não devem virar interrogatório automático. Use os frameworks para identificar lacunas e preparar a conversa. O sistema pode sugerir perguntas, mas o profissional decide a ordem e a profundidade.</p>
+
+<h4>4. Distribuição</h4>
+<table><thead><tr><th>Método</th><th>Uso</th><th>Risco</th></tr></thead><tbody>
+<tr><td>Round-robin</td><td>Divisão equilibrada</td><td>Ignorar especialização</td></tr>
+<tr><td>Território</td><td>Região ou idioma</td><td>Regras desatualizadas</td></tr>
+<tr><td>Segmento</td><td>Especialistas por mercado</td><td>Sobrecarga desigual</td></tr>
+<tr><td>Conta nomeada</td><td>Proprietário definido</td><td>Conflito de propriedade</td></tr>
+<tr><td>Carga</td><td>Disponibilidade atual</td><td>Quantidade sem qualidade</td></tr>
+</tbody></table>
+<p>Registre por que o lead foi atribuído e crie regra para ausência, férias e rejeição.</p>
+
+<h4>5. SLA</h4>
+<p>SLA define tempo e responsabilidade. Exemplo: lead de alta intenção deve receber primeira ação em quinze minutos; se não houver ação, alertar; após trinta minutos, redistribuir. Evite metas impossíveis fora do horário de atendimento.</p>
+
+<h4>6. Agendamento</h4>
+<ul>
+<li>Consultar disponibilidade real.</li>
+<li>Considerar fuso horário.</li>
+<li>Definir duração e buffer.</li>
+<li>Coletar informações essenciais.</li>
+<li>Criar evento e link.</li>
+<li>Enviar confirmação e lembretes.</li>
+<li>Permitir reagendamento e cancelamento.</li>
+<li>Atualizar CRM.</li>
+</ul>
+
+<h4>7. Redução de no-show</h4>
+<p>Confirme valor e objetivo da reunião, não apenas horário. Envie lembrete com pauta, participantes, duração e opção de reagendar. Após no-show, crie sequência curta e respeitosa, sem iniciar uma cadência infinita.</p>
+
+<h4>8. Fluxo exemplo</h4>
+<ol>
+<li>Lead solicita demonstração.</li>
+<li>Dados e fit são verificados.</li>
+<li>Score é calculado.</li>
+<li>Lead elegível vê agenda do especialista.</li>
+<li>Evento é criado.</li>
+<li>CRM recebe status e proprietário.</li>
+<li>Lembretes são enviados.</li>
+<li>Presença ou no-show atualiza o fluxo.</li>
+</ol>
+
+<h4>9. Métricas</h4>
+<ul>
+<li>Tempo de primeira resposta.</li>
+<li>Taxa de atribuição correta.</li>
+<li>Reatribuições.</li>
+<li>Conversão para reunião.</li>
+<li>No-show.</li>
+<li>Tempo até agenda.</li>
+<li>Reuniões por origem e score.</li>
+</ul>
+
+<h4>Atividade — Fluxo de qualificação e agenda</h4>
+<p>Desenhe um fluxo com cinco perguntas condicionais, score, três caminhos de distribuição, SLA, agenda, confirmação, dois lembretes e recuperação de no-show. Defina o que exige revisão humana.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Qualificação não é interrogatório.</li><li>Regras de distribuição são explicáveis.</li><li>Férias e indisponibilidade estão cobertas.</li><li>Fuso horário é respeitado.</li><li>Reagendamento é simples.</li><li>No-show possui fluxo finito.</li></ul>
+
+<h4>Resumo</h4>
+<p>Automação de qualificação e agenda reduz tempo de resposta quando combina critérios claros, distribuição justa e experiência simples. A descoberta consultiva continua humana.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual etapa deve ocorrer antes da descoberta humana?</strong></p><ol type="A"><li>Validação básica e fit.</li><li>Assinatura de contrato.</li><li>Desconto automático.</li><li>Marcar como ganho.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Camadas iniciais removem casos inválidos e organizam prioridade.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Como usar BANT, GPCT ou SPIN na automação?</strong></p><ol type="A"><li>Como interrogatório rígido.</li><li>Para identificar lacunas e sugerir perguntas.</li><li>Para descartar automaticamente todos os leads.</li><li>Para definir preço.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Frameworks apoiam, não substituem conversa.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Round-robin distribui leads por:</strong></p><ol type="A"><li>Equilíbrio sequencial.</li><li>Somente território.</li><li>Maior desconto.</li><li>Aleatoriedade sem controle.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Round-robin alterna responsáveis.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual é uma boa prática de SLA?</strong></p><ol type="A"><li>Definir prazo e escalonamento realistas.</li><li>Exigir resposta imediata 24 horas por dia sem equipe.</li><li>Não registrar atraso.</li><li>Nunca redistribuir.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> SLA deve ser executável e monitorável.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>O agendamento deve considerar:</strong></p><ol type="A"><li>Fuso, duração, buffer e disponibilidade real.</li><li>Somente o horário do vendedor.</li><li>Nenhuma confirmação.</li><li>Agenda fictícia.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Esses elementos evitam conflito e experiência ruim.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual ação ajuda a reduzir no-show?</strong></p><ol type="A"><li>Enviar apenas o link.</li><li>Confirmar pauta, valor e permitir reagendamento.</li><li>Enviar dez mensagens no mesmo dia.</li><li>Ocultar duração.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Clareza aumenta compromisso.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>O que fazer se o responsável estiver de férias?</strong></p><ol type="A"><li>Deixar o lead sem atendimento.</li><li>Aplicar regra de substituição ou redistribuição.</li><li>Apagar o lead.</li><li>Marcar como perdido.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Continuidade deve estar prevista.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual métrica mede velocidade do processo?</strong></p><ol type="A"><li>Tempo de primeira resposta.</li><li>Cor da agenda.</li><li>Quantidade de campos ocultos.</li><li>Número de logos.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Tempo de resposta é central em leads de alta intenção.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual informação deve ser registrada na distribuição?</strong></p><ol type="A"><li>Motivo e regra da atribuição.</li><li>Somente nome do vendedor.</li><li>Nada.</li><li>Senha do calendário.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Explicabilidade permite auditoria e correção.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual deve ser o comportamento após no-show?</strong></p><ol type="A"><li>Cadência infinita.</li><li>Fluxo curto, respeitoso e com opção de reagendar.</li><li>Marcar venda como perdida imediatamente.</li><li>Enviar proposta automática.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Recuperação deve equilibrar oportunidade e respeito.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Qualificação automática deve substituir toda descoberta humana.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ela organiza etapas iniciais; a descoberta continua consultiva.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Perguntas condicionais adaptam o fluxo às respostas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Elas evitam perguntas irrelevantes.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Round-robin pode ignorar especialização se usado sem regras adicionais.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Equilíbrio não garante melhor atendimento.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>SLA deve considerar horário real de operação.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Metas impossíveis geram alertas inúteis.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Agendamento precisa considerar fuso horário.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso evita conflitos e no-show.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>No-show deve iniciar uma sequência infinita.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A recuperação deve ser curta e respeitosa.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Distribuição deve registrar a regra aplicada.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso permite auditoria.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Férias do proprietário não precisam de tratamento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> É necessário fallback ou redistribuição.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>BANT, GPCT e SPIN podem apoiar identificação de lacunas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Frameworks orientam perguntas.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Lembrete com pauta e opção de reagendar pode reduzir no-show.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Clareza aumenta o compromisso.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c7-5" data-title="automação do crm, pipeline e gestão de oportunidades"><h3>7.5 — Automação do CRM, Pipeline e Gestão de Oportunidades</h3><div class="meta"><span class="pill">Duração: 4h</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Definir critérios objetivos para etapas do pipeline.</li><li>Automatizar tarefas e alertas sem distorcer o CRM.</li><li>Identificar oportunidades paradas e riscos.</li><li>Preservar histórico, qualidade e auditabilidade.</li></ul></div>
+<h4>1. CRM é sistema de registro e decisão</h4>
+<p>O CRM deve representar a realidade comercial. Automações que movem negócios para “parecer melhor” destroem confiança. Cada etapa precisa de significado, critérios de entrada, critérios de saída e campos obrigatórios.</p>
+
+<h4>2. Objetos e relacionamentos</h4>
+<ul>
+<li><strong>Contato:</strong> pessoa.</li>
+<li><strong>Empresa:</strong> organização.</li>
+<li><strong>Negócio:</strong> oportunidade comercial.</li>
+<li><strong>Atividade:</strong> ligação, e-mail, reunião ou tarefa.</li>
+<li><strong>Produto:</strong> item ou serviço.</li>
+</ul>
+<p>Uma oportunidade deve estar associada às pessoas e empresas corretas.</p>
+
+<h4>3. Critérios de etapa</h4>
+<table><thead><tr><th>Etapa</th><th>Entrada</th><th>Saída</th></tr></thead><tbody>
+<tr><td>Qualificada</td><td>Problema e fit confirmados</td><td>Reunião de descoberta concluída</td></tr>
+<tr><td>Diagnóstico</td><td>Reunião realizada</td><td>Impacto, decisão e próximos passos registrados</td></tr>
+<tr><td>Proposta</td><td>Escopo e critérios alinhados</td><td>Proposta entregue e revisão marcada</td></tr>
+<tr><td>Negociação</td><td>Cliente avaliando condições</td><td>Aceite ou perda documentada</td></tr>
+<tr><td>Ganha</td><td>Confirmação formal</td><td>Handoff concluído</td></tr>
+</tbody></table>
+
+<h4>4. Campos obrigatórios</h4>
+<p>Campos obrigatórios devem ser poucos e relevantes. Exigir cinquenta campos faz usuários preencherem qualquer coisa. Valide na transição da etapa: problema, impacto, decisores, próxima atividade, valor, data prevista e risco.</p>
+
+<h4>5. Automação útil</h4>
+<ul>
+<li>Criar tarefa quando faltar próxima atividade.</li>
+<li>Alertar negócio sem interação por período.</li>
+<li>Solicitar atualização de data prevista vencida.</li>
+<li>Registrar motivo de perda.</li>
+<li>Notificar gestor em desconto fora da política.</li>
+<li>Gerar resumo de mudanças.</li>
+</ul>
+
+<h4>6. Aging e estagnação</h4>
+<p>Aging mede tempo na etapa. Compare com o padrão por segmento. Um negócio parado não deve ser movido automaticamente; deve gerar revisão. Razões possíveis: ausência de próximo passo, prioridade baixa, dependência técnica ou falta de acesso ao decisor.</p>
+
+<h4>7. Forecast</h4>
+<p>Forecast não deve depender apenas da opinião do vendedor. Combine etapa, evidências, atividade, data, participação do grupo comprador e histórico. A IA pode apontar riscos, mas não deve alterar previsão sem transparência.</p>
+
+<h4>8. Pipeline hygiene</h4>
+<ul>
+<li>Negócios sem próxima atividade.</li>
+<li>Datas no passado.</li>
+<li>Valores vazios ou inconsistentes.</li>
+<li>Duplicidades.</li>
+<li>Etapas sem critérios.</li>
+<li>Perdas sem motivo.</li>
+<li>Oportunidades sem contato associado.</li>
+</ul>
+
+<h4>9. Auditoria</h4>
+<p>Registre alterações automáticas: valor anterior, novo valor, regra, execução e responsável. Não sobrescreva notas humanas sem histórico. Ofereça reversão para mudanças relevantes.</p>
+
+<h4>Atividade — Pipeline automatizado</h4>
+<p>Crie cinco etapas com critérios de entrada e saída, campos obrigatórios, tempo máximo, alertas, tarefas e exceções. Inclua regra para negócio parado, data vencida, proposta sem retorno e perda.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Etapas refletem fatos.</li><li>Negócio ganho exige confirmação.</li><li>Campos obrigatórios são úteis.</li><li>Alterações automáticas possuem log.</li><li>Alertas não se repetem sem controle.</li><li>Forecast mostra evidências e riscos.</li></ul>
+
+<h4>Resumo</h4>
+<p>Automação de CRM deve melhorar disciplina e visibilidade, não maquiar o pipeline. Critérios claros, alertas acionáveis e histórico confiável são mais valiosos que movimentos automáticos.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual princípio deve orientar etapas do pipeline?</strong></p><ol type="A"><li>Representar fatos e critérios objetivos.</li><li>Melhorar aparência do relatório.</li><li>Mover negócios automaticamente por tempo.</li><li>Esconder perdas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O pipeline deve refletir a realidade comercial.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Quando um negócio pode ser marcado como ganho?</strong></p><ol type="A"><li>Quando o vendedor sente confiança.</li><li>Após confirmação formal conforme a regra da empresa.</li><li>Quando a proposta é enviada.</li><li>Quando o lead abre o e-mail.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ganho exige evidência de fechamento.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>O que é aging?</strong></p><ol type="A"><li>Tempo na etapa.</li><li>Idade do vendedor.</li><li>Tempo de carregamento do site.</li><li>Valor do contrato.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Aging ajuda a identificar estagnação.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual automação é útil?</strong></p><ol type="A"><li>Criar tarefa quando falta próxima atividade.</li><li>Apagar negócios sem aviso.</li><li>Alterar valor aleatoriamente.</li><li>Marcar perdas como ganhas.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A tarefa melhora disciplina sem distorcer dados.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Como tratar negócio parado?</strong></p><ol type="A"><li>Mover automaticamente.</li><li>Gerar revisão e investigar causa.</li><li>Duplicar oportunidade.</li><li>Excluir histórico.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Estagnação precisa de diagnóstico.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Forecast confiável combina:</strong></p><ol type="A"><li>Somente opinião.</li><li>Etapa, evidências, atividade, data e histórico.</li><li>Quantidade de e-mails apenas.</li><li>Cor do pipeline.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Múltiplos sinais reduzem viés.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Qual problema pertence a pipeline hygiene?</strong></p><ol type="A"><li>Negócio sem próxima atividade.</li><li>Reunião registrada.</li><li>Motivo de perda preenchido.</li><li>Contato associado.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ausência de próximo passo é um problema de qualidade.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Uma alteração automática relevante deve registrar:</strong></p><ol type="A"><li>Antes, depois, regra e execução.</li><li>Somente o novo valor.</li><li>Nada.</li><li>A senha do usuário.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Auditoria permite entender e reverter.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Por que limitar campos obrigatórios?</strong></p><ol type="A"><li>Para reduzir preenchimento inútil e aumentar qualidade.</li><li>Para remover todo dado.</li><li>Para impedir gestão.</li><li>Para esconder o processo.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Excesso gera dados fictícios e baixa adoção.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual ação é inadequada?</strong></p><ol type="A"><li>Alertar data vencida.</li><li>Sobrescrever nota humana sem histórico.</li><li>Registrar motivo de perda.</li><li>Criar tarefa de revisão.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Informação humana deve ser preservada e auditável.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Etapas do pipeline devem refletir eventos comerciais reais.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O CRM deve representar a realidade.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Negócio sem próxima atividade é um problema de higiene.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Falta de ação indica risco de estagnação.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Aging mede o valor financeiro do negócio.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Aging mede tempo na etapa.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Negócio parado deve ser movido automaticamente para frente.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Ele deve ser revisado e diagnosticado.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Forecast pode combinar atividade, etapa, data e histórico.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Múltiplas evidências melhoram a previsão.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Sobrescrever notas humanas sem histórico é uma boa prática.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Alterações devem ser auditáveis.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Campos obrigatórios excessivos podem reduzir qualidade.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Usuários podem preencher dados sem significado.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Motivo de perda ajuda a melhoria do processo.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele permite analisar padrões.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Alertas repetidos sem limite aumentam eficiência.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Geram fadiga e são ignorados.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Oportunidade ganha deve ter confirmação formal.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> O status exige evidência.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c7-6" data-title="automação de propostas, follow-up, fechamento e passagem de bastão"><h3>7.6 — Automação de Propostas, Follow-up, Fechamento e Passagem de Bastão</h3><div class="meta"><span class="pill">Duração: 4h</span><span class="pill">Nível: Intermediário</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Automatizar geração e aprovação de propostas.</li><li>Controlar versões, descontos e assinaturas.</li><li>Criar follow-ups orientados a eventos.</li><li>Garantir handoff completo para financeiro e Customer Success.</li></ul></div>
+<h4>1. Pré-condições da proposta</h4>
+<p>Não gere proposta apenas porque o negócio chegou a uma etapa. Valide empresa, contato, escopo, produtos, quantidade, preço, impostos, prazo, condições, aprovadores e data de validade. Dados ausentes devem bloquear ou encaminhar para correção.</p>
+
+<h4>2. Geração por template</h4>
+<p>Use templates versionados com campos controlados. Separe conteúdo padrão de cláusulas especiais. O documento deve registrar versão, autor, origem dos dados e aprovações.</p>
+
+<h4>3. Aprovação de desconto</h4>
+<table><thead><tr><th>Faixa</th><th>Fluxo</th></tr></thead><tbody>
+<tr><td>0% a 5%</td><td>Dentro da autonomia definida</td></tr>
+<tr><td>5,01% a 10%</td><td>Aprovação do gestor</td></tr>
+<tr><td>Acima de 10%</td><td>Diretoria e justificativa</td></tr>
+<tr><td>Condição não padrão</td><td>Jurídico ou financeiro</td></tr>
+</tbody></table>
+<p>Faixas são exemplo e devem ser adaptadas. A automação não pode contornar a política.</p>
+
+<h4>4. Versionamento</h4>
+<p>Nunca sobrescreva uma proposta enviada. Crie nova versão e registre diferenças. Evite enviar documentos simultâneos sem indicar qual é válido.</p>
+
+<h4>5. Follow-up orientado por eventos</h4>
+<ul>
+<li>Proposta enviada.</li>
+<li>Documento aberto.</li>
+<li>Comentário recebido.</li>
+<li>Aprovação interna pendente.</li>
+<li>Validade próxima.</li>
+<li>Assinatura concluída.</li>
+</ul>
+<p>Rastreamento de abertura é sinal fraco e pode falhar. Não use como prova de leitura ou intenção.</p>
+
+<h4>6. Assinatura e fechamento</h4>
+<p>Quando a assinatura é confirmada, valide se todos os signatários concluíram, registre o documento final, atualize o negócio, interrompa cadências e inicie processos internos. Não marque como ganho apenas porque um link foi aberto.</p>
+
+<h4>7. Handoff</h4>
+<p>A passagem deve incluir:</p>
+<ul>
+<li>Problema e resultado esperado.</li>
+<li>Escopo vendido e exclusões.</li>
+<li>Condições comerciais.</li>
+<li>Stakeholders.</li>
+<li>Prazo e marcos.</li>
+<li>Riscos e promessas.</li>
+<li>Integrações e requisitos.</li>
+<li>Próxima reunião.</li>
+</ul>
+<p>O cliente não deve repetir toda a história.</p>
+
+<h4>8. Fluxo ponta a ponta</h4>
+<ol>
+<li>Validar dados.</li>
+<li>Gerar proposta.</li>
+<li>Solicitar aprovação.</li>
+<li>Enviar documento.</li>
+<li>Registrar eventos.</li>
+<li>Programar follow-ups.</li>
+<li>Receber assinatura.</li>
+<li>Atualizar CRM.</li>
+<li>Notificar financeiro.</li>
+<li>Criar handoff para CS.</li>
+<li>Agendar onboarding.</li>
+<li>Registrar conclusão.</li>
+</ol>
+
+<h4>9. Exceções</h4>
+<ul>
+<li>Proposta expirada.</li>
+<li>Assinatura parcial.</li>
+<li>Dados fiscais divergentes.</li>
+<li>Desconto reprovado.</li>
+<li>Cliente solicita alteração.</li>
+<li>Integração de assinatura falha.</li>
+</ul>
+
+<h4>Atividade — Fluxo de fechamento</h4>
+<p>Desenhe uma automação com validação, três níveis de aprovação, versionamento, envio, follow-up, assinatura, CRM, financeiro, CS e onboarding. Inclua cinco exceções e um mecanismo de reprocessamento.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Dados obrigatórios são validados.</li><li>Descontos respeitam política.</li><li>Versões são preservadas.</li><li>Assinatura é confirmada.</li><li>Cadências são interrompidas.</li><li>Handoff contém contexto completo.</li></ul>
+
+<h4>Resumo</h4>
+<p>Automação de fechamento reduz atrasos e omissões quando mantém controles comerciais e contratuais. O objetivo é criar continuidade entre venda, contrato, faturamento e entrega.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>O que deve acontecer antes de gerar proposta?</strong></p><ol type="A"><li>Validar dados, escopo, preço e aprovadores.</li><li>Enviar imediatamente.</li><li>Aplicar desconto máximo.</li><li>Marcar como ganho.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Pré-condições evitam documentos incorretos.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Como tratar desconto fora da autonomia?</strong></p><ol type="A"><li>Aprovar automaticamente.</li><li>Encaminhar para aprovação conforme política.</li><li>Ocultar na proposta.</li><li>Alterar o CRM sem registro.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Políticas de aprovação devem ser respeitadas.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>O que é versionamento de proposta?</strong></p><ol type="A"><li>Sobrescrever o arquivo antigo.</li><li>Criar versões identificadas e registrar diferenças.</li><li>Excluir todas as versões.</li><li>Usar o mesmo documento para todos.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Versionamento evita confusão e preserva histórico.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Abertura de proposta significa:</strong></p><ol type="A"><li>Compra confirmada.</li><li>Um sinal fraco que não prova leitura ou intenção.</li><li>Assinatura concluída.</li><li>Autorização para marcar ganho.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Rastreamento de abertura tem limitações.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>Quando marcar o negócio como ganho?</strong></p><ol type="A"><li>Após confirmar assinatura ou critério formal.</li><li>Quando enviar o documento.</li><li>Quando o cliente visitar o site.</li><li>Quando o vendedor criar a proposta.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Fechamento precisa de evidência formal.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Qual informação pertence ao handoff?</strong></p><ol type="A"><li>Escopo, promessas, stakeholders e próximos passos.</li><li>Somente valor.</li><li>Somente nome do vendedor.</li><li>Nenhuma informação de risco.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> CS e operação precisam de contexto completo.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>O que fazer após assinatura?</strong></p><ol type="A"><li>Manter cadência de prospecção.</li><li>Atualizar CRM, notificar áreas e iniciar onboarding.</li><li>Enviar outra proposta.</li><li>Excluir histórico.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Eventos de pós-venda devem ser iniciados de forma coordenada.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual exceção deve ser prevista?</strong></p><ol type="A"><li>Assinatura parcial.</li><li>Documento correto.</li><li>Handoff completo.</li><li>Dados válidos.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Assinatura parcial exige acompanhamento e regra.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Por que não sobrescrever proposta enviada?</strong></p><ol type="A"><li>Para preservar evidência e controle de versões.</li><li>Para aumentar número de arquivos sem motivo.</li><li>Para impedir negociação.</li><li>Para remover auditoria.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Histórico contratual e comercial precisa ser preservado.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual é o objetivo do handoff?</strong></p><ol type="A"><li>Fazer o cliente repetir tudo.</li><li>Transferir contexto e compromissos sem perda de informação.</li><li>Encerrar comunicação.</li><li>Alterar o escopo.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A passagem deve garantir continuidade e confiança.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Proposta deve ser gerada somente após validar dados essenciais.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso reduz erros comerciais e contratuais.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Desconto fora da política pode ignorar aprovação se o cliente tiver urgência.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> A política deve ser respeitada.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Versionamento preserva propostas enviadas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Cada revisão deve ser identificada.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Abertura de documento prova aceite.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Abertura é apenas um sinal limitado.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Assinatura parcial pode exigir acompanhamento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Nem todos os signatários podem ter concluído.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Após assinatura, cadências de prospecção devem continuar.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Elas devem ser interrompidas.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Handoff deve incluir promessas e riscos.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> A entrega precisa conhecer compromissos.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>Proposta expirada é uma exceção a ser tratada.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Pode exigir nova versão ou aprovação.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Documento final assinado deve ser armazenado conforme política.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> É parte do registro formal.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Cliente deve repetir todo o histórico no onboarding.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Um bom handoff evita repetição.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article><article class="cycle searchable" id="c7-7" data-title="arquitetura de automação comercial de ponta a ponta"><h3>7.7 — Arquitetura de Automação Comercial de Ponta a Ponta</h3><div class="meta"><span class="pill">Duração: 5h</span><span class="pill">Nível: Avançado</span><span class="pill">Quiz: 10 questões</span></div><div class="objectives"><h4>Objetivos de aprendizagem</h4><ul><li>Desenhar arquitetura integrada e observável.</li><li>Compreender APIs, webhooks, filas, retentativas e idempotência.</li><li>Proteger credenciais e separar ambientes.</li><li>Criar plano de testes, implantação e contingência.</li></ul></div>
+<h4>1. Arquitetura é o desenho das responsabilidades</h4>
+<p>Uma arquitetura comercial define quais sistemas são fontes de verdade, como os dados circulam, onde as regras vivem e quem responde por falhas. Conectar tudo a tudo cria dependências frágeis. Prefira integrações com contratos claros e responsabilidades definidas.</p>
+
+<h4>2. Sistemas típicos</h4>
+<ul>
+<li>Site, formulários e marketing.</li>
+<li>CRM.</li>
+<li>Enriquecimento.</li>
+<li>Sales engagement.</li>
+<li>Telefonia e mensageria.</li>
+<li>Calendário e videoconferência.</li>
+<li>Propostas e assinatura.</li>
+<li>Financeiro e ERP.</li>
+<li>Customer Success.</li>
+<li>BI e data warehouse.</li>
+<li>Camada de automação ou orquestração.</li>
+</ul>
+
+<h4>3. API e webhook</h4>
+<p>API é uma interface para consultar ou alterar dados. Webhook é uma notificação enviada quando um evento ocorre. Webhooks reduzem polling, mas precisam de autenticação, validação, idempotência e resposta rápida.</p>
+
+<h4>4. Sincronia, assincronia e filas</h4>
+<p>Fluxos síncronos esperam uma resposta imediata. Fluxos assíncronos registram uma tarefa e continuam. Filas absorvem picos, isolam falhas e permitem retentativa. Use fila para processos demorados ou dependentes de serviços externos.</p>
+
+<h4>5. Retentativas</h4>
+<p>Retente apenas erros temporários. Use espera crescente, limite de tentativas e fila de falhas. Erros de validação não devem ser repetidos sem correção. Toda retentativa deve ser idempotente.</p>
+
+<h4>6. Observabilidade</h4>
+<p>Cada execução deve ter:</p>
+<ul>
+<li>ID de correlação.</li>
+<li>Data e hora.</li>
+<li>Origem e destino.</li>
+<li>Entrada mascarada quando necessário.</li>
+<li>Etapas executadas.</li>
+<li>Status e duração.</li>
+<li>Erro e tentativa.</li>
+<li>Aprovação humana.</li>
+<li>Possibilidade de reprocessamento.</li>
+</ul>
+<p>Crie painéis para volume, sucesso, falha, latência, custo e fila.</p>
+
+<h4>7. Segurança</h4>
+<ul>
+<li>Segredos em cofre ou variáveis protegidas.</li>
+<li>Credenciais diferentes por ambiente.</li>
+<li>Princípio do menor privilégio.</li>
+<li>Rotação de chaves.</li>
+<li>Criptografia em trânsito e em repouso.</li>
+<li>Mascaramento de dados nos logs.</li>
+<li>Revisão de fornecedores.</li>
+<li>Plano de resposta a incidentes.</li>
+</ul>
+
+<h4>8. Ambientes</h4>
+<p>Separe desenvolvimento, homologação e produção. Use dados sintéticos ou anonimizados em testes. Promova versões com revisão e possibilidade de rollback.</p>
+
+<h4>9. Testes</h4>
+<ul>
+<li>Teste unitário de regras.</li>
+<li>Teste de integração.</li>
+<li>Teste de ponta a ponta.</li>
+<li>Teste de carga.</li>
+<li>Teste de falha e indisponibilidade.</li>
+<li>Teste de segurança e permissão.</li>
+<li>Teste de recuperação.</li>
+<li>Teste de dados duplicados.</li>
+</ul>
+
+<h4>10. Custos e limites</h4>
+<p>Monitore chamadas, tarefas, armazenamento, tokens, mensagens, licenças e suporte. Defina orçamento e alertas. Uma automação que economiza dez minutos, mas custa mais que o trabalho evitado, precisa ser redesenhada.</p>
+
+<h4>11. Plano de implantação</h4>
+<ol>
+<li>Selecionar piloto.</li>
+<li>Definir métricas e baseline.</li>
+<li>Testar em homologação.</li>
+<li>Implantar para grupo pequeno.</li>
+<li>Monitorar e coletar feedback.</li>
+<li>Corrigir.</li>
+<li>Expandir gradualmente.</li>
+<li>Documentar operação e contingência.</li>
+</ol>
+
+<h4>Projeto do módulo 7 — Automação ponta a ponta</h4>
+<p>Construa uma arquitetura com objetivo, escopo, diagrama, sistemas, fontes de verdade, eventos, APIs, webhooks, filas, campos, aprovações, logs, alertas, erros, LGPD, testes, implantação, rollback, custo e plano de contingência.</p>
+
+<h4>Checklist</h4>
+<ul class="checklist"><li>Fontes de verdade estão definidas.</li><li>Eventos são idempotentes.</li><li>Retentativas têm limite.</li><li>Logs não expõem segredos.</li><li>Ambientes são separados.</li><li>Existe rollback e contingência.</li><li>Custos são monitorados.</li></ul>
+
+<h4>Resumo</h4>
+<p>Automação ponta a ponta é uma disciplina de arquitetura e operação. Confiabilidade nasce de contratos de dados, isolamento de falhas, segurança, testes e observabilidade, não da quantidade de conectores.</p>
+<h4>Quiz do ciclo</h4><p>O sistema deve sortear e embaralhar as questões. Para aprovação, o aluno precisa acertar pelo menos 7 de 10.</p><div class="question-bank"><article class="question"><h5>Questão 1</h5><p><strong>Qual é a função de uma arquitetura comercial?</strong></p><ol type="A"><li>Definir responsabilidades, fluxos de dados e fontes de verdade.</li><li>Conectar tudo sem regras.</li><li>Eliminar documentação.</li><li>Substituir estratégia.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Arquitetura organiza sistemas e responsabilidades.</p></details></article><article class="question"><h5>Questão 2</h5><p><strong>Qual é a diferença entre API e webhook?</strong></p><ol type="A"><li>API é interface de acesso; webhook notifica eventos.</li><li>São sempre iguais.</li><li>Webhook só lê planilhas.</li><li>API não usa autenticação.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> APIs permitem operações; webhooks enviam notificações.</p></details></article><article class="question"><h5>Questão 3</h5><p><strong>Quando usar fila?</strong></p><ol type="A"><li>Para absorver picos e processar tarefas assíncronas.</li><li>Para ocultar erros.</li><li>Para remover logs.</li><li>Somente em processos manuais.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Filas desacoplam e aumentam resiliência.</p></details></article><article class="question"><h5>Questão 4</h5><p><strong>Qual erro deve ser retentado?</strong></p><ol type="A"><li>Erro temporário de indisponibilidade.</li><li>Campo obrigatório ausente sem correção.</li><li>Permissão negada permanente.</li><li>Regra inválida.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Retentativas são adequadas para falhas transitórias.</p></details></article><article class="question"><h5>Questão 5</h5><p><strong>O que é ID de correlação?</strong></p><ol type="A"><li>Identificador que acompanha uma execução entre sistemas.</li><li>Senha do usuário.</li><li>Nome do vendedor.</li><li>Valor do contrato.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele permite rastrear o fluxo de ponta a ponta.</p></details></article><article class="question"><h5>Questão 6</h5><p><strong>Onde armazenar segredos?</strong></p><ol type="A"><li>No código-fonte público.</li><li>Em cofre ou variáveis protegidas.</li><li>Em comentário de planilha.</li><li>Em mensagem de e-mail.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Segredos precisam de armazenamento e acesso controlados.</p></details></article><article class="question"><h5>Questão 7</h5><p><strong>Por que separar ambientes?</strong></p><ol type="A"><li>Para testar mudanças sem afetar produção.</li><li>Para duplicar custos sem benefício.</li><li>Para remover homologação.</li><li>Para usar dados reais em qualquer teste.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Separação reduz risco de implantação.</p></details></article><article class="question"><h5>Questão 8</h5><p><strong>Qual teste verifica o fluxo completo?</strong></p><ol type="A"><li>Teste ponta a ponta.</li><li>Somente teste de cor.</li><li>Teste sem dados.</li><li>Teste de opinião.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> E2E valida a jornada entre componentes.</p></details></article><article class="question"><h5>Questão 9</h5><p><strong>Qual prática melhora segurança dos logs?</strong></p><ol type="A"><li>Mascarar dados sensíveis.</li><li>Registrar senhas.</li><li>Publicar tokens.</li><li>Remover controle de acesso.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Logs devem ser úteis sem expor informações críticas.</p></details></article><article class="question"><h5>Questão 10</h5><p><strong>Qual abordagem de implantação é mais segura?</strong></p><ol type="A"><li>Lançar tudo sem teste.</li><li>Piloto, métricas, homologação, grupo pequeno e expansão gradual.</li><li>Desativar rollback.</li><li>Ignorar feedback.</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Implantação progressiva reduz impacto de falhas.</p></details></article><article class="question"><h5>Questão 11</h5><p><strong>Webhook é uma notificação de evento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele envia dados quando algo acontece.</p></details></article><article class="question"><h5>Questão 12</h5><p><strong>Filas ajudam a absorver picos e desacoplar sistemas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Elas melhoram resiliência.</p></details></article><article class="question"><h5>Questão 13</h5><p><strong>Todo erro deve ser retentado.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Erros permanentes exigem correção, não repetição.</p></details></article><article class="question"><h5>Questão 14</h5><p><strong>Retentativas devem ser idempotentes.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Caso contrário podem duplicar efeitos.</p></details></article><article class="question"><h5>Questão 15</h5><p><strong>Segredos podem ser armazenados no código-fonte.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Devem ficar em cofre ou variáveis protegidas.</p></details></article><article class="question"><h5>Questão 16</h5><p><strong>Ambientes de desenvolvimento e produção devem ser separados.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Isso reduz risco.</p></details></article><article class="question"><h5>Questão 17</h5><p><strong>Logs podem expor dados sensíveis sem mascaramento.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: B.</strong> Logs também precisam de proteção.</p></details></article><article class="question"><h5>Questão 18</h5><p><strong>ID de correlação ajuda a rastrear uma execução entre sistemas.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Ele conecta eventos distribuídos.</p></details></article><article class="question"><h5>Questão 19</h5><p><strong>Rollback faz parte de um plano de implantação seguro.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Permite reverter mudanças problemáticas.</p></details></article><article class="question"><h5>Questão 20</h5><p><strong>Custos de chamadas, mensagens e processamento devem ser monitorados.</strong></p><ol type="A"><li>Verdadeiro</li><li>Falso</li></ol><details class="answer"><summary>Ver resposta comentada</summary><p><strong>Resposta: A.</strong> Viabilidade econômica é parte da arquitetura.</p></details></article></div><a class="top" href="#top">Voltar ao índice</a></article>
+<section class="module" id="projects"><h2>Projetos obrigatórios dos módulos</h2>
+<h3>Projeto do Módulo 6 — Copiloto Comercial de IA</h3>
+<p>O aluno deverá entregar um documento contendo:</p>
+<ol><li>Problema e objetivo.</li><li>Usuários.</li><li>Entradas e fontes.</li><li>Instruções.</li><li>Ferramentas.</li><li>Saídas.</li><li>Ações permitidas e proibidas.</li><li>Permissões.</li><li>Aprovações humanas.</li><li>Logs.</li><li>Métricas.</li><li>Riscos.</li><li>Dez casos de teste.</li><li>Plano de implantação.</li></ol>
+<p><strong>Critérios:</strong> utilidade, precisão, rastreabilidade, privacidade, segurança, clareza de limites e qualidade dos testes.</p>
+<h3>Projeto do Módulo 7 — Automação Comercial Ponta a Ponta</h3>
+<p>O aluno deverá criar:</p>
+<ol><li>Mapa AS-IS.</li><li>Mapa TO-BE.</li><li>Diagrama da arquitetura.</li><li>Fontes de verdade.</li><li>Contrato de dados.</li><li>Gatilhos e condições.</li><li>Ações e delays.</li><li>Integrações.</li><li>Idempotência.</li><li>Aprovações.</li><li>Tratamento de erros.</li><li>Logs e alertas.</li><li>Métricas.</li><li>Segurança e LGPD.</li><li>Plano de testes.</li><li>Implantação e rollback.</li><li>Contingência.</li></ol>
+<p><strong>Critérios:</strong> coerência, viabilidade, qualidade de dados, resiliência, observabilidade, segurança, custo e experiência do usuário.</p>
+</section>
+
+<section class="references" id="references"><h2>Referências oficiais de atualização</h2>
+<p>Conteúdo conceitual revisado com base em documentação e políticas oficiais consultadas em junho de 2026:</p>
+<ul>
+<li>OpenAI Platform — Agents, Agent Builder, Agents SDK e avaliações de agentes.</li>
+<li>Autoridade Nacional de Proteção de Dados e portais Gov.br — LGPD, tratamento de dados e princípios.</li>
+<li>LinkedIn Help e Professional Community Policies — autenticidade, scraping e automação não autorizada.</li>
+<li>Meta e WhatsApp Business — preferências de mensagens empresariais, opt-in, templates e qualidade.</li>
+<li>HubSpot Knowledge Base — lead scoring, histórico e uso de scores em workflows e relatórios.</li>
+<li>Zapier Help — triggers, filters, paths, delays, loops e webhooks.</li>
+<li>Google Cloud Workflows — orquestração e observabilidade de fluxos.</li>
+</ul>
+<p>Funcionalidades, preços e políticas podem mudar. Antes de implementar, consulte a documentação oficial atual do fornecedor.</p>
+</section>
+<footer>Material criado em 21/06/2026 — Módulos 6 e 7 do curso de Inside Sales.</footer></main></div><script>
+const input=document.getElementById('search');
+input.addEventListener('input',()=>{const term=input.value.trim().toLowerCase();document.querySelectorAll('.searchable').forEach(el=>{const text=el.innerText.toLowerCase();el.classList.toggle('hidden',term && !text.includes(term));});});
+</script></body></html>
