@@ -1,6 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ForbiddenException, NotFoundException } from '@nestjs/common';
-import { SubmissionStatus } from '@prisma/client';
+import { NotFoundException } from '@nestjs/common';
 import { LmsService } from '../src/modules/lms/lms.service';
 import { PrismaService } from '../src/modules/common/prisma.service';
 import { AuthContext } from '../src/modules/auth/auth.types';
@@ -23,7 +22,6 @@ vi.mock('@prisma/client', async (importOriginal) => {
 
 describe('LmsService Multi-tenant Isolation', () => {
   let service: LmsService;
-  let prisma: PrismaService;
 
   const mockPrisma = {
     courseVersion: {
@@ -69,7 +67,6 @@ describe('LmsService Multi-tenant Isolation', () => {
     service = module.get<LmsService>(LmsService);
     (service as any).prisma = mockPrisma;
 
-    prisma = module.get<PrismaService>(PrismaService);
     vi.clearAllMocks();
   });
 
