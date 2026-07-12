@@ -245,7 +245,7 @@ async function seedTemplates() {
 
 async function seedExcellenceCatalog(tenantIdToSeed: string) {
   for (const item of excellenceItems) {
-    const itemNumber = Number(item.number);
+    const itemNumber = String(item.number);
     await prisma.excellenceItem.upsert({
       where: { tenantId_number: { tenantId: tenantIdToSeed, number: itemNumber } },
       update: {

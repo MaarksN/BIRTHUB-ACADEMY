@@ -50,26 +50,26 @@ enum SupportTicketStatus {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  tenantId      String
-  name          String
-  email         String    @unique
-  passwordHash  String
-  locale        String    @default("pt-BR")
-  deletedAt     DateTime?
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  id           String    @id @default(cuid())
+  tenantId     String
+  name         String
+  email        String    @unique
+  passwordHash String
+  locale       String    @default("pt-BR")
+  deletedAt    DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
 
-  memberships  Membership[]
-  sessions      Session[]
-  enrollments   Enrollment[]
-  progressEvents ProgressEvent[]
-  cycleCompletions CycleCompletion[]
-  quizAttempts  QuizAttempt[]
-  submissions   Submission[]
-  certificates  Certificate[]
-  learningPlans LearningPlan[]
-  supportTickets SupportTicket[]
+  memberships          Membership[]
+  sessions             Session[]
+  enrollments          Enrollment[]
+  progressEvents       ProgressEvent[]
+  cycleCompletions     CycleCompletion[]
+  quizAttempts         QuizAttempt[]
+  submissions          Submission[]
+  certificates         Certificate[]
+  learningPlans        LearningPlan[]
+  supportTickets       SupportTicket[]
   qualityScoresCreated CourseQualityScore[] @relation("QualityScoreCreator")
 
   @@index([tenantId])
@@ -92,29 +92,29 @@ model Organization {
 }
 
 model Session {
-  id             String        @id @default(cuid())
-  tokenHash      String        @unique
+  id             String       @id @default(cuid())
+  tokenHash      String       @unique
   userId         String
   activeTenantId String
   expiresAt      DateTime
   revokedAt      DateTime?
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
-  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  organization   Organization  @relation(fields: [activeTenantId], references: [tenantId], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization   Organization @relation(fields: [activeTenantId], references: [tenantId], onDelete: Cascade)
 
   @@index([userId, activeTenantId, expiresAt])
   @@index([tokenHash, revokedAt])
 }
 
 model Membership {
-  id             String   @id @default(cuid())
+  id             String       @id @default(cuid())
   tenantId       String
   userId         String
   organizationId String
   roleId         String
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
   user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   role           Role         @relation(fields: [roleId], references: [id], onDelete: Restrict)
@@ -125,15 +125,15 @@ model Membership {
 }
 
 model Role {
-  id          String   @id @default(cuid())
-  tenantId    String
-  code        RoleCode
-  name        String
-  permissions String[]
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           String       @id @default(cuid())
+  tenantId     String
+  code         RoleCode
+  name         String
+  permissions  String[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
   organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
-  memberships Membership[]
+  memberships  Membership[]
 
   @@unique([tenantId, code])
   @@index([tenantId])
@@ -147,35 +147,36 @@ model Permission {
 }
 
 model Course {
-  id          String    @id
-  tenantId    String
-  title       String
-  slug        String
-  language    String
-  deletedAt   DateTime?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
-  versions    CourseVersion[]
-  challenges  FinalChallenge[]
+  id            String               @id
+  tenantId      String
+  title         String
+  slug          String
+  language      String
+  deletedAt     DateTime?
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+  organization  Organization         @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
+  versions      CourseVersion[]
+  challenges    FinalChallenge[]
   qualityScores CourseQualityScore[]
+  Competency    Competency[]
 
   @@unique([tenantId, slug])
   @@index([tenantId])
 }
 
 model CourseVersion {
-  id        String   @id @default(cuid())
-  tenantId  String
-  courseId  String
-  version   String
-  status    String   @default("draft")
-  metadata  Json
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  course    Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  modules   Module[]
-  enrollments Enrollment[]
+  id           String        @id @default(cuid())
+  tenantId     String
+  courseId     String
+  version      String
+  status       String        @default("draft")
+  metadata     Json
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  course       Course        @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  modules      Module[]
+  enrollments  Enrollment[]
   certificates Certificate[]
 
   @@unique([tenantId, courseId, version])
@@ -183,14 +184,14 @@ model CourseVersion {
 }
 
 model Module {
-  id              String   @id
+  id              String        @id
   tenantId        String
   courseVersionId String
   code            String
   title           String
   sortOrder       Int
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
   courseVersion   CourseVersion @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
   cycles          Cycle[]
   projects        Project[]
@@ -200,22 +201,22 @@ model Module {
 }
 
 model Cycle {
-  id        String   @id
-  tenantId  String
-  moduleId  String
-  code      String
-  title     String
-  content   Json
-  sortOrder Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  module    Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
-  lessonBlocks LessonBlock[]
-  activities Activity[]
-  questions Question[]
-  quizAttempts QuizAttempt[]
+  id             String            @id
+  tenantId       String
+  moduleId       String
+  code           String
+  title          String
+  content        Json
+  sortOrder      Int
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  module         Module            @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  lessonBlocks   LessonBlock[]
+  activities     Activity[]
+  questions      Question[]
+  quizAttempts   QuizAttempt[]
   progressEvents ProgressEvent[]
-  completions CycleCompletion[]
+  completions    CycleCompletion[]
 
   @@unique([tenantId, code])
   @@index([tenantId])
@@ -231,55 +232,55 @@ model LessonBlock {
   sortOrder Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  cycle     Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  cycle     Cycle    @relation(fields: [cycleId], references: [id], onDelete: Cascade)
 
   @@index([tenantId, cycleId])
 }
 
 model Activity {
-  id        String   @id
-  tenantId  String
-  cycleId   String
-  title     String
-  content   Json
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  cycle     Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  id          String       @id
+  tenantId    String
+  cycleId     String
+  title       String
+  content     Json
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  cycle       Cycle        @relation(fields: [cycleId], references: [id], onDelete: Cascade)
   submissions Submission[]
 
   @@index([tenantId, cycleId])
 }
 
 model Rubric {
-  id        String   @id @default(cuid())
+  id        String            @id @default(cuid())
   tenantId  String
   ownerType String
   ownerId   String
   title     String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime          @default(now())
+  updatedAt DateTime          @updatedAt
   criteria  RubricCriterion[]
 
   @@index([tenantId, ownerType, ownerId])
 }
 
 model RubricCriterion {
-  id        String   @id @default(cuid())
+  id        String        @id @default(cuid())
   tenantId  String
   rubricId  String
   title     String
   levels    Json
   sortOrder Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  rubric    Rubric @relation(fields: [rubricId], references: [id], onDelete: Cascade)
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  rubric    Rubric        @relation(fields: [rubricId], references: [id], onDelete: Cascade)
   scores    ReviewScore[]
 
   @@index([tenantId, rubricId])
 }
 
 model Question {
-  id              String   @id
+  id              String              @id
   tenantId        String
   cycleId         String
   difficulty      String
@@ -288,78 +289,78 @@ model Question {
   explanation     String
   theme           String
   source          String
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
-  cycle           Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
-  options         QuestionOption[] @relation("QuestionOptions")
-  correctOption   QuestionOption? @relation("CorrectOption", fields: [correctOptionId], references: [id], onDelete: Restrict)
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+  cycle           Cycle               @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  options         QuestionOption[]    @relation("QuestionOptions")
+  correctOption   QuestionOption?     @relation("CorrectOption", fields: [correctOptionId], references: [id], onDelete: Restrict)
   answers         QuizAttemptAnswer[]
 
   @@index([tenantId, cycleId])
 }
 
 model QuestionOption {
-  id         String   @id
-  tenantId   String
-  questionId String
-  label      String
-  text       String
-  feedback   String
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  question   Question @relation("QuestionOptions", fields: [questionId], references: [id], onDelete: Cascade)
-  correctFor Question[] @relation("CorrectOption")
+  id              String              @id
+  tenantId        String
+  questionId      String
+  label           String
+  text            String
+  feedback        String
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+  question        Question            @relation("QuestionOptions", fields: [questionId], references: [id], onDelete: Cascade)
+  correctFor      Question[]          @relation("CorrectOption")
   selectedAnswers QuizAttemptAnswer[]
 
   @@index([tenantId, questionId])
 }
 
 model QuizAttempt {
-  id          String   @id @default(cuid())
+  id          String              @id @default(cuid())
   tenantId    String
   userId      String
   cycleId     String
   seed        String
   score       Int
   passed      Boolean
-  status      AttemptStatus @default(IN_PROGRESS)
+  status      AttemptStatus       @default(IN_PROGRESS)
   submittedAt DateTime?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  cycle       Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  user        User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cycle       Cycle               @relation(fields: [cycleId], references: [id], onDelete: Cascade)
   answers     QuizAttemptAnswer[]
 
   @@index([tenantId, userId, cycleId])
 }
 
 model QuizAttemptAnswer {
-  id              String   @id @default(cuid())
-  tenantId        String
-  attemptId       String
-  questionId      String
+  id               String         @id @default(cuid())
+  tenantId         String
+  attemptId        String
+  questionId       String
   selectedOptionId String
-  correct         Boolean
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
-  attempt         QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
-  question        Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-  selectedOption  QuestionOption @relation(fields: [selectedOptionId], references: [id], onDelete: Restrict)
+  correct          Boolean
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  attempt          QuizAttempt    @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question         Question       @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedOption   QuestionOption @relation(fields: [selectedOptionId], references: [id], onDelete: Restrict)
 
   @@unique([attemptId, questionId])
   @@index([tenantId, attemptId])
 }
 
 model Enrollment {
-  id              String    @id @default(cuid())
+  id              String        @id @default(cuid())
   tenantId        String
   userId          String
   courseVersionId String
-  status          String    @default("active")
+  status          String        @default("active")
   deletedAt       DateTime?
-  createdAt       DateTime  @default(now())
-  updatedAt       DateTime  @updatedAt
-  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  user            User          @relation(fields: [userId], references: [id], onDelete: Cascade)
   courseVersion   CourseVersion @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
 
   @@unique([tenantId, userId, courseVersionId])
@@ -374,8 +375,8 @@ model ProgressEvent {
   eventType String
   metadata  Json
   createdAt DateTime @default(now())
-  user      User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  cycle     Cycle? @relation(fields: [cycleId], references: [id], onDelete: SetNull)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cycle     Cycle?   @relation(fields: [cycleId], references: [id], onDelete: SetNull)
 
   @@index([tenantId, userId])
 }
@@ -386,15 +387,15 @@ model CycleCompletion {
   userId      String
   cycleId     String
   completedAt DateTime @default(now())
-  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  cycle       Cycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cycle       Cycle    @relation(fields: [cycleId], references: [id], onDelete: Cascade)
 
   @@unique([tenantId, userId, cycleId])
   @@index([tenantId, userId, completedAt])
 }
 
 model Submission {
-  id          String    @id @default(cuid())
+  id          String           @id @default(cuid())
   tenantId    String
   userId      String
   activityId  String?
@@ -405,12 +406,12 @@ model Submission {
   score       Int?
   reviewedBy  String?
   reviewedAt  DateTime?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  activity    Activity? @relation(fields: [activityId], references: [id], onDelete: Cascade)
-  project     Project? @relation(fields: [projectId], references: [id], onDelete: Cascade)
-  challenge   FinalChallenge? @relation(fields: [challengeId], references: [id], onDelete: Cascade)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  activity    Activity?        @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  project     Project?         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  challenge   FinalChallenge?  @relation(fields: [challengeId], references: [id], onDelete: Cascade)
   files       SubmissionFile[]
   reviews     Review[]
 
@@ -419,14 +420,14 @@ model Submission {
 }
 
 model SubmissionFile {
-  id           String   @id @default(cuid())
+  id           String     @id @default(cuid())
   tenantId     String
   submissionId String
   objectKey    String
   originalName String
   mimeType     String
   sizeBytes    Int
-  createdAt    DateTime @default(now())
+  createdAt    DateTime   @default(now())
   submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
 
   @@unique([tenantId, objectKey])
@@ -434,16 +435,16 @@ model SubmissionFile {
 }
 
 model Review {
-  id           String   @id @default(cuid())
+  id           String           @id @default(cuid())
   tenantId     String
   submissionId String
   reviewerId   String
   status       SubmissionStatus
   score        Int?
   feedback     String?
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  submission   Submission       @relation(fields: [submissionId], references: [id], onDelete: Cascade)
   scores       ReviewScore[]
 
   @@index([tenantId, submissionId, createdAt])
@@ -451,13 +452,13 @@ model Review {
 }
 
 model ReviewScore {
-  id          String @id @default(cuid())
+  id          String          @id @default(cuid())
   tenantId    String
   reviewId    String
   criterionId String
   score       Int
   note        String?
-  review      Review @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+  review      Review          @relation(fields: [reviewId], references: [id], onDelete: Cascade)
   criterion   RubricCriterion @relation(fields: [criterionId], references: [id], onDelete: Restrict)
 
   @@unique([reviewId, criterionId])
@@ -465,80 +466,80 @@ model ReviewScore {
 }
 
 model Project {
-  id        String   @id
-  tenantId  String
-  moduleId  String
-  title     String
-  content   Json
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  module    Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  id          String       @id
+  tenantId    String
+  moduleId    String
+  title       String
+  content     Json
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  module      Module       @relation(fields: [moduleId], references: [id], onDelete: Cascade)
   submissions Submission[]
 
   @@index([tenantId, moduleId])
 }
 
 model FinalChallenge {
-  id        String   @id
-  tenantId  String
-  courseId  String
-  title     String
-  content   Json
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  course    Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  id          String       @id
+  tenantId    String
+  courseId    String
+  title       String
+  content     Json
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  course      Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
   submissions Submission[]
 
   @@index([tenantId, courseId])
 }
 
 model Certificate {
-  id              String            @id @default(cuid())
-  tenantId        String
-  userId          String
-  courseVersionId String
-  code            String            @unique
-  status          CertificateStatus @default(VALID)
-  issuedAt        DateTime          @default(now())
-  revokedAt       DateTime?
-  revokedById     String?
+  id               String                    @id @default(cuid())
+  tenantId         String
+  userId           String
+  courseVersionId  String
+  code             String                    @unique
+  status           CertificateStatus         @default(VALID)
+  issuedAt         DateTime                  @default(now())
+  revokedAt        DateTime?
+  revokedById      String?
   revocationReason String?
-  pdfObjectKey    String?
-  expiresAt       DateTime?
-  payload         Json
-  createdAt       DateTime          @default(now())
-  updatedAt       DateTime          @updatedAt
-  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  courseVersion   CourseVersion @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
-  verifications   CertificateVerification[]
+  pdfObjectKey     String?
+  expiresAt        DateTime?
+  payload          Json
+  createdAt        DateTime                  @default(now())
+  updatedAt        DateTime                  @updatedAt
+  user             User                      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseVersion    CourseVersion             @relation(fields: [courseVersionId], references: [id], onDelete: Cascade)
+  verifications    CertificateVerification[]
 
   @@unique([tenantId, userId, courseVersionId])
   @@index([tenantId, userId, status])
 }
 
 model CertificateVerification {
-  id            String   @id @default(cuid())
+  id            String      @id @default(cuid())
   certificateId String
   code          String
   ipHash        String?
   userAgentHash String?
   result        String
-  createdAt     DateTime @default(now())
+  createdAt     DateTime    @default(now())
   certificate   Certificate @relation(fields: [certificateId], references: [id], onDelete: Cascade)
 
   @@index([code])
 }
 
 model SourceFile {
-  id             String   @id @default(cuid())
-  name           String
-  sha256         String   @unique
-  path           String
-  priority       String
-  condition      String
-  metadata       Json
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
+  id        String   @id @default(cuid())
+  name      String
+  sha256    String   @unique
+  path      String
+  priority  String
+  condition String
+  metadata  Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model SourceChunk {
@@ -574,15 +575,15 @@ model ConflictLog {
 }
 
 model Consent {
-  id          String   @id @default(cuid())
-  tenantId    String
-  userId      String
-  version     String
-  purpose     String
-  accepted    Boolean
-  acceptedAt  DateTime?
-  revokedAt   DateTime?
-  createdAt   DateTime @default(now())
+  id         String    @id @default(cuid())
+  tenantId   String
+  userId     String
+  version    String
+  purpose    String
+  accepted   Boolean
+  acceptedAt DateTime?
+  revokedAt  DateTime?
+  createdAt  DateTime  @default(now())
 
   @@index([tenantId, userId])
 }
@@ -627,7 +628,7 @@ model AIInteractionLog {
 }
 
 model LearningPlan {
-  id                String   @id @default(cuid())
+  id                String    @id @default(cuid())
   tenantId          String
   userId            String
   goal              String
@@ -637,10 +638,10 @@ model LearningPlan {
   focusCompetencies Json
   intensity         String
   milestones        Json
-  status            String   @default("active")
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  status            String    @default("active")
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([tenantId, userId, status])
   @@index([tenantId, createdAt])
@@ -710,9 +711,9 @@ model AutomationSimulation {
   id        String   @id @default(cuid())
   tenantId  String
   userId    String
-  flow       Json
-  logs       Json
-  valid      Boolean
+  flow      Json
+  logs      Json
+  valid     Boolean
   createdAt DateTime @default(now())
 
   @@index([tenantId, userId])
@@ -730,6 +731,44 @@ model ImportJob {
   updatedAt DateTime  @updatedAt
 
   @@index([tenantId, status])
+}
+
+model ExcellenceItem {
+  id                 String   @id @default(cuid())
+  tenantId           String
+  number             String
+  slug               String
+  title              String
+  category           String
+  priority           String
+  status             String   @default("backlog")
+  outcomes           Json     @default("[]")
+  metrics            Json     @default("[]")
+  acceptanceCriteria Json     @default("[]")
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@unique([tenantId, slug])
+  @@unique([tenantId, number])
+  @@index([tenantId])
+}
+
+model Competency {
+  id            String   @id @default(cuid())
+  tenantId      String
+  code          String
+  courseId      String
+  title         String
+  description   String
+  level         String
+  evidence      Json     @default("[]")
+  relatedCycles Json     @default("[]")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  course        Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, code])
+  @@index([tenantId, courseId])
 }
 
 model ExportJob {
