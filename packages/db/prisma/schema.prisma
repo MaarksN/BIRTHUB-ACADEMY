@@ -61,6 +61,8 @@ model User {
   quizAttempts  QuizAttempt[]
   submissions   Submission[]
   certificates  Certificate[]
+  learningPlans LearningPlan[]
+  supportTickets SupportTicket[]
 
   @@index([tenantId])
 }
@@ -148,6 +150,7 @@ model Course {
   organization Organization @relation(fields: [tenantId], references: [tenantId], onDelete: Cascade)
   versions    CourseVersion[]
   challenges  FinalChallenge[]
+  qualityScores CourseQualityScore[]
 
   @@unique([tenantId, slug])
   @@index([tenantId])
