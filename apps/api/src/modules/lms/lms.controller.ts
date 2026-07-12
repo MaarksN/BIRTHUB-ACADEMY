@@ -11,13 +11,13 @@ export class LmsController {
   constructor(private readonly lmsService: LmsService) {}
 
   @Get('lms/course')
-  getCourse() {
-    return this.lmsService.getCourse();
+  getCourse(@CurrentAuth() auth: AuthContext) {
+    return this.lmsService.getCourse(auth);
   }
 
   @Get('lms/cycles/:cycleCode')
-  getCycle(@Param('cycleCode') cycleCode: string) {
-    return this.lmsService.getCycle(cycleCode);
+  getCycle(@Param('cycleCode') cycleCode: string, @CurrentAuth() auth: AuthContext) {
+    return this.lmsService.getCycle(cycleCode, auth);
   }
 
   @Post('courses/:courseId/enroll')

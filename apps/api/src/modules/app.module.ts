@@ -15,6 +15,7 @@ import { AdminController } from './admin/admin.controller';
 import { AdminService } from './admin/admin.service';
 import { PrismaService } from './common/prisma.service';
 import { AuthGuard } from './common/guards/auth.guard';
+import { RolesGuard } from './common/guards/roles.guard';
 import { SubmissionController } from './submissions/submission.controller';
 import { SubmissionService } from './submissions/submission.service';
 import { StorageService } from './submissions/storage.service';
@@ -34,6 +35,7 @@ import { HealthController } from './health/health.controller';
     StorageService,
     PrismaService,
     { provide: APP_GUARD, useClass: AuthGuard },
+    { provide: APP_GUARD, useClass: RolesGuard },
   ],
 })
 export class AppModule {}

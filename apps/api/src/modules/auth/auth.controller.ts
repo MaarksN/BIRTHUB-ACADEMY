@@ -17,11 +17,12 @@ export class AuthController {
   async login(@Body() body: unknown, @Res({ passthrough: true }) response: Response) {
     const input = loginSchema.parse(body);
     const result = await this.authService.login(input.email, input.password, input.tenantSlug);
+    const isProd = process.env.NODE_ENV === 'production';
     const crossSite = process.env.COOKIE_SAME_SITE === 'none';
     response.cookie('inside_session', result.sessionId, {
       httpOnly: true,
       sameSite: crossSite ? 'none' : 'lax',
-      secure: process.env.NODE_ENV === 'production' || crossSite,
+      secure: isProd || crossSite,
       path: '/',
       expires: result.expiresAt,
     });
@@ -36,11 +37,12 @@ export class AuthController {
   @Post('logout')
   async logout(@Req() request: Request, @Res({ passthrough: true }) response: Response) {
     await this.authService.logout(request.cookies?.inside_session as string | undefined);
+    const isProd = process.env.NODE_ENV === 'production';
     const crossSite = process.env.COOKIE_SAME_SITE === 'none';
     response.clearCookie('inside_session', {
       httpOnly: true,
       sameSite: crossSite ? 'none' : 'lax',
-      secure: process.env.NODE_ENV === 'production' || crossSite,
+      secure: isProd || crossSite,
       path: '/',
     });
     return { success: true };

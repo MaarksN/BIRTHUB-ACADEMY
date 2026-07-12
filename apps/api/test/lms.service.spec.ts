@@ -1,30 +1,46 @@
-import { describe, expect, it } from 'vitest';
-import { ServiceUnavailableException } from '@nestjs/common';
+import { describe, expect, it, vi, beforeEach } from 'vitest';
+import { ServiceUnavailableException, NotFoundException } from '@nestjs/common';
 import { LmsService } from '../src/modules/lms/lms.service';
+import { AuthContext } from '../src/modules/auth/auth.types';
 
 describe('LmsService', () => {
-  const service = new LmsService();
+  let service: LmsService;
+  const mockPrisma = {
+    course: { findFirst: vi.fn() },
+    cycle: { findFirst: vi.fn() },
+    enrollment: { findFirst: vi.fn() },
+  };
 
-  it('returns the canonical course without exposing an alternate tenant scope', () => {
-    expect(service.getCourse().modules).toHaveLength(7);
+  beforeEach(() => {
+    service = new LmsService(mockPrisma as any);
+    vi.clearAllMocks();
   });
 
-  it('rejects unknown cycles', () => {
-    expect(() => service.getCycle('99.99')).toThrow('Ciclo não encontrado');
+  const auth: AuthContext = {
+    sessionId: 's',
+    userId: 'u',
+    name: 'User',
+    email: 'u@example.com',
+    activeTenantId: 'tenant',
+    roles: ['STUDENT'],
+    memberships: [{ tenantId: 'tenant', role: 'STUDENT', permissions: [] }],
+  };
+
+  it('returns the canonical course when available in tenant', async () => {
+    mockPrisma.course.findFirst.mockResolvedValue({ id: 'course' });
+    const course = await service.getCourse(auth);
+    expect(course.modules).toHaveLength(7);
+  });
+
+  it('rejects unknown cycles', async () => {
+    mockPrisma.cycle.findFirst.mockResolvedValue(null);
+    await expect(service.getCycle('99.99', auth)).rejects.toThrow(NotFoundException);
   });
 
   it('requires persistence for enrollment and progress mutations', async () => {
+    const serviceNoDb = new LmsService();
     await expect(
-      service.enroll('inside-sales-ia-automacao', {
-        sessionId: 'session',
-        userId: 'student',
-        name: 'Student',
-        email: 'student@example.test',
-        activeTenantId: 'tenant-a',
-        roles: ['STUDENT'],
-        memberships: [{ tenantId: 'tenant-a', role: 'STUDENT', permissions: [] }],
-      }),
+      serviceNoDb.enroll('inside-sales-ia-automacao', auth),
     ).rejects.toBeInstanceOf(ServiceUnavailableException);
   });
 });
-
