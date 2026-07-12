@@ -29,14 +29,22 @@ export class LmsService {
     return this.prisma;
   }
 
-  getCourse() {
+  async getCourse(auth: AuthContext) {
+    const course = await this.db().course.findFirst({
+      where: { tenantId: auth.activeTenantId, id: courseData.id, deletedAt: null },
+    });
+    if (!course) throw new NotFoundException('Curso não disponível para este tenant');
     return courseData;
   }
 
-  getCycle(cycleCode: string) {
-    const cycle = findCycle(cycleCode);
-    if (!cycle) throw new NotFoundException('Ciclo não encontrado');
-    return cycle;
+  async getCycle(cycleCode: string, auth: AuthContext) {
+    const cycle = await this.db().cycle.findFirst({
+      where: { tenantId: auth.activeTenantId, code: cycleCode },
+    });
+    if (!cycle) throw new NotFoundException('Ciclo não encontrado neste tenant');
+    const content = findCycle(cycleCode);
+    if (!content) throw new NotFoundException('Conteúdo do ciclo não encontrado');
+    return content;
   }
 
   async enroll(courseId: string, auth: AuthContext) {
@@ -161,7 +169,7 @@ export class LmsService {
     });
     if (!cycle) throw new NotFoundException('Ciclo não encontrado');
     await this.requireEnrollment(auth, cycle.id);
-    const contentCycle = this.getCycle(cycle.code);
+    const contentCycle = await this.getCycle(cycle.code, auth);
     const progress = await this.getLearnerProgress(auth);
     if (!isCycleUnlocked(cycle.code, progress)) throw new ForbiddenException('Ciclo bloqueado por pré-requisitos');
     if (!progress.passedQuizzes.includes(contentCycle.quiz.id)) throw new ForbiddenException('Quiz obrigatório ainda não aprovado');
@@ -208,7 +216,8 @@ export class LmsService {
     const attempts = await this.db().quizAttempt.count({
       where: { tenantId: auth.activeTenantId, userId: auth.userId, cycleId: cycle.id },
     });
-    if (attempts >= 3) throw new ForbiddenException('Limite de 3 tentativas atingido');
+    const maxAttempts = Number(process.env.MAX_QUIZ_ATTEMPTS ?? 3);
+    if (attempts >= maxAttempts) throw new ForbiddenException(`Limite de ${maxAttempts} tentativas atingido`);
     const seed = crypto.randomBytes(16).toString('hex');
     const attempt = await this.db().quizAttempt.create({
       data: {
@@ -225,7 +234,7 @@ export class LmsService {
       quizId,
       questions: this.safeQuestions(contentCycle.code, seed),
       attemptNumber: attempts + 1,
-      maxAttempts: 3,
+      maxAttempts,
     };
   }
 
@@ -270,7 +279,7 @@ export class LmsService {
     });
     if (!attempt) throw new NotFoundException('Tentativa não encontrada');
     if (attempt.status !== 'IN_PROGRESS') throw new ConflictException('Tentativa já submetida');
-    const contentCycle = this.getCycle(attempt.cycle.code);
+    const contentCycle = await this.getCycle(attempt.cycle.code, auth);
     const questions = drawQuizQuestions(attempt.cycle.code, attempt.seed);
     if (attempt.answers.length !== questions.length) throw new ConflictException('Responda todas as questões antes de enviar');
     const score = Math.round((attempt.answers.filter(({ correct }) => correct).length / questions.length) * 100);
