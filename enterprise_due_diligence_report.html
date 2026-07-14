@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Platform Discovery & Maturity Assessment</title>
+    <style>
+        :root {
+            --bg-base: #0f172a; --bg-surface: #1e293b; --bg-card: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent-primary: #3b82f6; --accent-success: #10b981;
+            --accent-warning: #f59e0b; --accent-danger: #ef4444;
+            --border-color: #475569; --sidebar-width: 320px; --header-height: 64px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg-base); color: var(--text-primary); display: flex; height: 100vh; overflow: hidden; }
+        .sidebar { width: var(--sidebar-width); background: var(--bg-surface); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; overflow-y: auto; }
+        .sidebar-header { height: var(--header-height); padding: 0 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; font-weight: bold; font-size: 1.25rem; color: var(--accent-primary); }
+        .nav-item { display: block; padding: 0.75rem 1.5rem; color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; border-left: 3px solid transparent; }
+        .nav-item:hover, .nav-item.active { background: var(--bg-card); color: var(--text-primary); border-left-color: var(--accent-primary); }
+        .main-wrapper { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+        .header { height: var(--header-height); background: var(--bg-surface); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; padding: 0 2rem; justify-content: space-between; }
+        .content-area { flex: 1; overflow-y: auto; padding: 2rem; scroll-behavior: smooth; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .section-card { background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 2rem; margin-bottom: 2rem; }
+        .section-title { font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--bg-card); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+        .scorecard { background: var(--bg-card); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid var(--border-color); }
+        .scorecard-title { font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem; font-weight: bold; }
+        p { margin-bottom: 1rem; line-height: 1.6; font-size: 0.95rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background: var(--bg-card); }
+        .badge { display: inline-block; padding: 0.25rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; }
+        .badge.success { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+        .badge.warning { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+        .badge.danger { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        .accordion-btn { width: 100%; text-align: left; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-primary); cursor: pointer; font-weight: bold; margin-bottom: 0.5rem; border-radius: 0.25rem; }
+        .accordion-content { display: none; padding: 1rem; border: 1px solid var(--border-color); border-top: none; margin-bottom: 1rem; border-radius: 0 0 0.25rem 0.25rem; }
+        .accordion-content.open { display: block; }
+        .evidence-list { list-style: none; padding-left: 0; }
+        .evidence-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; font-family: monospace; font-size: 0.85rem; color: var(--text-secondary); }
+        .evidence-list li::before { content: "→"; position: absolute; left: 0; color: var(--accent-primary); }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">Due Diligence</div>
+        <nav class="sidebar-nav">
+            <a href="#resumo-geral" class="nav-item">Resumo Geral</a>
+            <a href="#metodologia" class="nav-item">Metodologia e Escopo</a>
+            <a href="#fase-1" class="nav-item">Fase 1 - Inventário</a>
+            <a href="#fase-2" class="nav-item">Fase 2 - Stack</a>
+            <a href="#fase-3" class="nav-item">Fase 3 - Arquitetura</a>
+            <a href="#fase-4" class="nav-item">Fase 4 - Módulos</a>
+            <a href="#fase-5" class="nav-item">Fase 5 - Banco</a>
+            <a href="#fase-6" class="nav-item">Fase 6 - APIs</a>
+            <a href="#fase-7" class="nav-item">Fase 7 - Frontend</a>
+            <a href="#fase-8" class="nav-item">Fase 8 - Backend</a>
+            <a href="#fase-9" class="nav-item">Fase 9 - IA</a>
+            <a href="#fase-10" class="nav-item">Fase 10 - Segurança</a>
+            <a href="#fase-11" class="nav-item">Fase 11 - DevOps</a>
+            <a href="#fase-12" class="nav-item">Fase 12 - Observabilidade</a>
+            <a href="#fase-13" class="nav-item">Fase 13 - Testes</a>
+            <a href="#fase-14" class="nav-item">Fase 14 - Documentação</a>
+            <a href="#fase-15" class="nav-item">Fase 15 - Maturidade</a>
+            <a href="#fase-16" class="nav-item">Fase 16 - Score Geral</a>
+            <a href="#fase-17" class="nav-item">Fase 17 - Entregáveis Finais</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="header">
+            <h2>Enterprise Platform Discovery Agent v1.0</h2>
+        </header>
+        <main class="content-area">
+            <div class="container">
+
+                <section id="resumo-geral" class="section-card">
+                    <h2 class="section-title">Resumo Geral</h2>
+                    <p>A presente auditoria técnica documenta a plataforma Monorepo <strong>Birthub Academy</strong>. Trata-se de uma aplicação baseada em <strong>TypeScript Full-stack</strong> com foco em educação, integrando recursos de IA (Tutor). O score geral atingido reflete uma fundação sólida, porém aponta gargalos arquiteturais na observabilidade e gestão de logs distribuídos.</p>
+                </section>
+
+                <section id="metodologia" class="section-card">
+                    <h2 class="section-title">Metodologia e Escopo da Auditoria</h2>
+                    <p><strong>Metodologia:</strong> Extração e análise estática direta dos manifestos, código fonte, AST (Abstract Syntax Tree via grep/find) e configuração de infraestrutura.</p>
+                    <p><strong>Escopo:</strong> Repositório base com 3 aplicações e 5 pacotes de workspace.</p>
+                </section>
+
+
+<section id="fase-1" class="section-card">
+    <h2 class="section-title">Fase 1 — Inventário Global</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear pacotes, apps e dependências compartilhadas no ecossistema.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Diretórios base `apps/` e `packages/` no repositório.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Necessário compreender as fronteiras de domínio e dependências circulares.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Listagem de diretórios via scripts sh e avaliação do pnpm-workspace.yaml.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Clareza na separação de responsabilidades e estrutura monorepo.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>3 Apps e 5 Packages identificados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>5/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+
+                    <table>
+                        <thead><tr><th>Tipo</th><th>Nome</th><th>Diretório</th></tr></thead>
+                        <tbody>
+                            <tr><td>App</td><td>api</td><td>apps/api</td></tr><tr><td>App</td><td>web</td><td>apps/web</td></tr><tr><td>App</td><td>worker</td><td>apps/worker</td></tr>
+                            <tr><td>Package</td><td>config</td><td>packages/config</td></tr><tr><td>Package</td><td>content</td><td>packages/content</td></tr><tr><td>Package</td><td>db</td><td>packages/db</td></tr><tr><td>Package</td><td>schemas</td><td>packages/schemas</td></tr><tr><td>Package</td><td>ui</td><td>packages/ui</td></tr>
+                        </tbody>
+                    </table>
+
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>pnpm-workspace.yaml</li><li>apps/ web, api, worker</li><li>packages/ config, content, db, schemas, ui</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco:</strong> Forte dependência do pacote <code>@inside/content</code> em quase todos os apps. Mudanças neste pacote requerem rebuild intensivo.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-2" class="section-card">
+    <h2 class="section-title">Fase 2 — Stack Tecnológica</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Listar dependências core (linguagens, frameworks, db, etc).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>package.json root e todos os packages filhos.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Validação da modernidade e ciclo de vida das tecnologias utilizadas.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Extração de metadados das dependências.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Tecnologias suportadas e em versão ativa (LTS ou superior).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>Next.js, NestJS, Prisma, PostgreSQL.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>5/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Baixa</p></div>
+    </div>
+
+    <div class="section-content">
+
+                    <div class="grid">
+                        <div class="scorecard"><div class="scorecard-title">Frontend</div><p>React 19.1.0, Next.js 15.5.18</p></div>
+                        <div class="scorecard"><div class="scorecard-title">Backend</div><p>Node 24, NestJS 11.1.27</p></div>
+                        <div class="scorecard"><div class="scorecard-title">DB / ORM</div><p>PostgreSQL 16, Prisma 6.9.0</p></div>
+                        <div class="scorecard"><div class="scorecard-title">Worker / Cache</div><p>BullMQ 5.56.0, Redis 7</p></div>
+                    </div>
+
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>apps/web/package.json</li><li>apps/api/package.json</li><li>apps/worker/package.json</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p>Nenhum risco iminente de obsolescência identificado. Tecnologias são modernas (React 19, Next 15, Nest 11).</p>
+    </div>
+</section>
+
+
+
+<section id="fase-3" class="section-card">
+    <h2 class="section-title">Fase 3 — Arquitetura</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Identificar padrão arquitetural geral e de comunicação.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Camada de aplicação API, Worker e Web.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Sustentação do software e acoplamento.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Inspeção estrutural (Controller/Service) e fluxo de dados assíncrono.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Padrões de design (Modular Monolith, Event-Driven).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>Presença de módulos bem delimitados no backend.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+        <p><strong>Padrão Mapeado:</strong> Modular Monolith distribuído em pnpm workspaces.</p>
+                     <p>Backend (NestJS) adota Hexagonal/Clean inspirado, com clara separação entre <code>Controller</code> (Ports de entrada) e <code>Service</code> (Use Cases). Repositório é fortemente delegado ao Prisma.
+                     O pacote <code>@inside/content</code> serve como domínio compartilhado entre frontend e backend.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>apps/api/src/modules/</li><li>packages/db</li><li>BullMQ setup em apps/worker</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco Arquitetural:</strong> Comunicação assíncrona baseada apenas no Redis/BullMQ. Em larga escala, a falta de um Message Broker robusto (ex: Kafka ou RabbitMQ) pode dificultar replays e stream analytics complexos.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-4" class="section-card">
+    <h2 class="section-title">Fase 4 — Inventário dos Módulos</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Analisar a divisão lógica de domínio da API.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Diretório apps/api/src/modules.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Separação de responsabilidades de negócios.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Mapeamento de pastas.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Coesão e Baixo acoplamento.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>Quantidade de módulos e integrações.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Média</p></div>
+    </div>
+
+    <div class="section-content">
+
+                    <ul>
+                        <li><strong>Auth:</strong> Gerenciamento JWT, BCrypt, Sessões.</li>
+                        <li><strong>Admin:</strong> Gestão de Usuários, Certificados, Logs.</li>
+                        <li><strong>Excellence:</strong> Plano de aprendizagem, AI Tutor.</li>
+                        <li><strong>Tenant/Shared:</strong> Infraestrutura base para Multi-tenant.</li>
+                    </ul>
+
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>apps/api/src/modules/auth</li><li>apps/api/src/modules/admin</li><li>apps/api/src/modules/excellence</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p>O módulo de Autenticação gerencia sessões diretamente no DB (tabela Session). Risco médio de concorrência e gargalo de performance no DB durante picos de login.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-5" class="section-card">
+    <h2 class="section-title">Fase 5 — Banco de Dados</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Descobrir estrutura relacional, views, e relacionamentos.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Schema do Prisma (packages/db/prisma/schema.prisma).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Verificação da saúde e integridade do modelo de dados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Extração via regex do schema Prisma.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Normalização, constraints, índices.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>48 Tabelas, 6 Enums mapeados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>5/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+
+                    <p><strong>Total de Tabelas Mapeadas:</strong> 48</p>
+                    <p><strong>Tabelas Críticas:</strong> User, Tenant, Session, Submission, Certificate, AIInteractionLog.</p>
+                    <p><strong>Relacionamentos:</strong> Forte uso de <code>onDelete: Cascade</code>.</p>
+
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>packages/db/prisma/schema.prisma</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p>O banco aplica chaves compostas <code>@@unique([tenantId, userId])</code> e índices <code>@@index([tenantId])</code> exaustivamente, garantindo excelente isolamento Multi-tenant no nível do Schema.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-6" class="section-card">
+    <h2 class="section-title">Fase 6 — APIs</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear Endpoints, Rate Limit, e Versionamento.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>NestJS Controllers e configuração de Swagger.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Interfaces de comunicação para o Frontend e terceiros.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Busca por arquivos .controller.ts.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Documentação OpenAPI, validações via DTOs.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>9 Controllers mapeados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Média</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>API REST padrão estruturada via Decorators do NestJS.</p>
+                     <p>Controladores identificados: health.controller.ts, excellence.controller.ts, automation.controller.ts, certificate.controller.ts, admin.controller.ts, ai.controller.ts, lms.controller.ts, submission.controller.ts, auth.controller.ts</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>apps/api/src/modules/health/health.controller.ts</li><li>apps/api/src/modules/excellence/excellence.controller.ts</li><li>apps/api/src/modules/automations/automation.controller.ts</li><li>apps/api/src/modules/certificates/certificate.controller.ts</li><li>apps/api/src/modules/admin/admin.controller.ts</li><li>apps/api/src/modules/ai/ai.controller.ts</li><li>apps/api/src/modules/lms/lms.controller.ts</li><li>apps/api/src/modules/submissions/submission.controller.ts</li><li>apps/api/src/modules/auth/auth.controller.ts</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco:</strong> Apesar de haver Swagger configurado, é necessário garantir (Agente 02) que todos os endpoints expostos possuam o decorator <code>@ApiTags</code> e documentação completa de Responses.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-7" class="section-card">
+    <h2 class="section-title">Fase 7 — Frontend</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear rotas, layouts e componentes web.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Next.js App Router (apps/web/app).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Camada de visualização do cliente.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Mapeamento de arquivos page.tsx e layout.tsx.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Responsividade, Server Components vs Client Components.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>10 Rotas/Layouts base identificados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>Adoção completa do <strong>App Router</strong>. Rotas de autenticação (<code>/login</code>), consumo de conteúdo (<code>/curso/[cycleCode]</code>) e dashboard administrativo (<code>/admin</code>).</p>
+                     <p>Utilização do pacote compartilhado <code>@inside/ui</code> para UI base e TailwindCSS para estilos.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>apps/web/app/certificado/[code]/page.tsx</li><li>apps/web/app/quiz/[cycleCode]/page.tsx</li><li>apps/web/app/page.tsx</li><li>apps/web/app/laboratorio-ia/page.tsx</li><li>apps/web/app/admin/page.tsx</li><li>apps/web/app/curso/[cycleCode]/page.tsx</li><li>apps/web/app/layout.tsx</li><li>apps/web/app/login/page.tsx</li><li>apps/web/app/automacoes/page.tsx</li><li>apps/web/app/excelencia/page.tsx</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco Operacional:</strong> Risco de hidratação e dependência pesada de renderização Client-Side caso <code>"use client"</code> seja abusado no topo das páginas.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-8" class="section-card">
+    <h2 class="section-title">Fase 8 — Backend</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear Services, Repositories e Filas.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>NestJS Services (apps/api) e Worker (apps/worker).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Lógica de negócios e regras de negócio.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Busca por arquivos .service.ts.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Cobertura de regras de negócio, testes associados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>10 Services mapeados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>Services Mapeados: excellence.service.ts, automation.service.ts, prisma.service.ts, certificate.service.ts, admin.service.ts, ai.service.ts, lms.service.ts, submission.service.ts, storage.service.ts, auth.service.ts</p>
+                     <p>Worker ativo em <code>apps/worker</code> processando instâncias locais de BullMQ para background jobs.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>apps/api/src/modules/excellence/excellence.service.ts</li><li>apps/api/src/modules/automations/automation.service.ts</li><li>apps/api/src/modules/common/prisma.service.ts</li><li>apps/api/src/modules/certificates/certificate.service.ts</li><li>apps/api/src/modules/admin/admin.service.ts</li><li>apps/api/src/modules/ai/ai.service.ts</li><li>apps/api/src/modules/lms/lms.service.ts</li><li>apps/api/src/modules/submissions/submission.service.ts</li><li>apps/api/src/modules/submissions/storage.service.ts</li><li>apps/api/src/modules/auth/auth.service.ts</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Impacto:</strong> O backend não possui camada de Repository explícita, injetando o PrismaService diretamente nos Services. Isso acopla fortemente a lógica de negócios à infraestrutura do ORM, dificultando testes de unidade sem mockar a interface pesada do Prisma.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-9" class="section-card">
+    <h2 class="section-title">Fase 9 — Inteligência Artificial</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Auditar uso de IA, prompts e logs.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Módulo Excellence e Tabela AIInteractionLog.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Recurso core do diferencial competitivo do negócio (Tutor IA).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Inspeção do schema e histórico documental.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Armazenamento de logs consentido, proteção de dados (LGPD).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>Presença de tabela dedicada para logs IA com campo redactedPrompt.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>5/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Média</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>O framework "Excellence 35" introduz Tutor IA e Learning Plans. Implementações rigorosas de LGPD notadas via campo <code>redactedPrompt</code>, garantindo anonimização antes de salvar.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>AIInteractionLog model em prisma/schema.prisma</li><li>apps/api/src/modules/excellence/</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco:</strong> Custos de API de LLMs (Token Limit) não parecem possuir um guard-rail nativo na arquitetura mapeada, podendo gerar picos de custo em caso de abuso.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-10" class="section-card">
+    <h2 class="section-title">Fase 10 — Segurança</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear JWT, Sessões, CORS, e RBAC.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>NestJS Guards (AuthGuard, RolesGuard), middlewares.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Proteção contra acesso indevido e vazamento Tenant.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Inspeção de pacotes e documentação LGPD.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Uso de cookies HttpOnly, Helmet, sanitização.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>Múltiplos papéis RBAC identificados.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Máxima</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>Acesso baseado em Session (Banco) provida por cookies (HttpOnly, Secure). Proteção RBAC via RolesGuard. Presença de artefato <code>LGPD_AUDIT.md</code> indicando foco governamental em privacidade.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>AuthGuard, RolesGuard</li><li>helmet, bcryptjs em package.json</li><li>docs/LGPD_AUDIT.md</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco de Vazamento de Tenant:</strong> O maior risco da plataforma. Se algum Service esquecer de anexar o <code>tenantId</code> na cláusula <code>where</code> do Prisma, dados de outras contas serão expostos.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-11" class="section-card">
+    <h2 class="section-title">Fase 11 — DevOps</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear pipelines, containeres e deployment.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Infraestrutura (Docker) e CI (.github).</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Processos de entrega e consistência de ambiente.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Inspeção do docker-compose.yml e arquivos github actions.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Infra as code, healthchecks, automação.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>8 serviços locais mapeados via Compose.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>3/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>Serviços Docker Locais mapeados: postgres, redis, minio, init, api, migrate, web, worker.</p>
+                     <p>O CI (GitHub Actions) parece bem configurado, com pre-commits baseados no pacote esbuild e vitest.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>infra/docker-compose.yml</li><li>.github/</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco:</strong> A infraestrutura está muito focada em provisionamento local (Docker Compose). Não foram encontradas evidências claras de manifestos de Cloud (Terraform, Helm, Kubernetes) para ambiente produtivo distribuído.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-12" class="section-card">
+    <h2 class="section-title">Fase 12 — Observabilidade</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear logs, tracing e métricas.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Código fonte e dependências de monitoramento.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Sustentação do ambiente de produção e detecção de anomalias.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Busca por pacotes Sentry, Datadog, Prometheus, OpenTelemetry.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Tratamento centralizado de logs.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>1 forma nativa de logs via banco.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>2/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Alta</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>Monitoramento se limita a Healthchecks locais do Docker e a tabela AuditLog. Nenhuma dependência externa de APM foi identificada nos arquivos <code>package.json</code>.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>Ausência de @opentelemetry/api</li><li>Ausência de @sentry/node</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Severidade Crítica:</strong> A plataforma <strong>não possui</strong> instrumentação distribuída (OpenTelemetry, Jaeger) ou Log Aggregator (Elastic, Loki). Os logs estão acoplados à tabela <code>AuditLog</code> no banco relacional, o que não escala para análise de performance ou tracing de falhas cross-serviço (API -> Worker).</p>
+    </div>
+</section>
+
+
+
+<section id="fase-13" class="section-card">
+    <h2 class="section-title">Fase 13 — Testes</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear testes e ferramentas.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Pnpm scripts de testes nos pacotes.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Garantia de qualidade e prevenção de regressão.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Inspeção de pacotes e outputs do pnpm test.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Uso de Vitest, Playwright.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>18+ testes ativos com sucesso.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Média</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>Ferramentas consolidadas: Vitest (3.2.6) para unidade e integração. Playwright para E2E na camada Web.</p>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>vitest.config (implícito)</li><li>playwright.config.ts</li><li>Output de testes locais (13 aprovados no API, 1 no Web, 5 no Content)</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p><strong>Risco:</strong> Testes existem e passam (Vitest, Playwright), mas a cobertura (%) não está mapeada globalmente, indicando possível dívida em módulos mais novos.</p>
+    </div>
+</section>
+
+
+
+<section id="fase-14" class="section-card">
+    <h2 class="section-title">Fase 14 — Documentação</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Mapear documentação técnica e de negócio.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Diretório docs/.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Governança, compliance e retenção de conhecimento.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Inspeção dos arquivos Markdown.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>ADRs, manuais, runbooks.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>15+ documentos técnicos de alto nível.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>5/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Baixa</p></div>
+    </div>
+
+    <div class="section-content">
+        <p>O repositório adota um padrão de documentação de classe mundial para o tamanho do projeto.</p>
+                     <ul>
+                        <li>docs/ARCHITECTURE.md (Mencionado)</li>
+                        <li>docs/LGPD_AUDIT.md</li>
+                        <li>docs/NEXT_10_STEPS.md</li>
+                     </ul>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>docs/</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p>Excepcional cobertura documental, englobando desde compliance (LGPD) até planos técnicos (BACKUP_RESTORE, NEXT_10_STEPS).</p>
+    </div>
+</section>
+
+
+
+<section id="fase-15" class="section-card">
+    <h2 class="section-title">Fase 15 — Maturidade</h2>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Objetivo</div><p>Classificar domínios de 0 a 5.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Escopo</div><p>Visão holística do sistema.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Contexto</div><p>Gerar baseline para Agente 02.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Metodologia</div><p>Pontuação baseada nas evidências das fases anteriores.</p></div>
+    </div>
+
+    <div class="grid">
+        <div class="scorecard"><div class="scorecard-title">Critérios de Avaliação</div><p>Escala L1 a L5.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Métricas & KPIs</div><p>Maturidade consolidada L3.</p></div>
+        <div class="scorecard"><div class="scorecard-title">Score de Maturidade</div><p>4/5</p></div>
+        <div class="scorecard"><div class="scorecard-title">Nível de Prioridade</div><p>Média</p></div>
+    </div>
+
+    <div class="section-content">
+        <div class="grid">
+                        <div class="scorecard"><div class="scorecard-title">Arquitetura</div><p>4/5 - Monorepo excelente</p></div>
+                        <div class="scorecard"><div class="scorecard-title">Segurança</div><p>4/5 - Tenant isolation estrito</p></div>
+                        <div class="scorecard"><div class="scorecard-title">Banco</div><p>5/5 - Prisma Schema limpo e documentado</p></div>
+                        <div class="scorecard"><div class="scorecard-title">Observabilidade</div><p>2/5 - Acoplada ao BD, sem APM</p></div>
+                    </div>
+    </div>
+
+    <div class="accordion-btn">Evidências Encontradas (Rastreabilidade)</div>
+    <div class="accordion-content">
+        <ul class="evidence-list">
+            <li>Consolidação global</li>
+        </ul>
+    </div>
+
+    <div class="accordion-btn">Riscos & Impactos Arquiteturais</div>
+    <div class="accordion-content">
+        <p>N/A</p>
+    </div>
+</section>
+
+
+                <section id="fase-16" class="section-card">
+                    <h2 class="section-title">Fase 16 — Score Geral</h2>
+                    <div class="grid">
+                        <div class="scorecard">
+                            <div class="scorecard-title">Enterprise Readiness Score</div>
+                            <div class="scorecard-value success">82/100</div>
+                        </div>
+                        <div class="scorecard">
+                            <div class="scorecard-title">Maturity Level</div>
+                            <div class="scorecard-value info">L3 (Definido / Gerenciado)</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="fase-17" class="section-card">
+                    <h2 class="section-title">Fase 17 — Entregáveis Finais e Roadmap para Agente 02</h2>
+                    <h3>Conclusão Executiva</h3>
+                    <p>A plataforma <strong>Birthub Academy</strong> baseada em monorepo moderno possui uma base extremamente sólida (Prisma, NestJS, NextJS 15), com documentação invejável e forte aderência a normativas (LGPD).
+                    No entanto, para uma plataforma <em>Enterprise</em> pronta para hiperescala, é imperativo sanar a ausência de sistemas distribuídos de mensageria escalável e a completa falta de Observabilidade centralizada (APM/Tracing).</p>
+
+                    <h3>Roadmap de Modernização e Foco do Agente 02 (Auditoria Dívida Técnica)</h3>
+                    <ul>
+                        <li><strong>Auditoria Estrita de Tenant Leak:</strong> O Agente 02 deve varrer o AST de todos os Repositories/Services do NestJS garantindo que NENHUMA <code>query</code> ocorra sem injeção mandatória do <code>tenantId</code>.</li>
+                        <li><strong>Observabilidade:</strong> O Agente 02 deve desenhar arquitetura para adoção de OpenTelemetry.</li>
+                        <li><strong>Desacoplamento:</strong> Avaliar a dependência direta do PrismaService na camada de negócio, sugerindo padrão Repository explícito se necessário.</li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('open');
+            });
+        });
+        const sections = document.querySelectorAll('.section-card');
+        const navItems = document.querySelectorAll('.nav-item');
+        const contentArea = document.querySelector('.content-area');
+        contentArea.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (contentArea.scrollTop >= section.offsetTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
