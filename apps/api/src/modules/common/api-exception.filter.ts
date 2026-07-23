@@ -24,6 +24,11 @@ export class ApiExceptionFilter implements ExceptionFilter {
       : exception instanceof HttpException
         ? exception.message
         : 'Erro interno';
+        
+    if (status === HttpStatus.INTERNAL_SERVER_ERROR) {
+      console.error('[InternalServerError]', exception);
+    }
+        
     response.status(status).json({
       statusCode: status,
       error: HttpStatus[status],
